@@ -1,0 +1,9 @@
+<launch>
+    <param name="/system_lang" value="en"/>
+
+    <master auto="start" />
+    <include file="$(find qbo_arduqbo)/launch/qbo_arduqbo_default.launch" /> 
+    <node pkg="qbo_talk" name="qbo_talk" type="neo_talk.py" output="screen"/>
+<!--    <node pkg="qbo_brain"  name="qbo_brain"      type="qbo_brain.py" output="screen" /> -->
+
+</launch>

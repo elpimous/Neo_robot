@@ -1,0 +1,13 @@
+
+Version: 1.0.1-openqbo0
+Section: OpenQbo
+Maintainer: Miguel Angel Julian <miguel.a.j82@openqbo.org>
+Homepage: http://openqbo.org/wiki/doku.php?id=qbo_apps:ros_pack:qbo_launchers
+Priority: optional
+Architecture: all
+Depends: qbo-listen, qbo-talk, qbo-face-vision, qbo-arduqbo, qbo-music-player, qbo-music-player, qbo-object-recognition, qbo-stereo-selector, qbo-questions, qbo-camera
+Description: Startup script for the QBO brain
+ This package installs the startup script for the QBO brain and essential packages
+
+
+

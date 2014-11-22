@@ -1,0 +1,3 @@
+#!/bin/bash
+ln -s /home/neo/catkin_ws/src/qbo_launcher/qbo_start_service /etc/init.d/
+update-rc.d qbo_start_service defaults 99

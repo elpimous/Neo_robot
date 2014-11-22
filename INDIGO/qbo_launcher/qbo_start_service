@@ -1,0 +1,102 @@
+#! /bin/bash
+#
+#!/usr/bin/env python
+#
+# elpimous October 2014
+
+source devel/setup.bash
+source /home/neo/catkin_ws/devel/setup.bash
+source /opt/ros/indigo/share/rosbash/rosbash
+
+export ROS_HOSTNAME=`/bin/hostname`
+LOCALUSER=`ls /home | awk 'NR==1{print $1}'`
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+  start)
+
+    echo "Starting QBO_ROS Start Up script "
+	
+
+   #sleep 10
+ 
+    #Wait for pulseaudio daemon
+    echo "Waiting for pulse audio daemon"
+    
+    su -c "/usr/bin/pulseaudio --kill" $LOCALUSER
+    su -c "/usr/bin/pulseaudio --start" $LOCALUSER
+    su -c "/usr/bin/pulseaudio --check" $LOCALUSER
+    PA=$?
+    while [ $PA -ne 0 ]; do
+       echo "Pulse audio check: " $PA > /dev/tty8 
+       sleep 1
+       su -c "/usr/bin/pulseaudio --check" $LOCALUSER
+       PA=$?
+    done
+ 
+    
+	echo "Launching QBO base"
+
+  su -c "export HOME=/home/$LOCALUSER ; export DISPLAY=:0.0 ; source /home/neo/catkin_ws/devel/setup.bash ; source /opt/ros/indigo/share/rosbash/rosbash ; roslaunch qbo_launcher qbo_startup.launch" -m $LOCALUSER  > /dev/tty8 2>/dev/tty9 &  
+
+#su -c "HOME=/home/$LOCALUSER ; export DISPLAY=:0.0 ; source /opt/ros/electric/setup.bash ; source /opt/ros/electric/ros/tools/rosbash/rosbash ; roslaunch qbo_launchers qbo_startup.launch" -m $LOCALUSER  > /dev/tty8 2>/dev/tty9 &
+  #su -c "source /opt/ros/electric/setup.bash ; source /opt/ros/electric/ros/tools/rosbash/rosbash ; roslaunch qbo_launchers qbo_startup.launch" -m $LOCALUSER
+
+  sleep 5
+  su -c "export HOME=/home/$LOCALUSER ; export DISPLAY=:0.0 ; source /home/neo/catkin_ws/devel/setup.bash ; source /opt/ros/indigo/share/rosbash/rosbash ; rosservice call /say_fr1 bonjour"
+    ;;
+  stop)
+    echo "Stopping QBO_ROS Start Up script"
+	
+
+    #killall nodes
+    for i in $( rosnode list ); do # pour tourt rosnode
+    rosnode kill $i; # kill tout node trouvé
+    done
+
+    #stop roscore
+    kill `ps -ax | egrep indigo | egrep -o -E \^\ ?[0-9]+\ ` # | cut -d \  -f2-`
+
+
+	;;
+  restart)
+    echo "Restarting QBO_ROS Start Up script"
+
+    #killall nodes
+    for i in $( rosnode list ); do
+    rosnode kill $i;
+    done
+
+    #stop roscore
+    kill `ps -ax | egrep indigo | egrep -o -E \^\ ?[0-9]+\ ` # | cut -d \  -f2-`
+
+    #Wait for pulseaudio daemon
+    echo "Waiting for pulse audio daemon"
+
+    su -c "/usr/bin/pulseaudio --kill" $LOCALUSER
+    su -c "/usr/bin/pulseaudio --start" $LOCALUSER
+    su -c "/usr/bin/pulseaudio --check" $LOCALUSER
+    PA=$?
+    while [ $PA -ne 0 ]; do
+       echo "Pulse audio check: " $PA > /dev/tty8
+       sleep 1
+       su -c "/usr/bin/pulseaudio --check" $LOCALUSER
+       PA=$?
+    done
+
+
+        echo "Launching QBO base"
+
+  #su -c "HOME=/home/$LOCALUSER ; export DISPLAY=:0.0 ; source /opt/ros/electric/setup.bash ; source /opt/ros/electric/ros/tools/rosbash/rosbash ; roslaunch qbo_launchers qbo_startup.launch" -m $LOCALUSER  > /dev/tty8 2>/dev/tty9 &
+  su -c "export HOME=/home/$LOCALUSER ; export DISPLAY=:0.0 ; source /home/neo/catkin_ws/devel/setup.bash ; source /opt/ros/indigo/share/rosbash/rosbash ; roslaunch qbo_launcher qbo_startup.launch" -m $LOCALUSER  > /dev/tty8 2>/dev/tty9 &
+  #su -c "source /opt/ros/electric/setup.bash ; source /opt/ros/electric/ros/tools/rosbash/rosbash ; roslaunch qbo_launchers qbo_startup.launch" -m $LOCALUSER
+
+    ;;
+
+  *)
+    echo "Usage: /etc/init.d/qbo_start_service {start|stop|restart}"
+    exit 1
+    ;;
+esac
+
+exit 0
