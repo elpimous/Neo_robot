@@ -1,0 +1,15 @@
+<launch>
+
+  <!--- Run Robot Pose EKF -->
+  <!--- include file="$(find qbo_bringup)/base.launch" /-->
+
+  <!--- Run gmapping -->
+  <include file="$(find qbo_navigation)/config/gmapping_qbo.launch" />
+
+  <!--- Run Move Base -->
+  <include file="$(find qbo_navigation)/config/move_base_qbo.launch" />
+  
+  <!--- Run the kinect -->
+  <include file="$(find qbo_bringup)/kinect.launch" />
+
+</launch>

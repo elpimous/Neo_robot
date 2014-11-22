@@ -1,0 +1,15 @@
+<package>
+  <description brief="bot_navigation">
+
+     bot_navigation
+
+  </description>
+  <author>Tully Foote</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/turtlebot_navigation</url>
+  <depend package="move_base"/>
+  <depend package="gmapping"/>
+</package>
+
+
