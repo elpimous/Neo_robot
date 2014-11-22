@@ -7,7 +7,7 @@ Be sure to add your own private google key
 (https://sites.google.com/a/chromium.org/dev/developers/how-tos/api-keys)
 
 
-               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 for pocketsphinx use :  roslaunch qbo_listen neo_listen_vocal_move.launch (for example)
 

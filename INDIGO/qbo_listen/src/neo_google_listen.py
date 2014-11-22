@@ -30,7 +30,7 @@ import shlex,subprocess,os
 REC = 'rec --encoding signed-integer --bits 16 --channels 1 --rate 16000 recording.wav silence 1 0.1 1% 1 1.5 1%'
 
 # Need personal chromium Key for only google speech api : V2 one. (V1 finished !)
-private_api_key='AIzaSyB64J53wF3HCw2yXBCFlDpj_YQ09DRmWdc"'	
+private_api_key='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx'	
 # Selection of language recognition language                                    						
 selected_language="fr-fr"
 # Api V2 request
