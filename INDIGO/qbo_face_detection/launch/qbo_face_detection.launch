@@ -1,0 +1,14 @@
+<launch>
+<include file="$(find qbo_camera)/launch/qbo_single_camera.launch" />
+
+	
+	<node name="qbo_face_detection" pkg="qbo_face_detection" type="qbo_face_detection" output="screen">
+		<param name="alternative_face_classifier_path" value="/usr/share/opencv/haarcascades/haarcascade_profileface.xml" />
+		<param name="check_Haar" value="1" /> 
+		<param name="undetected_threshold" value="1.0" /> 
+
+		<remap from="/stereo/left/camera_info" to="/stereo/camera_info"/>
+		<remap from="/stereo/left/image_rect_color" to="/stereo/image_raw"/>
+	 </node>
+</launch>
+
