@@ -1,0 +1,21 @@
+a		aa
+arrêt           aa rr ai
+arrêt_d_urgence		aa rr ai dd uu rr jj an ss
+avance		aa vv an ss
+droite		dd rr ww aa tt
+en_avant	an nn aa vv an
+en_arrière	an nn aa rr yy ai rr
+gauche		gg au ch
+halte		aa ll tt
+moins		mm ww in
+moins_vite		mm ww in vv ii tt
+néo		nn ei au
+plus		pp ll uu ss
+plus_vite		pp ll uu vv ii tt
+recule		rr ee kk uu ll
+stop		ss tt oo pp
+tourne		tt ou rr nn
+tourne_a_droite		tt ou rr nn aa dd rr ww aa tt
+tourne_a_gauche		tt ou rr nn aa gg au ch
+urgence         uu rr jj an ss
+vite		vv ii tt

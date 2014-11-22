@@ -1,0 +1,24 @@
+	install Cython (cython extension on ubuntu softwares)
+
+        sudo apt-get install bison (in terminal)
+
+        remove all cmusphinx software (pocketsphinx / sphinxbase / sphinxtrain)
+	desinstaller tout les programmes cmusphinx
+
+go to pocket rep : (some modified parts on sources)
+se rendre dans le rep pocket
+
+
+compile sphinxbase :
+compiler:
+
+	sudo ./configure
+	sudo make clean all
+	sudo make install
+
+install pocketsphinx 0.8 on ubuntu software
+
+
+catkin_make
+
+*** enjoy ***

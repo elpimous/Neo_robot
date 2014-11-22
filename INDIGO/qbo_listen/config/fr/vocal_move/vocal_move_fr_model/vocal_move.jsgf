@@ -1,0 +1,4 @@
+#JSGF V1.0; 
+
+grammar generalGrammar;
+public <structure> = (( avance | recule ) ) | (( halte | stop ) ) | (( moins | plus ) ( vite ) ) | (( néo ) ( avance | recule ) ) | (( néo ) ( tourne ) ( a ) ( droite | gauche ) ) | (( néo ) ( halte | stop ) ) | (( néo ) ( moins | plus ) ( vite ) ) ;

@@ -1,0 +1,152 @@
+language model created by quicklm on tue sep 30 12:42:30 edt 2014
+copyright (c) 1996-2010 carnegie mellon university and alexander i. rudnicky
+
+the model is in standard arpa format, designed by doug paul while he was at mitre.
+
+the code that was used to produce this language model is available in open source.
+please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+the (fixed) discount mass is 0.5. the backoffs are computed using the ratio method.
+this model based on a corpus of 21 sentences and 29 words
+
+\data\
+ngram 1=29
+ngram 2=47
+ngram 3=53
+
+\1-grams:
+-1.0395 </s> -0.3010
+-1.0395 <s> -0.2594
+-2.0607 android -0.2594
+-2.3617 anglais -0.2594
+-2.3617 cible -0.2953
+-2.0607 conversation -0.2594
+-1.6628 démarre -0.2817
+-2.3617 halte -0.2594
+-2.0607 histoire -0.2594
+-2.3617 internet -0.2594
+-1.5836 la -0.2896
+-2.0607 le -0.2972
+-1.8846 moi -0.2553
+-2.0607 musique -0.2594
+-1.0395 néo -0.2594
+-2.3617 parler -0.2991
+-2.3617 patrouille -0.2594
+-2.3617 peux-tu -0.2991
+-2.3617 raconte -0.2953
+-2.3617 raconte-moi -0.2972
+-2.0607 recherche -0.2972
+-2.0607 reconnaissance -0.2594
+-2.3617 retour -0.2594
+-1.5836 stop -0.2382
+-2.3617 suis -0.2953
+-2.0607 sur -0.2972
+-2.0607 une -0.2972
+-2.3617 wikipédia -0.2594
+-2.0607 wébi -0.2594
+
+\2-grams:
+-0.3010 <s> néo 0.0000
+-0.3010 android </s> -0.3010
+-0.3010 anglais </s> -0.3010
+-0.3010 cible moi -0.1249
+-0.3010 conversation </s> -0.3010
+-1.0000 démarre android 0.0000
+-0.5229 démarre la 0.0000
+-1.0000 démarre le 0.0000
+-0.3010 halte </s> -0.3010
+-0.3010 histoire </s> -0.3010
+-0.3010 internet </s> -0.3010
+-0.7782 la conversation 0.0000
+-0.7782 la musique 0.0000
+-0.7782 la reconnaissance 0.0000
+-0.3010 le wébi 0.0000
+-0.4771 moi </s> -0.3010
+-0.7782 moi une 0.0000
+-0.3010 musique </s> -0.3010
+-1.6232 néo cible 0.0000
+-0.9243 néo démarre 0.0000
+-1.6232 néo halte 0.0000
+-1.6232 néo patrouille 0.0000
+-1.6232 néo peux-tu 0.0000
+-1.6232 néo raconte 0.0000
+-1.6232 néo raconte-moi 0.0000
+-1.3222 néo recherche 0.0000
+-1.6232 néo retour 0.0000
+-0.8451 néo stop 0.0000
+-1.6232 néo suis 0.0000
+-0.3010 parler anglais 0.0000
+-0.3010 patrouille </s> -0.3010
+-0.3010 peux-tu parler 0.0000
+-0.3010 raconte moi -0.2218
+-0.3010 raconte-moi une 0.0000
+-0.3010 recherche sur 0.0000
+-0.3010 reconnaissance </s> -0.3010
+-0.3010 retour </s> -0.3010
+-1.0792 stop </s> -0.3010
+-1.0792 stop android 0.0000
+-0.6021 stop la 0.0000
+-1.0792 stop le 0.0000
+-0.3010 suis moi -0.1249
+-0.6021 sur internet 0.0000
+-0.6021 sur wikipédia 0.0000
+-0.3010 une histoire 0.0000
+-0.3010 wikipédia </s> -0.3010
+-0.3010 wébi </s> -0.3010
+
+\3-grams:
+-1.6232 <s> néo cible
+-0.9243 <s> néo démarre
+-1.6232 <s> néo halte
+-1.6232 <s> néo patrouille
+-1.6232 <s> néo peux-tu
+-1.6232 <s> néo raconte
+-1.6232 <s> néo raconte-moi
+-1.3222 <s> néo recherche
+-1.6232 <s> néo retour
+-0.8451 <s> néo stop
+-1.6232 <s> néo suis
+-0.3010 cible moi </s>
+-0.3010 démarre android </s>
+-0.7782 démarre la conversation
+-0.7782 démarre la musique
+-0.7782 démarre la reconnaissance
+-0.3010 démarre le wébi
+-0.3010 la conversation </s>
+-0.3010 la musique </s>
+-0.3010 la reconnaissance </s>
+-0.3010 le wébi </s>
+-0.3010 moi une histoire
+-0.3010 néo cible moi
+-1.0000 néo démarre android
+-0.5229 néo démarre la
+-1.0000 néo démarre le
+-0.3010 néo halte </s>
+-0.3010 néo patrouille </s>
+-0.3010 néo peux-tu parler
+-0.3010 néo raconte moi
+-0.3010 néo raconte-moi une
+-0.3010 néo recherche sur
+-0.3010 néo retour </s>
+-1.0792 néo stop </s>
+-1.0792 néo stop android
+-0.6021 néo stop la
+-1.0792 néo stop le
+-0.3010 néo suis moi
+-0.3010 parler anglais </s>
+-0.3010 peux-tu parler anglais
+-0.3010 raconte moi une
+-0.3010 raconte-moi une histoire
+-0.6021 recherche sur internet
+-0.6021 recherche sur wikipédia
+-0.3010 stop android </s>
+-0.7782 stop la conversation
+-0.7782 stop la musique
+-0.7782 stop la reconnaissance
+-0.3010 stop le wébi
+-0.3010 suis moi </s>
+-0.3010 sur internet </s>
+-0.3010 sur wikipédia </s>
+-0.3010 une histoire </s>
+
+\end\

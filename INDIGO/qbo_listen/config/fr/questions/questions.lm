@@ -1,0 +1,83 @@
+language model created by quicklm on tue sep 23 13:43:41 edt 2014
+copyright (c) 1996-2010 carnegie mellon university and alexander i. rudnicky
+
+the model is in standard arpa format, designed by doug paul while he was at mitre.
+
+the code that was used to produce this language model is available in open source.
+please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+the (fixed) discount mass is 0.5. the backoffs are computed using the ratio method.
+this model based on a corpus of 10 sentences and 15 words
+
+\data\
+ngram 1=15
+ngram 2=24
+ngram 3=21
+
+\1-grams:
+-0.9138 </s> -0.3010
+-0.9138 <s> -0.2323
+-1.9138 aimer -0.2445
+-1.9138 chanter -0.2445
+-1.3118 es-tu -0.2323
+-1.9138 heureux -0.2445
+-1.9138 intelligent -0.2445
+-1.9138 marcher -0.2445
+-1.9138 parler -0.2445
+-1.1357 peux-tu -0.2680
+-1.9138 promener -0.2445
+-1.9138 qu -0.2793
+-1.9138 qui -0.2793
+-1.9138 rouler -0.2445
+-1.9138 te -0.2957
+
+\2-grams:
+-1.0000 <s> es-tu -0.1761
+-0.5229 <s> peux-tu 0.0000
+-1.3010 <s> qu 0.0000
+-1.3010 <s> qui 0.0000
+-0.3010 aimer </s> -0.3010
+-0.3010 chanter </s> -0.3010
+-0.6021 es-tu </s> -0.3010
+-0.9031 es-tu heureux 0.0000
+-0.9031 es-tu intelligent 0.0000
+-0.3010 heureux </s> -0.3010
+-0.3010 intelligent </s> -0.3010
+-0.3010 marcher </s> -0.3010
+-0.3010 parler </s> -0.3010
+-1.0792 peux-tu aimer 0.0000
+-1.0792 peux-tu chanter 0.0000
+-1.0792 peux-tu marcher 0.0000
+-1.0792 peux-tu parler 0.0000
+-1.0792 peux-tu rouler 0.0000
+-1.0792 peux-tu te 0.0000
+-0.3010 promener </s> -0.3010
+-0.3010 qu es-tu -0.1761
+-0.3010 qui es-tu -0.1761
+-0.3010 rouler </s> -0.3010
+-0.3010 te promener 0.0000
+
+\3-grams:
+-0.6021 <s> es-tu heureux
+-0.6021 <s> es-tu intelligent
+-1.0792 <s> peux-tu aimer
+-1.0792 <s> peux-tu chanter
+-1.0792 <s> peux-tu marcher
+-1.0792 <s> peux-tu parler
+-1.0792 <s> peux-tu rouler
+-1.0792 <s> peux-tu te
+-0.3010 <s> qu es-tu
+-0.3010 <s> qui es-tu
+-0.3010 es-tu heureux </s>
+-0.3010 es-tu intelligent </s>
+-0.3010 peux-tu aimer </s>
+-0.3010 peux-tu chanter </s>
+-0.3010 peux-tu marcher </s>
+-0.3010 peux-tu parler </s>
+-0.3010 peux-tu rouler </s>
+-0.3010 peux-tu te promener
+-0.3010 qu es-tu </s>
+-0.3010 qui es-tu </s>
+-0.3010 te promener </s>
+
+\end\

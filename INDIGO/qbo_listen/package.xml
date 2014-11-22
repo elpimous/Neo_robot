@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package>
+  <name>qbo_listen</name>
+  <version>2.0.0</version>
+  <description>
+	New qbo_listen package,
+	based on pocketsphinx engine (very powerfull, and learned by a big community)
+        other based on google speech api v2
+  </description>
+
+  <maintainer email="elpimous12@orange.fr">elpimous</maintainer>
+
+  <license>TODO</license>
+
+  <build_depend>message_generation</build_depend> 
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>message_runtime</run_depend> 
+
+
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+  <export>
+  </export>
+</package>

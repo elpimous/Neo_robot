@@ -1,0 +1,87 @@
+language model created by quicklm on sat oct 25 13:35:17 edt 2014
+copyright (c) 1996-2010 carnegie mellon university and alexander i. rudnicky
+
+the model is in standard arpa format, designed by doug paul while he was at mitre.
+
+the code that was used to produce this language model is available in open source.
+please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+the (fixed) discount mass is 0.5. the backoffs are computed using the ratio method.
+this model based on a corpus of 12 sentences and 15 words
+
+\data\
+ngram 1=15
+ngram 2=25
+ngram 3=24
+
+\1-grams:
+-0.9031 </s> -0.3010
+-0.9031 <s> -0.2430
+-1.9823 arrêt_d_urgence -0.2430
+-1.9823 avance -0.2430
+-1.9823 en_arrière -0.2430
+-1.9823 en_avant -0.2430
+-1.9823 halte -0.2430
+-1.9823 moins_vite -0.2430
+-0.9031 néo -0.2430
+-1.9823 plus_vite -0.2430
+-1.9823 recule -0.2430
+-1.9823 stop -0.2430
+-1.9823 tourne_a_droite -0.2430
+-1.9823 tourne_a_gauche -0.2430
+-1.9823 urgence -0.2430
+
+\2-grams:
+-0.3010 <s> néo 0.0000
+-0.3010 arrêt_d_urgence </s> -0.3010
+-0.3010 avance </s> -0.3010
+-0.3010 en_arrière </s> -0.3010
+-0.3010 en_avant </s> -0.3010
+-0.3010 halte </s> -0.3010
+-0.3010 moins_vite </s> -0.3010
+-1.3802 néo arrêt_d_urgence 0.0000
+-1.3802 néo avance 0.0000
+-1.3802 néo en_arrière 0.0000
+-1.3802 néo en_avant 0.0000
+-1.3802 néo halte 0.0000
+-1.3802 néo moins_vite 0.0000
+-1.3802 néo plus_vite 0.0000
+-1.3802 néo recule 0.0000
+-1.3802 néo stop 0.0000
+-1.3802 néo tourne_a_droite 0.0000
+-1.3802 néo tourne_a_gauche 0.0000
+-1.3802 néo urgence 0.0000
+-0.3010 plus_vite </s> -0.3010
+-0.3010 recule </s> -0.3010
+-0.3010 stop </s> -0.3010
+-0.3010 tourne_a_droite </s> -0.3010
+-0.3010 tourne_a_gauche </s> -0.3010
+-0.3010 urgence </s> -0.3010
+
+\3-grams:
+-1.3802 <s> néo arrêt_d_urgence
+-1.3802 <s> néo avance
+-1.3802 <s> néo en_arrière
+-1.3802 <s> néo en_avant
+-1.3802 <s> néo halte
+-1.3802 <s> néo moins_vite
+-1.3802 <s> néo plus_vite
+-1.3802 <s> néo recule
+-1.3802 <s> néo stop
+-1.3802 <s> néo tourne_a_droite
+-1.3802 <s> néo tourne_a_gauche
+-1.3802 <s> néo urgence
+-0.3010 néo arrêt_d_urgence </s>
+-0.3010 néo avance </s>
+-0.3010 néo en_arrière </s>
+-0.3010 néo en_avant </s>
+-0.3010 néo halte </s>
+-0.3010 néo moins_vite </s>
+-0.3010 néo plus_vite </s>
+-0.3010 néo recule </s>
+-0.3010 néo stop </s>
+-0.3010 néo tourne_a_droite </s>
+-0.3010 néo tourne_a_gauche </s>
+-0.3010 néo urgence </s>
+
+\end\
