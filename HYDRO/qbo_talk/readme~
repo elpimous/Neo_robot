@@ -1,0 +1,10 @@
+This is a wrapper for QBO robot from THE CORPORA
+It uses Espeak and Mbrola to produce nice voice.
+Actually it's in French, but it's easy to change :
+	download your model voices, and change "fr_speak" line content to feet your need
+
+It creates a service called /say
+
+ When neo_talk is running, you can make QBO speak with this, in terminal command : rosservice call /say "Salut a tous"
+
+Enjoy

@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find qbo_bringup)/minimal.launch" />
+	<include file="$(find qbo_navigation)/qbo_gmapping.launch" />
+	<include file="$(find qbo_controllers)/qbo_keyboard_teleop.launch" />
+	<node name="rviz" pkg="rviz" type="rviz -d `rospack find qbo_navigation`/qbo_nav_setup_rviz.vcg" />
+</launch>
+

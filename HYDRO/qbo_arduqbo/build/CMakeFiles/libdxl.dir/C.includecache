@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/opt/ros/hydro/stacks/qbo_arduqbo/src/dynamixel_sdk/src/dxl_hal.c
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+fcntl.h
+-
+termios.h
+-
+linux/serial.h
+-
+sys/ioctl.h
+-
+sys/time.h
+-
+dxl_hal.h
+/opt/ros/hydro/stacks/qbo_arduqbo/src/dynamixel_sdk/src/dxl_hal.h
+
+/opt/ros/hydro/stacks/qbo_arduqbo/src/dynamixel_sdk/src/dxl_hal.h
+

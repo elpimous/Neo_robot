@@ -1,0 +1,10 @@
+
+Version: 1.2-openqbo0
+Section: OpenQbo
+Depends: ros-hydro-ros, python, qbo-listen, qbo-talk, qbo-system-info, qbo-face-vision, qbo-internet-services
+Priority: standard
+Architecture: amd64
+Maintainer: Sergio Merino <s.merino@openqbo.org>
+Homepage: http://openqbo.org/wiki/doku.php?id=qbo_apps:ros_pack:qbo_questions
+Description: This package is a ros node to answer questions asked by users
+ This node answer questions asked by the users using the qbo_listen topic and the qbo_talk service.

@@ -1,0 +1,15 @@
+<package>
+  <description brief="qbo_navigation">
+
+     QBO navigation Stack
+
+  </description>
+  <author>Atom</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/qbo_navigation</url>
+  <depend package="move_base"/>
+  <depend package="gmapping"/>
+</package>
+
+

@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+
+<robot name="qbo_jarvis"
+  xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+  xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+  xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+  xmlns:xacro="http://ros.org/wiki/xacro">
+  
+  <!-- <xacro:include filename="$(find qbo_description)/urdf/qbo_hardware.xacro"/>
+  <xacro:include filename="$(find qbo_description)/urdf/gazebo.urdf.xacro"/> -->
+  
+    
+  <!-- <property name="M_PI" value="3.14159"/>
+  <property name="SCALE" value="0.0254"/>
+  <property name="base_x" value="0.33" />
+  <property name="base_y" value="0.33" /> -->
+  
+ <!-- Module de reference pour Odom -->
+  
+ <link name="base_footprint">
+   <visual>
+     <origin xyz="0 0 0.01" rpy="0 0 0" />
+     <geometry>
+       <box size="0.02 0.02 0.02" />
+     </geometry>
+     <material name="gray">
+      <color rgba=".2 .2 .2 1" />
+     </material>
+   </visual>
+ </link>
+ 
+ <!-- Corps de Jarvis avec liaison a la reference -->
+ 
+ <joint name="base_footprint_joint" type="fixed">
+   <origin xyz="0 0 0.02" rpy="0 0 0" />        
+   <parent link="base_footprint"/>
+   <child link="base_link" />
+ </joint>
+  
+ <link name="base_link">
+   <visual>
+     <origin rpy=" 0 0 0" xyz="0 0 0.16" />
+     <geometry>
+       <!--<cylinder radius="0.13" length = "0.32"/>-->
+       <mesh filename="/opt/ros/hydro/stacks/qbo_navigation/meshes/green_qbo_stock/green_qbo_stock.DAE"/>
+     </geometry>
+     <material name="white">
+       <color rgba="1 1 1 1"/>
+     </material>
+   </visual>   
+     
+   <collision>
+     <origin rpy="0 0 0" xyz="0 0 0.17"/>
+      <geometry>
+        <cylinder radius="0.13" length = "0.32"/>
+      </geometry>
+   </collision>
+ </link>
+ 
+ <!-- Partie Pan and Tilt de la tete de Jarvis _ Pb de joint a ressoudre -->
+ 
+ <link name="head_pan_link">
+   <visual>
+     <origin xyz=" 0 0 0" rpy="0 0 0" />
+     <geometry>
+       <box size="0.02 0.02 0.02" />
+     </geometry>
+   </visual>
+ </link>
+ 
+ <joint name="head_box_joint" type="fixed">
+   <origin xyz="0 0 0" rpy="0 0 0" />        
+   <parent link="head_pan_link"/>
+   <child link="head_link" />
+ </joint>
+ 
+ <link name="head_link">
+   <visual>
+     <origin xyz=" 0 0 0.12" rpy="0 0 0" />
+     <geometry>
+       <mesh filename="/home/neo/Documents/green_qbo_stock/head_z.DAE"/>
+     </geometry>
+     <material name="black">
+       <color rgba="0 0 0 1" />
+     </material> 
+   </visual>
+ </link>
+ 
+ <joint name="head_pan_joint" type="revolute">
+   <parent link="base_link"/>
+   <child link="head_pan_link"/>
+   <axis xyz="0 0 1"/>
+   <origin xyz="0 0 0.23" rpy="0 0 0" />
+   <calibration rising="0.0"/>
+   <limit upper="2" lower="-2" effort="10" velocity="10" />
+ </joint>
+ 
+ <!-- <joint name="head_tilt_joint" type="revolute">
+   <parent link="base_link"/>
+   <child link="head_link"/>
+   <axis xyz="0 1 0"/>
+   <origin xyz="0 0 0.23" rpy="0 0 0" />
+   <calibration rising="0.0"/>
+   <limit upper="0.01" lower="-1" effort="10" velocity="10" />
+ </joint> -->
+ 
+ <!--Partie deplacement de Jarvis -->  
+   
+ <link name="left_wheel_link">
+   <visual>
+     <origin xyz=" 0 0 0" rpy="0 1.5707 1.5707" />
+     <geometry>
+       <mesh filename="/opt/ros/hydro/stacks/qbo_description/meshes/left_wheel.DAE" scale="0.0254 0.0254 0.0254"/> -->
+       <cylinder radius="0.10" length = "0.025"/>
+     </geometry>
+     <material name="black">
+       <color rgba="0 0 0 1" />
+       <!-- <texture filename="/opt/ros/hydro/stacks/qbo_description/meshes/green_qbo_wheels.jpg"/> -->
+     </material>
+   </visual>
+ </link>
+ 
+ <joint name="left_wheel_joint" type="continuous">
+   <parent link="base_link"/>
+   <child link="left_wheel_link"/>
+   <axis xyz="0 1 0"/>
+   <origin xyz="0 0.13 0.08" rpy="0 0 0"/>
+ </joint>
+ 
+  
+   
+ <link name="right_wheel_link">
+   <visual>
+     <origin xyz=" 0 0 0" rpy="0 1.5707 1.5707" />
+     <geometry>
+       <cylinder radius="0.10" length = "0.025"/>
+     </geometry>
+     <material name="black">
+      <color rgba="0 0 0 1" />
+     </material>
+   </visual>
+ </link>
+ 
+ <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_wheel_link"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0 -0.13 0.08" rpy="0 0 0"/>
+ </joint>
+ 
+ 
+   
+ <link name="front_wheel_link">
+   <visual>
+     <origin xyz="0 0 0" rpy="0 0 0"/>
+     <geometry>
+       <sphere radius="0.030" />
+     </geometry>
+     <material name="black">
+      <color rgba="0 0 0 1" />
+     </material>
+   </visual>
+ </link>
+ 
+ <joint name="front_wheel_joint" type="fixed">
+   <parent link="base_link"/>
+   <child link="front_wheel_link"/>
+   <axis xyz="0 1 0"/>
+   <origin xyz="0.11 0 0.01" rpy="0 0 0" />
+ </joint>
+ 
+ <!-- Partie detection obstacle -->
+ 
+ <link name="floor_sensor_link">
+   <visual>
+     <origin xyz="0 0 0" rpy="0 0 0"/>
+     <geometry>
+       <cylinder radius="0.018" length = "0.018" />
+     </geometry>
+   </visual>
+ </link>
+ 
+ <joint name="floor_sensor_joint" type="fixed">
+   <parent link="base_link"/>
+   <child link="floor_sensor_link"/>
+   <axis xyz="0 1 0"/>
+   <origin xyz="0.13 0 0.15" rpy="0 0 0" />
+ </joint>
+ 
+ <link name="gyro_link">
+   <visual>
+     <geometry>
+       <box size="0.02 0.035 0.002" />
+     </geometry>
+   </visual>
+ </link>
+ 
+ <joint name="gyro_joint" type="fixed">
+    <origin xyz="0 0 0.01" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="gyro_link" />
+ </joint>
+
+  
+   
+</robot>

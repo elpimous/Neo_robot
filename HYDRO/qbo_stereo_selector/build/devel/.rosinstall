@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /opt/ros/hydro/stacks/qbo_stereo_selector/build/devel/setup.sh

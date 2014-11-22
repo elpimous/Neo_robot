@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+
+<robot name="qbo_jarvis"
+  xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+  xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+  xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+  xmlns:xacro="http://ros.org/wiki/xacro">
+  
+  <xacro:include filename="$(find qbo_description)/urdf/qbo_hardware.xacro"/>
+  <xacro:include filename="$(find qbo_description)/urdf/gazebo.urdf.xacro"/>
+  
+    
+  <property name="M_PI" value="3.14159"/>
+  <property name="SCALE" value="0.0254"/>
+  <property name="base_x" value="0.33" />
+  <property name="base_y" value="0.33" />
+  
+ 
+  
+ <link name="base_footprint">
+   <visual>
+     <origin xyz="0 0 0.01" rpy="0 0 0" />
+     <geometry>
+       <box size="0.02 0.02 0.02" />
+     </geometry>
+     <material name="gray">
+      <color rgba=".2 .2 .2 1" />
+     </material>
+   </visual>
+ </link>
+ 
+ <joint name="base_footprint_joint" type="fixed">
+   <origin xyz="0 0 0.01" rpy="0 0 0" />        
+   <parent link="base_footprint"/>
+   <child link="base_link" />
+ </joint>
+  
+ <link name="base_link">
+   <visual>
+     <origin rpy=" 0 0 0" xyz="0 0 0.17" />
+     <geometry>
+       <mesh filename="package://qbo_description/meshes/circles/68-02403-125_Spacer.dae"/>
+     </geometry>
+   </visual>
+     <!-- <material name="white">
+      <color rgba="1 1 1 1"/>
+     </material> -->
+   <collision>
+     <origin rpy="0 0 0" xyz="0 0 0.17"/>
+      <geometry>
+        <cylinder radius="0.13" length = "0.30"/>
+      </geometry>
+   </collision>
+ </link>
+ 
+ 
+ 
+ <link name="head_link">
+   <visual>
+     <origin xyz=" 0 0 0.34" rpy="0 0 0" />
+     <geometry>
+       <sphere radius="0.10" />
+     </geometry>
+   </visual>
+ </link>
+ 
+ <joint name="head_link_joint" type="fixed">
+   <parent link="base_footprint"/>
+   <child link="head_link"/>
+   <axis xyz="0 0 1"/>
+   <origin xyz="0 0 0.24" rpy="0 0 0" />
+   <calibration rising="0.0"/>
+   <limit upper="0" lower="-.5" effort="10" velocity="10" />
+ </joint>
+ 
+ 
+   
+ <link name="left_wheel_link">
+   <visual>
+     <origin xyz=" 0 0 0.085" rpy="0 1.5707 1.5707" />
+     <geometry>
+       <cylinder radius="0.105" length = "0.025"/>
+     </geometry>
+     <material name="black">
+      <color rgba="0 0 0 1" />
+     </material>
+   </visual>
+ </link>
+ 
+ <joint name="left_wheel_joint" type="fixed">
+   <parent link="base_link"/>
+   <child link="left_wheel_link"/>
+   <axis xyz="0 1 0"/>
+   <origin xyz="0 0.13 0.015" rpy="0 0 0"/>
+ </joint>
+ 
+  
+   
+ <link name="right_wheel_link">
+   <visual>
+     <origin xyz=" 0 0 0.085" rpy="0 1.5707 1.5707" />
+     <geometry>
+       <cylinder radius="0.105" length = "0.025"/>
+     </geometry>
+     <material name="black">
+      <color rgba="0 0 0 1" />
+     </material>
+   </visual>
+ </link>
+ 
+ <joint name="right_wheel_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="right_wheel_link"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0 -0.13 0.015" rpy="0 0 0"/>
+ </joint>
+ 
+ 
+   
+ <link name="front_wheel_link">
+   <visual>
+     <origin xyz="0 0 0.009" rpy="0 1.5707 1.5707"/>
+     <geometry>
+       <sphere radius="0.018" />
+     </geometry>
+     <material name="black">
+      <color rgba="0 0 0 1" />
+     </material>
+   </visual>
+ </link>
+ 
+ <joint name="front_wheel_joint" type="fixed">
+   <parent link="base_link"/>
+   <child link="front_wheel_link"/>
+   <axis xyz="0 1 0"/>
+   <origin xyz="0.13 0 0" rpy="0 0 0" />
+ </joint>
+ 
+ 
+ 
+ <link name="floor_sensor_link">
+   <visual>
+     <origin xyz="0 0 0" rpy="0 0 0"/>
+     <geometry>
+       <cylinder radius="0.018" length = "0.018" />
+     </geometry>
+   </visual>
+ </link>
+ 
+ <joint name="floor_sensor_joint" type="fixed">
+   <parent link="base_link"/>
+   <child link="floor_sensor_link"/>
+   <axis xyz="0 1 0"/>
+   <origin xyz="0.13 0 0.15" rpy="0 0 0" />
+ </joint>
+   
+</robot>

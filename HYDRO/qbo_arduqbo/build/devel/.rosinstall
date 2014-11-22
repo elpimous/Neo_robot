@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /opt/ros/hydro/stacks/qbo_arduqbo/build/devel/setup.sh

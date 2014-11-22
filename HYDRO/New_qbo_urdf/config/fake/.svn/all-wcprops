@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/119/trunk/rbx_vol_1/rbx1_nav/config/fake
+END
+costmap_common_params.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/119/trunk/rbx_vol_1/rbx1_nav/config/fake/costmap_common_params.yaml
+END
+local_costmap_params.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/119/trunk/rbx_vol_1/rbx1_nav/config/fake/local_costmap_params.yaml
+END
+base_local_planner_params.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/119/trunk/rbx_vol_1/rbx1_nav/config/fake/base_local_planner_params.yaml
+END
+global_costmap_params.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/119/trunk/rbx_vol_1/rbx1_nav/config/fake/global_costmap_params.yaml
+END

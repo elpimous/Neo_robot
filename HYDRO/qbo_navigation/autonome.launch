@@ -1,0 +1,10 @@
+<launch>
+
+  <!--- bringup -->
+  <include file="$(find qbo_navigation)/minimal.launch" />
+
+  <!--- gmapping -->
+  <include file="$(find qbo_navigation)/qbo_amcl.launch" />
+
+ 
+</launch>

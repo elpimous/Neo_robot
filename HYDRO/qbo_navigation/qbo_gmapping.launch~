@@ -1,0 +1,18 @@
+<launch>
+
+  <!--- Run Robot Pose EKF -->
+  <!--- include file="$(find qbo_bringup)/base.launch" /-->
+
+  <!-- Run the map server with the desired map -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find qbo_navigation)/maps/neo.yaml"/>
+
+  <!--- Run gmapping -->
+  <!---  <include file="$(find qbo_navigation)/config/gmapping_qbo.launch" /> -->
+
+  <!--- Run Move Base -->
+  <include file="$(find qbo_navigation)/config/move_base_qbo.launch" />
+  
+  <!--- Run the kinect -->
+  <include file="$(find qbo_bringup)/kinect.launch" />
+
+</launch>

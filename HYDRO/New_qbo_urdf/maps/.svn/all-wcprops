@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/65/trunk/rbx_vol_1/rbx1_nav/maps
+END
+blank_map.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64/trunk/rbx_vol_1/rbx1_nav/maps/blank_map.yaml
+END
+blank_map.pgm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/65/trunk/rbx_vol_1/rbx1_nav/maps/blank_map.pgm
+END
+blank_map_with_obstacle.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/64/trunk/rbx_vol_1/rbx1_nav/maps/blank_map_with_obstacle.yaml
+END
+test_map.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/61/trunk/rbx_vol_1/rbx1_nav/maps/test_map.yaml
+END
+blank_map_with_obstacle.pgm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/65/trunk/rbx_vol_1/rbx1_nav/maps/blank_map_with_obstacle.pgm
+END
+test_map.pgm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/56/trunk/rbx_vol_1/rbx1_nav/maps/test_map.pgm
+END

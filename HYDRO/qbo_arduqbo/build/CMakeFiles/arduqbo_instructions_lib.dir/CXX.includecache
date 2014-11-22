@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/driver/arduqbo_instructions.h
+dataUnion.h
+../include/driver/dataUnion.h
+string
+-
+vector
+-
+stdint.h
+-
+
+../include/driver/dataUnion.h
+string
+-
+stdint.h
+-
+
+/opt/ros/hydro/stacks/qbo_arduqbo/src/driver/arduqbo_instructions.cpp
+driver/arduqbo_instructions.h
+-
+

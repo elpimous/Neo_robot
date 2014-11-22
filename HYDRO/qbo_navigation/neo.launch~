@@ -1,0 +1,19 @@
+<launch>
+
+  <!--- modele neo EKF -->
+  <include file="$(find qbo_bringup)/minimal.launch" />
+  <include file="$(find qbo_bringup)/base.launch" />
+  <!--- Run the kinect -->
+  <include file="$(find qbo_bringup)/kinect.launch" />
+
+  <!-- serveur carte -->
+  <arg name="map_file" default="$(find qbo_navigation)/maps/map.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+  <!--- demarrage AMCL -->
+  <include file="$(find qbo_navigation)/config/amcl_qbo.launch" />
+
+  <!--- parametres de deplacement -->
+  <include file="$(find qbo_navigation)/config/move_base_qbo.launch" />
+
+</launch>

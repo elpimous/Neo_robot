@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/dynamixel.h
+
+/opt/ros/hydro/stacks/qbo_arduqbo/src/dynamixel_sdk/src/dxl_hal.h
+
+/opt/ros/hydro/stacks/qbo_arduqbo/src/dynamixel_sdk/src/dynamixel.c
+dxl_hal.h
+/opt/ros/hydro/stacks/qbo_arduqbo/src/dynamixel_sdk/src/dxl_hal.h
+dynamixel.h
+/opt/ros/hydro/stacks/qbo_arduqbo/src/dynamixel_sdk/src/dynamixel.h
+

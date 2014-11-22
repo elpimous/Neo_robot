@@ -1,0 +1,14 @@
+<package>
+  <description brief="qbo_patrouille">
+
+     qbo_patrouille
+
+  </description>
+  <author>Vincent FOUCAULT</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/qbo_patrouille</url>
+
+</package>
+
+

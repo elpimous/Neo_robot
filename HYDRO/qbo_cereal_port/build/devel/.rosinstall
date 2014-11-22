@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /opt/ros/hydro/stacks/qbo_cereal_port/build/devel/setup.sh

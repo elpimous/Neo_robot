@@ -1,0 +1,15 @@
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/clean-test-results.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/rosbuild_precompile.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/rosbuild_premsgsrvgen.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/rospack_genmsg.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/rospack_genmsg_libexe.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/rospack_gensrv.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/test.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/test-future.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/test-results.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/test-results-run.dir
+/opt/ros/electric/stacks/qbo_stack/qbo_patrouille/build/CMakeFiles/tests.dir

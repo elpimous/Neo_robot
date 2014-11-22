@@ -1,0 +1,19 @@
+<launch>
+
+  <!--- Run Robot Pose EKF -->
+  <include file="$(find qbo_bringup)/base.launch" />
+
+  <!--- Run the kinect -->
+  <include file="$(find qbo_bringup)/kinect.launch" />
+
+  <!-- Run the map server -->
+  <arg name="map_file" default="$(find qbo_navigation)/maps/willow-2010-02-18-0.10.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+  <!--- Run AMCL -->
+  <include file="$(find qbo_navigation)/config/amcl_qbo.launch" />
+
+  <!--- Run Move Base -->
+  <include file="$(find qbo_navigation)/config/move_base_qbo.launch" />
+
+</launch>
