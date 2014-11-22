@@ -5,11 +5,15 @@ Artificial intelligency package for ros based robots.
 
 need qbo_listen, qbo_talk
 
-Based on Pyaiml package, and Alice package.
+Based on Pyaiml package, and Alice AIML brain.
+
+http://www.alicebot.org/aiml.html
 
 includes french and us brain.
 
 ACTUALLY CONFIGURED IN FRENCH !!!!!
+
+All brain loads in less than 3 sec.
 _______________________________________________________________________________
 
 for vocal questions and answers : roslaunch qbo_ai neo_ai.launch
