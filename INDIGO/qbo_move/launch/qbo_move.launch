@@ -1,0 +1,5 @@
+<launch>
+<node name="qbo_move_head" pkg="qbo_move" type="qbo_move_head" output="screen"/>
+<node name="qbo_move_base" pkg="qbo_move" type="qbo_move_base" output="screen"/>
+
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+<include file="$(find qbo_face_detection)/launch/qbo_face_detection.launch" />
+<node name="qbo_move_head" pkg="qbo_move" type="qbo_move_head" output="screen">
+<remap from="qbo_head_tracker" to="/qbo_face_detection/face_pos_and_dist" />
+</node>
+</launch>
