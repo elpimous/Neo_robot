@@ -13,3 +13,11 @@ _______________________________________________________________
 
 roslaunch qbo_random_move neo_move_avoiding_obstacles.launch
 _______________________________________________________________
+
+TODO : use imu in realtime !
+  when imu angle is too high, Qbo can fall backward
+  and reaction appears after at least 1 to 2 seconds !!! 
+Don't know how to correct it !!!
+
+
+    ANY HELP ?????
