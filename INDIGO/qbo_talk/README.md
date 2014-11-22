@@ -4,7 +4,7 @@ QBO_TALK
 #   This is a Espeak wrapper for QBO robot from THE CORPORA          #
 #   It uses Mbrola to produce nice voice.                            #
 #   Actually it's in French, and English  but it's easy to change :  #
-#   see neo.py !!!                                                   #
+#                                                                    #
 ######################################################################
 
 
@@ -30,6 +30,3 @@ in other terminal : rosservice call /say_fr1 "salut tout le monde"
                     rosservice call /say_en1 "hello world"
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- Vincent FOUCAULT 22 Octobre 2014 !
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
