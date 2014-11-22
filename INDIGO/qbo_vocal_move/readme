@@ -1,0 +1,28 @@
+Config parameters are locate on /qbo_listen/config/fr/vocal_move
+
+#########################################################################################
+#                                                                                       #
+#                       You can change all words or phrases !!!                         #
+#                                                                                       #
+#########################################################################################
+
+
+                                     tip here :
+ 
+                    modify move_cmd.corpus , and create your words,
+
+              go to : http://www.speech.cs.cmu.edu/tools/lmtool-new.html
+
+            click on : Upload a sentence corpus file, and select your file,
+
+                         click on compile knowledge base
+
+                      save the first 2 files (*.dic and *.lm)
+
+          rename as move_cmd.dic, and move_cmd.lm and put them in config rep.
+
+                                        Enjoy
+
+
+
+			         Vincent (elpimous)

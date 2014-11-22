@@ -1,0 +1,18 @@
+<launch>
+
+  <!-- launch voice disabler-->
+    <include file="$(find qbo_audio_control)/launch/audio_control_listener.launch" />
+
+
+  <!-- launch qbo_listen-->
+  <node name="neo_listen" pkg="neo_listen" type="listen.py" output="screen">
+    <param name="hmm" value="$(find neo_listen)/config/fr/vocal_move/vocal_move_fr_model"/>
+    <param name="lm" value="$(find neo_listen)/config/fr/vocal_move/vocal_move.lm"/>
+    <param name="dic" value="$(find neo_listen)/config/fr/vocal_move/vocal_move.dic"/>
+  </node>
+
+     <node name="neo_vocal_move" pkg="neo_vocal_move" type="neo_vocal_move.py">
+     </node>
+
+</launch>
+
