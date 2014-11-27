@@ -5,6 +5,9 @@ Robot simulates life with :
 
 _____________________________________________________________________________________________________
 
+                      roslaunch qbo_alive neo_alive.py
+_____________________________________________________________________________________________________
+
 - body moves / TODO : limit moves to less than 1 meter, rotations to less than 40°, with use of odom.
 
 - head moves,
