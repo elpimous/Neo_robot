@@ -1,0 +1,17 @@
+<package>
+  <name>qbo_joy_control</name>
+  <version>0.1.0</version>
+  <description>qbo_joy_control</description>
+  <author>Martin Zidek</author>
+  <license>BSD</license>
+  <url>http://ros.org/wiki/qbo_joy_ctrl</url>
+  <maintainer email="martin@martinzidek.com">Martin Zidek</maintainer>
+  <build_depend>rospy</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>joy</build_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
+
+

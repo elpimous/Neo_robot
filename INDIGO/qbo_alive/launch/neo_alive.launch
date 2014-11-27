@@ -1,0 +1,11 @@
+<launch>
+
+  <!-- launch voice disabler-->
+    <include file="$(find qbo_audio_control)/launch/audio_control_listener.launch" /> 
+
+
+  <!-- launch life -->
+     <node name="qbo_alive" pkg="qbo_alive" type="neo_alive.py">
+     </node>
+
+</launch>

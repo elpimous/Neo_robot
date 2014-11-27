@@ -1,0 +1,9 @@
+#Following values are default for the PS3 sixaxis controller
+#Uncomment line and change value for different joysticks
+
+#axis_wheel_turn: 2
+#axis_wheel_straight: 1
+#axis_head_pan: 2
+#axis_head_tilt: 3
+
+#button_nose: 14
