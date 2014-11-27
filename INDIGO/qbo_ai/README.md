@@ -14,6 +14,8 @@ includes french and us brain.
 ACTUALLY CONFIGURED IN FRENCH !!!!!
 
 All brain loads in less than 3 sec.
+
+
 _______________________________________________________________________________
 
  for vocal questions and answers : roslaunch qbo_ai neo_ai.launch
