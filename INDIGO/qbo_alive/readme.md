@@ -9,7 +9,7 @@ ________________________________________________________________________________
 _____________________________________________________________________________________________________
 Rev1.
 
-- body moves / TODO : limit moves to less than 1 meter, rotations to less than 40°, with use of odom.
+- body moves
 
 - head moves,
 
@@ -17,8 +17,10 @@ Rev1.
 
 - voice with mouth
 
-- TODO : eyelids
+- TODO : eyelids, 
 
+- TODO2 : limit base moves to less than 1 meter, rotations to less than 40°, with use of odom.
+(Must show his face, better than his back, lol)
 _____________________________________________________________________________________________________
 Rev2.
 
