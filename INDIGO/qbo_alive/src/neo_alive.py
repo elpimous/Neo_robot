@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 #********************************************************************
-#
-#
 #                        Qbo is alive !!!
 #
 #              - curious, Néo moves head and speak
@@ -13,15 +10,15 @@
 #
 #                      elpimous12@orange.fr
 #
-#           ps : good tutorial to know publishing orders
+#           ps : good tutorial to test publishing orders
 #********************************************************************
 
 import rospy
 import random
 from random import choice, uniform
 import time
+import os
 from time import sleep
-
 from qbo_talk.srv import Text2Speach # voice
 from geometry_msgs.msg import Twist # body moves
 from sensor_msgs.msg import JointState # head moves
@@ -36,14 +33,16 @@ def main():
   baseMovePub = rospy.Publisher("/cmd_vel", Twist, queue_size=1)
   headPub = rospy.Publisher("/cmd_joints", JointState, queue_size=1)
   nosePub = rospy.Publisher("/cmd_nose", UInt8, queue_size=1)
-  eyelidsPub = rospy.Publisher("/cmd_", UInt8, queue_size=1)
+  #eyelidsPub = rospy.Publisher("/cmd_", UInt8, queue_size=1)
 
   while not rospy.is_shutdown(): # start loop
-
-    localHour = int(time.strftime('%H',time.localtime())) # real local time
-    while localHour < 22 and localHour >= 9: # qbo alive between 9am and 10pm
-
-###  Base Move  ###
+    localHour = int(time.strftime('%H',time.localtime())) # actual local time
+    woken = (10 <= localHour < 21)
+    if woken == True:
+      os.system("rosservice call /qbo_arduqbo/head_tilt_joint/torqueEnable True")
+      os.system("rosservice call /qbo_arduqbo/head_pan_joint/torqueEnable True")
+      spokenTime = time.strftime("%H heures %M",time.localtime())
+###   Base Move  ###
       bodyMove = Twist()
       bodyMove.linear.x = random.uniform(-0.12,0.12)
       bodyMove.angular.z = random.uniform(-0.3,0.3)
@@ -51,7 +50,7 @@ def main():
       baseMovePub.publish(bodyMove)
 
 
-###  head moves  ###
+###   head moves  ###
       panTilt = JointState()
       panTilt.name=['head_tilt_joint', 'head_pan_joint'] # L/R, U/D
 
@@ -83,20 +82,24 @@ def main():
 
 
 ###  Eyelids  ###
-      eyeslids = UInt8() 
+    #  eyeslids = UInt8() 
 
 
 
 ###  Voice  ###
       client_speak = rospy.ServiceProxy("/say_fr1", Text2Speach)
-      sentences = ["Bon, j'ai un peu la dalle, Ya quoi à manger,","Ah, oui, quand-même, C'est pas faux.","j'ai besoin de me recharger, je pense","Maintenant que je dispose d'une intelligence artificielle, je me pose plein de questions","Si seulement je pouvais penser par moimême,","Je ferai bien un truc,là, du genre, parler pour ne rien dire, juste comme ça","Je me pose plein de questions, trop, peut_être","yaisse, je suis au top, ou du moins je le pense","Euh, je pensais à un truc,super compliqué,","En fait, qui suis-je? Un vrai robot,","Je suis bardé de capteurs, Je suis prêt","Oh, le temps ma l'air bien humide","Mais bien sur,","Un truc de ouf, Et si je cartographiai le salon,","Dis moi qui tu es, Je te dirai qui tu es.","On est comme on est, Et on est, ou pas.","Je suis vert, c'est un fait, Mais j'aurais bien aimé être tout blanc","Tout ce pouvoir dans un aussi petit corps, Je vais exploser","Et toi, t'en penses quoi de ma présence,","J'ai envie de foncer plein gaz dans la maison","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""]
+      sentences = ["Quoi? Il est déjà "+spokenTime+" ?","Hoh ? "+spokenTime+", déjà ?","Ah, oui, quand-même, C'est pas faux.","j'ai besoin de me recharger, je pense","Maintenant que je dispose d'une intelligence artificielle, je me pose plein de questions","Si seulement je pouvais penser par moimême,","Je ferai bien un truc,là, du genre, parler pour ne rien dire, juste comme ça","Je me pose plein de questions, trop, peut_être","yaisse, je suis au top, ou du moins je le pense","Euh, je pensais à un truc,super conpliqué,","En fait, qui suis-je? Un robot?,","Je suis bardé de capteurs, Je sais même pas ce que ça veut dire","Oh, le temps m'a l'air bien humide","Mais bien sur,","Un truc de ouf, Et si je cartographiai le salon,","Dis moi qui tu es? Je te dirai qui tu es? ou pas","On est comme on est, Et on est, ou pas.","Je suis vert, c'est un fait, Mais j'aurais bien aimé être tout blanc","Tout ce pouvoir dans un aussi petit corps, J'ai une patate d'enfer","Et toi, t'en penses quoi de ma présence,","J'ai envie de foncer plein gaz dans la maison","Ou est la prise électrique la plus proche?","étant donné que je simule ma réflexion et donc ma pensée, Suis-je?","J'ai compris. Cette grosse boite est en fait, une pièce?","Que ce passera t'il quand ma batterie arrivera en fin de vie?","C'est bizarre que je n'ai pas de bras?","","","","","","","","","","","","","","","","","","","","",""]
       speak_this(choice(sentences))
-      rospy.loginfo("end of actual life loop")
-      rospy.sleep(random.uniform (5,10)) # time waiting for next loop
+      rospy.loginfo("Woken")
+      rospy.sleep(random.uniform (5,120)) # time waiting for next loop
 
-
-    rospy.loginfo("Sleeping")
-
+    else:
+      rospy.loginfo("Sleeping")
+      os.system("rosservice call /qbo_arduqbo/head_tilt_joint/torqueEnable False")
+      os.system("rosservice call /qbo_arduqbo/head_pan_joint/torqueEnable False")
+      os.system("rostopic pub -1 /cmd_nose std_msgs/UInt8 0")
+      rospy.sleep(100)
+    continue
 #Main instuctions
 if __name__ == '__main__':
    try:
