@@ -3,10 +3,10 @@ QBO_RANDOM_MOVE_AVOIDING_OBSTACLES
 
 THANKS FOR MANON HELP (startup package and Ros priority process !)
 
-_______________________________________________________________
+________________________________________________________________
 
-roslaunch qbo_random_move neo_move_avoiding_obstacles.launch
-_______________________________________________________________
+  roslaunch qbo_random_move neo_move_avoiding_obstacles.launch
+________________________________________________________________
 Rev1.
 
 A move node, using both frontal SRF10, FLOOR-SENSOR, IMU, TWIST.
