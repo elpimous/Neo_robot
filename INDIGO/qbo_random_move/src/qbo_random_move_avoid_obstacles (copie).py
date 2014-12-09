@@ -31,7 +31,7 @@ class randomMoveObstacleDetector:
     self.wallInterval = 0.04 # slightly modify, depending of your wall material
 
     self.imuAngleOk = True
-    self.imuMaxAngle = -2.5 # slightly modify if carpets, small walls...
+    self.imuMaxAngle = -5 # slightly modify if carpets, small walls...
 
     # useful to let robot know where it went from, and best direction to use.
     self.last_turn_direction=True # means last turn to right
@@ -47,7 +47,7 @@ class randomMoveObstacleDetector:
     rospy.Subscriber('/qbo_random_move/obstacle_avoidance_twist', Twist, self.twistCallback)# recover topic from qbo_explore
 
     self.twistPublisher = rospy.Publisher("/output_twist", Twist, queue_size=1)
-    self.directControl = rospy.Publisher("/cmd_vel", Twist, queue_size=1)
+
 
   def frontLeftSensorCallback(self, data):
     self.frontLeftDistance = data.points[0].x
@@ -57,69 +57,47 @@ class randomMoveObstacleDetector:
   def frontRightSensorCallback(self, data):
     self.frontRightDistance = data.points[0].x
     if self.frontRightDistance ==0:
-      self.frontRightDistance = 3 
-  
-  
+      self.frontRightDistance = 3
+
   def floorSensorCallback(self, data):
     self.floorWallDistance = data.points[0].x
     self.floorDistanceOk = (self.floorWallDistance <= (self.floorDistance + self.floorInterval))# 0.32
-    self.wallDistanceOk = (self.floorWallDistance >= 0.16)  
-      
-    if not self.floorDistanceOk or not self.wallDistanceOk:
-      rospy.loginfo("IR sensor Alert !")
-      control = Twist()    
-      if self.last_turn_direction==True:
-        control.linear.x = -0.3
-        control.angular.z = random.uniform(-0.1,-0.3)
-        self.last_turn_direction=True
-      elif self.last_turn_direction==False:
-        control.linear.x = -0.3
-        control.angular.z = random.uniform(0.1,0.3)
-        self.last_turn_direction=False
-      self.directControl.publish(control)  
-
+    if not self.floorDistanceOk:
+      print "plus de sol !!"
+    self.wallDistanceOk = (self.floorWallDistance >= 0.16)#
+    if not self.wallDistanceOk:
+      print "                  obstacle frontal détecté !!"
 
   def imuSensorCallback(self, data):
     self.imuAngleOk = (data.linear_acceleration.x > self.imuMaxAngle)
-    control = Twist()    
-    
     if not self.imuAngleOk :
-      rospy.loginfo("imu angle too high !")
-      if self.last_turn_direction==True:
-        control.linear.x = -0.3
-        control.angular.z = random.uniform(-0.1,-0.3)
-        self.last_turn_direction=True
-      elif self.last_turn_direction==False:
-        control.linear.x = -0.3
-        control.angular.z = random.uniform(0.1,0.3)
-        self.last_turn_direction=False
-      self.directControl.publish(control)
- 
-   def blockedWheels()
+      print "risque de chute arrière !!"
+
 
   def twistCallback(self, data): # TODO calculate angles for better move. Ex : left_srf/floor, left_srf/right_srf, right_srf/floor
                                  # Ex : if left_srf == 2(right_srt), turn 90° left...
 
 #****************** AVOIDING BACK-FALLING *****************************
 
-    while not self.imuAngleOk or not self.wallDistanceOk:
-    
+    while not self.floorDistanceOk or not self.wallDistanceOk or not self.imuAngleOk :
+      # si apres un virage droite, detection vide ou chute arrière, recul et tourne vers droite, pour finir le virage
       # if after a right turn, robot detects an immediat obstacle, or a fall risk, robot goes backward and turn right
       if self.last_turn_direction==True:
           data.linear.x = -0.2
           data.angular.z = random.uniform(-0.3,-0.6)
           self.last_turn_direction=True
-          sleep(2)
+          sleep(1)
       elif self.last_turn_direction==False:
           data.linear.x = -0.2
           data.angular.z = random.uniform(0.3,0.6)
           self.last_turn_direction=False
-          sleep(2)
+          sleep(1)
+      sleep(0.1)
     else:
 
 #****************** NO OBSTACLES / FULL SPEED  ************************OK
 
-      if self.frontRightDistance > 1.7 and self.frontLeftDistance > 1.7:
+      if self.frontRightDistance > 1.5 and self.frontLeftDistance > 1.5:
         data.linear.x = 0.15
         data.angular.z
 
