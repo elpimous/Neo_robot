@@ -16,11 +16,15 @@ Package not perfect, but does the job !!!
 TODO : use imu in realtime !
   when imu angle is too high, Qbo can fall backward
   and reaction appears after at least 1 to 2 seconds !!! 
+  NOT GOOD
 _______________________________________________________________
 Rev2.
 
-Imu problem solved, floor sensor too
-  Now, qbo reactions are immediate regarding to risks
-Better avoiding obstacles, smooth
+Imu problem solved, floor sensor too.
+
+  Now, qbo reactions are immediate regarding to risks.
+
+Better avoiding obstacles, smooth.
+
 TODO : blocked wheel recognition function
 _______________________________________________________________
