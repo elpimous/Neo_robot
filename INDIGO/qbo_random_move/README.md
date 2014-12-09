@@ -14,17 +14,17 @@ A move node, using both frontal SRF10, FLOOR-SENSOR, IMU, TWIST.
 Package not perfect, but does the job !!!
 
 TODO : use imu in realtime !
-  when imu angle is too high, Qbo can fall backward
-  and reaction appears after at least 1 to 2 seconds !!! 
+  when imu angle is too high, Qbo falls backward. Imu
+  reaction appears after at least 1 to 2 seconds !!! 
   NOT GOOD
 _______________________________________________________________
 Rev2.
 
 Imu problem solved, floor sensor too.
 
-  Now, qbo reactions are immediate regarding to risks.
+  Now, qbo reacts immediately regarding to risks.
 
-Better avoiding obstacles, smooth.
+Better avoiding obstacles, smooth Twist corrections.
 
 TODO : blocked wheel recognition function
 _______________________________________________________________
