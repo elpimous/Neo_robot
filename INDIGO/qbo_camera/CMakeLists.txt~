@@ -102,9 +102,9 @@ include_directories(
 ## Build ##
 ###########
 
-
+add_library(stereovision src/stereovision.cpp)
 #add_executable(usb_camera_calib_stereo src/usb_camera_calib_stereo.cpp)
-#target_link_libraries(usb_camera_calib_stereo stereovision ${catkin_LIBRARIES})
+target_link_libraries(usb_camera_calib_stereo stereovision ${catkin_LIBRARIES})
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
