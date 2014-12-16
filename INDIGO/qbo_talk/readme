@@ -1,0 +1,32 @@
+#   This is a Espeak wrapper for QBO robot from THE CORPORA          #
+#   It uses Mbrola to produce nice voice.                            #
+#   Actually it's in French, and English  but it's easy to change :  #
+#   see neo.py !!!                                                   #
+######################################################################
+
+
+Open a terminal :
+
+*****************************
+sudo apt-get install espeak
+sudo apt-get install mbrola
+***************************************************************************************************************
+download your mbrola voices, (here, download al least Fr1 and En1. Those voices are quite better than festival
+Voices can be directly downloaded on ubuntu 14.04 software downloads
+***************************************************************************************************************
+
+
+this node creates a service called "/say_(chosen language)"
+
+
+*** When qbo_talk is running, you can make QBO speak with this: ***
+
+open one terminal : rosrun qbo_talk neo_talk.py
+
+in other terminal : rosservice call /say_fr1 "salut tout le monde"
+                    rosservice call /say_en1 "hello world"
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Vincent FOUCAULT 22 Octobre 2014 !
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
