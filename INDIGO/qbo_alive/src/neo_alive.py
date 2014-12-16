@@ -4,9 +4,9 @@
 #********************************************************************
 #                        Qbo is alive !!!
 #
-#              - curious, Néo moves head and speak
+#              - curious, Néo moves head, body and speak
 #
-#               - it uses mouth, eyelids and nose 
+#               - it uses mouth, eyelids (TODO), and nose 
 #
 #                      elpimous12@orange.fr
 #
@@ -17,7 +17,7 @@ import rospy
 import random
 from random import choice, uniform
 import time
-import os
+import subprocess # for run_process orders
 from time import sleep
 from qbo_talk.srv import Text2Speach # voice
 from geometry_msgs.msg import Twist # body moves
@@ -28,19 +28,26 @@ def speak_this(text):
  global client_speak
  client_speak(text)
 
+def run_process(command = ""): # with this, I don't have to wait the end of one os.system request to start another .
+    if command != "":
+        return subprocess.Popen(command.split())
+    else:
+        return -1
+        
+        
 def main():
   global client_speak
-  baseMovePub = rospy.Publisher("/cmd_vel", Twist, queue_size=1)
-  headPub = rospy.Publisher("/cmd_joints", JointState, queue_size=1)
-  nosePub = rospy.Publisher("/cmd_nose", UInt8, queue_size=1)
+  baseMovePub = rospy.Publisher("/cmd_vel", Twist, queue_size=1) # body move
+  headPub = rospy.Publisher("/cmd_joints", JointState, queue_size=1) # head
+  nosePub = rospy.Publisher("/cmd_nose", UInt8, queue_size=1) # nose color
   #eyelidsPub = rospy.Publisher("/cmd_", UInt8, queue_size=1)
 
   while not rospy.is_shutdown(): # start loop
     localHour = int(time.strftime('%H',time.localtime())) # actual local time
-    woken = (10 <= localHour < 21)
+    woken = (10 <= localHour < 21) # when QBO will be woken !!!
     if woken == True:
-      os.system("rosservice call /qbo_arduqbo/head_tilt_joint/torqueEnable True")
-      os.system("rosservice call /qbo_arduqbo/head_pan_joint/torqueEnable True")
+      run_process("rosservice call /qbo_arduqbo/head_tilt_joint/torqueEnable True") # turn on torque or dynamixels
+      run_process("rosservice call /qbo_arduqbo/head_pan_joint/torqueEnable True")
       spokenTime = time.strftime("%H heures %M",time.localtime())
 ###   Base Move  ###
       bodyMove = Twist()
@@ -81,24 +88,25 @@ def main():
          rospy.sleep(0.2) # loops nose color 10 times a second
 
 
-###  Eyelids  ###
+###  Eyelids  ###  TODO
     #  eyeslids = UInt8() 
 
 
 
 ###  Voice  ###
-      client_speak = rospy.ServiceProxy("/say_fr1", Text2Speach)
-      sentences = ["Quoi? Il est déjà "+spokenTime+" ?","Hoh ? "+spokenTime+", déjà ?","Ah, oui, quand-même, C'est pas faux.","j'ai besoin de me recharger, je pense","Maintenant que je dispose d'une intelligence artificielle, je me pose plein de questions","Si seulement je pouvais penser par moimême,","Je ferai bien un truc,là, du genre, parler pour ne rien dire, juste comme ça","Je me pose plein de questions, trop, peut_être","yaisse, je suis au top, ou du moins je le pense","Euh, je pensais à un truc,super conpliqué,","En fait, qui suis-je? Un robot?,","Je suis bardé de capteurs, Je sais même pas ce que ça veut dire","Oh, le temps m'a l'air bien humide","Mais bien sur,","Un truc de ouf, Et si je cartographiai le salon,","Dis moi qui tu es? Je te dirai qui tu es? ou pas","On est comme on est, Et on est, ou pas.","Je suis vert, c'est un fait, Mais j'aurais bien aimé être tout blanc","Tout ce pouvoir dans un aussi petit corps, J'ai une patate d'enfer","Et toi, t'en penses quoi de ma présence,","J'ai envie de foncer plein gaz dans la maison","Ou est la prise électrique la plus proche?","étant donné que je simule ma réflexion et donc ma pensée, Suis-je?","J'ai compris. Cette grosse boite est en fait, une pièce?","Que ce passera t'il quand ma batterie arrivera en fin de vie?","C'est bizarre que je n'ai pas de bras?","","","","","","","","","","","","","","","","","","","","",""]
-      speak_this(choice(sentences))
+      client_speak = rospy.ServiceProxy("/say_fr1", Text2Speach) # change _fr1 to _en1 for english, accordint to qbo_talk
+      # need to fake with grammar to hear correctly words sound
+      sentences = ["Quoi? Il est déjà "+spokenTime+" ?","Hoh ? "+spokenTime+", déjà ?","Ah, oui, quand-même, C'est pas faux.","j'ai besoin de me recharger, je pense","Maintenant que je dispose d'une intelligence artificielle, je me pose plein de questions","Si seulement je pouvais penser par moimême,","Je ferai bien un truc,là, du genre, parler pour ne rien dire, juste comme ça","Je me pose plein de questions, trop, peut_être","yaisse, je suis au top, ou du moins je le pense","Euh, je pensais à un truc,super conpliqué,","En fait, qui suis-je? Un robot?,","Je suis bardé de capteurs, Je sais même pas ce que ça veut dire","Oh, le temps m'a l'air bien humide","Mais bien sur,","Un truc de ouf, Et si je cartographiai le salon,","Dis moi qui tu es? Je te dirai qui tu es? ou pas","On est comme on est, Et on est, ou pas.","Je suis vert, c'est un fait, Mais j'aurais bien aimé être tout blanc","Tout ce pouvoir dans un aussi petit corps, J'ai une patate d'enfer","Et toi, t'en penses quoi de ma présence,","J'ai envie de foncer plein gaz dans la maison","Ou est la prise électrique la plus proche?","étant donné que je simule ma réflexion et donc ma pensée, Suis-je?","J'ai conpris. Cette grosse boite est en fait, une pièce?","Que ce passera t'il quand ma batterie arrivera en fin de vie?","C'est bizarre que je n'ai pas de bras?","","","","","","","","","","","","","","","","","","","","",""]
+      speak_this(choice(sentences)) # random select sentence in sentences
       rospy.loginfo("Woken")
       rospy.sleep(random.uniform (5,120)) # time waiting for next loop
 
     else:
       rospy.loginfo("Sleeping")
-      os.system("rosservice call /qbo_arduqbo/head_tilt_joint/torqueEnable False")
-      os.system("rosservice call /qbo_arduqbo/head_pan_joint/torqueEnable False")
-      os.system("rostopic pub -1 /cmd_nose std_msgs/UInt8 0")
-      rospy.sleep(100)
+      run_process("rosservice call /qbo_arduqbo/head_tilt_joint/torqueEnable False") # turn off torque or dynamixels
+      run_process("rosservice call /qbo_arduqbo/head_pan_joint/torqueEnable False")
+      run_process("rostopic pub -1 /cmd_nose std_msgs/UInt8 0") # turn off nose light
+      rospy.sleep(600) # wait 10 min
     continue
 #Main instuctions
 if __name__ == '__main__':
