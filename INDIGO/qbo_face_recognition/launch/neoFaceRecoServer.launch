@@ -1,0 +1,8 @@
+<launch>
+       
+  <!-- launch server -->
+       <node name="faceRecognitionServer" pkg="qbo_face_recognition" type="Fserver" output="screen">
+  </node>
+       
+</launch>
+

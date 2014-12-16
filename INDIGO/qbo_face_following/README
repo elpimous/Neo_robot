@@ -1,0 +1,9 @@
+QBO FACE FOLLOWING
+Catkinized version of electric package from THE CORPORA
+For INDIGO
+______________________________________________________________________
+
+	roslaunch qbo_face_following qbo_face_following.launch
+______________________________________________________________________
+
+elpimous Dec 2014

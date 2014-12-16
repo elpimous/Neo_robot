@@ -1,0 +1,17 @@
+Qbo_face_recognition
+====================
+
+A package for face reco learning, and recognizing
+
+faces pics are located in data rep.
+
+for ros indigo / catkinized
+_____________________________________________________________________
+
+        roslaunch qbo_face_recognition neo_face_reco.launch
+_____________________________________________________________________
+
+recognized face name are in topic : /face_recognition/feedback
+
+TODO : a GUI interface, a publisher (name)
+       

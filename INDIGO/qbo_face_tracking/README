@@ -1,0 +1,25 @@
+QBO FACE tracking
+Catkinized version of electric package from THE CORPORA
+For INDIGO
+______________________________________________________________________
+
+	roslaunch qbo_face_tracking qbo_face_tracking.launch
+______________________________________________________________________
+
+elpimous Dec 2014
+
+
+
+
+=== Copyright ===
+
+Copyright (C) 2012 Thecorpora SL
+ 
+=== License ===
+GPL v2.0
+
+=== Description  ===
+
+This package - qbo_face_tracking - contains the implementation of a node that detects and 
+tracks a face in the input image via computer vision algorithms.
+

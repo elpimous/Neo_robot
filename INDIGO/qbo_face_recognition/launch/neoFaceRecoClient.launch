@@ -1,0 +1,12 @@
+<launch>
+
+  <!-- launch stereo camera node -->
+         <include file="$(find qbo_camera)/launch/qbo_stereo_node.launch" />   
+         
+         
+  <!-- launch client -->
+       <node name="faceRecognitionClient" pkg="qbo_face_recognition" type="Fclient" output="screen">
+  </node>
+  
+</launch>
+

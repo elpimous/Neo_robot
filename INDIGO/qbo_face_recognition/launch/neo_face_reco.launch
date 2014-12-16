@@ -1,0 +1,10 @@
+<launch>
+
+  <!-- launch stereo camera node and server-->
+         <include file="$(find qbo_face_recognition)/launch/neoFaceRecoServer.launch" />     
+
+  <!-- launch client-->
+         <include file="$(find qbo_face_recognition)/launch/neoFaceRecoClient.launch" />  
+       
+</launch>
+
