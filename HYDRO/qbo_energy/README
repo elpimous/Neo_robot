@@ -1,0 +1,25 @@
+
+######################################################################################################
+#                                                                                                    #
+# A SIMPLE NODE TO LET ROBOT SPEAK AND TELL US IF : CHARGE IS NEEDED / FULL CHARGE / FULL DISCHARGE  #
+#                                                                                                    #
+#   use of .wav files with sox to let robot speak... Waiting for SAPI5 linux perfect integrity       #
+#                                                                                                    #
+#              Vincent FOUCAULT       elpimous12@orange.fr            FEV. 2015                      #
+######################################################################################################
+
+Sox needed to play .wav file in the .py file
+
+install SOX :
+
+sudo apt-get install sox libsox-fmt-all
+
+
+
+ENJOY
+
+
+P.S.: replace vocal .wav files in wav-files rep for your own language
+
+      Working on SAPI5 integration on linux, with Wine...
+      Some runtime errors, and others problems, but soon, I hope.

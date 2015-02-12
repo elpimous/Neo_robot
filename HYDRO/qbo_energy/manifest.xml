@@ -1,0 +1,14 @@
+<package>
+  <description brief="qbo_energy">
+
+     a simple package containing robot alerts :
+     - battery low voltage...
+
+  </description>
+  <author>Vincent FOUCAULT</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="qbo_talk"/>
+</package>
