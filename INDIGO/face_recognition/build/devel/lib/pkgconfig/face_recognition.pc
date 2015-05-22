@@ -1,0 +1,8 @@
+prefix=/home/neo/catkin_ws/src/face_recognition/build/devel
+
+Name: face_recognition
+Description: Description of face_recognition
+Version: 0.0.0
+Cflags: -I/home/neo/catkin_ws/src/face_recognition/build/devel/include
+Libs: -L/home/neo/catkin_ws/src/face_recognition/build/devel/lib 
+Requires: message_runtime roscpp std_msgs actionlib rospy roslib actionlib_msgs cv_bridge image_transport

@@ -1,0 +1,35 @@
+<launch>
+
+<!-- FACE RECOGNIZER -->
+
+	<!-- Face Tracking node to detect faces -->
+	<node name="qbo_face_tracking" pkg="qbo_face_tracking" type="qbo_face_tracking" >
+	</node> 
+	 
+	<!-- Face Following node to move head and base (Pan = L/R ; Tilt = U/D) -->
+	<node name="qbo_face_following" pkg="qbo_face_following" type="qbo_face_following">
+	</node>  
+	 <param name="/qbo_face_following/move_base" value="false" />
+	 <param name="/qbo_face_following/move_head" value="true
+" />
+	 <param name="/qbo_face_tracking/send_stop"  value="true" />
+	 <param name="/qbo_face_following/search_min_pan" value="-0.3" /> 
+	 <param name="/qbo_face_following/search_max_pan" value="0.3" /> 
+	 <param name="/qbo_face_following/search_pan_vel" value="0.3" />  
+	 <param name="/qbo_face_following/search_min_tilt" value="0.0" /> 
+	 <param name="/qbo_face_following/search_max_tilt" value="-0.5" />
+   <param name="/qbo_face_following/search_tilt_vel" value="0.3" /> 
+   <param name="/qbo_face_following/desired_distance" value="1.6" /> 
+
+
+	 <!-- launch_recognition Fserver-->
+  <node pkg="face_recognition"  name="face_recognition" type="Fserver" output="screen" >
+   
+   
+   <param name="confidence_value" value="0.90"/>
+   <param name="show_screen_flag" value="true"/>
+   <param name="add_face_number" value="40"/>
+    
+  </node>
+
+</launch>

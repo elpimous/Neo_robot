@@ -1,0 +1,28 @@
+Qbo_face_recognition
+====================
+
+A package for face reco learning, and recognizing
+
+faces pics are located in data rep.
+
+for ros indigo / catkinized
+
+SOME MODS WOULD PERHAPS BE NECESSARY !!!
+
+____________________________________________________________________________
++++  need qbo_talk (espeak+mbrola) +++
+
++++  need qbo_listen (you can simulate listen words with terminal command :
+
+  rostopic pub -1 /listened std_msgs/String "alpha x-ray echo lima fini"
+
+           robot will construct name : axel , and will start learning
+____________________________________________________________________________
+
+for recognition :
+	rosrun  face_recognition qbo_face_analysis.py
+
+for face learning :
+	rosrun  face_recognition qbo_face_learning.py
+
+TODO : a GUI interface, a publisher (name)

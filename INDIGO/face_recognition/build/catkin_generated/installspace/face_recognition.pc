@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: face_recognition
+Description: Description of face_recognition
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: message_runtime roscpp std_msgs actionlib rospy roslib actionlib_msgs cv_bridge image_transport
