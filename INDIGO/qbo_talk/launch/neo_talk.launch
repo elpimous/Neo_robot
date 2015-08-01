@@ -1,0 +1,7 @@
+<launch>
+
+  <!-- launch qbo_talk-->
+  <node name="qbo_talk" pkg="qbo_talk" type="neo_talk.py" output="screen">
+  </node>
+
+</launch>
