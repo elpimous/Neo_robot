@@ -1,0 +1,19 @@
+POCKETSPHINX ACOUSTIC MODEL ADAPTATION LOG :
+____________________________________________
+
+
+28 Aout 2015 : PAMA Version 1.00.
+	creation of a gui program to interface python with cmusphinx tools.
+        Objective : have an easy interface for acoustic adaptation.
+
+
+18 Septembre 2015 : PAMA Version 1.01.
+	Add 2 learning modes :
+		- manual : you create by yourself your sentences and record them.
+		- auto : you record existing random sentences (easy at startup)
+                  you can add all sentences you want in : config/sentences.list
+
+
+29 Septembre 2015 : PAMA Version 1.02.
+	Add some popups (links verifications, rec infos)
+	add missing words check ( if, in your sentence, you input an unknown word, regardind to your dictionary, PAMA will tell you to correct it before adaptation)

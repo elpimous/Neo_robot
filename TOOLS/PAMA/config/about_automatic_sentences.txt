@@ -1,0 +1,5 @@
+sentences.list contains some sentences for automatic adapt !
+
+You can add as many sentences as you want :
+   but without any punctuation !!!
+   SOON, PROGRAMM WILL FILTER ALL PUNCTUATION ERRORS
