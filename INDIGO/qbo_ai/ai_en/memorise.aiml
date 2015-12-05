@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- fichier permettant l'apprentissage d'infos -->
+    <!-- prononcer apprentissage, puis la phrase.   -->
+
+    <!-- ex : Prononcer "c'est quoi asimov ?" >> "je ne sais pas" -->
+    <!-- Prononcer : "MEMORIZE   asimov est un ensemble de règles concernant les robots" -->
+    <!-- Prononcer : "c'est quoi asimov ?" >> "c'est un ensemble de règles concernant les robots" -->
+
+<aiml>
+
+  <category>
+    <pattern>MEMORIZEPROCESS</pattern>
+    <template>
+    <random>
+    <li>Ok, I add to my brain that </li>
+    <li>I learn that </li>
+    </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>MEMORIZE * IS *</pattern>
+    <template>
+      <srai>MEMORIZEPROCESS </srai> <star index="1"/> IS <star index="2"/>.
+    </template>
+  </category>
+
+  <category>
+    <pattern>MEMORIZE * ARE *</pattern>
+    <template>
+      <srai>MEMORIZEPROCESS </srai> <star index="1"/> ARE <star index="2"/>.
+    </template>
+  </category>
+
+  <category>
+    <pattern>MEMORIZE * MEANS *</pattern>
+    <template>
+      <srai>MEMORIZEPROCESS </srai> <star index="1"/> MEANS <star index="2"/>.
+    </template>
+  </category>
+
+</aiml>
+

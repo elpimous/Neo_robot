@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Learnt sentences, It' actualized each memorized sentence , and loaded out of BRN binary (aiml's content)-->
+<!-- be sure to always keep in last line, the end tag </aiml> -->
+
+<aiml>
+
+  <category>
+    <pattern>WHO IS AN APPLE</pattern>
+    <template>It's a fruit</template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS AN APPLE</pattern>
+    <template>It's a fruit</template>
+  </category>
+
+  <category>
+    <pattern>WHO IS NEO</pattern>
+    <template>It's a robot</template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS NEO</pattern>
+    <template>It's a robot</template>
+  </category>
+
+  <category>
+    <pattern>WHO IS SMALL NEO</pattern>
+    <template>It's a very small robot</template>
+  </category>
+  <category>
+    <pattern>WHAT IS SMALL NEO</pattern>
+    <template>It's a very small robot</template>
+  </category>
+
+  <category>
+    <pattern>WHO IS BLUE NEO</pattern>
+    <template>It's a green one</template>
+  </category>
+  <category>
+    <pattern>WHAT IS BLUE NEO</pattern>
+    <template>It's a green one</template>
+  </category>
+
+  <category>
+    <pattern>WHO IS BUG NEO</pattern>
+    <template>It's a small one</template>
+  </category>
+  <category>
+    <pattern>WHAT IS BUG NEO</pattern>
+    <template>It's a small one</template>
+  </category>
+
+  <category>
+    <pattern>WHO IS A BAGUETTE</pattern>
+    <template>It's a french food</template>
+  </category>
+  <category>
+    <pattern>WHAT IS A BAGUETTE</pattern>
+    <template>It's a french food</template>
+  </category>
+
+  <category>
+    <pattern>WHO IS A FROMAGE</pattern>
+    <template>It's a french food</template>
+  </category>
+  <category>
+    <pattern>WHAT IS A FROMAGE</pattern>
+    <template>It's a french food</template>
+  </category>
+
+  <category>
+    <pattern>WHO IS A CAMEMBERT</pattern>
+    <template>It's a french food</template>
+  </category>
+  <category>
+    <pattern>WHAT IS A CAMEMBERT</pattern>
+    <template>It's a french food</template>
+  </category>
+
+  <category>
+    <pattern>WHAT MEANS FROMAGE</pattern>
+    <template>It means food</template>
+  </category>
+  <category>
+    <pattern>what is FROMAGE</pattern>
+    <template>It is food</template>
+  </category>
+
+  <category>
+    <pattern>WHO IS FROMAGE</pattern>
+    <template>It's food</template>
+  </category>
+  <category>
+    <pattern>WHAT IS FROMAGE</pattern>
+    <template>It's food</template>
+  </category>
+
+  <category>
+    <pattern>WHO ARE BONBONS</pattern>
+    <template>They are food</template>
+  </category>
+  <category>
+    <pattern>WHAT ARE BONBONS</pattern>
+    <template>It's food</template>
+  </category>
+
+  <category>
+    <pattern>WHO ARE DES CHEVAUX</pattern>
+    <template>They are horses</template>
+  </category>
+  <category>
+    <pattern>WHAT ARE DES CHEVAUX</pattern>
+    <template>It's horses</template>
+  </category>
+</aiml>

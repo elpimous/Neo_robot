@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+
+  <category>
+    <pattern>QUI EST  UNE POMME</pattern>
+    <template>C'est un fruit</template>
+  </category>
+  <category>
+    <pattern>QUI C EST UNE POMME</pattern>
+    <template>C'est un fruit</template>
+  </category>
+  <category>
+    <pattern>C EST QUI UNE POMME</pattern>
+    <template>C'est un fruit</template>
+  </category>
+  <category>
+    <pattern>QU EST CE QUE UNE POMME</pattern>
+    <template>C'est un fruit</template>
+  </category>
+  <category>
+    <pattern>QU EST CE QUE C EST UNE POMME</pattern>
+    <template>C'est un fruit</template>
+  </category>
+  <category>
+    <pattern>C EST QUOI UNE POMME</pattern>
+    <template>C'est un fruit</template>
+  </category>
+
+  <category>
+    <pattern>QUI EST UNE POIRE</pattern>
+    <template>C'est un fruit</template>
+  </category>
+  <category>
+    <pattern>QUI C EST UNE POIRE</pattern>
+    <template>C'est un fruit</template>
+  </category>
+  <category>
+    <pattern>C EST QUI UNE POIRE</pattern>
+    <template>C'est un fruit</template>
+  </category>
+  <category>
+    <pattern>QU EST CE QUE UNE POIRE</pattern>
+    <template>C'est un fruit</template>
+  </category>
+  <category>
+    <pattern>QU EST CE QUE C EST UNE POIRE</pattern>
+    <template>C'est un fruit</template>
+  </category>
+  <category>
+    <pattern>C EST QUOI UNE POIRE</pattern>
+    <template>C'est un fruit</template>
+  </category>
+</aiml>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="1.0">
+
+  <category>
+    <pattern>MON CHIEN S'APPELLE *</pattern>
+    <template>
+      C'est trés intéressant que tu es un chien qui s'appelle <set name="dog"><star/></set>
+    </template>
+  </category>
+  <category>
+    <pattern>QUEL EST LE NOM DE MON CHIEN</pattern>
+    <template>
+      tu as un chien qui s'appelle <get name="dog"/>.
+    </template>
+  </category>
+
+  <category>
+    <pattern>DATE</pattern>
+    <template>nous sommes le <system>date +%A" "%d" "%B</system>.
+    </template>
+  </category>
+
+  <category>
+    <pattern>HEURE</pattern>
+    <template>
+      il est <hour/>
+    </template>
+  </category>
+
+  <category>
+    <pattern>JOUR</pattern>
+    <template>
+      On est <day/>
+    </template>
+  </category>
+
+  <category>
+    <pattern>MEMORISE * EST *</pattern>
+    <template>
+      Bien, je mémorise la donnée suivante : <star index="1"/> est <star index="2"/>.<memorize/>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>ORDRE</pattern>
+    <template>
+      j'execute ceci <system>rostopic pub -1 /Qbo/runExpression std_msgs/String happy</system>  
+    </template>
+  </category>
+</aiml>
