@@ -30,3 +30,18 @@ in other terminal : rosservice call /say_fr1 "salut tout le monde"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  Vincent FOUCAULT 22 Octobre 2014 !
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+                                             **********************************
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        News / DEC 2015
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- use of pico2wave for better language
+- Add a dic in params, to replace original prunonciation ( original word on left, spoken one on right )
+  ex : my name, Vincent, in French, must be written vinssant.  
+       So i put in dic " vincent > vinssant ", and that's all
+
+

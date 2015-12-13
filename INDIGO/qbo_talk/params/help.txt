@@ -1,0 +1,9 @@
+sometimes, in speech synthesis, words are not correctly spoken, so...
+The talk_dic_* helps you to automatically improve synthesis.
+
+insert in talk_dic_* :
+"the word you'd like to hear" ">" "the modified word that will be correctly heard"
+
+IMPORTANT : be sure to make a space before and after ">" symbol (ex :vincent > vinssant)
+
+For english, uncomment L56, and comment L54
