@@ -1,14 +1,11 @@
 <launch>
 
-  <!-- launch voice disabler-->
-    <include file="$(find qbo_audio_control)/launch/audio_control_listener.launch" />
-
-
   <!-- launch qbo_listen-->
-  <node name="qbo_listen" pkg="qbo_listen" type="neo_listen.py" output="screen">
-    <param name="hmm" value="$(find qbo_listen)/config/fr/fr_model/lium_french_f0"/>
-    <param name="lm" value="$(find qbo_listen)/config/fr/aiml/aiml.lm.dmp"/>
-    <param name="dic" value="$(find qbo_listen)/config/fr/aiml/aiml.dic"/>
+  <node name="qbo_listen" pkg="qbo_listen" type="qbo_listen.py" output="screen">
+    <param name="hmm" value="$(find qbo_listen)/config/fr/fr_model/cmusphinx-fr-ptm-5.2"/>
+    <param name="lm" value="$(find qbo_listen)/config/fr/fr_model/french3g62K.lm.bin"/>
+    <param name="dic" value="$(find qbo_listen)/config/fr/fr_model/frenchWords62K.dic"/>
   </node>
 
 </launch>
+

@@ -32,29 +32,37 @@
 #include <map>
 #include <vector>
 #include <set>
+#include <qbo_arduqbo/BaseStop.h>
 #include <sensor_msgs/PointCloud.h>
-
+//#include <sensor_msgs/PointCloud2.h>
+//#include <pcl/io/pcd_io.h>
+//#include <pcl/point_types.h>
+//#include <pcl/ros/conversions.h>
 #include <myXmlRpc.h>
-
 
 
 class CDistanceSensor
 {
     public:
-        CDistanceSensor(std::string name, uint8_t address, std::string topic, ros::NodeHandle& nh, std::string type, std::string frame_id="");
+        CDistanceSensor(std::string name, uint8_t address, std::string topic, ros::NodeHandle& nh, std::string type, std::string frame_id="", float min_alert_distance=-1, float max_alert_distance=-1);
         void publish(unsigned int readedValue, ros::Time time);
-
+        void setAlarm(bool state, float distance=-1);
         std::string getName();
-
+        static void* serviceCallFunction(void * args);
+        static qbo_arduqbo::BaseStop base_stop_service_msg_;
     protected:
         std::string name_;
         uint8_t address_;
 	std::string type_;
         ros::NodeHandle nh_;
 	ros::Publisher sensor_pub_;
-
+        ros::ServiceClient base_stop_service_client_;
+        //pcl::PointCloud<pcl::PointXYZ> cloud_;
+        //sensor_msgs::PointCloud2 msg_;
         sensor_msgs::PointCloud cloud_;
-
+        double min_alert_distance_;
+        double max_alert_distance_;
+        bool alert_;
 };
 
 class CSrf10Controller : public CController
@@ -70,7 +78,6 @@ class CSrf10Controller : public CController
         std::map<uint8_t,uint8_t> srf10SensorsUpdateGroup_;
         std::map<uint8_t,CDistanceSensor *> adcSensors_;
         std::vector<uint8_t> adcSensorsAddresses_;
-	void createDistanceSensor(std::string paramName,std::string sensorName,std::string topic, ros::NodeHandle& nh);
 };
 
 #endif

@@ -80,38 +80,15 @@ class ComandosSet
         CComando resetStall;
         CComando getMotorsState;
         CComando getI2cDevicesState;
-        ComandosSet() : version(0x40,0,2), 
-			setSpeed(0x4d,2,0,"f"), 
-			getSpeed(0x56,0,2,"b","f"),
-            		setOdometry(0x42,3,0,"f"), 
-			getOdometry(0x59,0,3,"b","f"), 
-			wheelMovement(0x51,0,2,"b","f"),
-            		floorDistance(0x48,0,1,"b","f"), 
-			battery(0x57,0,2), 
-			baseInfraRed(0x46,0,3), 
-			setEncoders(0x70,2,0,"l"),
-            		getEncoders(0x4f,0,2,"b","l"), 
-			distanceSensors(0x4e,0,-1,"b","xbh"), 
-			distanceSensor(0x52,1,1,"b","h"),
-            		setAutoupdateSensors(0x72,-1,0), 
-			adcReads(0x73,-1,-1,"b","h"), 
-			lcd(0x4c,1,0,"s"), 
-			pid(0x50,1,0),
-            		pidAdjustment(0x71,4,0,"f"),
-			srfContinuousUpdate(0x5d,1,0), 
-			powerOff(0x5a,1,0), 
-			mouth(0x44,3,0), 
-			nose(0x45,1,0),
-            		setServo(0x53,3,0,"bhh"), 
-			getServo(0x5d,1,1,"b","h"), 
-			getHeadServos(0x5c,0,2,"b","h"), 
-			getEyeServos(0x5f,0,2,"b","h"),
-            		setMic(0x4a,1,0), 
-			getMics(0x4b,0,3,"b","h"), 
-			getIMU(0x74,0,6,"b","hhhbbb"), 
-			resetStall(0x80,0,0), 
-			getMotorsState(0x81,0,1),
-    			getI2cDevicesState(0x82,0,1)
+        ComandosSet() : version(0x40,0,2), setSpeed(0x4d,2,0,"f"), getSpeed(0x56,0,2,"b","f"),
+            setOdometry(0x42,3,0,"f"), getOdometry(0x59,0,3,"b","f"), wheelMovement(0x51,0,2,"b","f"),
+            floorDistance(0x48,0,1,"b","f"), battery(0x57,0,2), baseInfraRed(0x46,0,3), setEncoders(0x70,2,0,"l"),
+            getEncoders(0x4f,0,2,"b","l"), distanceSensors(0x4e,0,-1,"b","xbh"), distanceSensor(0x52,1,1,"b","h"),
+            setAutoupdateSensors(0x72,-1,0), adcReads(0x73,-1,-1,"b","h"), lcd(0x4c,1,0,"s"), pid(0x50,1,0),
+            pidAdjustment(0x71,4,0,"f"), srfContinuousUpdate(0x5d,1,0), powerOff(0x5a,1,0), mouth(0x44,3,0), nose(0x45,1,0),
+            setServo(0x53,3,0,"bhh"), getServo(0x5d,1,1,"b","h"), getHeadServos(0x5c,0,2,"b","h"), getEyeServos(0x5f,0,2,"b","h"),
+            setMic(0x4a,1,0), getMics(0x4b,0,3,"b","h"), getIMU(0x74,0,6,"b","hhhbbb"), resetStall(0x80,0,0), getMotorsState(0x81,0,1),
+            getI2cDevicesState(0x82,0,1)
         {}
 };
 

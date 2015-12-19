@@ -25,43 +25,16 @@
 #ifndef QBO_ARDUQBO_H_
 #define QBO_ARDUQBO_H_
 
-#include <map>
-#include <vector>
-#include <sstream>
-#include <iostream>
-
-#include <unistd.h>
-#include <stdio.h>
-#include <sys/types.h>
-#include <ifaddrs.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-
 #include <ros/ros.h>
-#include <ros/console.h>
-#include <std_msgs/String.h>
-#include "qbo_arduqbo/Test.h"
-#include <sensor_msgs/JointState.h>
-
 #include <driver/qboduino_driver.h>
 #include <driver/arduqbo_instructions.h>
-#include <servos.h>
-#include <XmlRpcValue.h>
-#include <myXmlRpc.h>
-#include <dynamixel.h>
-
-
 #include <controllers/controllers_class.h>
-#include <controllers/base_controller.h>
-#include <controllers/joint_controller.h>
-#include <controllers/mouth_controller.h>
-#include <controllers/nose_controller.h>
-#include <controllers/battery_controller.h>
-#include <controllers/mics_controller.h>
 #include <controllers/srf10_controller.h>
-#include <controllers/lcd_controller.h>
-#include <controllers/imu_controller.h>
-
+#include <servos.h>
+#include <std_msgs/String.h>
+#include <map>
+#include <vector>
+#include "qbo_arduqbo/Test.h"
 
 class CSerialController : public CQboduinoDriver
 {

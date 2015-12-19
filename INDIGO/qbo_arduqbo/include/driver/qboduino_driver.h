@@ -39,7 +39,7 @@
 /*!
   This variable is used in the message checksum calculation function.
 */
-const uint8_t checksumdata[] = {
+const uint8_t pearsondata[] = {
   0x00, 0x77, 0xee, 0x99, 0x07, 0x70, 0xe9, 0x9e, 0x0e, 0x79, 0xe0, 0x97,
   0x09, 0x7e, 0xe7, 0x90, 0x1d, 0x6a, 0xf3, 0x84, 0x1a, 0x6d, 0xf4, 0x83,
   0x13, 0x64, 0xfd, 0x8a, 0x14, 0x63, 0xfa, 0x8d, 0x3b, 0x4c, 0xd5, 0xa2,
@@ -69,7 +69,7 @@ const uint8_t checksumdata[] = {
   \param len a byte indicating the byte array message length.
   \return The byte array message checksum
 */
-uint8_t computeChecksum(uint8_t *key, uint8_t len);
+uint8_t pearson(uint8_t *key, uint8_t len);
     
 const uint8_t INPUT_FLAG=0xFF;  /*!< This variable is the value of the byte that indicates the start of a message */
 const uint8_t OUTPUT_FLAG=0xFE; /*!< This variable is the value of the byte that indicates the end of a message */
@@ -112,7 +112,7 @@ public:
     int setMic(uint8_t mic);
     int setAutoupdateSensors(std::map<uint8_t,uint8_t> sensors);
     int getDistanceSensors(std::map<uint8_t,unsigned short>& sensorsDistances);
-    int getAdcReads(std::vector<uint8_t> addresses, std::vector<unsigned int>& readValues);
+    int getAdcReads(std::vector<uint8_t> addreses, std::vector<unsigned int>& readedValues);
     int getIMU(int16_t& gyroX,int16_t& gyroY,int16_t& gyroZ,int8_t& accelerometerX,int8_t& accelerometerY,int8_t& accelerometerZ);
     int resetStall();
     int getMotorsState(uint8_t& state);
@@ -135,12 +135,12 @@ protected:
   std::map<std::string,cereal::CerealPort *> boards_;
   std::map<std::string,long *> timeouts_;
 
-  int read(cereal::CerealPort *port, std::string& read, long timeout);
-  int write(cereal::CerealPort *port, std::string& toWrite);
-  int processResponse(uint8_t *buf, uint32_t length, std::string& read);
+  int read(cereal::CerealPort *ser, std::string& lectura, long timeout);
+  int write(cereal::CerealPort *ser, std::string& escritura);
+  int processResponse(uint8_t *buf, uint32_t length, std::string& lectura);
   void prepareData(std::string& escritura, std::string& preparedData);
-  int lockAndSendCommand(std::string board, CComando& command, std::vector<dataUnion>& response, std::vector<dataUnion>& data);
-  int sendCommand(std::string board, CComando& command, std::vector<dataUnion>& response, std::vector<dataUnion>& data);
+  int lockAndSendComand(std::string board, CComando& comand, std::vector<dataUnion>& response, std::vector<dataUnion>& data);
+  int sendComand(std::string board, CComando& comand, std::vector<dataUnion>& response, std::vector<dataUnion>& data);
 };
 
 #endif

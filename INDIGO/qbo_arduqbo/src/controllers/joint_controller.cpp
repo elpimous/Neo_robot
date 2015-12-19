@@ -23,7 +23,11 @@
  */
 
 #include <controllers/joint_controller.h>
-
+#include "ros/ros.h"
+#include <sensor_msgs/JointState.h>
+#include <map>
+#include <ros/console.h>
+#include <servos.h>
 
 CJointController::CJointController(std::string name, CQboduinoDriver *device_p, ros::NodeHandle& nh, std::map<std::string,CServo *>& servos) : CController(name,device_p,nh)
 {
@@ -56,14 +60,13 @@ void CJointController::timerCallback(const ros::TimerEvent& e)
                 joints_dirty_=false;
                 return;
             }
-            bool velocityCommandIncluded=false;
-            if(joint_msg_.velocity.size()==joint_msg_.name.size()) 
-		velocityCommandIncluded=true;
+            bool velocityComandIncluded=false;
+            if(joint_msg_.velocity.size()==joint_msg_.name.size()) velocityComandIncluded=true;
             for (unsigned int i=0;i<joint_msg_.name.size();i++)
             {
                 if (servos_p_->count(joint_msg_.name[i])>0)
                 {
-                    if (velocityCommandIncluded)
+                    if (velocityComandIncluded)
                       (*servos_p_)[joint_msg_.name[i]]->setAngle( joint_msg_.position[i], joint_msg_.velocity[i] );
                     else
                       (*servos_p_)[joint_msg_.name[i]]->setAngle( joint_msg_.position[i] );

@@ -29,7 +29,8 @@
 #include <controllers/controllers_class.h>
 #include "ros/ros.h"
 #include <ros/console.h>
-#include "std_msgs/UInt16MultiArray.h"
+#include "qbo_arduqbo/NoiseLevels.h"
+//#include "qbo_arduqbo/Mic.h"
 
 class CMicsController : public CController
 {
@@ -38,11 +39,12 @@ class CMicsController : public CController
         
     protected:
 	ros::Publisher mics_pub_;
-
+        //ros::Subscriber mics_sub_;
         uint16_t m0_;
         uint16_t m1_;
         uint16_t m2_;
-
+        //uint8_t mic_;
+	//void micsCallback(const qbo_arduqbo::Mic::ConstPtr& msg);
         void timerCallback(const ros::TimerEvent& e);
 };
 

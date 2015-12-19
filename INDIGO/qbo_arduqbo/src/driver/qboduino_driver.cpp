@@ -27,13 +27,16 @@
 CQboduinoDriver::CQboduinoDriver(std::string port1, int baud1, std::string port2, int baud2, float timeout1, float timeout2) :
     firstDevice(), secondDevice(), timeout1_(timeout1*1000), timeout2_(timeout2*1000)
 {
-//open serial ports
+    try{
     firstDevice.open(port1.c_str(),baud1);
+    }
+    catch (...){}
+
+    try{
     secondDevice.open(port2.c_str(),baud2);
-
+    }
+    catch(...){}
     usleep(5500000);
-
-//test what board is on port1 and read version
     if(!firstDevice.portOpen()) {
       std::cout << "Unable to open " << port1 << " port" << std::endl;
     }
@@ -43,25 +46,23 @@ CQboduinoDriver::CQboduinoDriver(std::string port1, int baud1, std::string port2
         boards_["first"]=&firstDevice;
         timeouts_["first"]=&timeout1_;
         int code = getVersion("first", board_id, version);
-        if(code>=0 && board_id==0)//base control board
+        if(code>=0 && board_id==0)
         {
             boards_["base"]=&firstDevice;
             timeouts_["base"]=&timeout1_;
-            std::cout << "Base control board found in " << port1 << " and initialized at " << baud1 << " baudrate" << std::endl;
+            std::cout << "Base control board fount at " << port1 << " and inicialiced at " << baud1 << " baudrate" << std::endl;
         }
-        else if(code>=0 && board_id==1)//head control board
+        else if(code>=0 && board_id==1)
         {
             boards_["head"]=&firstDevice;
             timeouts_["head"]=&timeout1_;
-            std::cout << "Head control board found in " << port1 << " and initialized at " << baud1 << " baudrate" << std::endl;
+            std::cout << "Head control board fount at " << port1 << " and inicialiced at " << baud1 << " baudrate" << std::endl;
         }
         else
         {
-          std::cout << "Device at " << port1 << " is not a Q.Board"<< std::endl;
+          std::cout << "Not QBO Board detected at " << port1 << std::endl;
         }
     }
-
-//test what board is on port2 and read version
     if(!secondDevice.portOpen()) {
       std::cout << "Unable to open " << port2 << " port" << std::endl;
     }
@@ -71,151 +72,153 @@ CQboduinoDriver::CQboduinoDriver(std::string port1, int baud1, std::string port2
         boards_["second"]=&secondDevice;
         timeouts_["second"]=&timeout2_;
         int code = getVersion("second", board_id, version);
-        if(code>=0 && board_id==0)//base control board
+        if(code>=0 && board_id==0)
         {
             boards_["base"]=&secondDevice;
             timeouts_["base"]=&timeout2_;
-            std::cout << "Base control board found in " << port2 << " and initialized at " << baud2 << " baudrate" << std::endl;
+            std::cout << "Base control board fount at " << port2 << " and inicialiced at " << baud2 << " baudrate" << std::endl;
         }
-        else if(code>=0 && board_id==1)//head control board
+        else if(code>=0 && board_id==1)
         {
             boards_["head"]=&secondDevice;
             timeouts_["head"]=&timeout2_;
-            std::cout << "Head control board found in " << port2 << " and initialized at " << baud2 << " baudrate" << std::endl;;
+            std::cout << "Head control board fount at " << port2 << " and inicialiced at " << baud2 << " baudrate" << std::endl;
         }
         else
         {
-          std::cout << "Device at " << port2 << " is not a Q.Board"<< std::endl;
+          std::cout << "Not QBO Board detected at " << port2 << std::endl;
         }
     }
-    if(boards_.count("base")==0 && boards_.count("head")==0)//no board found
+    if(boards_.count("base")==0 && boards_.count("head")==0)
       exit(-1);
 }
 
-//read data on the arduino
-int CQboduinoDriver::read(cereal::CerealPort *port, std::string& read, long timeout)
+int CQboduinoDriver::read(cereal::CerealPort *ser, std::string& lectura, long timeout)
 {
     std::string buf;
+    int leidos=0;
+    int totalLeidos=0;
     
     try
     {
-        if(!port->readBetween(&buf,INPUT_FLAG,OUTPUT_FLAG,timeout))
+        if(!ser->readBetween(&buf,0xFF,0XFE,timeout))
         {
             return -1;
         }
     }
-    catch(const std::exception & e)
+    //TODO: Capturar excepcion de forma correcta
+    catch(...)
     {
-	std::cerr<<"qboduino driver : exception while trying to read" << e.what();
         return -1;
     }
     
-//check if packet is correct
-    int code=processResponse((uint8_t*)buf.c_str(),buf.size(),read);
- 
-  if( code != 1){
-	read.clear();
+    int code=processResponse((uint8_t*)buf.c_str(),buf.size(),lectura);
+    switch(code)
+    {
+        case 1:
+            break;
+        case -1:
+            lectura.clear();
+            break;
+        case -2:
+            lectura.clear();
+            break;
+        case -3:
+            lectura.clear();
+            break;
+        case -4:
+            lectura.clear();
+            break;
+        default:
+            lectura.clear();
+            break;
     }
-
     return code;
 }
         
-int CQboduinoDriver::write(cereal::CerealPort *port, std::string& toWrite)
+int CQboduinoDriver::write(cereal::CerealPort *ser, std::string& escritura)
 {
     std::string serialData;
-    prepareData(toWrite, serialData);
-    return port->write(serialData.c_str(),serialData.size());
+    prepareData(escritura, serialData);
+    return ser->write(serialData.c_str(),serialData.size());
 }
 
-int CQboduinoDriver::processResponse(uint8_t *buf, uint32_t length, std::string& read)
+int CQboduinoDriver::processResponse(uint8_t *buf, uint32_t length, std::string& lectura)
 {
-  read.clear();
-  if (length<5) return -1; //packet too short
-  if(buf[0]!=INPUT_FLAG) return -2; //bad first data
-  if(buf[length-1]!=OUTPUT_FLAG) return -3; //bad last data
+  lectura.clear();
+  if (length<5) return -1;
+  if(buf[0]!=INPUT_FLAG) return -2;
+  if(buf[length-1]!=OUTPUT_FLAG) return -3;
   uint8_t data[128];
-  bool escapePressed=false;
-  int currentDataIndex=0;
+  bool escapeEntrada=false;
+  int datosComando=0;
   for(uint32_t i=1;i<length-1;i++)
   {
-//if escape is not pressed, put current buffer data in data table at index currentDataIndex
-//if escape is pressed, add 2 to buffer data (but why ?)
-//if buffer contain INPUT_SCAPE, escape is pressed
-    if(escapePressed)
+    if(escapeEntrada)
     {
-      data[currentDataIndex]=buf[i]+2;
-      escapePressed=false;
-      currentDataIndex++;
+      data[datosComando]=buf[i]+2;
+      escapeEntrada=false;
+      datosComando++;
     }
     else if(buf[i]==INPUT_SCAPE)
-      escapePressed=true;
+      escapeEntrada=true;
     else
     {
-      data[currentDataIndex]=buf[i];
-      escapePressed=false;
-      currentDataIndex++;
+      data[datosComando]=buf[i];
+      escapeEntrada=false;
+      datosComando++;
     }
   }
-
-//compute checksum
-  uint8_t check=computeChecksum(data,currentDataIndex-1);
-  uint8_t inCheck=data[currentDataIndex-1];
+  uint8_t check=pearson(data,datosComando-1);
+  uint8_t inCheck=data[datosComando-1];
+  
   if(check!=inCheck){
     return -4;
   }
-
-//packet ok, put back into string
-  for(int i=0;i<currentDataIndex-1;i++)
-    read.push_back(data[i]);
+  for(int i=0;i<datosComando-1;i++)
+    lectura.push_back(data[i]);
   return 1;
 }
 
-void CQboduinoDriver::prepareData(std::string& toWrite, std::string& preparedData)
+void CQboduinoDriver::prepareData(std::string& escritura, std::string& preparedData)
 {
     preparedData.clear();
-    preparedData.push_back(INPUT_FLAG);//add init data
+    preparedData.push_back(INPUT_FLAG);
         
-    //compute and add checksum
-    uint8_t check=computeChecksum((uint8_t *)toWrite.c_str(),(uint8_t)toWrite.size());
-    toWrite.push_back((char)check);
+    uint8_t check=pearson((uint8_t *)escritura.c_str(),(uint8_t)escritura.size());
+    escritura.push_back((char)check);
     
-    //copy everything from toWrite into preparedData
-    // escape special characters
-    for(unsigned int i=0;i<toWrite.size();i++)
+    for(unsigned int i=0;i<escritura.size();i++)
     {
-      if((uint8_t)toWrite[i]==INPUT_FLAG||(uint8_t)toWrite[i]==INPUT_SCAPE||(uint8_t)toWrite[i]==OUTPUT_FLAG)
+      if((uint8_t)escritura[i]==INPUT_FLAG||(uint8_t)escritura[i]==INPUT_SCAPE||(uint8_t)escritura[i]==OUTPUT_FLAG)
       {
         preparedData.push_back(INPUT_SCAPE);
-        preparedData.push_back(toWrite[i]-2);
+        preparedData.push_back(escritura[i]-2);
       }
       else
       {
-        preparedData.push_back(toWrite[i]);
+        preparedData.push_back(escritura[i]);
       }
     }
     
-    preparedData.push_back(OUTPUT_FLAG);//add end data
+    preparedData.push_back(OUTPUT_FLAG);
 }
 
-int CQboduinoDriver::lockAndSendCommand(std::string board, CComando& command, std::vector<dataUnion>& response, std::vector<dataUnion>& data)
+int CQboduinoDriver::lockAndSendComand(std::string board, CComando& comand, std::vector<dataUnion>& response, std::vector<dataUnion>& data)
 {
     int code=-3;
-    if(boards_.count(board)==0) return -2; //no board of that type detected
-
-//lock mutex and send command to base
+    if(boards_.count(board)==0) return -2;
     if(board.compare("base")==0 && sending_data_mutex_.timed_lock(boost::posix_time::millisec(500)))
     {
-        code=sendCommand(board,command,response,data);
+        code=sendComand(board,comand,response,data);
         sending_data_mutex_.unlock();
         return code;
     }
     else
-        code=-3; 
-
-//lock mutex and send command to head
+        code=-3;
     if(board.compare("head")==0 && sending_data_head_mutex_.timed_lock(boost::posix_time::millisec(500)))
     {
-        code=sendCommand(board,command,response,data);
+        code=sendComand(board,comand,response,data);
         sending_data_head_mutex_.unlock();
         return code;
     }
@@ -225,35 +228,33 @@ int CQboduinoDriver::lockAndSendCommand(std::string board, CComando& command, st
     return code;
 }
 
-int CQboduinoDriver::sendCommand(std::string board, CComando& command, std::vector<dataUnion>& response, std::vector<dataUnion>& data)
+int CQboduinoDriver::sendComand(std::string board, CComando& comand, std::vector<dataUnion>& response, std::vector<dataUnion>& data)
 {
     response.clear();
-    cereal::CerealPort *port=boards_[board];
+    cereal::CerealPort *ser=boards_[board];
     long timeout=*timeouts_[board];
-    port->flush();
+    ser->flush();
     std::string oud;
-    if(command.serialize(data, oud)<0)
-        return -4; //data could not be serialized
-    if(!write(port,oud))
-        return -5; //data could not be writen on port
+    if(comand.serialize(data, oud)<0)
+        return -4;
+    if(!write(ser,oud))
+        return -5;
     std::string ind;
-    if(!read(port,ind,timeout))
-        return -6; //response could not be read
-    if(command.deserialize(ind, response)<0)
+    if(!read(ser,ind,timeout))
+        return -6;
+    if(comand.deserialize(ind, response)<0)
     {
-        return -7;//response could not be deserialized
+        return -7;
     }
     return 1;
 }
     
 int CQboduinoDriver::getVersion(std::string board, int& board_number, int& version)
 {
-    CComando command=comandosSet_.version;
+    CComando comand=comandosSet_.version;
     std::vector<dataUnion> data, sent;
-    int code=sendCommand(board,command,data,sent);
-
-    if (code<0) return code;//error
-
+    int code=sendComand(board,comand,data,sent);
+    if (code<0) return code;
     board_number=(int)data[0].b;
     version=(int)data[1].b;
     return code;
@@ -262,20 +263,18 @@ int CQboduinoDriver::getVersion(std::string board, int& board_number, int& versi
 int CQboduinoDriver::setSpeed(float linear, float angular)
 {
     dataUnion d;
-//prepare the vector data containing 2 dataUnions (linear and angular)
     std::vector<dataUnion> data, resp;
     d.f=linear;
     data.push_back(d);
     d.f=angular;
     data.push_back(d);
-    CComando command=comandosSet_.setSpeed;
-    return (lockAndSendCommand("base",command,resp,data));
+    CComando comand=comandosSet_.setSpeed;
+    return (lockAndSendComand("base",comand,resp,data));
 }
 
 int CQboduinoDriver::setServo(uint8_t idx,unsigned short tics, unsigned short tics_per_second)
 {
     dataUnion d;
-//prepare the vector data containing 3 dataUnions (id, tics and tics per seconds)
     std::vector<dataUnion> data, resp;
     d.b=idx;
     data.push_back(d);
@@ -283,16 +282,16 @@ int CQboduinoDriver::setServo(uint8_t idx,unsigned short tics, unsigned short ti
     data.push_back(d);
     d.h=tics_per_second;
     data.push_back(d);
-    CComando command=comandosSet_.setServo;
-    return (lockAndSendCommand("head",command,resp,data));
+    CComando comand=comandosSet_.setServo;
+    return (lockAndSendComand("head",comand,resp,data));
 }
     
 int CQboduinoDriver::getOdometry(float& x, float& y, float& th)
 {
     std::vector<dataUnion> data, sent;
-    CComando command=comandosSet_.getOdometry;
-    int code=lockAndSendCommand("base",command,data,sent);
-    if (code<0) return code;//error
+    CComando comand=comandosSet_.getOdometry;
+    int code=lockAndSendComand("base",comand,data,sent);
+    if (code<0) return code;
     x=data[0].f;
     y=data[1].f;
     th=data[2].f;
@@ -305,9 +304,9 @@ int CQboduinoDriver::getServoPosition(uint8_t idx, unsigned short& tics)
     std::vector<dataUnion> data,sent;
     d.b= idx;
     sent.push_back(d);
-    CComando command=comandosSet_.getServo;
-    int code=lockAndSendCommand("head",command,data,sent);
-    if (code<0) return code;//error
+    CComando comand=comandosSet_.getServo;
+    int code=lockAndSendComand("head",comand,data,sent);
+    if (code<0) return code;
     tics=data[0].h;
     return code;
 }
@@ -315,9 +314,9 @@ int CQboduinoDriver::getHeadServosPositions(std::vector<unsigned short>& tics)
 {
     dataUnion d;
     std::vector<dataUnion> data,sent;
-    CComando command=comandosSet_.getHeadServos;
-    int code=lockAndSendCommand("head",command,data,sent);
-    if (code<0) return code;//error
+    CComando comand=comandosSet_.getHeadServos;
+    int code=lockAndSendComand("head",comand,data,sent);
+    if (code<0) return code;
     tics.push_back(data[0].h);
     tics.push_back(data[1].h);
     return code;
@@ -326,8 +325,8 @@ int CQboduinoDriver::getEyesServosPositions(std::vector<unsigned short>& tics)
 {
     dataUnion d;
     std::vector<dataUnion> data,sent;
-    CComando command=comandosSet_.getEyeServos;
-    int code=lockAndSendCommand("head",command,data,sent);
+    CComando comand=comandosSet_.getEyeServos;
+    int code=lockAndSendComand("head",comand,data,sent);
     if (code<0) return code;
     tics.push_back(data[0].h);
     tics.push_back(data[1].h);
@@ -344,8 +343,8 @@ int CQboduinoDriver::setMouth(uint8_t b0, uint8_t b1, uint8_t b2)
     d.b= b2;
     data.push_back(d);
     
-    CComando command=comandosSet_.mouth;
-    return (lockAndSendCommand("head",command,resp,data));
+    CComando comand=comandosSet_.mouth;
+    return (lockAndSendComand("head",comand,resp,data));
 }
 
 int CQboduinoDriver::setNose(uint8_t nose)
@@ -355,8 +354,8 @@ int CQboduinoDriver::setNose(uint8_t nose)
       d.b= nose;
       data.push_back(d);
 
-      CComando command=comandosSet_.nose;
-      return (lockAndSendCommand("head",command,resp,data));
+      CComando comand=comandosSet_.nose;
+      return (lockAndSendComand("head",comand,resp,data));
 }
 
 int CQboduinoDriver::setLCD(std::string msg)
@@ -366,18 +365,17 @@ int CQboduinoDriver::setLCD(std::string msg)
     d.s= msg;
     data.push_back(d);
     
-    CComando command=comandosSet_.lcd;
-    return (lockAndSendCommand("base",command,resp,data));
+    CComando comand=comandosSet_.lcd;
+    return (lockAndSendComand("base",comand,resp,data));
 }
 
 int CQboduinoDriver::getBattery(float& level, uint8_t& stat)
 {
     std::vector<dataUnion> data,sent;
     
-    CComando command=comandosSet_.battery;
-    int code=lockAndSendCommand("base",command,data,sent);
-    if (code<0) return code;//error
-//get battery level and QBO state
+    CComando comand=comandosSet_.battery;
+    int code=lockAndSendComand("base",comand,data,sent);
+    if (code<0) return code;
     level=((float)data[0].b);
     stat=((uint8_t)data[1].b);
     return code;
@@ -387,9 +385,9 @@ int CQboduinoDriver::getMics(uint16_t& m0,uint16_t& m1,uint16_t& m2)
 {
     std::vector<dataUnion> data,sent;
     
-    CComando command=comandosSet_.getMics;
-    int code=lockAndSendCommand("head",command,data,sent);
-    if (code<0) return code;//error
+    CComando comand=comandosSet_.getMics;
+    int code=lockAndSendComand("head",comand,data,sent);
+    if (code<0) return code;
     m0=(uint16_t)data[0].h;
     m1=(uint16_t)data[1].h;
     m2=(uint16_t)data[2].h;
@@ -403,8 +401,8 @@ int CQboduinoDriver::setMic(uint8_t mic)
     d.b=mic;
     data.push_back(d);
     
-    CComando command=comandosSet_.setMic;
-    return (lockAndSendCommand("head",command,resp,data));
+    CComando comand=comandosSet_.setMic;
+    return (lockAndSendComand("head",comand,resp,data));
 }
 
 int CQboduinoDriver::setAutoupdateSensors(std::map<uint8_t,uint8_t> sensors)
@@ -420,8 +418,8 @@ int CQboduinoDriver::setAutoupdateSensors(std::map<uint8_t,uint8_t> sensors)
       data.push_back(d);
     }
     
-    CComando command=comandosSet_.setAutoupdateSensors;
-    return (lockAndSendCommand("base",command,resp,data));
+    CComando comand=comandosSet_.setAutoupdateSensors;
+    return (lockAndSendComand("base",comand,resp,data));
 }
 int CQboduinoDriver::getDistanceSensors(std::map<uint8_t,unsigned short>& sensorsDistances)
 {
@@ -429,9 +427,9 @@ int CQboduinoDriver::getDistanceSensors(std::map<uint8_t,unsigned short>& sensor
     std::vector<dataUnion> data,sent;
     sensorsDistances.clear();
     
-    CComando command=comandosSet_.distanceSensors;
-    int code=lockAndSendCommand("base",command,data,sent);
-    if (code<0) return code;//error
+    CComando comand=comandosSet_.distanceSensors;
+    int code=lockAndSendComand("base",comand,data,sent);
+    if (code<0) return code;
     for (unsigned int i=0;i<data.size()/2;i++)
     {
       sensorsDistances[data[2*i].b]=data[2*i+1].h;
@@ -439,25 +437,25 @@ int CQboduinoDriver::getDistanceSensors(std::map<uint8_t,unsigned short>& sensor
     return code;
 }
 
-int CQboduinoDriver::getAdcReads(std::vector<uint8_t> addresses, std::vector<unsigned int>& readValues)
+int CQboduinoDriver::getAdcReads(std::vector<uint8_t> addreses, std::vector<unsigned int>& readedValues)
 {
     dataUnion d;
-    std::vector<dataUnion> received,sent;
-    readValues.clear();
-    if(addresses.size()==0)
+    std::vector<dataUnion> recived,sent;
+    readedValues.clear();
+    if(addreses.size()==0)
       return 1;
-    for(int i=0;i<addresses.size();i++)
+    for(int i=0;i<addreses.size();i++)
     {
-      d.b=addresses[i];
+      d.b=addreses[i];
       sent.push_back(d);
     }
     
-    CComando command=comandosSet_.adcReads;
-    int code=lockAndSendCommand("base",command,received,sent);
-    if (code<0) return code;//error
-    for (unsigned int i=0;i<received.size();i++)
+    CComando comand=comandosSet_.adcReads;
+    int code=lockAndSendComand("base",comand,recived,sent);
+    if (code<0) return code;
+    for (unsigned int i=0;i<recived.size();i++)
     {
-      readValues.push_back(received[i].h);
+      readedValues.push_back(recived[i].h);
     }
     return code;
   
@@ -467,9 +465,9 @@ int CQboduinoDriver::getIMU(int16_t& gyroX,int16_t& gyroY,int16_t& gyroZ,int8_t&
 {
     std::vector<dataUnion> data,sent;
 
-    CComando command=comandosSet_.getIMU;
-    int code=lockAndSendCommand("base",command,data,sent);
-    if (code<0) return code;//error
+    CComando comand=comandosSet_.getIMU;
+    int code=lockAndSendComand("base",comand,data,sent);
+    if (code<0) return code;
     gyroX=(int16_t)data[0].h;
     gyroY=(int16_t)data[1].h;
     gyroZ=(int16_t)data[2].h;
@@ -483,8 +481,8 @@ int CQboduinoDriver::resetStall()
 {
     std::vector<dataUnion> data,sent;
 
-    CComando command=comandosSet_.resetStall;
-    int code=lockAndSendCommand("base",command,data,sent);
+    CComando comand=comandosSet_.resetStall;
+    int code=lockAndSendComand("base",comand,data,sent);
     return code;
 }
 
@@ -492,9 +490,9 @@ int CQboduinoDriver::getMotorsState(uint8_t& state)
 {
     std::vector<dataUnion> data,sent;
 
-    CComando command=comandosSet_.getMotorsState;
-    int code=lockAndSendCommand("base",command,data,sent);
-    if (code<0) return code;//error
+    CComando comand=comandosSet_.getMotorsState;
+    int code=lockAndSendComand("base",comand,data,sent);
+    if (code<0) return code;
     state=(uint8_t)data[0].b;
     return code;
 }
@@ -503,9 +501,9 @@ int CQboduinoDriver::getIRs(uint8_t& ir0,uint8_t& ir1,uint8_t& ir2)
 {
     std::vector<dataUnion> data,sent;
 
-    CComando command=comandosSet_.baseInfraRed;
-    int code=lockAndSendCommand("base",command,data,sent);
-    if (code<0) return code;//error
+    CComando comand=comandosSet_.baseInfraRed;
+    int code=lockAndSendComand("base",comand,data,sent);
+    if (code<0) return code;
     ir0=(uint16_t)data[0].b;
     ir1=(uint16_t)data[1].b;
     ir2=(uint16_t)data[2].b;
@@ -516,19 +514,19 @@ int CQboduinoDriver::getI2cDevicesState(uint8_t& state)
 {
     std::vector<dataUnion> data,sent;
 
-    CComando command=comandosSet_.getI2cDevicesState;
-    int code=lockAndSendCommand("base",command,data,sent);
-    if (code<0) return code;//error
+    CComando comand=comandosSet_.getI2cDevicesState;
+    int code=lockAndSendComand("base",comand,data,sent);
+    if (code<0) return code;
     state=(uint16_t)data[0].b;
     return code;
 }
 
-uint8_t computeChecksum(uint8_t *key, uint8_t len)
+uint8_t pearson(uint8_t *key, uint8_t len)
 {
   uint8_t hash=0;
   for (uint8_t i=0; i<len; i++)
   {
-    hash = checksumdata[hash^key[i]];
+    hash = pearsondata[hash^key[i]];
   }
   return (hash);
 }

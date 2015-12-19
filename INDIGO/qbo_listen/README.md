@@ -1,7 +1,7 @@
 Qbo_listen
 ==========
 
-for google stt use : roslaunch qbo_listen neo_listen_google.launch
+for google stt, use : roslaunch qbo_listen neo_listen_google.launch
 
 Be sure to add your own private google key 
 (https://sites.google.com/a/chromium.org/dev/developers/how-tos/api-keys)

@@ -29,9 +29,7 @@
 #include <controllers/controllers_class.h>
 #include "ros/ros.h"
 #include <ros/console.h>
-//#include "qbo_arduqbo/BatteryLevel.h"
-#include "std_msgs/Float32.h"
-#include "std_msgs/Int8.h"
+#include "qbo_arduqbo/BatteryLevel.h"
 
 class CBatteryController : public CController
 {
@@ -40,8 +38,6 @@ class CBatteryController : public CController
         
     protected:
 	ros::Publisher battery_pub_;
-	ros::Publisher status_pub_;
-
         float level_;
         uint8_t stat_;
         void timerCallback(const ros::TimerEvent& e);

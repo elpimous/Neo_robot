@@ -61,14 +61,13 @@ class CBaseController : public CController
         nav_msgs::Odometry odom_;
         ros::Time then_;
         bool is_odom_broadcast_enabled_;
-	bool base_stop_;
         
         void timerCallback(const ros::TimerEvent& e);
         void twistCallback(const geometry_msgs::Twist::ConstPtr& msg);
         bool unlockStall(std_srvs::Empty::Request &req,
                          std_srvs::Empty::Response &res );
-        bool baseStopService(std_srvs::Empty::Request  &req,
-                         std_srvs::Empty::Response &res);
+        bool baseStopService(qbo_arduqbo::BaseStop::Request  &req,
+                         qbo_arduqbo::BaseStop::Response &res);
 };
 
 #endif

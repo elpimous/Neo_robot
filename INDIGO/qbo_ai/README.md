@@ -11,15 +11,18 @@ http://www.alicebot.org/aiml.html
 
 includes french and us brain.
 
+ACTUALLY CONFIGURED IN FRENCH !!!!!
+
+All brain loads in less than 3 sec.
+
+
 ______________________________________________________________________________________
 
-      for vocal questions and answers : roslaunch qbo_ai neo_pocket_ai_fr.launch
-                                        roslaunch qbo_ai neo_pocket_ai_en.launch
+      for vocal questions and answers : roslaunch qbo_ai neo_ai.launch
 
 ______________________________________________________________________________________
 
-      for keyboard input and vocal answers : roslaunch qbo_ai neo_ai_keyboard_fr.launch
-                                             roslaunch qbo_ai neo_ai_keyboard_en.launch
+      for keyboard input and vocal answers : roslaunch qbo_ai neo_ai_keyboard.launch
 
 ______________________________________________________________________________________
 

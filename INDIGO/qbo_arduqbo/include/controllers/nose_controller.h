@@ -28,8 +28,7 @@
 #include <driver/qboduino_driver.h>
 #include <controllers/controllers_class.h>
 #include "ros/ros.h"
-//#include "qbo_arduqbo/Nose.h"
-#include "std_msgs/UInt8.h"
+#include "qbo_arduqbo/Nose.h"
 #include <ros/console.h>
 
 class CNoseController : public CController
@@ -39,7 +38,7 @@ class CNoseController : public CController
         
     protected:
         ros::Subscriber nose_sub_;
-        void setNose(const std_msgs::UInt8::ConstPtr& msg);
+        void setNose(const qbo_arduqbo::Nose::ConstPtr& msg);
 };
 
 #endif

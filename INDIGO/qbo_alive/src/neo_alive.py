@@ -22,7 +22,7 @@ from time import sleep
 from qbo_talk.srv import Text2Speach # voice
 from geometry_msgs.msg import Twist # body moves
 from sensor_msgs.msg import JointState # head moves
-from std_msgs.msg import UInt8 # nose colors
+from qbo_arduqbo.msg import Nose # nose colors
 
 def speak_this(text):
  global client_speak
@@ -39,12 +39,12 @@ def main():
   global client_speak
   baseMovePub = rospy.Publisher("/cmd_vel", Twist, queue_size=1) # body move
   headPub = rospy.Publisher("/cmd_joints", JointState, queue_size=1) # head
-  nosePub = rospy.Publisher("/cmd_nose", UInt8, queue_size=1) # nose color
+  nose_pub = rospy.Publisher('/cmd_nose', Nose, queue_size=10) # nose color
   #eyelidsPub = rospy.Publisher("/cmd_", UInt8, queue_size=1)
 
   while not rospy.is_shutdown(): # start loop
     localHour = int(time.strftime('%H',time.localtime())) # actual local time
-    woken = (10 <= localHour < 21) # when QBO will be woken !!!
+    woken = True# (10 <= localHour < 21) # when QBO will be woken !!!
     if woken == True:
       run_process("rosservice call /qbo_arduqbo/head_tilt_joint/torqueEnable True") # turn on torque or dynamixels
       run_process("rosservice call /qbo_arduqbo/head_pan_joint/torqueEnable True")
@@ -80,13 +80,12 @@ def main():
 
 
 ###  Nose colors  ###
-      noseColor = UInt8() # publish nose number for color changing
+      nose_command=Nose()   # publish nose number for color changing
       for i in range(0,10): # cycle colors for 2 sec 
-         noseColor = random.uniform(0,3)
-         nosePub.publish(noseColor)
+         nose_command.color = random.uniform(0,3)
+         nose_pub.publish(nose_command)
          i+=1 
          rospy.sleep(0.2) # loops nose color 10 times a second
-
 
 ###  Eyelids  ###  TODO
     #  eyeslids = UInt8() 
@@ -105,7 +104,7 @@ def main():
       rospy.loginfo("Sleeping")
       run_process("rosservice call /qbo_arduqbo/head_tilt_joint/torqueEnable False") # turn off torque or dynamixels
       run_process("rosservice call /qbo_arduqbo/head_pan_joint/torqueEnable False")
-      run_process("rostopic pub -1 /cmd_nose std_msgs/UInt8 0") # turn off nose light
+      run_process("rostopic pub -1 /cmd_nose qbo_arduqbo/Nose [0,0,'test'] 0") # turn off nose light
       rospy.sleep(600) # wait 10 min
     continue
 #Main instuctions

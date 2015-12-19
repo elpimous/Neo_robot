@@ -134,7 +134,7 @@ add_library(mouth_controller_lib src/controllers/mouth_controller.cpp)
 add_library(nose_controller_lib src/controllers/nose_controller.cpp)
 add_library(srf10_controller_lib src/controllers/srf10_controller.cpp)
 add_dependencies(qboduino_driver_lib qbo_arduqbo_generate_messages_cpp qbo_arduqbo_generate_services_cpp)
-
+add_library(irs_controller_lib src/controllers/infra_red_recievers_controller.cpp)
 add_library(imu_controller_lib src/controllers/imu_controller.cpp)
 
 ## Declare a cpp executable
@@ -146,7 +146,7 @@ add_dependencies(qbo_arduqbo qbo_arduqbo_generate_messages_cpp qbo_arduqbo_gener
 ## as an example, message headers may need to be generated before nodes
 
 
-target_link_libraries(qbo_arduqbo cereal_port qboduino_driver_lib base_controller_lib battery_controller_lib joint_controller_lib lcd_controller_lib mics_controller_lib mouth_controller_lib nose_controller_lib  imu_controller_lib  pthread dynamixel libdxl srf10_controller_lib  ${catkin_LIBRARIES})
+target_link_libraries(qbo_arduqbo cereal_port qboduino_driver_lib base_controller_lib battery_controller_lib joint_controller_lib lcd_controller_lib mics_controller_lib mouth_controller_lib nose_controller_lib  imu_controller_lib  pthread dynamixel libdxl srf10_controller_lib irs_controller_lib  ${catkin_LIBRARIES})
 
 #irs_controller_lib
 
@@ -155,7 +155,6 @@ target_link_libraries(qbo_arduqbo cereal_port qboduino_driver_lib base_controlle
 #   src/${PROJECT_NAME}/qbo_arduqbo.cpp
 # )
 
-## Declare a cpp executable
 # add_executable(qbo_arduqbo_node src/qbo_arduqbo_node.cpp)
 
 ## Add cmake target dependencies of the executable/library

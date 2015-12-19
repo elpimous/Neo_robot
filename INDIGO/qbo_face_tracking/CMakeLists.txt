@@ -10,7 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
   #opencv2
   qbo_arduqbo
   qbo_face_msgs
-  qbo_face_recognition
+  face_recognition
   roscpp
   sensor_msgs
 )

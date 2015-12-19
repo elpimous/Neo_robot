@@ -28,10 +28,8 @@
 #include <driver/qboduino_driver.h>
 #include <controllers/controllers_class.h>
 #include "ros/ros.h"
-//#include "qbo_arduqbo/Mouth.h"
-#include "std_msgs/ByteMultiArray.h"
+#include "qbo_arduqbo/Mouth.h"
 #include <ros/console.h>
-#include <boost/lexical_cast.hpp>
 
 class CMouthController : public CController
 {
@@ -40,8 +38,7 @@ class CMouthController : public CController
         
     protected:
         ros::Subscriber mouth_sub_;
-	void setMouth(const std_msgs::ByteMultiArray::ConstPtr& msg);
-       // void setMouth(const qbo_arduqbo::Mouth::ConstPtr& msg);
+        void setMouth(const qbo_arduqbo::Mouth::ConstPtr& msg);
 };
 
 #endif

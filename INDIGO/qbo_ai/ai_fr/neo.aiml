@@ -51,4 +51,79 @@
     <pattern>C EST QUOI UNE POIRE</pattern>
     <template>C'est un fruit</template>
   </category>
+
+  <category>
+    <pattern>QUI EST UN FRUIT</pattern>
+    <template>C'est un aliment important pour la santé. il parait qu'il faut en manger au moins 5 par jour.</template>
+  </category>
+  <category>
+    <pattern>QUI C EST UN FRUIT</pattern>
+    <template>C'est un aliment important pour la santé. il parait qu'il faut en manger au moins 5 par jour.</template>
+  </category>
+  <category>
+    <pattern>C EST QUI UN FRUIT</pattern>
+    <template>C'est un aliment important pour la santé. il parait qu'il faut en manger au moins 5 par jour.</template>
+  </category>
+  <category>
+    <pattern>QU EST CE QUE UN FRUIT</pattern>
+    <template>C'est un aliment important pour la santé. il parait qu'il faut en manger au moins 5 par jour.</template>
+  </category>
+  <category>
+    <pattern>QU EST CE QUE C EST UN FRUIT</pattern>
+    <template>C'est un aliment important pour la santé. il parait qu'il faut en manger au moins 5 par jour.</template>
+  </category>
+  <category>
+    <pattern>C EST QUOI UN FRUIT</pattern>
+    <template>C'est un aliment important pour la santé. il parait qu'il faut en manger au moins 5 par jour.</template>
+  </category>
+
+  <category>
+    <pattern>QUI EST UNE FUSÉE</pattern>
+    <template>C'est un vaisseau qui transporte des gens dans l'espace</template>
+  </category>
+  <category>
+    <pattern>QUI C EST UNE FUSÉE</pattern>
+    <template>C'est un vaisseau qui transporte des gens dans l'espace</template>
+  </category>
+  <category>
+    <pattern>C EST QUI UNE FUSÉE</pattern>
+    <template>C'est un vaisseau qui transporte des gens dans l'espace</template>
+  </category>
+  <category>
+    <pattern>QU EST CE QUE UNE FUSÉE</pattern>
+    <template>C'est un vaisseau qui transporte des gens dans l'espace</template>
+  </category>
+  <category>
+    <pattern>QU EST CE QUE C EST UNE FUSÉE</pattern>
+    <template>C'est un vaisseau qui transporte des gens dans l'espace</template>
+  </category>
+  <category>
+    <pattern>C EST QUOI UNE FUSÉE</pattern>
+    <template>C'est un vaisseau qui transporte des gens dans l'espace</template>
+  </category>
+
+  <category>
+    <pattern>QUI EST NÉO</pattern>
+    <template>C'est moi, néo</template>
+  </category>
+  <category>
+    <pattern>QUI C EST NÉO</pattern>
+    <template>C'est moi, néo</template>
+  </category>
+  <category>
+    <pattern>C EST QUI NÉO</pattern>
+    <template>C'est moi, néo</template>
+  </category>
+  <category>
+    <pattern>QU EST CE QUE NÉO</pattern>
+    <template>C'est moi, néo</template>
+  </category>
+  <category>
+    <pattern>QU EST CE QUE C EST NÉO</pattern>
+    <template>C'est moi, néo</template>
+  </category>
+  <category>
+    <pattern>C EST QUOI NÉO</pattern>
+    <template>C'est moi, néo</template>
+  </category>
 </aiml>

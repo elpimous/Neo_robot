@@ -23,40 +23,21 @@
  */
 
 #include <controllers/mouth_controller.h>
+#include "ros/ros.h"
+#include "qbo_arduqbo/Mouth.h"
+#include <ros/console.h>
+#include <boost/lexical_cast.hpp>
 
 CMouthController::CMouthController(std::string name, CQboduinoDriver *device_p, ros::NodeHandle& nh) : CController(name,device_p,nh)
 {
     std::string topic;
     nh.param("controllers/"+name+"/topic", topic, std::string("cmd_mouth"));
-    //mouth_sub_ = nh.subscribe<qbo_arduqbo::Mouth>(topic, 1, &CMouthController::setMouth,this);
-    mouth_sub_ = nh.subscribe<std_msgs::ByteMultiArray>(topic, 1, &CMouthController::setMouth,this);
+    mouth_sub_ = nh.subscribe<qbo_arduqbo::Mouth>(topic, 1, &CMouthController::setMouth,this);
 }
 
-void CMouthController::setMouth(const std_msgs::ByteMultiArray::ConstPtr& msg)
+void CMouthController::setMouth(const qbo_arduqbo::Mouth::ConstPtr& msg)
 {
-//rostopic pub -1 /cmd_mouth std_msgs/ByteMultiArray "{}" [0b0,0b0,0b10000,0b10100]
-    if(msg->data.size() != 4){
-        ROS_ERROR("Error : mouth command should contain 4 bytes");
-        return;
-    }
-//mouth is commanded by 3 bytes, strangely arranged
-    uint8_t b1,b2,b3;
-    b1=(msg->data[0]&0b11111)<<1 | ((msg->data[1]&0b11)<<6);
-    b2=(msg->data[1]&0b11100)>>2 | (msg->data[2]&0b11111)<<3;
-    b3=msg->data[3]&0b11111;
-
-    int code=device_p_->setMouth(b1, b2, b3);
-    if (code<0)
-        ROS_ERROR("Unable to send mouth to the head control board");
-    else
-    {
-        ROS_DEBUG_STREAM("Mouth command sent");
-    }
-}
-
-/*void CMouthController::setMouth(const qbo_arduqbo::Mouth::ConstPtr& msg)
-{
-    std::string debugStream = "Mouth command arrived: ";
+    std::string debugStream = "Mouth comand arrived: ";
     for(uint8_t i=0;i<20;i++)
     {
       debugStream += boost::lexical_cast<std::string>(msg->mouthImage[i]) + " ";
@@ -99,4 +80,4 @@ void CMouthController::setMouth(const std_msgs::ByteMultiArray::ConstPtr& msg)
         debugStream += " to the head board ";
         ROS_DEBUG_STREAM(debugStream);
     }
-}*/
+}

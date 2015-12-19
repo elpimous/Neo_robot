@@ -23,7 +23,14 @@
  */
 
 #include <servos.h>
-
+#include <cmath>
+#include <algorithm>
+#include <XmlRpcValue.h>
+#include <ros/console.h>
+//#include <std_msgs/Float64.h>
+//#include <dynamixel_msgs/JointState.h>
+//#include <dynamixel_controllers/SetSpeed.h>
+//#include <dynamixel_controllers/TorqueEnable.h>
 
 void PrintCommStatus(int CommStatus);
 void PrintErrorCode(void);
@@ -151,7 +158,7 @@ float ControledServo::getAngle()
         if (invert_)
             angle = angle * -1.0;
         angle_ = angle;
-        ROS_DEBUG_STREAM("Received angle " << angle_ << " for servo " << name_ << " from the head board");
+        ROS_DEBUG_STREAM("Recibed angle " << angle_ << " for servo " << name_ << " from the head board");
         return angle_;
     }
     ROS_ERROR_STREAM("Unable to get angle for servo " << name_ << " from head board " << code);
@@ -220,7 +227,7 @@ float DynamixelServo::getAngle()
     if (invert_)
         angle = angle * -1.0;
     angle_ = angle;
-    ROS_DEBUG_STREAM("Received angle " << angle_ << " for servo " << name_ << " from the head board");
+    ROS_DEBUG_STREAM("Recibed angle " << angle_ << " for servo " << name_ << " from the head board");
     return angle_;
 }
 

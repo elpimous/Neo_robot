@@ -1,4 +1,4 @@
-language model created by quicklm on tue sep 23 13:43:41 edt 2014
+language model created by quicklm on sat aug 29 15:06:35 edt 2015
 copyright (c) 1996-2010 carnegie mellon university and alexander i. rudnicky
 
 the model is in standard arpa format, designed by doug paul while he was at mitre.
@@ -7,77 +7,137 @@ the code that was used to produce this language model is available in open sourc
 please visit http://www.speech.cs.cmu.edu/tools/ for more information
 
 the (fixed) discount mass is 0.5. the backoffs are computed using the ratio method.
-this model based on a corpus of 10 sentences and 15 words
+this model based on a corpus of 29 sentences and 31 words
 
 \data\
-ngram 1=15
-ngram 2=24
-ngram 3=21
+ngram 1=31
+ngram 2=58
+ngram 3=31
 
 \1-grams:
--0.9138 </s> -0.3010
--0.9138 <s> -0.2323
--1.9138 aimer -0.2445
--1.9138 chanter -0.2445
--1.3118 es-tu -0.2323
--1.9138 heureux -0.2445
--1.9138 intelligent -0.2445
--1.9138 marcher -0.2445
--1.9138 parler -0.2445
--1.1357 peux-tu -0.2680
--1.9138 promener -0.2445
--1.9138 qu -0.2793
--1.9138 qui -0.2793
--1.9138 rouler -0.2445
--1.9138 te -0.2957
+-0.7880 </s> -0.3010
+-0.7880 <s> -0.2238
+-2.2504 aimer -0.2238
+-2.2504 axel -0.2238
+-2.2504 chanter -0.2238
+-2.2504 christiane -0.2238
+-1.7733 es-tu -0.2179
+-2.2504 géraldine -0.2238
+-2.2504 heureux -0.2238
+-2.2504 intelligent -0.2238
+-2.2504 je_te_présente -0.2238
+-2.2504 jérémy -0.2238
+-2.2504 magalie -0.2238
+-2.2504 marcher -0.2238
+-2.2504 nolwen -0.2238
+-2.2504 non -0.2238
+-2.2504 néo_stop -0.2238
+-2.2504 océane -0.2238
+-2.2504 oui -0.2238
+-2.2504 parler -0.2238
+-2.2504 peux-tu -0.2238
+-2.2504 promener -0.2238
+-2.2504 qu -0.2238
+-2.2504 quelle_heure -0.2238
+-2.2504 quel_temps -0.2238
+-2.2504 qui -0.2238
+-2.2504 rouler -0.2238
+-2.2504 si_tu_veux -0.2238
+-2.2504 stéphanie -0.2238
+-2.2504 tu_veux_faire_quoi -0.2238
+-2.2504 vincent -0.2238
 
 \2-grams:
--1.0000 <s> es-tu -0.1761
--0.5229 <s> peux-tu 0.0000
--1.3010 <s> qu 0.0000
--1.3010 <s> qui 0.0000
+-1.7634 <s> aimer 0.0000
+-1.7634 <s> axel 0.0000
+-1.7634 <s> chanter 0.0000
+-1.7634 <s> christiane 0.0000
+-1.2863 <s> es-tu 0.0000
+-1.7634 <s> géraldine 0.0000
+-1.7634 <s> je_te_présente 0.0000
+-1.7634 <s> jérémy 0.0000
+-1.7634 <s> magalie 0.0000
+-1.7634 <s> marcher 0.0000
+-1.7634 <s> nolwen 0.0000
+-1.7634 <s> non 0.0000
+-1.7634 <s> néo_stop 0.0000
+-1.7634 <s> océane 0.0000
+-1.7634 <s> oui 0.0000
+-1.7634 <s> parler 0.0000
+-1.7634 <s> peux-tu 0.0000
+-1.7634 <s> promener 0.0000
+-1.7634 <s> qu 0.0000
+-1.7634 <s> quelle_heure 0.0000
+-1.7634 <s> quel_temps 0.0000
+-1.7634 <s> qui 0.0000
+-1.7634 <s> rouler 0.0000
+-1.7634 <s> si_tu_veux 0.0000
+-1.7634 <s> stéphanie 0.0000
+-1.7634 <s> tu_veux_faire_quoi 0.0000
+-1.7634 <s> vincent 0.0000
 -0.3010 aimer </s> -0.3010
+-0.3010 axel </s> -0.3010
 -0.3010 chanter </s> -0.3010
--0.6021 es-tu </s> -0.3010
--0.9031 es-tu heureux 0.0000
--0.9031 es-tu intelligent 0.0000
+-0.3010 christiane </s> -0.3010
+-0.7782 es-tu </s> -0.3010
+-0.7782 es-tu heureux 0.0000
+-0.7782 es-tu intelligent 0.0000
+-0.3010 géraldine </s> -0.3010
 -0.3010 heureux </s> -0.3010
 -0.3010 intelligent </s> -0.3010
+-0.3010 je_te_présente </s> -0.3010
+-0.3010 jérémy </s> -0.3010
+-0.3010 magalie </s> -0.3010
 -0.3010 marcher </s> -0.3010
+-0.3010 nolwen </s> -0.3010
+-0.3010 non </s> -0.3010
+-0.3010 néo_stop </s> -0.3010
+-0.3010 océane </s> -0.3010
+-0.3010 oui </s> -0.3010
 -0.3010 parler </s> -0.3010
--1.0792 peux-tu aimer 0.0000
--1.0792 peux-tu chanter 0.0000
--1.0792 peux-tu marcher 0.0000
--1.0792 peux-tu parler 0.0000
--1.0792 peux-tu rouler 0.0000
--1.0792 peux-tu te 0.0000
+-0.3010 peux-tu </s> -0.3010
 -0.3010 promener </s> -0.3010
--0.3010 qu es-tu -0.1761
--0.3010 qui es-tu -0.1761
+-0.3010 qu </s> -0.3010
+-0.3010 quelle_heure </s> -0.3010
+-0.3010 quel_temps </s> -0.3010
+-0.3010 qui </s> -0.3010
 -0.3010 rouler </s> -0.3010
--0.3010 te promener 0.0000
+-0.3010 si_tu_veux </s> -0.3010
+-0.3010 stéphanie </s> -0.3010
+-0.3010 tu_veux_faire_quoi </s> -0.3010
+-0.3010 vincent </s> -0.3010
 
 \3-grams:
--0.6021 <s> es-tu heureux
--0.6021 <s> es-tu intelligent
--1.0792 <s> peux-tu aimer
--1.0792 <s> peux-tu chanter
--1.0792 <s> peux-tu marcher
--1.0792 <s> peux-tu parler
--1.0792 <s> peux-tu rouler
--1.0792 <s> peux-tu te
--0.3010 <s> qu es-tu
--0.3010 <s> qui es-tu
+-0.3010 <s> aimer </s>
+-0.3010 <s> axel </s>
+-0.3010 <s> chanter </s>
+-0.3010 <s> christiane </s>
+-0.7782 <s> es-tu </s>
+-0.7782 <s> es-tu heureux
+-0.7782 <s> es-tu intelligent
+-0.3010 <s> géraldine </s>
+-0.3010 <s> je_te_présente </s>
+-0.3010 <s> jérémy </s>
+-0.3010 <s> magalie </s>
+-0.3010 <s> marcher </s>
+-0.3010 <s> nolwen </s>
+-0.3010 <s> non </s>
+-0.3010 <s> néo_stop </s>
+-0.3010 <s> océane </s>
+-0.3010 <s> oui </s>
+-0.3010 <s> parler </s>
+-0.3010 <s> peux-tu </s>
+-0.3010 <s> promener </s>
+-0.3010 <s> qu </s>
+-0.3010 <s> quelle_heure </s>
+-0.3010 <s> quel_temps </s>
+-0.3010 <s> qui </s>
+-0.3010 <s> rouler </s>
+-0.3010 <s> si_tu_veux </s>
+-0.3010 <s> stéphanie </s>
+-0.3010 <s> tu_veux_faire_quoi </s>
+-0.3010 <s> vincent </s>
 -0.3010 es-tu heureux </s>
 -0.3010 es-tu intelligent </s>
--0.3010 peux-tu aimer </s>
--0.3010 peux-tu chanter </s>
--0.3010 peux-tu marcher </s>
--0.3010 peux-tu parler </s>
--0.3010 peux-tu rouler </s>
--0.3010 peux-tu te promener
--0.3010 qu es-tu </s>
--0.3010 qui es-tu </s>
--0.3010 te promener </s>
 
 \end\

@@ -28,7 +28,7 @@
 #include <driver/qboduino_driver.h>
 #include <controllers/controllers_class.h>
 #include "ros/ros.h"
-#include "std_msgs/String.h"
+#include "qbo_arduqbo/LCD.h"
 #include <ros/console.h>
 
 class CLCDController : public CController
@@ -38,7 +38,7 @@ class CLCDController : public CController
         
     protected:
         ros::Subscriber lcd_sub_;
-	void setLCD(const std_msgs::String::ConstPtr& msg);
+        void setLCD(const qbo_arduqbo::LCD::ConstPtr& msg);
 };
 
 #endif
