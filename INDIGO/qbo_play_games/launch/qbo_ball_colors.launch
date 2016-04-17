@@ -1,0 +1,18 @@
+<launch>
+
+  <!-- launch qbo_listen-->
+  <node name="qbo_listen" pkg="qbo_listen" type="qbo_listen_new.py" output="screen">
+    <param name="hmm" value="$(find qbo_listen)/config/fr/fr_model/fr_ptm_5.2"/>
+    <param name="lm" value="$(find qbo_play_games)/config/for_qbo_listen/fr/color_balls.lm"/>
+    <param name="dic" value="$(find qbo_play_games)/config/for_qbo_listen/fr/color_balls.dic"/>
+  </node>
+
+  <!-- launch qbo_color_publisher-->
+  <node name="qbo_color_balls_publisher" pkg="qbo_play_games" type="ball_color_publisher.py" output="screen">
+  </node>
+
+  <!-- launch qbo_color_ball_game-->
+  <node name="qbo_color_balls_game" pkg="qbo_play_games" type="color_balls_game.py" output="screen">
+  </node>
+
+</launch>

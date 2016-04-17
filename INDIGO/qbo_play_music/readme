@@ -1,0 +1,29 @@
+needs : 
+°°°°°°°
+qbo_listen, 
+qbo_talk, 
+qbo_hand_detector
+
+
+dependencies :
+°°°°°°°°°°°°°°
+install this or it will not work !!
+sudo apt-get install xmms2-client-nycli
+
+######################################################################################
+
+This player works with vocal orders. You can order (in french):
+
+lecture
+prédédent(e)
+suivant(e)
+pause 
+stop
+titre
+combien
+
+A hand gesture node is used to pause audio, waiting for orders.
+- pass slowly your hand in front of right eye (30 to 60 cm), and music should pause...
+After a while without orders, music restarts.
+
+######################################################################################

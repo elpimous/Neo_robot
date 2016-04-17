@@ -1,0 +1,11 @@
+################################################
+#
+#	Vincent FOUCAULT Avril 2016
+#
+################################################
+
+If you need to convert BGR to HSV picture,
+you can use this small program.
+
+or range_detector, with this command line :
+range_detector.py -i /home/neo/catkin_ws/src/qbo_play_games/config/frame0000.jpg -f HSV

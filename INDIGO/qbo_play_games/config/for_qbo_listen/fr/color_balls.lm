@@ -1,0 +1,68 @@
+Language model created by QuickLM on Mon Apr 11 11:52:34 EDT 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 6 sentences and 13 words
+
+\data\
+ngram 1=13
+ngram 2=17
+ngram 3=15
+
+\1-grams:
+-0.9700 </s> -0.3010
+-0.9700 <s> -0.2518
+-1.4472 couleur -0.2518
+-1.7482 est -0.2932
+-1.4472 je -0.2852
+-1.7482 la -0.2852
+-1.7482 non -0.2518
+-1.4472 néo -0.2852
+-1.7482 oui -0.2518
+-1.4472 quelle -0.2771
+-1.4472 quitter -0.2518
+-1.7482 souhaite -0.2852
+-1.7482 veux -0.2852
+
+\2-grams:
+-1.0792 <s> non 0.0000
+-0.7782 <s> néo 0.0000
+-1.0792 <s> oui 0.0000
+-0.7782 <s> quelle 0.0000
+-0.3010 couleur </s> -0.3010
+-0.3010 est la 0.0000
+-0.6021 je souhaite 0.0000
+-0.6021 je veux 0.0000
+-0.3010 la couleur 0.0000
+-0.3010 non </s> -0.3010
+-0.3010 néo je 0.0000
+-0.3010 oui </s> -0.3010
+-0.6021 quelle couleur 0.0000
+-0.6021 quelle est 0.0000
+-0.3010 quitter </s> -0.3010
+-0.3010 souhaite quitter 0.0000
+-0.3010 veux quitter 0.0000
+
+\3-grams:
+-0.3010 <s> non </s>
+-0.3010 <s> néo je
+-0.3010 <s> oui </s>
+-0.6021 <s> quelle couleur
+-0.6021 <s> quelle est
+-0.3010 est la couleur
+-0.3010 je souhaite quitter
+-0.3010 je veux quitter
+-0.3010 la couleur </s>
+-0.6021 néo je souhaite
+-0.6021 néo je veux
+-0.3010 quelle couleur </s>
+-0.3010 quelle est la
+-0.3010 souhaite quitter </s>
+-0.3010 veux quitter </s>
+
+\end\

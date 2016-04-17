@@ -1,0 +1,9 @@
+
+Version: 1.0-openqbo0
+Priority: standard
+Section: OpenQbo
+Architecture: amd64
+Depends: qbo-arduqbo
+Maintainer: Arturo Bajuelos <arturo@openqbo.org>
+Homepage: http://openqbo.org/wiki/doku.php?id=qbo_apps:ros_pack:qbo_self_recognizer
+Description: The self_recognizer node enables Q.bo to recognize itself, by emitting nose signals and recognizing them using its webcams

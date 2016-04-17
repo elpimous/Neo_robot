@@ -1,0 +1,23 @@
+<launch>
+
+
+  <!-- run play_audio.py (the program) 
+     <node name="qbo_play_music" pkg="qbo_play_music" type="play_music_new.py" output="screen">
+     </node>-->
+
+
+<!-- launch questions recognition orders (for vocal orders) -->
+     <node name="qbo_listen" pkg="qbo_listen" type="qbo_listen_new.py" output="screen">
+    	<param name="hmm" value="$(find qbo_listen)/config/fr/fr_model/fr_ptm_5.2"/>
+    	<param name="lm" value="$(find qbo_listen)/config/fr/play_music/play_music.lm.bin"/>
+    	<param name="dic" value="$(find qbo_listen)/config/fr/play_music/play_music.dic"/>
+     </node>
+
+
+<!-- launch qbo_hand_detector node (for pause process) -->
+     <node name="qbo_hand_detector" pkg="qbo_hand_detector" type="hand_gestures_recognition.py" output="screen">
+     </node>
+
+
+</launch>
+
