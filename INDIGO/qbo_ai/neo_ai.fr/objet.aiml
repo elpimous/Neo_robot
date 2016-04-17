@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+
+<aiml>
+<!--author: neo-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>UNE TÉLÉ</pattern>
+	<template>C'est un écran qui affiche des images animées. Maintenant, les écrans sont plats.</template>
+</category>
+<category>
+	<pattern>UNE TÉLÉVISION</pattern>
+	<template><srai>UNE TÉLÉ</srai></template>
+</category>
+<category>
+	<pattern>UN VERRE</pattern>
+	<template>C'est un récipient qui permet de boire de l'eau, ou d'autres boissons.</template>
+</category>
+<category>
+	<pattern>UN ÉCRAN DE *</pattern>
+	<template><srai>UNE TÉLÉ</srai></template>
+</category>
+<category>
+	<pattern>UNE BOUTEILLE</pattern>
+	<template><srai>UN VERRE</srai></template>
+</category>
+<category>
+	<pattern>UN VERRE DE *</pattern>
+	<template>C'est un récipient qui permet de boire du <star />.</template>
+</category>
+<category>
+	<pattern>UNE BOUTEILLE DE *</pattern>
+	<template>C'est un récipient qui contiend du <star />.</template>
+</category>
+<category>
+	<pattern>UN ORDINATEUR</pattern>
+	<template>C'est un système qui permet de calculer, programmer, et automatiser des taches. Moi, par exemple, je suis un basé sur un ordinateur puissant.</template>
+</category>
+<category>
+	<pattern>UNE TABLE</pattern>
+	<template>Une table, c'est un meuble sur lequel on peut manger.</template>
+</category>
+<category>
+	<pattern>UNE CHAISE</pattern>
+	<template>C'est comme un tabouret.</template>
+</category>
+<category>
+	<pattern>UN TABOURET</pattern>
+	<template>C'est un objet qui sert à s'asseoir.</template>
+</category>
+<category>
+	<pattern>UN CRAYON</pattern>
+	<template>C'est un petit objet, qui permet d'écrire ou de dessiner.</template>
+</category>
+<category>
+	<pattern>UN STYLO</pattern>
+	<template><srai>UN CRAYON</srai></template>
+</category>
+<category>
+	<pattern>UN COUTEAU</pattern>
+	<template>C'est un accessoire de cuisine, qui sert à couper la nourriture.</template>
+</category>
+<category>
+	<pattern>UNE FOURCHETTE</pattern>
+	<template>C'est un accessoire de cuisine, qui sert à attrapper la nourriture.</template>
+</category>
+<category>
+	<pattern>UNE CUILLÈRE</pattern>
+	<template><srai>UNE FOURCHETTE</srai></template>
+</category>
+<category>
+	<pattern>UN MEUBLE</pattern>
+	<template>C'est une grosse boîte, avec des ouvertures. On peut y ranger des chôses</template>
+</category>
+<category>
+	<pattern>UNE BOITE</pattern>
+	<template>C'est un récipient.</template>
+</category>
+<category>
+	<pattern>UNE OUVERTURE</pattern>
+	<template>C'est un passage pour une personne, un animal, ou un objet.</template>
+</category>
+<category>
+	<pattern>UN OBJET</pattern>
+	<template>C'est un outil, un accessoire, un morceau de matière, ça peut être plein de chôses.</template>
+</category>
+<category>
+	<pattern>UN OUTIL</pattern>
+	<template>C'est un accessoire créé par les hommes, qui sert à les aider dans leur travail.</template>
+</category>
+<category>
+	<pattern>UN ACCESSOIRE</pattern>
+	<template>C'est un outil créé par les hommes, qui sert à les aider dans leur travail.</template>
+</category>
+</aiml>

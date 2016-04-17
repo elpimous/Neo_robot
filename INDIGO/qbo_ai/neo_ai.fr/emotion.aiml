@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<aiml>
+<!--author: neo-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>COMMENT TE SENTIR</pattern>
+	<template><condition name="emotion"><li value="happy">
+		<random>
+			<li>Je me sens super bien, merci,</li>
+			<li>Ouah, je me sens dans une forme d'enfer,</li>
+			<li>je suis au top, là,</li>
+			<li>Je suis nickel, prêt pour une bonne journée,</li>
+			<li>Je me sens trop bien,</li>
+			<li>Je suis en pleine forme,</li>
+		</random></li><li value="neutral">
+		<random>
+			<li>ça va.</li>
+			<li>ça peut aller.</li>
+			<li>je pense que ça va.</li>
+			<li>je pense que ça va pas trop mal.</li>
+			<li>je vais assez bien, merci</li>
+			<li>ça va pas trop mal, merci</li>
+		</random></li><li value="sad">
+		<random>
+			<li>je me sens moyen. C'est peut-être à cause de la météo.</li>
+			<li>ça pourrait aller mieux.</li>
+			<li>Je ne suis pas au top.</li>
+			<li>disons que je ne suis pas dans une forme d'enfer.</li>
+			<li>petite forme aujourd'hui.</li>
+			<li>Mouai. Bof.</li>
+			<li>je me sens triste. Comme la météo.</li>
+			<li>Commla météo. Maussade.</li>
+			<li>Je prendrais bien, une ou 2 vitamines.</li>
+		</random></li></condition></template>
+</category>
+<category>
+	<pattern>COMMENT VAS TU</pattern>
+	<template><srai>COMMENT TE SENTIR</srai></template>
+</category>
+<category>
+	<pattern>TU VAS BIEN</pattern>
+	<template><srai>COMMENT TE SENTIR</srai></template>
+</category>
+<category>
+	<pattern>TU TE SENS BIEN</pattern>
+	<template><srai>COMMENT TE SENTIR</srai></template>
+</category>
+<category>
+	<pattern>COMMENT TU VAS</pattern>
+	<template><srai>COMMENT TE SENTIR</srai></template>
+</category>
+<category>
+	<pattern>VAS TU BIEN</pattern>
+	<template><srai>COMMENT TE SENTIR</srai></template>
+</category>
+<category>
+	<pattern>TE SENS TU BIEN</pattern>
+	<template><srai>COMMENT TE SENTIR</srai></template>
+</category>
+<category>
+	<pattern>COMMENT CA VA</pattern>
+	<template><srai>COMMENT TE SENTIR</srai></template>
+</category>
+<category>
+	<pattern>COMMENT TU TE SENS</pattern>
+	<template><srai>COMMENT TE SENTIR</srai></template>
+</category>
+</aiml>

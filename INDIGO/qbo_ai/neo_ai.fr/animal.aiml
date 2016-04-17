@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+<aiml>
+<!--author: neo-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>UN CHIEN</pattern>
+	<template>c'est un animal à 4 pattes qui aboit. On dit que c'est le meilleur ami de l'homme</template>
+</category>
+<category>
+	<pattern>UN CHAT</pattern>
+	<template>c'est un petit animal à 4 pattes qui miaule.</template>
+</category>
+<category>
+	<pattern>UNE SOURIS</pattern>
+	<template>C'est un petit rongeur.</template>
+</category>
+<category>
+	<pattern>UN RONGEUR</pattern>
+	<template>C'est un petit animal à 4 pattes. Il passe sa vie à ronger des trucs.</template>
+</category>
+<category>
+	<pattern>UN ANIMAL</pattern>
+	<template>C'est une bête. Il y en a de tout type.</template>
+</category>
+</aiml>

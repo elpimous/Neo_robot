@@ -53,7 +53,7 @@ class Neo_Chat():
 
 	# Données personnelles du robot, comme son nom, ses préférences...
         self.NEO.setBotPredicate('name', "Neio")
-        self.NEO.setBotPredicate('age' ,"12 ans")
+        self.NEO.setBotPredicate('age' ,"7 ans")
         self.NEO.setBotPredicate('anniversaire', "octobre 2014")
         self.NEO.setBotPredicate('gender', "garsson")
         self.NEO.setBotPredicate('master', "Vincent")
@@ -70,15 +70,15 @@ class Neo_Chat():
         while not self.brainLoaded:
 
 	    if self.forceReload or (len(sys.argv) >= 2 and sys.argv[1] == "reload"):
-		    self.NEO.bootstrap(learnFiles="/home/neo/catkin_ws/src/qbo_ai/ai_fr/*.aiml")# charge tous les fichiers aiml
+		    self.NEO.bootstrap(learnFiles="/home/neo/catkin_ws/src/qbo_ai/neo_ai_fr/*.aiml")# charge tous les fichiers aiml
 		    self.brainLoaded = True
 		    # backup des differents fichiers aiml dans un fichier compressé, pour un chargement éclair les fois suivantes
-		    self.NEO.saveBrain("/home/neo/catkin_ws/src/qbo_ai/NEO.brn")
+		    self.NEO.saveBrain("/home/neo/catkin_ws/src/qbo_ai/neo_ai_fr.brn")
 	    else:
 
 		    try:
 			    # chargement rapide des fichiers aiml, si existance du fichier compressé
-			    self.NEO.bootstrap(brainFile = "/home/neo/catkin_ws/src/qbo_ai/NEO.brn")
+			    self.NEO.bootstrap(brainFile = "/home/neo/catkin_ws/src/qbo_ai/neo_ai_fr.brn")
 			    self.brainLoaded = True
 		    except:
 			    self.forceReload = True

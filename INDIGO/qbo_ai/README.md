@@ -9,10 +9,6 @@ Based on Pyaiml package, and Alice AIML brain.
 
 http://www.alicebot.org/aiml.html
 
-includes french and us brain.
-
-ACTUALLY CONFIGURED IN FRENCH !!!!!
-
 All brain loads in less than 3 sec.
 
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+<aiml>
+<!--author: neo-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>QUELLE EST LA TENSION DE LA BATTERIE</pattern>
+	<template>La batterie à une tension de <get name="levelBat" /> Volt</template>
+</category>
+<category>
+	<pattern>COMMENT ALIMENTE</pattern>
+	<template><condition name="statBat"><li value="31">Acctuellement, <get name="name" />, je suis au repos sur ma base, et je suis totalement chargé.</li><li value="15">Acctuellement, <get name="name" />, je suis au repos sur ma base, et je me recharge</li><li value="23">Acctuellement, <get name="name" />, je suis au repos sur ma base, et je suis presque chargé. Encore quelques minutes de patience</li><li value="35">Acctuellement je fonctionne sur la batterie</li></condition></template>
+</category>
+<category>
+	<pattern>DIAGNOSTICBATTERY</pattern>
+	<template><srai>QUELLE EST LA TENSION DE LA BATTERIE</srai><condition name="statBat"><li value="31">, je suis sur ma base, et ma batterie est totalement chargée.</li><li value="15">, je suis sur ma base et ma batterie en charge.</li><li value="23">, je suis sur ma base et ma batterie est pratiquement chargée.</li><li value="35">je ne suis pas sur ma base de charge, </li></condition><condition name="statBat" value="35"><condition name="autonBat"><li value="Low Battery">et je constate que le niveau de ma batterie est faible.</li><li value="Medium Battery">mais mon niveau de batterie est suffisant.</li><li value="Battery OK">mais mon niveau de batterie est correct.</li></condition></condition></template>
+</category>
+</aiml>

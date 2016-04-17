@@ -37,12 +37,11 @@ class Neo_Chat():
 
     def __init__(self):
 	global client_speak
-        rospy.Subscriber('listened', String, self.listen_callback)
         client_speak = rospy.ServiceProxy("/say_fr1", Text2Speach)
         rospy.init_node('neo_chat_node', anonymous=True)
         self.NEO = aiml_fr.Kernel()# charge le moteur de l'IA
         self.brainLoaded = False # False to reload all aiml files !!!
-        self.forceReload = False # force reload of all aiml files
+        self.forceReload = True # force reload of all aiml files
 	# Données personnelles du robot, comme son nom, ses préférences...
         self.NEO.setBotPredicate('name', "Naio")
         self.NEO.setBotPredicate('age' ,"environ six ans")
@@ -61,36 +60,30 @@ class Neo_Chat():
 
         while not self.brainLoaded:
 	    if self.forceReload or (len(sys.argv) >= 2 and sys.argv[1] == "reload"):
-		    self.NEO.bootstrap(learnFiles="/home/neo/catkin_ws/src/qbo_ai/ai_fr/*.aiml")# charge tous les fichiers aiml
-		    self.brainLoaded = False
+		    self.NEO.bootstrap(learnFiles="/home/neo/catkin_ws/src/qbo_ai/neo_ai.fr/*.aiml")# charge tous les fichiers aiml
+		    self.brainLoaded = True
 
 
 		    # backup des differents fichiers aiml dans un fichier compressé, pour un chargement éclair les fois suivantes
-		    self.NEO.saveBrain("/home/neo/catkin_ws/src/qbo_ai/NEO_FR.brn")
+		    self.NEO.saveBrain("/home/neo/catkin_ws/src/qbo_ai/NEO.brn")
 	    else:
 
 		    try:
 			    # chargement rapide des fichiers aiml, si existance du fichier compressé
-			    self.NEO.bootstrap(brainFile = "/home/neo/catkin_ws/src/qbo_ai/NEO_FR.brn")
+			    self.NEO.bootstrap(brainFile = "/home/neo/catkin_ws/src/qbo_ai/NEO.brn")
 			    self.brainLoaded = True
 		    except:
 			    self.forceReload = True
 
             while True:
-                # specific backup aiml file restarted
-                self.NEO.bootstrap(learnFiles="/home/neo/catkin_ws/src/qbo_ai/ai_fr/neo.aiml")
-
                 question = raw_input("posez votre question : ")
                 #question = (msg.data)
 	        reponse = self.NEO.respond(question)# A commenter pour tester la reco. vocale
 	        #reponse = self.NEO.respond(msg.data)# récupère la séquence ententue via qbo_listen et interroge le moteur d'IA
-
+                print "\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n"
+                print "  réponse : ",reponse
+                print "\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°\n"
                 speak_this(reponse)# si une réponse est trouvée, elle est exécutée oralement
-
-
-    def listen_callback(self, msg):
-        print "question = ",msg.data
-
 
 
 if __name__ == '__main__':

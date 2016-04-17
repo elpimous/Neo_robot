@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+<aiml>
+<!--author: neo-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>QUI EST *</pattern>
+	<template>
+	<random>
+		<li><star /> ? Je ne sais pas.</li>
+		<li>Je ne sais pas qui est <star />,</li>
+		<li><star /> ? Aucune idée,</li>
+		<li>Je ne vois pas qui est <star />,</li>
+		<li>Je n'ai jamais entendu parler de <star />,</li>
+		<li><star /> n'est pas dans ma base de donnée,</li>
+	</random>
+	</template>
+</category>
+<category>
+	<pattern>C EST QUI *</pattern>
+	<template>	
+	<random>
+		<li><star /> ? Je ne sais pas.</li>
+		<li>Je ne sais pas qui est <star />,</li>
+		<li><star /> ? Aucune idée,</li>
+		<li>Je ne vois pas qui est <star />,</li>
+		<li>Je n'ai jamais entendu parler de <star />,</li>
+		<li><star /> n'est pas dans ma base de donnée,</li>
+	</random>
+	</template>
+</category>
+<category>
+	<pattern>QUI EST TON BOTMASTER</pattern>
+	<template>C'est vincent , mon créateur</template>
+</category>
+<category>
+	<pattern>QUI EST TON CREATEUR</pattern>
+	<template><srai>QUI EST TON BOTMASTER</srai></template>
+</category>
+<category>
+	<pattern>QUI EST AXEL</pattern>
+	<template>C'est mon copain, et c'est l'enfant de mon créateur. En plusse, on a presque le même age. Cool,</template>
+</category>
+<category>
+	<pattern>QUI EST MADONNA</pattern>
+	<template>Il s'agit d'une chanteuse.</template>
+</category>
+<category>
+	<pattern>QUI EST PICASSO</pattern>
+	<template>C'est un peintre très connu.</template>
+</category>
+<category>
+	<pattern>QUI EST ASIMOV</pattern>
+	<template>C'est une personne qui a créé des règles concernant les robots.</template>
+</category>
+<category>
+	<pattern>QUI EST ALAN TURING</pattern>
+	<template>c'est une personne qui a créé un test, le test de turing. Tu veux que je t'en parle ?</template>
+</category>
+<category>
+	<pattern>OUI</pattern><that>C EST UNE PERSONNE QUI A CRÉÉ UN TEST LE TEST DE TURING TU VEUX QUE JE T EN PARLE</that>
+	<template>Ok, Je vais t'en parler avec mes mots à moi. On demande à 5 personnes de converser par écrit avec quelqu'un. Ce quelqu'un est, en fait, soit un robot, soit une vrai personne. Les 5 personnes doivent distinguer le robot de l'homme, et si ils y arrivent pas, alors ils disent que l'intelligence du robot a réussi le test.</template>
+</category>
+
+<category>
+	<pattern>NON</pattern><that>C EST UNE PERSONNE QUI A CRÉÉ UN TEST LE TEST DE TURING TU VEUX QUE JE T EN PARLE</that>
+	<template>D'accord <get name="username" />.</template>
+</category>
+</aiml>

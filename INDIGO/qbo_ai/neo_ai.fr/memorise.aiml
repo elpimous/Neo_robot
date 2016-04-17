@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- fichier permettant l'apprentissage d'infos -->
+    <!-- prononcer apprentissage, puis la phrase.   -->
+
+    <!-- ex : Prononcer "c'est quoi asimov ?" >> "je ne sais pas" -->
+    <!-- Prononcer : "mémorise   asimov est un ensemble de règles concernant les robots" -->
+    <!-- Prononcer : "c'est quoi asimov ?" >> "c'est un ensemble de règles concernant les robots" -->
+
+<aiml>
+
+  <category>
+    <pattern>MEMORISATION</pattern>
+    <template>
+    <random>
+    <li>Bien, je mémorise la donnée suivante </li>
+    <li>J'enregistre ce que tu viens de dire </li>
+    <li>Bien, je mémorise cette information </li>
+    <li>J'enregistre cette information </li>
+    <li>Je retiens cela </li>
+    <li>J'enregistre que </li>
+    <li>Je note que </li>
+    <li>Je retiens que </li>
+    <li>Je sauvegarde </li>
+    <li>Je sauvegarde la donnée suivante </li>
+    <li>Mise à jour de ma base de donnée </li>
+    <li>Je mets à jour ma base de donnée </li>
+    <li>Bien reçu, j'alimente ma base de donnée avec cette entrée </li>
+    <li>Bien reçu, j'enregistre cette entrée </li>
+    <li>Bien reçu, je sauvegarde cette entrée </li>
+    </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>MÉMORISE * EST *</pattern>
+    <template>
+      <srai>MEMORISATION </srai> <star index="1"/> est <star index="2"/>.
+    </template>
+  </category>
+
+  <category>
+    <pattern>MÉMORISE * SONT *</pattern>
+    <template>
+      <srai>MEMORISATION </srai> <star index="1"/> sont <star index="2"/>.
+    </template>
+  </category>
+
+  <category>
+    <pattern>MÉMORISE * SIGNIFIE *</pattern>
+    <template>
+      <srai>MEMORISATION </srai> <star index="1"/> signifie <star index="2"/>.
+    </template>
+  </category>
+
+</aiml>
+

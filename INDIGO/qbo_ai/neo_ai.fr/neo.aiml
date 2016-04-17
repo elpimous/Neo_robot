@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+<aiml>
+<!--author: neo-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>NEO *</pattern>
+	<template><srai><star /></srai></template>
+</category>
+<category>
+	<pattern>* NEO</pattern>
+	<template><srai><star /></srai></template>
+</category>
+<category>
+	<pattern>*</pattern>
+	<template>
+	<random>
+		<li>Je ne saurais pas dire,</li>
+		<li>Je ne sais pas,</li>
+		<li>je ne comprends pas ta phrase,</li>
+		<li>non, je ne vois pas,</li>
+	</random>
+	</template>
+</category>
+</aiml>
