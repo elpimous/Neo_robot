@@ -1,0 +1,28 @@
+icons:
+°°°°°°°°°°°°°
+a = happy; 
+b = neutral;
+c = sad.
+°°°°°°°°°°°°°
+
+
+chanceflurries	B
+chancerain	B
+chancesleet	B
+chancesnow	B
+chancetstorms	B
+clear		A
+cloudy		A
+flurries	B  
+fog		A
+hazy		A
+mostlycloudy	A
+mostlysunny	A
+partlycloudy	A
+partlysunny	A
+sleet		C
+rain		C
+snow		C
+sunny		A
+tstorms		C
+
