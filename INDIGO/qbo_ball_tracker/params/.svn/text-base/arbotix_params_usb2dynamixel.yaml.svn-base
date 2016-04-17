@@ -1,0 +1,12 @@
+port: /dev/ttyUSB0
+baud: 1000000
+rate: 50
+read_rate: 20
+write_rate: 20
+sync_read: False
+sync_write: True
+
+dynamixels: {
+    head_pan_joint: {id: 1, max_speed: 180, min_angle: -145, max_angle: 145},
+    head_tilt_joint: {id: 2, max_speed: 180, min_angle: -60, max_angle: 90}
+}

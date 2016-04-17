@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/745/trunk/pi_tutorials/pi_head_tracking_tutorial/launch
+END
+camera.launch
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/744/trunk/pi_tutorials/pi_head_tracking_tutorial/launch/camera.launch
+END
+arbotix.launch
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/694/trunk/pi_tutorials/pi_head_tracking_tutorial/launch/arbotix.launch
+END
+openni_node.launch
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/469/trunk/pi_tutorials/pi_head_tracking_tutorial/launch/openni_node.launch
+END
+camshift.launch
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/745/trunk/pi_tutorials/pi_head_tracking_tutorial/launch/camshift.launch
+END
+arbotix_usb2dynamixel.launch
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/551/trunk/pi_tutorials/pi_head_tracking_tutorial/launch/arbotix_usb2dynamixel.launch
+END
+test_urdf.launch
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/550/trunk/pi_tutorials/pi_head_tracking_tutorial/launch/test_urdf.launch
+END
+robotis.launch
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/469/trunk/pi_tutorials/pi_head_tracking_tutorial/launch/robotis.launch
+END
+test_head_track.launch
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/745/trunk/pi_tutorials/pi_head_tracking_tutorial/launch/test_head_track.launch
+END
+head_track.launch
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/698/trunk/pi_tutorials/pi_head_tracking_tutorial/launch/head_track.launch
+END

@@ -1,0 +1,5 @@
+{absolute_exposure: -59652324, brightness: -298261618, camera_info_url: '', camera_name: camera,
+  contrast: 178956970, device: /dev/video1, exposure: -656175559, format_mode: 1,
+  frame_id: /camera, frame_rate: 30.0, gain: 59652323, height: 480, power_line_frequency: -2147483648,
+  saturation: 1431655767, sharpness: -536870912, white_balance_temperature: true,
+  width: 640}

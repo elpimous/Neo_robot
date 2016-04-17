@@ -1,0 +1,10 @@
+<launch>
+  <node pkg="rbx1_apps" name="object_tracker" type="object_tracker.py" output="screen">
+    <remap from="camera_info" to="/stereo/left/camera_info" />
+  </node>
+
+    <node name="dynamic_reconfigure" pkg="dynamic_reconfigure" type="reconfigure_gui" />
+    
+    <node name="dynamic_reconfigure_load" pkg="dynamic_reconfigure" type="dynparam" args="load /uvc_cam_node $(find qbo_ball_tracker)/params/my_camera.yaml" />
+    
+</launch>

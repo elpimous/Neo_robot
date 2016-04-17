@@ -1,0 +1,9 @@
+<launch>
+	<node name="arbotix" pkg="arbotix_python" type="driver.py" output="screen">
+		<rosparam file="$(find pi_head_tracking_tutorial)/params/arbotix_params_usb2dynamixel.yaml" command="load" />
+	</node>
+	
+    <node name="arbotix_joint_controller" pkg="arbotix_controllers" type="joint_controller.py" output="screen">
+        <rosparam param="joints">[head_pan_joint, head_tilt_joint]</rosparam>
+    </node>
+</launch>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/550/trunk/pi_tutorials/pi_head_tracking_tutorial/params
+END
+arbotix_params_usb2dynamixel.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/550/trunk/pi_tutorials/pi_head_tracking_tutorial/params/arbotix_params_usb2dynamixel.yaml
+END
+philips_spc1300.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/469/trunk/pi_tutorials/pi_head_tracking_tutorial/params/philips_spc1300.yaml
+END
+arbotix_params.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/549/trunk/pi_tutorials/pi_head_tracking_tutorial/params/arbotix_params.yaml
+END

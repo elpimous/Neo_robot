@@ -1,0 +1,10 @@
+<launch>
+    <node name="uvc_cam_node" pkg="uvc_cam" type="uvc_cam_node" output="screen">
+        <param name="device" value="/dev/video1" />
+    </node>
+
+    <node name="dynamic_reconfigure" pkg="dynamic_reconfigure" type="reconfigure_gui" />
+    <!--
+    <node name="dynamic_reconfigure_load" pkg="dynamic_reconfigure" type="dynparam" args="load /uvc_cam_node $(find pi_head_tracking_tutorial)/params/my_camera.yaml" />
+    -->
+</launch>

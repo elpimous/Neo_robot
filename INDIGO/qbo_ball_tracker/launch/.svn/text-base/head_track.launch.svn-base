@@ -1,0 +1,39 @@
+<launch>
+   <!-- For the USB2Dynamixel use controller value "robotis".  For the ArbotiX, use "arbotix". For ArbotiX with a USB2Dynamixel controller use "arbotix_usb2dynamixel"-->
+   <arg name="controller" value="arbotix_usb2dynamixel" />
+	
+   <!-- For the Kinect, set the kinect arg = True. For a webcam, set the value = False -->
+   <arg name="kinect" value="False" />
+
+   <!-- Load the URDF/Xacro model of our robot -->
+   <param name="robot_description" command="$(find xacro)/xacro.py '$(find pi_head_tracking_tutorial)/urdf/kinectbot.urdf.xacro'" />
+
+   <!-- Publish the robot state -->
+   <!--
+   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
+      <param name="publish_frequency" value="20.0"/>
+   </node>
+   -->
+
+   <include if="$(arg kinect)" file="$(find pi_head_tracking_tutorial)/launch/openni_node.launch" />
+   <include unless="$(arg kinect)" file="$(find pi_head_tracking_tutorial)/launch/camera.launch" />
+	
+   <node if="$(arg kinect)" name="vision_node" pkg="pi_head_tracking_tutorial" type="vision_node.py" output="screen">
+      <remap from="input" to="/camera/rgb/image_color" />
+      <remap from="camera_info" to="/camera/rgb/camera_info" />
+   </node>
+    
+   <node unless="$(arg kinect)" name="vision_node" pkg="pi_head_tracking_tutorial" type="vision_node.py" output="screen">
+      <remap from="input" to="/camera/image_raw" />
+      <remap from="camera_info" to="/camera/camera_info" />
+   </node>
+    
+    <node name="head_track_node" pkg="pi_head_tracking_tutorial" type="head_track_node.py" output="screen">
+       <remap if="$(arg kinect)" from="camera_info" to="/camera/rgb/camera_info" />
+       <remap unless="$(arg kinect)" from="camera_info" to="/camera/camera_info" />
+    </node>
+    
+    <!-- Comment out the next line if you do not yet have a servo controller attached -->
+    <include file="$(find pi_head_tracking_tutorial)/launch/$(arg controller).launch" />
+    
+</launch>

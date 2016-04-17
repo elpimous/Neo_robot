@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find qbo_ball_tracker)/launch/camshift.launch" />
+    <node name="head_track_node" pkg="qbo_ball_tracker" type="head_track_node.py" output="screen">
+       <remap from="camera_info" to="/camera/camera_info" />
+    </node>
+</launch>

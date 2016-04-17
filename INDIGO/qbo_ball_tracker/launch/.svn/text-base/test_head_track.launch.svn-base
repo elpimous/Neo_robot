@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find pi_head_tracking_tutorial)/launch/camshift.launch" />
+    <node name="head_track_node" pkg="pi_head_tracking_tutorial" type="head_track_node.py" output="screen">
+       <remap from="camera_info" to="/camera/camera_info" />
+    </node>
+</launch>

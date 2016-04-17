@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find qbo_stereo_selector)/launch/qbo_stereo_selector.launch" />
+    <node name="camshift_node" pkg="qbo_ball_tracker" type="camshift_node.py" output="screen">
+      <remap from="input" to="/camera/image_raw" />
+      <remap from="camera_info" to="/camera/camera_info" />
+    </node>
+</launch>

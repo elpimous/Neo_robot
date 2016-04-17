@@ -1,0 +1,4 @@
+{absolue_exposure: 500, brightness: -5, camera_info_url: '', camera_name: camera,
+  contrast: 25, device: /dev/video1, exposure: 1, format_mode: 1, frame_id: /camera,
+  frame_rate: 20.0, gain: 10, height: 240, power_line_frequency: 0, saturation: 50,
+  sharpness: 2, white_balance_temperature: true, width: 320}
