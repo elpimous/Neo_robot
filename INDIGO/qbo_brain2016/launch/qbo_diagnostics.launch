@@ -1,0 +1,14 @@
+<launch>
+    
+  <arg name="rate"   default="1.0"/>
+  
+  
+    <node pkg="qbo_brain2016"  name="diagnosticFrontLeft" type="diagnostic_front_left.py" output="screen">
+          <param name="diagnosticFrontLeft/rate" value="$(arg rate)"/>
+    </node>
+    
+    <node pkg="qbo_brain2016"  name="diagnosticFrontRight" type="diagnostic_front_right.py" output="screen">
+          <param name="diagnosticFrontRight/rate" value="$(arg rate)"/>
+    </node>
+
+</launch>

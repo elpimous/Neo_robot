@@ -1,0 +1,29 @@
+<launch>
+
+  <!--- Run the robot -->
+  <include file="$(find qbo_bringup)/launch/minimal.launch" >
+  </include>
+
+  <!--- Run the kinect -->
+  <include file="$(find qbo_bringup)/launch/includes/3dsensor.launch" >
+    <arg name="rgb_processing" value="true" />
+    <arg name="depth_registration" value="true" />
+    <arg name="depth_processing" value="true" />
+    <arg name="scan_topic" value="/scan" />
+  </include>
+    
+  <!-- *** Write here your map *** -->
+  <arg name="map" default="boncourtMars2016.yaml" />
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find qbo_navigation)/maps/$(arg map)"/>
+
+  <!--- Run AMCL -->
+  <include file="$(find qbo_navigation)/launch/Neo/Neo_amcl_params.launch" />-->
+       
+  <!--- Run Move Base -->
+  <include file="$(find qbo_navigation)/launch/Neo/Neo_move_base_amcl.launch" />-->
+
+
+  <!-- launch qbo_brain2016 node-->
+    <node name="qbo_brain2016" pkg="qbo_brain2016" type="qbo_brain2016_3.py" output="screen" />
+
+</launch>
