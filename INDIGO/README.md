@@ -1,14 +1,132 @@
 ROS INDIGO
 ==========
-https://github.com/HumaRobotics/ros-indigo-qbo-packages
-MANON WORK. THANKS MANON
 
-    Install Ubuntu 14.04 (I made a bootable USB stick using http://unetbootin.sourceforge.net/ Don't forget to enable booting from USB in the boot options (for me, F2 when starting, enable USB, then F10 and boot from card reader))
-    Install ROS Indigo (http://wiki.ros.org/indigo/Installation/Ubuntu)
-    Install a few dependencies sudo apt-get install libpam-systemd libsystemd-daemon0 libsystemd-login0 libudev1 systemd-services udev ros-indigo-uvc-camera ros-indigo-camera-calibration-parsers ros-indigo-image-view
-    add your user in dialout and video groups to be able to use USB and video ports. (My user name is qbobot, adapt to your setup) sudo usermod -a -G dialout qbobot sudo usermod -a -G video qbobot (to list the groups you are in : cat /etc/group | grep qbobot )
-    Create a catkin workspace (http://wiki.ros.org/catkin/Tutorials/create_a_workspace). I called the workspace ros instead of catkin_ws, but this has no importance. In the src folder, there is a CMakeLists.txt link. Save it somewhere else, then remove src folder.
-    In your catkin workspace, clone this directory in a folder named src: git clone git@github.com:HumaRobotics/ros-indigo-qbo-packages.git src Inside the src folder, put back the CMakeLists.txt you saved before.
-    compile: catkin_make
-    run (don't forget to do a 'source ./devel/setup.bash' in your catkin_workspace in each new terminal). Terminal 1 : roscore Terminal 2 : roslaunch qbo_arduqbo qbo_arduqbo_default.launch You can now look at published topics and move the motors and light up the mouth and nose
+some links need changes !!!
 
+***********************************************
+* all needed parts for qbo on ros hydro 12.04 *
+* Work of Atom, with some corrections, *
+***********************************************
+
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu precise main" > /etc/apt/sources.list.d/ros-latest.list'
+
+wget https://raw.githubusercontent.com/ros/r ... er/ros.key -O - | sudo apt-key add -
+
+sudo apt-get update
+
+sudo apt-get install ros-hydro-desktop-full
+
+sudo apt-get install gstreamer0.10-pocketsphinx
+
+sudo rosdep init
+
+rosdep update
+
+echo "source /opt/ros/hydro/setup.bash" >> ~/.bashrc
+
+source ~/.bashrc
+
+sudo apt-get install python-rosinstall
+
+sudo chown -R <your login on ros>:users /opt/ros/hydro
+
+***********************************************
+* copy STACKS folder on ros
+***********************************************
+
+sudo apt-get build-dep pulseaudio
+
+sudo apt-get install pulseaudio libpulse-dev
+
+sudo apt-get install ros-hydro-camera-umd
+
+sudo apt-get install ros-hydro-image-pipeline
+
+chmod 777 /opt/ros/hydro/stacks/qbo_face_vision/qbo_face_recognition/faces/new_faces
+
+chmod 777 /opt/ros/hydro/stacks/qbo_face_vision/qbo_face_recognition/faces/faces_db
+
+sudo ln -s /opt/ros/hydro/stacks/qbo_launchers/qbo_start_service /etc/init.d/
+
+sudo update-rc.d qbo_start_service defaults 99
+
+sudo mv /opt/ros/hydro/stacks/qbo_mjpeg_server/Dependencies/CvBridge.h /opt/ros/hydro/include/cv_bridge
+
+sudo apt-get install python-cherrypy3
+
+sudo apt-get install python-xmmsclient
+
+sudo apt-get install python-poster
+
+sudo apt-get install xmms2
+
+sudo apt-get install openssl
+
+chmod 777 /opt/ros/hydro/stacks/qbo_object_recognition/objects/objects_db
+
+chmod 777 /opt/ros/hydro/stacks/qbo_object_recognition/objects/new_objects
+
+sudo apt-get install julius
+
+sudo apt-get install libjulius-dev
+
+sudo apt-get install libasound2-dev
+
+
+sudo apt-get install festival
+
+sudo cp /etc/festival.scm /etc/festival.scm.bak
+
+sed "/aplay/c\(Parameter.set\ \'Audio_Command\ \"paplay\ \$FILE\"\)" /etc/festival.scm.bak > /etc/festival.scm
+
+rm /etc/festival.scm.bak
+
+sudo add-apt-repository ppa:fkrull/deadsnakes
+
+sudo apt-get update
+
+sudo apt-get install python2.6 python2.6-dev
+
+sudo rmmod uvcvideo
+
+sudo modprobe uvcvideo quirks=128
+
+sudo gedit /etc/modprobe.d/uvcvideo.conf
+then add this line "options uvcvideo quirks=128"
+
+sudo cp -R /opt/ros/hydro/share/OpenCV /usr/share/opencv
+
+sudo apt-get remove modemmanager
+
+sudo usermod -a -G dialout <you user name>
+
+chmod -R 777 /opt/ros/hydro/stacks/qbo_webi/src/xmms2/songs/
+
+chmod -R 777 /opt/ros/hydro/stacks/qbo_webi/src/recorder/videos/
+
+chmod 666 /opt/ros/hydro/stacks/qbo_linphone/config/linphonerc.in
+
+export PYTHONPATH=/opt/ros/hydro/stacks/qbo_webi/src/teleoperation/sip2rtmp/p2p-sip:$PYTHONPATH
+
+
+
+***************************
+* building ! *
+***************************
+
+do rosmake on cereal, and arduqbo
+do a catkin_make
+
+
+*****************************
+* And for XTION new model : *
+*****************************
+
+sudo apt-get install ros-hydro-openni-camera
+
+sudo apt-get install ros-hydro-openni-launch
+
+sudo chmod 666 /etc/openni/GlobalDefaults.ini
+
+sudo gedit /etc/openni/GlobalDefaults.ini
+remove the ";" so it should be this : UsbInterface=2
