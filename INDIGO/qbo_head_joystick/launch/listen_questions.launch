@@ -1,0 +1,10 @@
+<launch>
+
+  <!-- launch qbo_listen-->
+  <node name="qbo_listen" pkg="qbo_listen" type="qbo_listen.py" output="screen">
+    <param name="hmm" value="$(find qbo_listen)/config/fr/fr_model/cmusphinx-fr-ptm-5.2"/>
+    <param name="lm" value="$(find qbo_listen)/config/fr/questions/questions.lm.bin"/>
+    <param name="dic" value="$(find qbo_listen)/config/fr/questions/questions.dic"/>
+  </node>
+
+</launch>

@@ -1,0 +1,8 @@
+<launch>
+
+  <!-- launch qbo_listen-->
+  <node name="qbo_listen" pkg="qbo_listen" type="neo_google_listen.py" output="screen">
+
+  </node>
+
+</launch>

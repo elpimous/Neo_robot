@@ -1,0 +1,7 @@
+<launch>
+
+  <!-- launch qbo_listen-->
+  <node name="qbo_listen" pkg="qbo_listen" type="qbo_listen_new.py" output="screen">
+  </node>
+
+</launch>

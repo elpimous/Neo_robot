@@ -1,0 +1,14 @@
+<launch>
+
+  <!-- launch voice disabler-->
+    <!--  <include file="$(find qbo_audio_control)/launch/audio_control_listener.launch" /> -->
+
+
+  <!-- launch qbo_listen-->
+  <node name="qbo_listen" pkg="qbo_listen" type="neo_listen.py" output="screen">
+    <param name="hmm" value="$(find qbo_listen)/config/fr/fr_model/cmusphinx-fr-ptm-5.2"/>
+    <param name="lm" value="$(find qbo_listen)/config/fr/vocal_move/vocal_move.lm"/>
+    <param name="dic" value="$(find qbo_listen)/config/fr/vocal_move/vocal_move.dic"/>
+  </node>
+
+</launch>
