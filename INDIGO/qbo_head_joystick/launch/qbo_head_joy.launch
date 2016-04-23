@@ -1,0 +1,6 @@
+<launch>
+
+    <!--- Run the joy node -->
+    <include file="$(find qbo_head_joystick)/launch/qbo_head_joy.launch" >
+
+</launch>

@@ -37,7 +37,7 @@ class headMoveJoy():
     def values(self):
         rospy.wait_for_message("joint_states", JointState)
         self.up = self.originHT+0.1
-	self.down = self.originHT-0.1
+	self.down = self.originHT-0.2
 	self.left = self.originHP+0.1
 	self.right = self.originHP-0.1
 
