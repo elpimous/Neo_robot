@@ -2,7 +2,7 @@ needs :
 °°°°°°°
 qbo_listen, 
 qbo_talk, 
-qbo_hand_detector
+qbo_head_joystick
 
 
 dependencies :
@@ -22,8 +22,6 @@ stop
 titre
 combien
 
-A hand gesture node is used to pause audio, waiting for orders.
-- pass slowly your hand in front of right eye (30 to 60 cm), and music should pause...
-After a while without orders, music restarts.
+Gently press on QBO head (left or right) and music will pause for 5 sec
 
 ######################################################################################
