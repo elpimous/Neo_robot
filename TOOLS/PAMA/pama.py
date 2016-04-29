@@ -13,16 +13,23 @@
 #
 ##############################################################
 
-import sys, os, re
+import re
 import subprocess  
 import glob
-import pyaudio, wave
+import tempfile
+import pyaudio
+import sys
+import wave
+import os
 import difflib
 import tkMessageBox
 import matplotlib.pyplot as plt
 import numpy as np
 import fileinput
 from pylab import *
+from time import sleep
+from array import array
+from struct import pack
 from tkMessageBox import *
 from random import choice
 
@@ -48,7 +55,7 @@ def vp_start_gui():
     '''Starting point when module is the main routine.'''
     global val, w, root
     root = Tk()
-    root.title('Pocketsphinx_Acoustic_Model_Adaptation -- ver.01.02 --                     elpimous12@orange.fr  ')
+    root.title('Pocketsphinx_Acoustic_Model_Adaptation -- ver.02.00 --                     elpimous12@orange.fr  ')
     geom = "786x450"
     root.geometry(geom)
     w = Pocketsphinx_Acoustic_Model_Adaptation (root)
@@ -94,7 +101,7 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
         master.configure(relief="ridge")
         master.configure(background="#344c78")
         master.configure(cursor="icon")
-        master.configure(height="300")
+        master.configure(height="350")
         master.configure(highlightbackground="#9eacbe")
         master.configure(highlightcolor="#98abc0")
         master.configure(width="600")
@@ -103,6 +110,14 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
         self.dic_value=StringVar()
         self.text_value=StringVar()
         self.dir_value=StringVar()
+	self.THRESHOLD = 2000
+	self.CHUNK = 1024
+	self.FORMAT = pyaudio.paInt16
+	self.CHANNELS = 1
+	self.RATE = 16000
+	self.SILENCE_DURATION = 40 # end recording after period of silence reaches this value
+	self.WAIT_DURATION = 300 # end recording if no input before this value is reached
+	self.SPEECH_DURATION = 300 # end recording if too much input
         self.notext = False
         self.automode = False
         self.miss_words = False
@@ -110,15 +125,16 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
         self.lang = ""
         self.lang2 = ""
         self.mode = ""
-        self.i = 1
+        ################# change for next lign   ############################
+        self.i = 168
         self.menubar = Menu(master,font=self.font10,bg=_bgcolor,fg=_fgcolor)
         master.configure(menu = self.menubar)
-
+        """
         erase_files = self.racine+"/adapt*"
         print "directory cleaned !"
         for f in glob.glob(erase_files):
           os.remove(f)
-
+        """
 
         # language selected at startup
         open_racines = open(self.racine+"/config/pama.config", "r")
@@ -253,14 +269,14 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
         self.Message_racines.configure(width=416)
 
         self.Entry1 = Entry(master,textvariable=self.text_value)
-        self.Entry1.place(relx=0.04, rely=0.47, relheight=0.11, relwidth=0.93)
+        self.Entry1.place(relx=0.04, rely=0.47, relheight=0.21, relwidth=0.93)
         self.Entry1.configure(background="white")
         self.Entry1.configure(font=self.font10)
         self.Entry1.configure(justify=CENTER)
         self.Entry1.configure(width=740)
 
         self.Message1 = Message(master)
-        self.Message1.place(relx=0.04, rely=0.64, relheight=0.3, relwidth=0.55)
+        self.Message1.place(relx=0.04, rely=0.71, relheight=0.25, relwidth=0.55)
         self.Message1.configure(font=font14)
         self.Message1.configure(justify=CENTER)
         if self.en:
@@ -273,7 +289,7 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
 
 # rec Button
         self.Button1 = Button(master, highlightthickness=0, borderwidth=0, command=self.REC)
-        self.Button1.place(relx=0.7, rely=0.62, height=150, width=150)
+        self.Button1.place(relx=0.7, rely=0.68, height=130, width=150)
         self.Button1.configure(background = "#344c78")
 
         self.recB = PhotoImage(file=self.racine+"/gif/rec.gif")
@@ -289,6 +305,17 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
           self.Message2.configure(text='''J'attends votre choix''')
         self.Message2.configure(width=200)
 
+        """
+# stop_rec Button
+        self.Button10 = Button(master, highlightthickness=0, borderwidth=0, command=self.REC)
+        self.Button10.place(relx=0.78, rely=0.62, height=150, width=150)
+        self.Button10.configure(background = "#344c78")
+
+        self.recB10 = PhotoImage(file=self.racine+"/gif/stop.gif")
+        self.Button10.configure(image=self.recB10)
+        self.Button10.configure(text='''STOP''')
+        self.Button10.configure(width=137)
+        """
 
 # info Button
         self.Button2 = Button(master, command=self.racine_infos)
@@ -428,12 +455,19 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
     def REC(self):
 
         # change button pic
+        #self.Button1 = Button(master, highlightthickness=0, borderwidth=0, command=self.stop_recording)
         self.recB = PhotoImage(file=self.racine+"/gif/stop.gif")
         self.Button1.configure(image=self.recB)
         root.update()
         self.text_popup()
         self.recording_voice()
 
+
+    def stop_recording(self):
+        print "stop rec pushed"
+        self.recB11 = PhotoImage(file=self.racine+"/gif/rec.gif")
+        self.Button10.configure(image=self.recB11)
+        self.stop_needed = True
 
 
 # recover existing racines, or let blank
@@ -462,9 +496,21 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
 
     def recording_voice(self):
       if self.notext == False:
-       #micro = os.system("rec --encoding signed-integer --bits 16 --channels 1 --rate 16000 "+self.racine+"/adapt"+str(self.i)+".wav silence 1 0.1 1% 1 1.5 1%")
-       micro = os.system("rec --encoding signed-integer --bits 16 --channels 1 --rate 16000 "+self.racine+"/adapt"+str(self.i)+".wav silence -l 0% 1.0 2.5 1.0%")
-       micro
+       # rec file and stop after 3sec silence,
+       os.system("rec --encoding signed-integer --bits 16 --type wav --channels 1 --rate 16000 tempWavFile.wav silence -l 0% 1.0 2.5 1.0%")
+       print "audio 1 ok"
+       sleep(0.2)
+       print "eeeeeeeeeeeeeeeeeeee"
+
+       # remove silence in front of audiofile, and let 0.2s silence, and reverse file
+       os.system("rec tempWavFile.wav tempWavFile2.wav silence 1 0.2 1% reverse")
+       print "audio 2 ok"
+       sleep(0.3)
+       # remove silence in end of audiofile, and let 0.2s silence, and reverse file, for normal order
+       os.system("rec tempWavFile2.wav "+self.racine+"/adapt"+str(self.i)+".wav silence 1 0.2 1% reverse")
+       print "audio 3 ok"
+       sleep(0.3)
+
        self.recB = PhotoImage(file=self.racine+"/gif/rec.gif")
        self.Button1.configure(image=self.recB)
        root.update()
@@ -606,7 +652,9 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
 
 # backup text, and save informations in 2 differents text files, NEEDED FOR CMUSPHINX ADAPT PROCESS
     def text(self):
-      a = self.read_text.lower().replace("-"," ").replace(",","").replace(".","").replace("...","").replace("?","").replace("!","").replace(":","").replace(";","").replace("(","").replace(")","").replace("'"," ").replace("’"," ").replace('"',"").replace("l'","l ").replace("d'","d ").replace("c'","c ").replace("j'","j ").replace("s'","s ").replace("t'","t ").replace("qu'","qu ")
+
+      a = self.read_text.lower().replace("-"," ").replace(",","").replace(".","").replace("...","").replace("?","").replace("!","").replace(":","").replace(";","").replace("(","").replace(")","").replace("'"," ").replace("’"," ").replace('"',"")
+
       open_adapt = open(self.racine+"/adapt.transcription", "a")
       open_adapt
       open_adapt.write("<s> ")
@@ -643,12 +691,15 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
         return self.ph_out
 
 
+########################################################################################
 ##################################  PROCESSING  ########################################
+########################################################################################
+
 
     def process(self):
         print "\n\n\n ********************************************"
         print " *    GENERATING ACOUSTIC FEATURE FILES     *"
-        print " *     on génère le modèle acoustique :     *"
+        print " *     on génère lee fichiers MFCC:     *"
         print " ********************************************\n\n\n"
         os.system ("cd "+self.racine+" && sphinx_fe -argfile "+self.hmm+"/feat.params \
         -samprate 16000 -c "+self.racine+"/adapt.fileids \
@@ -661,11 +712,13 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
         print " ********************************************\n\n\n"
         os.system ("pocketsphinx_mdef_convert -text "+self.hmm+"/mdef "+self.hmm+"/mdef.txt")
 
+
         print "\n\n\n ********************************************"
         print " *     ACCUMULATION OBSERVATION COUNTS      *"
         print " *     création des profiles :              *"
         print " ********************************************\n\n\n"
         self.runCmdOutput("cd "+self.racine+" && ./bw  -hmmdir "+self.hmm+"  -moddeffn "+self.hmm+"/mdef.txt  -ts2cbfn .ptm.  -feat 1s_c_d_dd  -svspec 0-12/13-25/26-38  -cmn current  -agc none  -dictfn "+self.dic+"  -ctlfn "+self.racine+"/adapt.fileids  -lsnfn "+self.racine+"/adapt.transcription  -accumdir .")
+
 
         print "\n *********************************************************"
         print " *                  READ CARFULLY LOG !!!                *"
@@ -683,9 +736,36 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
           print " *********************************************\n\n\n"
 
           os.system ("cd "+self.racine+" && ./mllr_solve     -meanfn "+self.hmm+"/means     -varfn "+self.hmm+"/variances     -outmllrfn mllr_matrix -accumdir .")
+
+
+          print "\n\n\n ********************************************"
+          print " *            INSERTING MATRIX IN MODEL           *"
+          print " *   reconstruction du modèle avec les matrix :   *"
+          print " ********************************************\n\n\n"
+          os.system ("cd "+self.racine+" && ./mllr_transform -inmeanfn "+self.hmm+"/means -outmeanfn "+self.hmm+"/new_means -mllrmat "+self.racine+"/mllr_matrix")
+
+
+          print "\n\n\n ********************************************"
+          print " *        REPLACE MEANS WITH NEW ONE        *"
+          print " *  remplacement du means par le nouveau    *"
+          print " *     et efface l' ancien fichier means    *"
+          print " ********************************************\n\n\n"
+          os.system ("cp "+self.hmm+"/new_means"+self.hmm+"/means")
+          os.system ("rm "+self.hmm+"/new_means")
+
+
+          print "\n\n\n ********************************************"
+          print " *  AGAIN, ACCUMULATION OBSERVATION COUNTS  *"
+          print " *       2 ème création des profiles        *"
+          print " *         avec le means modifié :          *"
+          print " ********************************************\n\n\n"
+          self.runCmdOutput("cd "+self.racine+" && ./bw  -hmmdir "+self.hmm+"  -moddeffn "+self.hmm+"/mdef.txt  -ts2cbfn .ptm.  -feat 1s_c_d_dd  -svspec 0-12/13-25/26-38  -cmn current  -agc none  -dictfn "+self.dic+"  -ctlfn "+self.racine+"/adapt.fileids  -lsnfn "+self.racine+"/adapt.transcription  -accumdir .")
+
+
           print "\n\n\n ***********************************************"
           print " *  UPDATING THE ACOUSTIC MODEL WITH MAP UTIL  *"
-          print " *     mise a jour du modèle avec le MAP :     *"
+          print " *      mise a jour du modèle avec le MAP      *"
+          print " *              sans les variances             *"
           print " ***********************************************\n\n\n"
           os.system("cd "+self.racine)
           os.system("./map_adapt \
@@ -697,9 +777,11 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
     -tmatfn "+self.hmm+"/transition_matrices \
     -accumdir . \
     -mapmeanfn "+self.hmm+"/means \
-    -mapvarfn "+self.hmm+"/variances \
     -mapmixwfn "+self.hmm+"/mixture_weights \
     -maptmatfn "+self.hmm+"/transition_matrices")
+
+
+          """
           print "\n\n\n ******************************************"
           print " *  RECREATING THE ADAPTED SENDUP FILE    *"
           print " *   RECONSTRUCTION DU FICHIER SENDUP :   *"
@@ -715,6 +797,8 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
           print " *     on reconverti le mdef en bin:    *"
           print " ****************************************\n\n\n"
           os.system ("pocketsphinx_mdef_convert -bin "+self.hmm+"/mdef.txt "+self.hmm+"/mdef")
+          """
+
 
           print "\n\n\n ************************************************************************"
           print "   Congratulations! You now have an adapted acoustic model!\n  You can delete the files cmusphinx-fr-ptm-5.2-adapt/mixture_weights\n  and cmusphinx-fr-ptm-5.2-adapt/mdef.txt\n "
@@ -739,8 +823,9 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
             else:
               root.destroy()
                
-  
+######################################################################################
 ##################################  ACCURACY  ########################################
+######################################################################################
 
 # Accuracy popup
     def Accuracy(self):
@@ -903,6 +988,8 @@ class Pocketsphinx_Acoustic_Model_Adaptation:
       else:
         result = tkMessageBox.showinfo("elpimous@2015","Bravo, vous venez d'adapter votre modèle")
       root.destroy()
+
+
 
 if __name__ == '__main__':
   vp_start_gui()

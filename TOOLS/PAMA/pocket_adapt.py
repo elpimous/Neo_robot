@@ -11,7 +11,7 @@
 #
 #**************************************************************
 
-import os
+import sys, os, re
 import rospy
 import subprocess
 import glob
@@ -26,9 +26,9 @@ class adapt():
     self.racine = os.getcwd()
     # put your direct links here, to avoid each manual input at each startup, if done, you can directly press '2' at startup !
     # placez ici vos liens vers votre modèle acoustique et le rép. d'installation, ainsi vous pourrez presser directement '2' au démarrage !
-    self.lm = self.racine+"/model/french3g62K.lm.bin"
-    self.dic = self.racine+"/model/frenchWords62K.dic"
-    self.hmm = self.racine+"/model/cmusphinx-fr-ptm-5.2-adapt"
+    self.lm = self.racine+"/model/fr.lm.bin"
+    self.dic = self.racine+"/model/fr.dict"
+    self.hmm = self.racine+"/model/fr_ptm_5.2"
     self.link = self.racine
 
 
@@ -304,8 +304,58 @@ class adapt():
     else :
         print "\n\n  ###  OK BYE  ###"
 
+# recover errors from terminal, write missing words in txt file
+  def read_words(self):
+      open_read = self.ph_err      # read terminal and look for missing words
+      open_newwords = open(self.racine+"/adapt.newwords", "w")      # open txt to save missing words if exists
+      print "============================================================="
+      print self.ph_err
+      print "============================================================="
+      print open_read
+      m = re.search("Unable to lookup word '(.+?)' in the dictionary", open_read) # localize string between 2 other strings
+      if m:
+        self.miss_words = True
+        found = m.group(1)
+        open_newwords.write(found+"\n")
+      else :
+        self.miss_words = False 
+      open_newwords.close()
 
 
+
+# insert missing words in popup alert
+  def missing_words(self):
+      self.read_words()
+      miss = open(self.racine+"/adapt.newwords", "r")      # open txt to read missing words if exists
+      self.Errors = miss.read()
+      if self.Errors== "":
+         self.miss_words = False
+      miss.close()
+
+
+############# recover terminal infos, needed for compilation errors finding ###########
+
+
+  def runCmdOutput(self, cmd, timeout=None):
+        self.ph_out = None # process output
+        self.ph_err = None # stderr
+        self.ph_ret = None # return code
+        p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        if not timeout:
+            self.ph_ret = p.wait()
+        else:
+            fin_time = time.time() + timeout
+            while p.poll() == None and fin_time > time.time():
+                time.sleep(1)
+            if fin_time < time.time():
+                os.kill(p.pid, signal.SIGKILL)
+                raise OSError("Process timeout has been reached")
+            self.ph_ret = p.returncode
+        self.ph_out, self.ph_err = p.communicate()
+        return self.ph_out
+
+
+##################################  PROCESSING  ########################################
 
   def gen_acoustic(self):
     os.system('clear')
@@ -321,13 +371,15 @@ class adapt():
     print " *     CONVERTING SENDUP AND MDEF FILES     *"
     print " *     on converti le sendup et le mdef :   *"
     print " ********************************************\n\n\n"
-    os.system ("pocketsphinx_mdef_convert -text "+self.hmm+"/mdef "+self.hmm+"/mdef.txt")
-
+    try :
+      os.system ("pocketsphinx_mdef_convert -text "+self.hmm+"/mdef "+self.hmm+"/mdef.txt")
+    except :
+      pass
     print "\n\n\n ********************************************"
     print " *     ACCUMULATION OBSERVATION COUNTS      *"
     print " *     création des profiles :              *"
     print " ********************************************\n\n\n"
-    os.system ("cd "+self.link+" && sudo ./bw  -hmmdir "+self.hmm+"  -moddeffn "+self.hmm+"/mdef.txt  -ts2cbfn .ptm.  -feat 1s_c_d_dd  -svspec 0-12/13-25/26-38  -cmn current  -agc none  -dictfn "+self.dic+"  -ctlfn "+self.link+"/adapt.fileids  -lsnfn "+self.link+"/adapt.transcription  -accumdir .")
+    self.runCmdOutput("cd "+self.link+" && sudo ./bw  -hmmdir "+self.hmm+"  -moddeffn "+self.hmm+"/mdef.txt  -ts2cbfn .ptm.  -feat 1s_c_d_dd  -svspec 0-12/13-25/26-38  -cmn current  -agc none  -dictfn "+self.dic+"  -ctlfn "+self.link+"/adapt.fileids  -lsnfn "+self.link+"/adapt.transcription  -accumdir .")
 
     print "\n *********************************************************"
     print " *                  READ CARFULLY LOG !!!                *"
@@ -336,15 +388,25 @@ class adapt():
     print " *  de mots inconnus. Sinon, les ajouter au fichier dic  *"
     print " *********************************************************\n"
     print "            !!! IMPORTANT !!! TAKE A PAUSE !!!"
-    self.answer = raw_input("\nIf everything is ok, you can continue.\nElse, pause this program, add missing words on your dic file, and only after, return to the program.\nContinue ? / y, n\n >> ")
-    if self.answer == "y":
 
+    self.missing_words()
+    if self.miss_words == False:
       print "\n Ok, next process..."
       print "\n\n\n *********************************************"
       print " *     CREATING TRANSFORMATION WITH MLLR     *"
       print " *     transformation avec le MLLR :         *"
       print " *********************************************\n\n\n"
-      os.system ("cd "+self.link+" && sudo ./mllr_solve     -meanfn "+self.hmm+"/means     -varfn "+self.hmm+"/variances     -outmllrfn mllr_matrix -accumdir .")
+      os.system ("cd "+self.link+" && sudo ./mllr_solve     -meanfn "+self.hmm+"/means     -varfn "+self.hmm+"/variances     -outmllrfn "+self.hmm+"/mllr_matrix -accumdir .")
+
+
+      print "\n next process..."
+      print "\n\n\n *********************************************"
+      print " *     inserting mllr_matrix in new model     *"
+      print " *                                            *"
+      print " *********************************************\n\n\n"
+      os.system ("cd "+self.link+" && ./mllr_transform -inmeanfn /home/neo/Documents/PAMA/model/fr_ptm_5.2/means -outmeanfn /home/neo/Documents/PAMA/model/fr_ptm_5.2/new_means -mllrmat /home/neo/Documents/PAMA/mllr_matrix")
+      a = raw_input("remplacer le means d'origine par le nouveau, puis cliquez sur entrer")
+
 
       print "\n\n\n ***********************************************"
       print " *  UPDATING THE ACOUSTIC MODEL WITH MAP UTIL  *"
@@ -363,6 +425,20 @@ class adapt():
     -mapmixwfn "+self.hmm+"/mixture_weights \
     -maptmatfn "+self.hmm+"/transition_matrices")
 
+      """
+./map_adapt \
+    -moddeffn /home/neo/Documents/PAMA/model/fr_ptm_5.2/mdef.txt \
+    -ts2cbfn .ptm. \
+    -meanfn /home/neo/Documents/PAMA/model/fr_ptm_5.2/means \
+    -varfn /home/neo/Documents/PAMA/model/fr_ptm_5.2/variances \
+    -mixwfn /home/neo/Documents/PAMA/model/fr_ptm_5.2/mixture_weights \
+    -tmatfn /home/neo/Documents/PAMA/model/fr_ptm_5.2/transition_matrices \
+    -accumdir . \
+    -mapmeanfn /home/neo/Documents/PAMA/model/fr_ptm_5.2/means2 \
+    -mapmixwfn /home/neo/Documents/PAMA/model/fr_ptm_5.2/mixture_weights2 \
+    -maptmatfn /home/neo/Documents/PAMA/model/fr_ptm_5.2/transition_matrices2
+      """
+
       print "\n\n\n ******************************************"
       print " *  RECREATING THE ADAPTED SENDUP FILE    *"
       print " *   RECONSTRUCTION DU FICHIER SENDUP :   *"
@@ -378,13 +454,16 @@ class adapt():
       print " *     on reconverti le mdef en bin:    *"
       print " ****************************************\n\n\n"
       os.system ("pocketsphinx_mdef_convert -bin "+self.hmm+"/mdef.txt "+self.hmm+"/mdef")
-
+      """
       print "\n\n\n ************************************************************************"
       print "   Congratulations! You now have an adapted acoustic model!\n  You can delete the files cmusphinx-fr-ptm-5.2-adapt/mixture_weights\n  and cmusphinx-fr-ptm-5.2-adapt/mdef.txt\n  to save space if you like, because they are not used by the decoder.\n  "
       print "         Bravo, fini, tu as adapté ton modèle acoustique !!! \n     effaces mixture_weights et mdef.txt à l'intérieur ton modele.  "
       print " ************************************************************************\n\n\n"
 
     else :
+      print ("Erreurs lors de la compilation ","  Les mots suivants sont absents du dictionnaire "+(self.Errors))
+      attente =  raw_input("corrigez et cliquez entree")
+       
       self.gen_acoustic()
 
 adapt().menu()
