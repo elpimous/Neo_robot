@@ -1,0 +1,12 @@
+
+######################################################################################################
+#                                                                                                    #
+# A SIMPLE NODE TO LET ROBOT SPEAK AND TELL US IF : CHARGE IS NEEDED / FULL CHARGE / FULL DISCHARGE  #
+#                                                                                                    #
+#                                                                                                    #
+#              Vincent FOUCAULT       elpimous12@orange.fr            FEV. 2015                      #
+######################################################################################################
+
+rev 2 : Jan.2016
+add : strings message for topic: chargeNeeded
+yes,no,,charging

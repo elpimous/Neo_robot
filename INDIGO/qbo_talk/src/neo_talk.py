@@ -40,25 +40,29 @@ class talk():
 
         rospy.init_node('talk', anonymous=True)
         fr1 = rospy.Service('say_fr1', Text2Speach, self.fr1_talk)
-        en1 = rospy.Service('say_en1', Text2Speach, self.en1_talk)
+        #en1 = rospy.Service('say_en1', Text2Speach, self.en1_talk)
         
 
     #TODO  Dic. words fo gain better words sounds ! 
 
     def fr1_talk(self, speak): 
-        # When speaking, micros cut (0 %)  /OFF
-        run_process("amixer -c 1 sset Mic,1 0%")
-        sleep (0.2)
+      #try :
         # open talk_dic_fr to read words inside
-        pkg_dir = roslib.packages.get_pkg_dir("qbo_talk")
+        #pkg_dir = roslib.packages.get_pkg_dir("qbo_talk")
  
         # FR #
-        with open(pkg_dir+"/params/talk_dic_fr","r") as dic:
+        #with open(pkg_dir+"/params/talk_dic_fr","r") as dic:
         # EN #
         #with open(pkg_dir+"/params/talk_dic_en","r") as dic:
 
-          self.dico = dic.read()
-          dico = self.dico.split("\n")
+          #self.dico = dic.read()
+          #dico = self.dico.split("\n")
+
+          # When speaking, micros cut (0 %)  /OFF
+          os.system("amixer -c 1 sset Mic,0 nocap")
+          os.system("amixer -c 1 sset Mic,1 nocap")
+          sleep (0.3)
+          """
           # replace word with modified one in dic, for better sound
           New = speak.sentence.split(" ")
           for w in New :
@@ -67,19 +71,29 @@ class talk():
               a = i.split(" > ")
               speak.sentence = speak.sentence.replace(w, a[1])
            continue
+           dic.close()
 
           else :
            print speak.sentence
            os.system(fr1_speak % speak.sentence) 
 
            # when finished talking, micros hear again /ON
-           run_process("amixer -c 1 sset Mic,1 75%")
-           dic.close()
-           return []
+           sleep (0.1)
+      
 
+      except :
+           """
+          os.system(fr1_speak % str(speak.sentence))
+
+      	  os.system("amixer -c 1 sset Mic,0 cap")
+          os.system("amixer -c 1 sset Mic,0 70%")
+          return True
+
+    """
     def en1_talk(self, speak):
         os.system(en1_speak % speak.sentence)
         return []
+    """
 
 if __name__ == '__main__':
     try:
