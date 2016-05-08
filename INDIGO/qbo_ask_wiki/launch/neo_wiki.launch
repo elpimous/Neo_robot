@@ -1,0 +1,7 @@
+<launch>
+
+  <!-- launch qbo_talk-->
+  <node name="qbo_wiki" pkg="qbo_wiki" type="neo_wiki.py" output="screen">
+  </node>
+
+</launch>
