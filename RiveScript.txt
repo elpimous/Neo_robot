@@ -88,10 +88,10 @@ object
 -----------------------------------------------------------------------------------------------------
 ===>   interrogation systeme object
 -----------------------------------------------------------------------------------------------------
-// on est quel jour néo
-// en quelle annee s' il te plait
-// en quel mois sommes nous
-// il est quelle heure là....
+//ex: on est quel jour néo
+//ex: en quelle annee s' il te plait
+//ex: en quel mois sommes nous
+//ex: il est quelle heure là....
 
 + (((quel|quelle) jour|(quel|quelle) date) (sommes nous|on est|est il)|(quel est|quelle est) (le jour|la date)) [*]
 - {random}Nous sommes|on est{/random} le <call>jour</call> <call>mois</call> <call>annee</call>
