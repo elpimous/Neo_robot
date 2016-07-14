@@ -10,7 +10,7 @@ import both informations on bot for immediate use (no need to restart program an
 
 // ex : "memorize a golden apple is a yellow fruit"
 
-// object converts and write :
+// object converts, write, and import in bot (like set/get) :
 
 // + a golden apple
 
@@ -19,6 +19,11 @@ import both informations on bot for immediate use (no need to restart program an
 // I ask : "what is a golden apple"
 
 // bot replies : "it's a yellow fruit"
+
+----------------------------------------------
+    + what is *
+    - it's {@<star>}
+----------------------------------------------
 
     object memorize python
 
