@@ -139,7 +139,7 @@ object
 < object
 
 -----------------------------------------------------------------------------------------------------
-===>   learn on wikipedia
+===>   learn on wikipedia Object
 -----------------------------------------------------------------------------------------------------
 //ex: recherche sur internet einstein
 
@@ -160,7 +160,7 @@ object
 < object
 
 -----------------------------------------------------------------------------------------------------
-===>   random robot sentences from wikipedia
+===>   random robot sentences from wikipedia Object
 -----------------------------------------------------------------------------------------------------
 //ex: dis moi un truc neo
 //ex: raconte moi quelque chose
