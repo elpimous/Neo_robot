@@ -21,8 +21,8 @@ import both informations on bot for immediate use (no need to restart program an
 // bot replies : "it's a yellow fruit"
 
 ----------------------------------------------
-// + (memorises|memorise|memorize) [the next information][this entry][this][that] * (is|are) *
-// - <call>memorize (+ <star2>     - <star4>)</call> Ok. I just learnt that <star2> is <star4>
++ (memorises|memorise|memorize) [the next information][this entry][this][that] * (is|are) *
+- <call>memorize (+ <star2>     - <star4>)</call> Ok. I just learnt that <star2> is <star4>
 ----------------------------------------------
     + what is *
     - it's {@<star>}
