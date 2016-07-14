@@ -45,6 +45,7 @@ ________________________________________________________________________________
 ===>   pause object
 -----------------------------------------------------------------------------------------------------
 // ex : - <call>pause 5</call>  // do a 5s pause before continuing next command
+// simulate robot thinking hard before speaking
 // ex : - the result is,<call>pause 1</call>again a second please,<call>pause 2</call>ok. The result is 6728
 > object pause python
     import time
