@@ -136,3 +136,59 @@ object
     Heure = time.strftime('%H heures %M minutes et %S secondes',time.localtime())
     return Heure
 < object
+
+-----------------------------------------------------------------------------------------------------
+===>   learn on wikipedia
+-----------------------------------------------------------------------------------------------------
+//ex: recherche sur internet einstein
++ ((cherche|recherche|cherches|recherches) sur (internet|wikipedia)) *
+- <call>WikiPerson <star2></call>
+
+> object WikiPerson python
+    import wikipedia
+    search = ""
+    wikipedia.set_lang("fr")
+    wordSearch = (args)
+    wordSearch2 = str(wordSearch)
+    search = wordSearch2.encode('utf8')
+    FirstSearch = wikipedia.search((search), results=1)
+    modWord2 = str(FirstSearch)
+    Search = wikipedia.summary(modWord2, sentences=3)
+    return type(Search)
+< object
+
+-----------------------------------------------------------------------------------------------------
+===>   random robot sentences from wikipedia
+-----------------------------------------------------------------------------------------------------
+//ex:
+
+> object WikiRandom python 
+
+    import wikipedia
+    wikipedia.set_lang("fr")
+    wordSearch = wikipedia.random(pages=1)
+    search = wordSearch.encode('utf8')
+    try :
+        Search = wikipedia.summary(search, sentences=3)
+    except :
+        a = 'Désolé, je ne sais pas quoi te dire'
+        return (a)
+    try:
+        cleaning = Search.replace('(','').replace(')','').replace('/',' ') # remove parenthesis from text for better speaking
+    except :
+        pass
+    try:
+        a = cleaning.split('[')[0] # remove phonetics
+        b = cleaning.split(']')[1]
+        cleaned = a+b 
+        return (cleaned)
+    except :
+        try :
+            return (cleaning)
+        except :
+            try :
+                return (Search)
+            except :
+                a = 'Désolé, je ne sais pas quoi te dire'
+                return (a)
+< object
