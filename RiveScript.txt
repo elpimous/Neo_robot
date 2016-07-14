@@ -141,6 +141,7 @@ object
 ===>   learn on wikipedia
 -----------------------------------------------------------------------------------------------------
 //ex: recherche sur internet einstein
+
 + ((cherche|recherche|cherches|recherches) sur (internet|wikipedia)) *
 - <call>WikiPerson <star2></call>
 
@@ -160,10 +161,13 @@ object
 -----------------------------------------------------------------------------------------------------
 ===>   random robot sentences from wikipedia
 -----------------------------------------------------------------------------------------------------
-//ex:
+//ex: dis moi un truc neo
+//ex: raconte moi quelque chose
+
++ [neo] (surprend|surprends|parle|parles|(raconte|raconte|dis)) moi [un truc|une chose|quelque chose][neo]
+- <call>WikiRandom</call>
 
 > object WikiRandom python 
-
     import wikipedia
     wikipedia.set_lang("fr")
     wordSearch = wikipedia.random(pages=1)
