@@ -1,6 +1,9 @@
 #Tutorials for RIVESCRIPT 1.12.3 python version
 
-** learn object  **  
+__________________________________________________________________________________________________________________
+
+# learn object
+
 write trigger and reply on .rive file for permanent learning,
 import both informations on bot for immediate use (no need to restart program and read .rive files)
 
@@ -16,7 +19,7 @@ import both informations on bot for immediate use (no need to restart program an
 
 // bot replies : "it's a yellow fruit"
 
-> object memorize python
+    object memorize python
 
     a = args
     
@@ -36,5 +39,6 @@ import both informations on bot for immediate use (no need to restart program an
     
     file.close()
     
-< object
+    object
 
+__________________________________________________________________________________________________________________
