@@ -86,5 +86,48 @@ object memorize python
 object
 
 -----------------------------------------------------------------------------------------------------
-===>   search on wikipedia object
+===>   interrogation systeme object
 -----------------------------------------------------------------------------------------------------
++ (((quel|quelle) jour|(quel|quelle) date) (sommes nous|on est|est il)|(quel est|quelle est) (le jour|la date)) [*]
+- {random}Nous sommes|on est{/random} le <call>jour</call> <call>mois</call> <call>annee</call>
+
++ [en] (quel|quelle) annee (sommes nous|on est) [*]
+- {random}Nous sommes|on est{/random} en <call>annee</call>
+
++ [en] (quel|quelle) mois (sommes nous|on est) [*]
+- {random}Nous sommes|on est{/random} en <call>mois</call>
+
++ ((quel|quelle) heure est il|(quel|quelle) est l heure|il est (quel|quelle) heure) [*]
+- il est <call>heure</call>
+
+
+> object annee python
+    import datetime
+    dat = datetime.date.today()
+    LAnnee = dat.year
+    return LAnnee
+< object
+
+> object mois python
+    import datetime
+    Mois=['Janvier','Fevrier','Mars','Avril','Mai','Juin','Juillet','Aout','Septembre','Octobre','Novembre','Decembre']
+    dat = datetime.date.today()
+    mois = dat.month
+    LeMois = Mois[mois-1]
+    return LeMois
+< object
+
+> object jour python
+    import time
+    a = time.strftime('%a') # ex: Mon
+    b = time.strftime('%d') # ex: 6
+    c = a.replace("Sun","Dimanche").replace("Mon","Lundi").replace("Tue","Mardi").replace("Wed","Mercredi").replace("Thu","Jeudi").replace("Fri","Vendredi").replace("Sat","Samedi")
+    jour = c+" "+b
+    return jour
+< object
+
+> object heure python
+    import time
+    Heure = time.strftime('%H heures %M minutes et %S secondes',time.localtime())
+    return Heure
+< object
