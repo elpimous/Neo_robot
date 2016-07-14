@@ -3,7 +3,7 @@ ________________________________________________________________________________
 #                       Tutorials for RIVESCRIPT 1.12.3 python version
 _____________________________________________________________________________________________________
 
-# learn object
+#==>   learn object
 _____________________________________________________________________________________________________
 write trigger and reply on .rive file for permanent learning,
 import both informations on bot for immediate use (no need to restart program and read .rive files)
@@ -41,4 +41,7 @@ import both informations on bot for immediate use (no need to restart program an
     file.close()
     
     object
+_____________________________________________________________________________________________________
+
+#==>   search on wikipedia object
 _____________________________________________________________________________________________________
