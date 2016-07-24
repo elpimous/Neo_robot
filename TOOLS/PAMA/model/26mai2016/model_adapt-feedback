@@ -1,0 +1,36 @@
+base model :
+TOTAL Words: 2903 Correct: 1877 Errors: 1110
+TOTAL Percent correct = 64.66% Error = 38.24% Accuracy = 61.76%
+TOTAL Insertions: 84 Deletions: 171 Substitutions: 855
+
+adaptent with 1265 wavfiles :
+TOTAL Words: 2903 Correct: 2142 Errors: 828
+TOTAL Percent correct = 73.79% Error = 28.52% Accuracy = 71.48%
+TOTAL Insertions: 67 Deletions: 122 Substitutions: 639
+                  ----------------------
+                   and without -tau :
+TOTAL Words: 2903 Correct: 2229 Errors: 741
+TOTAL Percent correct = 76.78% Error = 25.53% Accuracy = 74.47%
+TOTAL Insertions: 67 Deletions: 117 Substitutions: 557
+
+
+next, adaptent with 697 wavfiles :
+TOTAL Words: 2903 Correct: 2221 Errors: 744
+TOTAL Percent correct = 76.51% Error = 25.63% Accuracy = 74.37%
+TOTAL Insertions: 62 Deletions: 112 Substitutions: 570
+                  ----------------------
+                   and without -tau :
+TOTAL Words: 2903 Correct: 2189 Errors: 784
+TOTAL Percent correct = 75.40% Error = 27.01% Accuracy = 72.99%
+TOTAL Insertions: 70 Deletions: 123 Substitutions: 591
+
+
+next, adaptent with 835 wavfiles :
+TOTAL Words: 2903 Correct: 2196 Errors: 763
+TOTAL Percent correct = 75.65% Error = 26.28% Accuracy = 73.72%
+TOTAL Insertions: 56 Deletions: 126 Substitutions: 581
+                  ----------------------
+                   and without -tau :
+TOTAL Words: 2903 Correct: 2180 Errors: 787
+TOTAL Percent correct = 75.09% Error = 27.11% Accuracy = 72.89%
+TOTAL Insertions: 64 Deletions: 112 Substitutions: 611
