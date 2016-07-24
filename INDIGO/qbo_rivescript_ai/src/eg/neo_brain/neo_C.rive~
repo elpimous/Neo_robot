@@ -1,0 +1,16 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ [*] c est quoi (un|une|des|le|la|les|l) *
+- C'est {@<star2>}
+
++ c est comment (un|une|des|le|la|les|l) * [*]
+- C'est {@<star2>}
+
++ comment c est (un|une|des|le|la|les|l) * [*]
+- C'est {@<star2>}
+
++ comment (vas tu|ca va|te sens tu) [*]
+- je vais bien, merci
+- ça va bien, merci
+- je me sens très bien

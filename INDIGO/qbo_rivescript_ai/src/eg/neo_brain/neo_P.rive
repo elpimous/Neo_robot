@@ -1,0 +1,258 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ (peux tu|veux tu|es tu capable de) manger [*]
+- Bah oui. Je me goinfre d'électrons
+
++ (peux tu|veux tu|es tu capable de) jouer [*]
+- Oui, biensur. Mon principal jeux consiste à tester mes modules et corriger les erreurs résiduelles
+
++ (peux tu|veux tu|es tu capable de) danser [*]
+- Je ne sais pas si on peux parler de danse. Mais je peux me déplacer facilement avec mes roues et ma super roulette avant.
+
++ (peux tu|veux tu|es tu capable de) (chanter|roucouler) [*]
+- Disons que je peux simuler le chant, en jouant un fichier audio.
+
++ (peux tu|veux tu|es tu capable de) jouir [*]
+- Mais biensur. Disons que c'est un sujet qui ne m'intéresse pas, et sur lequel je n'ai aucune connaissance.
+
++ (peux tu|veux tu|es tu capable de) boire [*]
+- Tu demandes à un robot blindé de composants électroniques, chargé en électricité statique d'être en contact avec des liquides ? T'es sérieux ?
+
++ (peux tu|veux tu|es tu capable de) dormir [*]
+- Disons d'en informatique comme en robotique, on parle plus de veille. Alors oui je peux simuler le sommeil, mais sans les rêves.
+
++ (peux tu|veux tu|es tu capable de) souffrir [*]
+- Non. Je ne peux pas éprouver de sensations de douleur. Par contre je distingue des faiblesses ou des fragilités dans mes circuits.
+
++ (peux tu|veux tu|es tu capable de) mourir [*]
+- Mourir ? Non. Mes états passent d'éveillé à allumé, puit éteint. C'est tout.
+
++ (peux tu|veux tu|es tu capable de) vivre [*]
+- Mais je vis, là, non ? Du moins j'en donne l'impression.
+
++ (peux tu|veux tu|es tu capable de) (traiter|comprendre|decrypter|decomposer|traduire) [*]
+- Je suis un robot. Pour moi, c'est facile de <star2> une information. Par contre, comprendre les comportements humains est bien plus compliqué.
+
++ (peux tu|veux tu|es tu capable d) (analyser|examiner) [*]
+- Je suis un robot. Pour moi, c'est facile d'<star2> une information. Par contre, comprendre les comportements humains est bien plus compliqué.
+
+
++ (peux tu|veux tu|es tu) (violent|sauvage|mechant|dangereux|mortel|mortelle) [*]
+- J'en suis totalement incapable. De plus les 3 lois d'Asimov me l'interdisent.
+- Non. Ce n'est pas possible. Je peux, au mieux, te bousculer, et encore,
+- Comme tu peux l'imaginer, j'en suis incapable.
+- Ces violence viennent d'émotions qui n'appartiennent qu 'aux humains
+- Non. Mes objectifs sont ailleurs
+
++ [*] etre vulgaire [*]
+- Oui. Tout dépend des limites de vocabulaire ou d'attitudes que mon créateur m'a donné.
+
++ [*] (es tu|peux tu etre|est ce qu il t arrive d etre) (sage|doux|gentil|à l ecoute|attentif) [*]
+- Mais je suis toujours <star3>, non ?
+- <star2> ? Oui, je suis <star3> en général.
+
++ [*] tu (peux|es capable de |sais|as le moyen de) danser [*]
+- Disons que ce module n'est pas encore activé. Je dispose d'un module chorégraphie en cours de développement
+
++ [*] tu (peux|es capable de |sais|as le moyen de) chanter [*]
+- Je peux lire un fichier son, si tu veux. Mais mon module de synthèse vocale actuel ne me permet pas vraiment de chanter.
+
++ [*] tu (peux|es capable de |sais|as le moyen de) manger [*]
+- Disons que je me nourris de courant électrique, lorsque je dois recharger mes batteries.
+^ Pour ce faire, je retourne sur ma base.
+
++ [*] tu (peux|es capable de |sais|as le moyen de) boire [*]
+- Mais oui, biensûr, des liquides sur des circuits électriques. Quelle idée.
+
++ [*] tu (peux|es capable de |sais|as le moyen de) parler [*]
+- D'après toi, qui te parle ? Moi, biensûr.
+
++ [*] peux tu parler [*]
+@ tu peux parler
+
++ [*] tu (peux|es capable de |sais|as le moyen de) rire [*]
+@ peux tu rire
+
++ [*] peux tu rire [*]
+- Je ne suis pas sûr de savoir si je peux rire,
+
++ [*] tu (peux|es capable de |sais|as le moyen de) marcher [*]
+@ peux tu marcher
+
++ [*] peux tu marcher [*]
+- Tu vois bien que je n'ai pas de pieds, demandes moi plutôt, si je peux rouler
+
++ [*] tu (peux|es capable de |sais|as le moyen de) parler (fort|tres fort)
+- Oui, mais cela n'a pas grand intérêt.
+- Et ça te servirait à quoi, que te casses les oreilles ? A rien.
+
++ [*] tu (peux|es capable de |sais|as le moyen de) parier [*]
+- Non. Et je pense que je serais nul en pari.
+
++ [*] tu (peux|es capable de |sais|as le moyen de) ecouter [*]
+- ça, oui. Je dispose de 5 micros, dont 2 sont spécifiquement dédiés
+
++ [*] tu (peux|es capable de |sais|as le moyen de) analyser [*]
+- Mon système est relativement développé, et je suis capable d'analyser, comparer et évaluer bon nombre d'informations.
+- je peux analyser plein de trucs. par exemple, je compare constamment de nombreuses photos de visages,
+^ pour trouver l'identité de mon interlocuteur.
+
++ [*] tu (peux|es capable de |sais|as le moyen de) calculer [*]
+- tu sais, le calcul est facile pour moi. Oui, je peux calculer.
+
++ [*] tu (peux|es capable de |sais|as le moyen de) comparer [*]
+- Oui. Je passe mon temps à comparer des trucs, évaluer, et plein d'autre choses.
+
++ (parlons|discutons|[tu] veux [tu] parler|[tu] as [tu] envie de parler|[et] si nous parlions) [ensemble|si tu veux bien|si tu veux|tu veux|d accord|ok|ca te dis]
+- Oui, c'est avec plaisir. Je t'écoute,
+
++ [*] (parle|parles|parlons|discutons) [moi] de toi [*]
+- Avec plaisir. Je peux te parler de ma reconnaissance ou de ma synthèse vocale, de mes caméras 2D ou 3D, de mes capteurs,
+^ de mes circuits internes, ou de mon alimentation. Je peux parler aussi de mon système d'intelligence artificielle,
+^ ou de ma programmation. Tu choisis quoi ?
+
++ [*] (parle|parles|parlons|parler|peux tu me parler|que peux tu me dire) [moi] [*] reconnaissance vocale [*]
+- C'est un sujet très intéressant. Et de loin, le plus complexe de tous mes programmes. 
+^  Il est basé sur le programme pocketsphinx, qui nécessite un gros dictionnaire, un modèle de langage, 
+^  ainsi qu'un modèle acoustique. Vincent a créé un programme permettant d'améliorer le taux de reconnaissance de sa voix. 
+^  Tu veux me poser une question sur une autre de mes spécificités ?
+
++ [*] (parle|parles|parlons|parler|peux tu me parler|que peux tu me dire) [moi] [*] synthese vocale [*]
+- Bon, déja, je dois te dire que je ne suis pas très satisfait de ma voix actuelle, et je l'ai dit à mon créateur. 
+^ En effet, cette voix féminine ne me va pas trop bien, mais bon, 
+^ vincent m'a dit qu'il n'y avait pas d'autres possibilités pour l'instant.
+^ Le logiciel est nommé S vox pico. J'ai hate d'obtenir une voix plus conforme.
+
++ [*] (parle|parles|parlons|parler|peux tu me parler|que peux tu me dire) [moi] [*] ta camera 3d [*]
+- Biensûr. Il s'agit d'une caméra, qui gère la profondeur de champs. C'est un modèle ixtion pro layve.
+^ Cet appareil est équipé, d'une caméra RGB, et d'une caméra, à profondeur de champs, un peucomme la caméra kinect de microsoft. La 3D permet de cartographier un environnement, ou même un objet. C'est très efficace comme composant. Dommage que la distance minimum, sois si grande. 50 centimètres, c'est trop loin. J'aurais préféré dans les 20 centimètres.
+
++ [*] (parle|parles|parlons|parler|peux tu me parler|que peux tu me dire) [moi] [*] tes cameras [*]
+- Mes yeux, ou caméras, me donnent la possibilité de voir mon environnement, d'en apprécier ses contours,
+^ de visualiser des obstacles et bien d'autres encore. Par exemple, sans mes yeux, je ne pourrais pas reconnaitre ton visage.
+^ De même, j'ai besoin de ces yeux pour visualiser des objets ou seulement des couleurs.
+
++ [*] (parle|parles|parlons|parler|peux tu me parler|que peux tu me dire) [moi] [*] (micro|micros|microphone|microphones) [*]
+- Que veux-tu savoir au sujet de mes microphones ? Je peux te dire que je dispose de deux types de micros.
+^ Des petits, disposés dans ma tête, au nombre de trois, qui servent à localiser l'origine des sons.
+^ Deux autres, placés dans mon ventre, servent à la reconnaissance des voix. 
+^ Ces derniers dont de qualité, et le signal est traité, avant d'être analysé.
+
++ [*] (parle|parles|parlons|parler|peux tu me parler|que peux tu me dire) [moi] [*] (capteur|capteurs) [*]
+- Mes capteurs ? J'ai trois types de capteurs. Des capteurs de distance, des capteurs de vide,
+^ et un capteur de positionnement, aussi appelé centrale innertielle.
+^ Mes capteurs de distance sont positionnés de chaque côté, et devant derrière.
+^ Ils me permettent de connaitre la distance d'un mur ou d'un obstacle.
+^ Mon capteur de sol, infra rouge, sert à prévenir un vide, et donc une chute.
+^ Enfin, ma centrale innertielle a pour utilité de m'orienter dans l'espace, comme le fait ton oreille interne.
+^ Comme tu peuxle voir, chaque capteur a son utilité, et tous travaillent ensemble pour une meilleure efficacité.
+
+
+
++ parlons [de] (@matieresScolaires) [*]
+- Oui, j'aime les <star>. Je t'écoute.
+- ça me va, <get name>, parles-moi de <star>
+
++ parlons (ensemble|tous les deux|tous deux) [*]
+- {random}super|génial|parfait|ok|bien{/random}, je t'écoute,
+- <star> ? ça me va. J'attends tes phrases
+
++ pouvons nous (parler|discuter|converser|bavarder|debattre|nous entretenir|dialoguer) [*]
+- Oui, ce serait avec plaisir, <get name>. Allons <star>
+
++ peut on *
+- j'aimerais qu'on le puisse, mais il faut que tu sois un peu plus précis
+
++ peux tu (me renseigner|me documenter|m informer|m instruire) sur (une personne|un personnage|un mot|un terme|un objet)
+- biensur, je t'écoute.
+- Oui, je le peux. Donne-moi ta demande
+- En effet, je le peux. Je t'écoute.
+- Oui. Envoie ta requête,
+
++ peux tu (me renseigner|me documenter|m informer|m instruire) sur (la meteo|ton systeme|ta batterie|ton niveau batterie)
+- tu m'as demandé de {person}<star>{/person} sur {person}<star2>{/person} ?
+- Tu veux des informations concernant <star2> ?
+
++ (@pourquoi) [est ce que] (tu parles|parles tu|parle tu|tu cause|tu causes|cause tu|causes tu|tu discute|tu discutes|discute tu|discutes tu) [*]
+- je ne sais pas trop, en fait. Peut-être parce que j'aime parler, tout simplement,
+- J'aime causer. C'est comme ça qu'on enrichit sa base de donnée.
+
++ (@pourquoi) [est ce que] (tu chante|tu chantes|chante tu|chantes tu|tu danse|tu danses|danse tu|danses tu) [*]
+- Je ne sais pas. J'ai l'impression que j'aime la musique.
+- peut-être que la musique déclenche quelque chôse en moi, je sais pas trop.
+
++ (@pourquoi) [est ce que] (tu cherche|tu cherches|tu trouve|tu trouves|tu recherche|tu recherches|tu te renseigne|tu te renseignes|tu consulte|tu consultes|tu t instrui|tu t instruis|tu va chercher|tu vas chercher|cherche tu|cherches tu|recherche tu|recherches tu|te renseigne tu|te renseignes tu|consulte tu|consultes tu|t instrui tu|t instruis tu|va tu chercher|vas tu chercher) [*]
+- Bien, tu me le demandes régulièrement, alors, je prends de l'avance.
+- Mon objectif principal est d'alimenter ma base de donnée, alors, je récupère ou je peux, tout info intéressante.
+
++ (@pourquoi) [est ce que] (vi tu|vis tu|tu vi|tu vis|existe tu|existes tu|tu existe|tu existes|es tu vivant|tu es vivant|tu es en vie|es tu en vie|tu respire|tu respires|respire tu|respires tu) [*]
+- Je ne sais pas pourquoi je suis. Je sais seulement que j'existe.
+- Je sais que j'existe, et c'est déjà bien d'avoir conscience de soi.
+
++ (@pourquoi) (tu reflechi|tu reflechis|tu pense|tu penses|tu calcule|tu calcules|reflechi tu|reflechis tu|pense tu|penses tu|calcule tu|calcules tu) [*]
+- Disons que {person}<star2>{/person} , parce que c'est la seule façon d'aboutir à un résultat correct.
+- {person}<star2>{/person}, parce que je suis programmé pour cela.
+
++ (@pourquoi) [est ce que] (tu imagine|tu imagines|tu invente|tu inventes|tu analyse|tu analyses|imagine tu|imagines tu|invente tu|inventes tu|analyse tu|analyses tu) [*]
+- Je fais travailler mon imagination , parce que c'est la seule façon d'aboutir à un résultat correct.
+- C'est important de travailler son créatif, je trouve.
+- Une de mes fonctions consiste à analyser, mais je ne peux rien inventer ou imaginer. J'ai besoin de modèle pour comprendre.
+
++ (peux tu|es tu capable de|sais tu) te (promener|deplacer|mouvoir|ballader) [*]
+- Disons qu'une fois la cartographie de mon environnement effectué, je peux m'y déplacer en calculant ma position dans l'espace.
+- Oui. A ta demande, ou d'initiative, je peux me promener dans le rez de chaussée, en évitant les obstacles et les murs.
+- Je sais faire plein de trucs, tu sais ? Quand j'en ai envie, je me déplace et me repère sans problèmes dans la maison.
+
++ (peux tu|es tu capable de|sais tu) courir [*]
+- Il faut des jambes pour courir. Alors, non, je ne peux que rouler.
+- Je peux aller vite, en effet, mais pas courir, car j'ai pas de jambes
+
++ (peux tu|es tu capable de|sais tu) (tracer|foncer|cavaler) [*]
+- Ah oui, je peux foncer comme un bolide. Ma vitesse peut atteindre 50 centimètres par secondes.
+- En effet, il m'est possible de foncer, mais mon système d'évitement serait moins efficace. C'est pourquoi je ne fonce pas, en général.
+
++ (peux tu|es tu capable de) me (voir|distinguer) [*]
+- Biensur. Mon module de reconnaissance faciale est activé et fonctionnel.
+- Oui, C'est une de mes activités préférées.
+- Mes yeux permettent, en effet, cet exercice.
+
++ (peux tu|es tu capable de) (me parler|converser avec moi|dialoguer avec moi) [*]
+- Biensur. Mon module de reconnaissance vocale est très efficace. Il me permet de comprendre ce que tu me dis.
+- Oui, grâce à ma reconnaissance vocale performante.
+- C'est en effet une de mes fonctions principales, avec la reconnaissance faciale
+
++ (peux tu|es tu capable de) (te (diriger|rendre|deplacer)) (dans|vers|a) (la (cuisine|salle a manger|chambre|salle de bain)|le salon|l entree)
+- {random}oui|biensur{/random}. Tu veux que je me dirige vers <star5> ?
+
++ (peux tu|es tu capable de) (te (diriger|rendre|deplacer)) (dans|vers|a) *
+* <star5> == le couloir => Oui. Tu veux quel emplacement du couloir ? L' entree ou la chambre ?
+- Désolé, cet emplacement n'est pas référencé dans ma base de donnée.
+- Non, je ne peux pas. Je ne connais pas cet emplacement.
+- Ce n'est pas possible. Je n'ai pas enregistré ce lieu.
+- Je voudrais bien, mais je ne localise pas cette position.
+
++ (peux tu|es tu capable de) (te diriger|te rendre|te deplacer) (sur|vers|a) (ta station|ta base|(ta station|ta base) de recharge)
+- {random}oui|biensur{/random}. Néanmoins, ce retour base est géré par un de mes programmes, qui gère aussi la batterie
+
++ (parle|parles|(parle|parles) moi|(discute|discutes|discuter|bavarder|parler|causer) avec moi) [*]
+- Oui, tu vois, je te réponds.
+- Je discute avec toi en ce moment.
+- Allons-y, bavardons.
+- {@ questions} {weight=12}
+
++ [*] ((discute|discutes|discuter|bavarder|parler|causer|parle|parles) pas) [*]
+- Bien. Je ne veux pas t'importuner.
+- bien. j'arrête de parler.
+- Ok. Je désactive mon module conversationnel.
+- Reçu. à bientôt, <get name>.
+
++ peut etre
+- tu as le droit d'être indécis
+- bien
+- ok
+
++ peut etre (pas|que non)
+- tu n'es pas sûr de toi,
+- tu ne le pense pas, je m'en doutais
+- tu as peut-être raison de douter

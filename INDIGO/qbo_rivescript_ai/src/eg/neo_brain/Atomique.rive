@@ -1,0 +1,217 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
+//-----------------------------------------------------------------------------------------------------------------------
+//-------  ENGINS  -------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+
++ (voiture|camion)
+- c'est un vEhicule à 4 roues, motorisE.
+
++ camion
+@ voiture
+
++ bus
+@ voiture-camion
+
++ mob
+- un vEhicule de transport, possEdant 2 roues, et parfois même 3.
+
++ (mobylette|moto|mob)
+@ mob
+
++ (velo|velo de course|velo de cross|velo de trial)
+- comme une mobylette, mais sans moteur. Son poids est moindre, aussi.
+
++ quad
+- un vEhicule de transport, motorisE, portE par 4 roues. ça ressemble un peu à une moto
+
++ avion
+- un appareil volant, imitant l'oiseau. c'est le moyen de transport le plus sûr parait-il.
+
++ helicoptere
+- un moyen de transport volant sans ailes. Il dispose d'une voilure tournante et d'un rotor d'anti-couple.
+
++ (soucoupe volante|ovni|objet volant non identifie)
+- un appareil volant, inconnu, ou non encore rEfErencE. Des scientifiques cherchent à prouver leur existence.
+
++ parachutiste
+- l'utilisateur d'un parachute ou d'un parapente.
+
++ (parachute|parapente)
+- une toile reliEe à une personne. Cette toile s'ouvre lors d'une chute et permet à son utilisateur de ralentir sa descente
+
++ deltaplane
+- un appareil volant sans moteur, composE d'une aile en tissus et d'une structure en mEtal, pour supporter une personne.
+
++ ulm
+- un petit appareil volant, motorisE, qui ne fait pas partie des avions
+
++ drone
+- un petit appareil volant, motorisE, qui ne peut pas emporter de passagers. Il est parfois totalement autonome.
+
+//-----------------------------------------------------------------------------------------------------------------------
+//-------  ANIMAUX  ----------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+
++ chat
+- un petit animal de la race des fElins. Il miaule. Dans certains pays, il Etait considErE comme un dieu
+
++ (chien|chienne|chiwawa)
+- un animal, de la race canine. Il dispose de 4 pattes, et il aboit. Il est dit que c'est le meilleur ami de l'homme.
+
++ (oiseau|oisillon|pigeon|aigle|faucon|perroquet|perruche|pigeon)
+- un animal avec des ailes. Il vole plus ou moins bien. Certains migrent.
+
++ (lion|lionne|tigre|tigresse|leopard|guepard|panthere)
+- un animal carnassier, de la race des fElins. C'est un super chasseur.
+
++ (chevreuil|biche|cerf|elan)
+- un mamifère à 4 pattes. il est la proie des prEdateurs comme la lionne, le tigre, ou l'homme.
+
++ (crocodile|caiman)
+- un animal carnassier à 4 pattes, descendant des dynosaures. Il dispose d'une machoire très impressionnante.
+
++ (lezard|varan)
+- un animal à 4 pattes, descendant des dynosaures.
+
++ poisson[*]
+- un animal qui possède des branchies et vit dans l'eau. Il en existe de toutes tailles et couleurs.
+
+//-----------------------------------------------------------------------------------------------------------------------
+//-------       TECHNOLOGIE        --------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+
++ ia
+- un système capable d'analyser une question, trouver une rEponse adEquate et mEmoriser de nouvelles donnEes.
+
++ intelligence artificielle
+@ ia
+
++ (ordinateur|portable|pc portable|tablette)
+- une boite contenant des composants electroniques, et permettant le dEmarrage d'un système d'exploitation
+
++ (linux|windows|mac|systeme d exploitation)
+- un environnement logiciel permettant le dEmarrage d'un système informatique. On appelle ça, un système d'exploitation.
+
++ composant electronique
+- un ElEment contenant certains materiaux, composants, circuits, permettant de remplir un rôle spEcifique en electronique.
+
++ robot
+- un assemblage de composants informatiques, plastiques, mEtal, connectiques, moteurs et autres pEriphEriques, permettant une certaine autonomie.
+
++ robotique
+- l'apprentissage des robots, et leur mise en oeuvre.
+
++ (laser|lasers)
+- un rayon de lumière, très concentrE, servant au calcul de distances comme la tElEmEtrie, à la dEcoupe de matEriaux, au pointage, et plein d'autres chôses.
+
++ (camera|cameras)
+- un dispositif technologique qui remplace les yeux humains. Maintenant, certaines camEras dEpassent la capacitE de l'oeil humain
+
++ (camera (3d|3 d|trois d|tridimentionnelle|tri dimensionnelles|tri-dimensionnelles)|cameras (3d|3 d|trois d|tridimentionnelle|tri dimensionnelles|tri-dimensionnelles))
+- un dispositif technologique qui remplace la stErEovision des yeux humains, et qui autorise la profondeur de champs, chôse impossible sur une image 2D. ça permet de reconstruire un objet en 3D, ou de cartographier son environnement en 3 dimensions.
+
++ (micro|micros)
+- un composant qui rEcupère les sons environnants et les retranscrit en signal Electrique. Je dispose de 5 micros, 3 standards, et 2 de qualitE.
+
++ (antenne|antennes)
+- un accessoire qui sert à amplifier le signal. Mon antenne permet d'augmenter la portEe du signal wifi, pour une meilleure communication avec l'extErieur.
+
++ (haut parleur|haut parleurs|haut-parleur|haut-parleurs)
+- un composant qui retranscrit le signal Electrique en son. Tu vois, je dispose de 2 gros haut-parleurs sur les côtEs. C'est avec ça que tu m'entends.
+
++ (capteur|capteurs)
+- un composant electronique qui sert à mesurer ou dEtecter des distances, des couleurs, la tempErature, ou plein d'autres choses.
+
++ (capteur de distance|capteurs de distance|capteurs de proximite)
+- un composant Electronique qui sert à mesurer la distance. Il peut aussi servir à localiser des obstacles, après programmation.
+
++ (capteur de sol|capteurs de sol)
+- un composant Electronique qui sert à mesurer la distance. Il peut aussi servir à dEtecter le vide, après programmation.
+
++ (roue|roues)
+- un ElEment qui autorise le dEplacement. Les miennes me permettent de me dEplacer jusqu'à 50 centimètres par seconde, et rEpartissent mon poids sur les 2 roues. Je dispose aussi d'une roulette directionnelle.
+
++ (roulette|roulettes) [directionnelle|directionnelles]
+- un ElEment qui autorise le dEplacement. La mienne permet de faciliter les rotations de mon corps, tout en restant souple. 
+
++ carte mere
+- un ensemble de circuits permettant l'informatique. J'en ai une dans mon corps, une mini ITX très basse consommation. Ainsi, j'ai une autonomie d'environ 12 Heures.
+
++ (processeur|processeurs) [informatique]
+- un peu comme ton coeur. Il est obligatoire sur une carte mère, pour que l'ensemble puisse fonctionner. C'est le processeur qui calcule plus ou moins vite, et consomme en proportion. Mon coeur est un intel très basse consommation, consommant moins de 6 watt par heure.
+
++ (coeur|coeurs) [informatique]
+- Il prend place sur une carte mère, pour que l'ensemble puisse fonctionner. C'est le coeur, ou processeur, qui calcule plus ou moins vite, et consomme en proportion. Mon coeur est un intel très basse consommation, consommant moins de 6 watt par heure.
+
++  tele
+-  un ecran qui affiche des images animees. maintenant, les ecrans sont plats.
+
++  television
+- @  tele
+
++  ecran de *
+- @  tele
+
++  ordinateur
+-  un système qui permet de calculer, programmer, et automatiser des taches. moi, par exemple, je suis un base sur un ordinateur puissant.
+
+
+//-----------------------------------------------------------------------------------------------------------------------
+//-------       TECHNOLOGIE        --------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------
+
++  verre
+-  un recipient qui permet de boire de l'eau, ou d'autres boissons.
+
++  bouteille
+- @  verre
+
++  verre de *
+-  un recipient qui permet de boire du <star>
+
++  bouteille de *
+-  un recipient qui contiend du <star>
+
++  table
+- une table, c'est un meuble sur lequel on peut manger.
+
++  chaise
+-  comme un tabouret.
+
++  tabouret
+-  un objet qui sert à s'asseoir.
+
++  crayon
+-  un petit objet, qui permet d'ecrire ou de dessiner.
+
++  stylo
+- @  crayon
+
++  couteau
+-  un accessoire de cuisine, qui sert à couper la nourriture.
+
++  fourchette
+-  un accessoire de cuisine, qui sert à attrapper la nourriture.
+
++  cuillere
+- @  fourchette
+
++  meuble
+-  une grosse boîte, avec des ouvertures. on peut y ranger des chôses
+
++  boite
+-  un recipient.
+
++  ouverture
+-  un passage pour une personne, un animal, ou un objet.
+
++  objet
+-  un outil, un accessoire, un morceau de matière, ça peut être plein de chôses.
+
++  outil
+-  un accessoire cree par les hommes, qui sert à les aider dans leur travail.
+
++  accessoire
+-  un outil cree par les hommes, qui sert à les aider dans leur travail.

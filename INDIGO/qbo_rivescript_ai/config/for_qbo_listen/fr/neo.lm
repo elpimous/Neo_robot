@@ -1,0 +1,6085 @@
+language model created by quicklm on fri jul 22 18:20:03 edt 2016
+copyright (c) 1996-2010 carnegie mellon university and alexander i. rudnicky
+
+the model is in standard arpa format, designed by doug paul while he was at mitre.
+
+lm created for french ai based on rivescript  (elpimous12 juillet 2016)
+
+
+\data\
+ngram 1=828
+ngram 2=2321
+ngram 3=2916
+
+\1-grams:
+-3.3961 3d -0.2868
+-1.5922 </s> -0.3010
+-1.5922 <s> -0.1990
+-2.9701 a -0.2840
+-3.8732 accessoire -0.2898
+-2.9190 accord -0.2816
+-3.8732 accus -0.3004
+-3.8732 actuel -0.2898
+-3.8732 adolescence -0.2999
+-3.5722 adresse -0.3009
+-3.0281 age -0.2640
+-3.8732 agé -0.2898
+-3.1742 ai -0.2969
+-3.8732 aigle -0.2973
+-2.7940 aime -0.2790
+-3.1742 aimerais -0.2835
+-3.5722 ainsi -0.3004
+-3.8732 alcool -0.2868
+-3.8732 alimenté -0.2953
+-3.3961 alors -0.2880
+-2.8732 ami -0.2481
+-3.8732 amie -0.2973
+-3.8732 amour -0.2868
+-3.5722 amoureux -0.2897
+-3.8732 ampères -0.2898
+-3.8732 améliorée -0.2898
+-3.5722 analyse -0.2865
+-3.5722 analyser -0.2868
+-3.8732 anciennes -0.2898
+-3.8732 animal -0.2966
+-3.0951 année -0.2742
+-3.8732 ans -0.2981
+-3.5722 antenne -0.2752
+-3.3961 appelle -0.2601
+-3.8732 apprentissage -0.2953
+-3.8732 après -0.3010
+-3.8732 apéritif -0.3003
+-3.8732 arbre -0.2953
+-3.8732 arrive -0.2999
+-3.5722 artificielle -0.2982
+-3.8732 artiste -0.2868
+-2.2397 as -0.2544
+-3.8732 assez -0.3003
+-3.8732 attentif -0.2898
+-2.9190 au -0.3003
+-3.5722 audio -0.2868
+-3.8732 aujourd' -0.3010
+-3.0951 aussi -0.2851
+-2.8318 avec -0.2945
+-3.8732 avion -0.2953
+-3.8732 axel -0.3010
+-3.8732 b -0.3010
+-3.5722 bain -0.2979
+-3.8732 ballader -0.3006
+-3.8732 balles -0.2966
+-3.8732 base -0.3003
+-2.9701 batterie -0.2664
+-3.5722 bavarde -0.2989
+-3.5722 bavarder -0.3009
+-3.5722 beau -0.3009
+-3.3961 beaucoup -0.2994
+-3.8732 beaux -0.3008
+-3.8732 belle -0.3009
+-3.1742 besoin -0.2833
+-3.8732 biche -0.2980
+-2.7940 bien -0.2631
+-3.8732 bientôt -0.3001
+-3.8732 biologie -0.3010
+-3.5722 blanc -0.2897
+-3.5722 bleu -0.2897
+-3.8732 blond -0.3000
+-3.8732 blonde -0.3005
+-3.1742 boire -0.2749
+-3.8732 boite -0.2898
+-3.8732 bon -0.2868
+-3.8732 bonjour -0.3001
+-3.2711 bonne -0.3008
+-3.2711 botmaster -0.2742
+-3.8732 bouche -0.3005
+-3.8732 bouteille -0.2966
+-3.8732 bras -0.3006
+-3.8732 bruit -0.2953
+-3.8732 brun -0.2868
+-3.8732 brune -0.3009
+-3.8732 bus -0.2868
+-3.8732 bye -0.3000
+-3.5722 bête -0.3007
+-3.8732 c -0.3010
+-2.4108 c' -0.2962
+-3.5722 calcule -0.2867
+-3.8732 calculer -0.3009
+-3.5722 camarade -0.2752
+-3.8732 camera -0.2868
+-3.8732 camion -0.2868
+-3.2711 caméra -0.2867
+-3.5722 caméras -0.2989
+-3.1742 capable -0.2966
+-3.3961 capteurs -0.2956
+-3.3961 car -0.2969
+-3.8732 carte -0.3009
+-3.2711 cause -0.2701
+-3.8732 causer -0.3003
+-3.8732 cavaler -0.3010
+-3.8732 caïman -0.3002
+-2.4930 ce -0.2902
+-3.5722 ceci -0.2887
+-2.9190 cela -0.2826
+-3.5722 cent -0.2898
+-3.8732 cerf -0.2953
+-3.8732 cerveau -0.3010
+-3.8732 cet -0.3010
+-3.3961 chambre -0.2992
+-3.5722 chante -0.2868
+-3.1742 chanter -0.2861
+-3.8732 charger -0.3009
+-3.5722 chargé -0.2809
+-3.8732 chat -0.2973
+-3.5722 chatain -0.2897
+-3.2711 cherche -0.2842
+-3.3961 chercher -0.2601
+-3.8732 chevelure -0.3010
+-3.5722 cheveux -0.2862
+-3.8732 chevreuil -0.2979
+-3.8732 chien -0.3010
+-3.8732 chienne -0.3010
+-3.1742 chifoumi -0.2805
+-3.8732 chimie -0.3010
+-3.8732 chiwawa -0.2898
+-3.8732 choisis -0.2993
+-3.3961 chose -0.2878
+-3.5722 ciel -0.3004
+-3.8732 cinq -0.3010
+-3.8732 cinquante -0.3010
+-3.8732 cinquante-cinq -0.3010
+-3.8732 cinquante-deux -0.3010
+-3.8732 cinquante-huit -0.3010
+-3.8732 cinquante-neuf -0.3010
+-3.8732 cinquante-quatre -0.2898
+-3.8732 cinquante-sept -0.3010
+-3.8732 cinquante-six -0.3010
+-3.8732 cinquante-trois -0.3010
+-3.8732 cinquante_et_un -0.3010
+-3.8732 ciseaux -0.2868
+-3.8732 climat -0.2953
+-3.8732 coeur -0.2962
+-3.2711 combien -0.3008
+-2.6971 comme -0.2880
+-3.5722 commencé -0.2858
+-2.5510 comment -0.2505
+-3.8732 comparer -0.2898
+-3.8732 compliqué -0.2898
+-3.8732 composant -0.3010
+-3.8732 comprend -0.2992
+-3.5722 comprendre -0.2978
+-3.8732 construit -0.2868
+-3.5722 consulte -0.2864
+-3.8732 content -0.2953
+-3.8732 contre -0.2981
+-3.3961 converse -0.2930
+-3.3961 converser -0.2890
+-3.5722 conçu -0.2752
+-3.8732 cool -0.2898
+-3.0951 copain -0.2712
+-3.2711 copine -0.2799
+-3.8732 correcte -0.2953
+-2.8732 couleur -0.2657
+-3.5722 couloir -0.2865
+-3.8732 courir -0.2898
+-3.8732 course -0.2868
+-3.8732 cousin -0.2981
+-3.8732 cousine -0.2898
+-3.8732 couteau -0.2953
+-3.8732 crayon -0.2898
+-3.8732 crocodile -0.2953
+-3.8732 cross -0.2868
+-3.3961 créateur -0.2882
+-3.8732 créé -0.3009
+-3.8732 cuillère -0.3009
+-3.2711 cuisine -0.2980
+-3.8732 cultivant -0.2953
+-3.8732 cultivé -0.3009
+-3.8732 d -0.3010
+-2.5722 d' -0.2958
+-3.8732 dangereux -0.3009
+-3.0281 dans -0.2823
+-3.8732 dansant -0.2953
+-3.5722 danse -0.2752
+-3.3961 danser -0.3004
+-3.8732 darwin -0.2953
+-3.5722 date -0.2875
+-1.9924 de -0.2766
+-3.8732 debattre -0.3006
+-3.8732 deltaplane -0.2868
+-3.5722 demain -0.2809
+-3.3961 demande -0.2808
+-3.8732 demoiselle -0.2868
+-2.3818 des -0.2964
+-3.8732 destination -0.3001
+-2.9701 deux -0.2732
+-3.8732 dialogue -0.2992
+-3.5722 dialoguer -0.2891
+-3.8732 différent -0.2898
+-2.9190 dire -0.2614
+-3.8732 directionnelle -0.3010
+-3.5722 dirige -0.3000
+-3.8732 diriger -0.2993
+-3.0281 dis -0.2933
+-3.1742 discute -0.2830
+-3.5722 discuter -0.3007
+-3.3961 discutons -0.2848
+-3.3961 dispose -0.2961
+-3.8732 distance -0.2868
+-3.8732 distingue -0.2973
+-3.8732 distinguer -0.3003
+-3.8732 dit -0.2898
+-3.8732 divisé -0.3005
+-3.8732 dix -0.3010
+-3.8732 dix-huit -0.3010
+-3.8732 dix-neuf -0.3010
+-3.8732 dix-sept -0.3010
+-3.5722 documenter -0.3007
+-3.8732 doigts -0.2898
+-3.2711 donne -0.2992
+-3.8732 donnée -0.3009
+-3.1742 dormir -0.2723
+-3.8732 dors -0.3003
+-3.8732 doux -0.3009
+-3.5722 douze -0.3009
+-3.8732 doué -0.3009
+-3.8732 drone -0.3010
+-3.2711 du -0.3007
+-3.8732 dur -0.2979
+-3.5722 débuté -0.2995
+-3.8732 décide -0.2868
+-3.8732 décomposer -0.2868
+-3.8732 décrypter -0.3010
+-3.5722 déplace -0.2997
+-3.5722 déplacer -0.2989
+-3.5722 dérange -0.2849
+-3.8732 désire -0.2953
+-3.8732 développées -0.3009
+-3.8732 e -0.3010
+-3.8732 eau -0.3002
+-3.8732 ecoute -0.2868
+-3.8732 edison -0.2868
+-3.8732 effectue -0.2868
+-3.8732 einstein -0.2868
+-3.8732 electronique -0.2898
+-3.5722 elle -0.2952
+-2.8732 en -0.2976
+-2.6428 encore -0.2880
+-3.8732 enfin -0.2996
+-3.8732 enrichissant -0.3000
+-3.0281 ensemble -0.2723
+-3.5722 entendre -0.2823
+-3.8732 entretenir -0.2868
+-3.8732 entrée -0.2979
+-2.9701 envie -0.2732
+-2.2200 es -0.2603
+-3.8732 essaie -0.2980
+-1.9594 est -0.2447
+-1.8820 et -0.2334
+-3.8732 examiner -0.2868
+-3.8732 exige -0.2953
+-3.5722 existe -0.2721
+-3.8732 explique -0.3004
+-3.8732 exploitation -0.3006
+-3.5722 exprime -0.2948
+-3.8732 exprimer -0.2868
+-3.8732 extérieur -0.3002
+-3.8732 f -0.3010
+-3.5722 fabriqué -0.2868
+-3.5722 faible -0.2952
+-3.5722 faim -0.2868
+-2.6179 faire -0.2516
+-3.2711 fais -0.2772
+-3.2711 fait -0.2963
+-3.8732 faucon -0.2973
+-3.8732 femelle -0.2898
+-3.5722 femme -0.2868
+-3.3961 fenêtre -0.2837
+-3.8732 fera -0.2988
+-3.2711 fille -0.2741
+-3.8732 fillette -0.2868
+-3.8732 fin -0.2966
+-3.8732 fixés -0.2953
+-3.5722 fois -0.3000
+-3.8732 foncer -0.3010
+-3.8732 fonction -0.2999
+-3.2711 font -0.3006
+-3.5722 force -0.2971
+-3.8732 forcer -0.3010
+-3.5722 fort -0.2999
+-3.8732 fourchette -0.2973
+-3.5722 fruit -0.2752
+-3.5722 frère -0.2960
+-3.8732 fuschia -0.3010
+-3.8732 g -0.3010
+-3.2711 garçon -0.2739
+-3.5722 gentil -0.2995
+-3.8732 geographie -0.3009
+-3.8732 gibier -0.2898
+-3.8732 gigantesque -0.2898
+-3.3961 grand -0.3005
+-3.8732 grand-mère -0.2981
+-3.8732 grand-père -0.2898
+-3.8732 grave -0.3010
+-3.8732 gris -0.2898
+-3.8732 grisonnant -0.3006
+-3.8732 guépard -0.2953
+-3.8732 géant -0.3010
+-3.8732 h -0.3010
+-3.5722 habite -0.2721
+-3.2711 haut-parleur -0.2756
+-3.8732 hello -0.3001
+-3.5722 herbe -0.2934
+-3.2711 heure -0.2693
+-3.8732 histoire -0.3010
+-3.8732 hobby -0.2868
+-3.5722 homme -0.2868
+-3.8732 hors -0.3010
+-3.8732 hui -0.2868
+-3.8732 huit -0.3010
+-3.8732 hélicoptère -0.2989
+-3.8732 i -0.3010
+-3.5722 ia -0.3006
+-3.8732 idem -0.3005
+-3.8732 identifié -0.2898
+-2.7271 il -0.2738
+-3.8732 ils -0.2898
+-3.2711 imagine -0.2865
+-3.8732 impressionnant -0.3009
+-3.8732 inactif -0.2868
+-3.8732 information -0.3009
+-3.8732 informatique -0.2953
+-3.5722 informer -0.3007
+-3.5722 insignifiant -0.3003
+-3.5722 instruire -0.3003
+-3.5722 instruis -0.2861
+-3.5722 intelligence -0.3009
+-3.5722 intelligent -0.2897
+-3.8732 internet -0.2868
+-3.3961 intéressant -0.2868
+-3.8732 intéressante -0.2898
+-3.8732 intéresse -0.2992
+-3.8732 intérêt -0.3010
+-3.5722 invente -0.2868
+-3.8732 inventé -0.2868
+-3.5722 ip -0.2943
+-3.8732 j -0.3010
+-2.8732 j' -0.2998
+-3.5722 jardin -0.2837
+-2.1742 je -0.2761
+-3.0281 jeu -0.2988
+-3.3961 jeune -0.2951
+-3.8732 jeunesse -0.2868
+-3.8732 joli -0.3010
+-3.2711 jouait -0.3001
+-3.3961 joue -0.2857
+-3.0951 jouer -0.2992
+-3.8732 jouir -0.3007
+-3.3961 jouons -0.2996
+-3.2711 jour -0.2808
+-3.8732 journée -0.2868
+-3.8732 jungle -0.3002
+-3.8732 jus -0.2966
+-3.8732 juste -0.3009
+-3.8732 k -0.3009
+-3.5722 l -0.3007
+-2.6179 l' -0.2992
+-2.1408 la -0.2963
+-3.8732 lacunes -0.2898
+-3.5722 langue -0.3009
+-3.8732 laser -0.3008
+-2.1572 le -0.2855
+-3.8732 leopard -0.2980
+-2.8732 les -0.2859
+-3.8732 lieu -0.2966
+-3.8732 linux -0.3010
+-3.8732 lion -0.2979
+-3.8732 lionne -0.2980
+-3.5722 livre -0.2951
+-3.3961 loisirs -0.2770
+-3.8732 lézard -0.2868
+-3.1742 m -0.3007
+-3.3961 m' -0.3007
+-3.2711 ma -0.3006
+-3.8732 mac -0.2868
+-3.8732 madonna -0.2868
+-3.8732 magnifique -0.2898
+-3.8732 maintenant -0.2898
+-2.9190 mais -0.2769
+-3.5722 maison -0.2836
+-3.3961 maitre -0.2863
+-3.8732 male -0.2898
+-3.8732 malin -0.2868
+-3.8732 maline -0.3000
+-3.8732 maman -0.3010
+-3.8732 mange -0.2966
+-2.8732 manger -0.2693
+-3.5722 marié -0.2871
+-3.8732 marron -0.3010
+-3.8732 math -0.3010
+-3.8732 mathematiques -0.3010
+-3.8732 maussade -0.3005
+-2.7593 me -0.2988
+-3.0951 merci -0.2859
+-3.8732 mes -0.3009
+-3.8732 meteo -0.2995
+-3.8732 meuble -0.3003
+-3.5722 micro -0.2858
+-3.8732 microphones -0.2898
+-3.2711 micros -0.2659
+-3.8732 midi -0.2868
+-3.5722 minable -0.2868
+-3.8732 minuscule -0.3009
+-3.8732 mob -0.2989
+-3.8732 mobylette -0.2868
+-3.8732 moche -0.3005
+-2.3681 moi -0.2521
+-3.8732 moins -0.3006
+-3.1742 mois -0.2730
+-2.3961 mon -0.2981
+-3.8732 monté -0.2898
+-3.8732 mort -0.2868
+-3.5722 mortel -0.2752
+-3.8732 mot -0.2973
+-3.8732 moto -0.2973
+-3.8732 mots -0.3010
+-3.8732 mourir -0.3010
+-3.8732 mouvoir -0.2868
+-3.5722 moyen -0.2966
+-3.8732 musclé -0.3010
+-3.3961 musique -0.2954
+-3.3961 mère -0.2951
+-3.8732 méchant -0.3010
+-3.8732 mémoire -0.2898
+-3.2711 mémorise -0.2918
+-3.8732 mémoriser -0.3005
+-3.2711 météo -0.2752
+-2.9190 même -0.2990
+-3.8732 n -0.3010
+-3.0951 n' -0.2932
+-2.6691 ne -0.2949
+-3.8732 neuf -0.3010
+-3.8732 newton -0.2868
+-3.0281 ni -0.2896
+-3.5722 nickel -0.2999
+-3.2711 niveau -0.2961
+-3.8732 no -0.3010
+-3.8732 noir -0.3009
+-3.3961 nom -0.2791
+-2.9701 non -0.2814
+-3.0281 nous -0.2788
+-3.5722 nuages -0.2858
+-3.5722 nuit -0.3001
+-3.8732 nul -0.3009
+-3.8732 nécessaire -0.3009
+-2.6691 néo -0.2660
+-3.8732 o -0.3010
+-2.9701 objet -0.2660
+-3.8732 occupations -0.2868
+-3.8732 oeil -0.3006
+-3.8732 oiseau -0.3010
+-3.8732 oisillon -0.2868
+-3.3961 ok -0.2895
+-2.7593 on -0.2946
+-3.8732 onze -0.3009
+-3.8732 orange -0.3010
+-3.5722 ordinateur -0.2894
+-3.8732 oreilles -0.2953
+-3.8732 orientation -0.3010
+-1.4930 ou -0.2082
+-3.1742 oui -0.2833
+-3.8732 outil -0.2953
+-3.8732 ouverture -0.2981
+-3.8732 ovni -0.3002
+-3.8732 p -0.3010
+-3.8732 panthere -0.2898
+-3.8732 papa -0.3008
+-3.8732 papier -0.2868
+-2.9190 par -0.2935
+-3.8732 parachute -0.2868
+-3.8732 parachutiste -0.3004
+-3.8732 parapente -0.3010
+-3.8732 pareil -0.2953
+-3.8732 parentale -0.2898
+-3.5722 parents -0.2752
+-3.5722 parfait -0.2867
+-3.8732 parier -0.2868
+-3.8732 parlant -0.2953
+-2.9190 parle -0.2840
+-2.7940 parler -0.2727
+-3.8732 parlions -0.2996
+-3.1742 parlons -0.2807
+-2.3681 pas -0.2464
+-3.8732 passe-temps -0.2898
+-3.5722 paysage -0.2837
+-3.8732 pc -0.2868
+-3.5722 pelouse -0.2948
+-3.5722 pense -0.2868
+-3.8732 perroquet -0.2989
+-3.8732 perruche -0.2898
+-3.8732 personnage -0.2973
+-3.8732 personne -0.2973
+-3.5722 petit -0.3007
+-3.2711 peut -0.2861
+-3.1742 peut-être -0.2707
+-2.5722 peux -0.2842
+-3.8732 physique -0.3010
+-3.8732 picasso -0.2868
+-3.8732 pieds -0.2992
+-3.8732 pierre -0.3010
+-3.8732 pigeon -0.3002
+-3.8732 piloté -0.3005
+-3.8732 plait -0.2999
+-3.8732 pleines -0.2953
+-3.8732 pleure -0.2953
+-3.8732 pleurer -0.3006
+-3.2711 plus -0.2732
+-3.3961 plusieurs -0.3006
+-3.8732 poisson -0.3007
+-3.8732 portable -0.2973
+-3.5722 porte -0.2898
+-3.8732 poser -0.3000
+-3.8732 possible -0.2989
+-3.2711 pote -0.2787
+-3.2711 pour -0.2942
+-3.2711 pourquoi -0.2948
+-3.8732 pouvais -0.2953
+-3.8732 pouvait -0.3006
+-3.3961 pouvons -0.3003
+-3.8732 prendre -0.2973
+-3.5722 processeur -0.2965
+-3.5722 prochaine -0.2897
+-3.8732 proche -0.2966
+-3.8732 programme -0.3007
+-3.8732 promener -0.2993
+-3.5722 promène -0.3000
+-3.8732 prononce -0.3004
+-3.8732 proximité -0.3004
+-3.5722 près -0.3008
+-3.2711 préfères -0.2961
+-3.3961 préféré -0.2809
+-3.3961 prénom -0.2896
+-3.8732 présents -0.2898
+-3.8732 psychologie -0.3008
+-3.8732 puissant -0.2898
+-3.5722 père -0.2923
+-3.8732 q -0.3010
+-2.8732 qu' -0.2892
+-3.8732 qu'un -0.3006
+-3.8732 quad -0.2973
+-3.8732 qualité -0.2898
+-3.0951 quand -0.2870
+-3.8732 quarante -0.3010
+-3.8732 quarante-cinq -0.3010
+-3.8732 quarante-deux -0.3010
+-3.8732 quarante-huit -0.3010
+-3.8732 quarante-neuf -0.3010
+-3.3961 quarante-quatre -0.3006
+-3.8732 quarante-sept -0.3010
+-3.8732 quarante-six -0.3010
+-3.8732 quarante-trois -0.2898
+-3.8732 quarante_et_un -0.3010
+-3.5722 quatorze -0.3009
+-3.3961 quatre -0.2952
+-3.8732 quatre-vingt-cinq -0.3010
+-3.8732 quatre-vingt-deux -0.3010
+-3.8732 quatre-vingt-dix -0.3010
+-3.8732 quatre-vingt-dix-huit -0.3010
+-3.8732 quatre-vingt-dix-neuf -0.3009
+-3.8732 quatre-vingt-dix-sept -0.3010
+-3.8732 quatre-vingt-douze -0.3010
+-3.8732 quatre-vingt-huit -0.3010
+-3.8732 quatre-vingt-neuf -0.3010
+-3.8732 quatre-vingt-onze -0.2898
+-3.8732 quatre-vingt-quatorze -0.3010
+-3.8732 quatre-vingt-quatre -0.3010
+-3.8732 quatre-vingt-quinze -0.3010
+-3.8732 quatre-vingt-seize -0.2898
+-3.8732 quatre-vingt-sept -0.3010
+-3.8732 quatre-vingt-six -0.3010
+-3.8732 quatre-vingt-treize -0.3010
+-3.8732 quatre-vingt-trois -0.2898
+-3.8732 quatre-vingt-un -0.3010
+-2.3050 que -0.2625
+-2.2934 quel -0.2929
+-3.5722 quelque-chose -0.2956
+-2.9190 qui -0.2801
+-3.5722 quinze -0.3002
+-2.3961 quoi -0.2512
+-3.8732 r -0.3010
+-3.8732 raconte -0.2992
+-3.5722 raison -0.2823
+-3.8732 rasé -0.2953
+-3.8732 ravissant -0.3010
+-3.1742 recharge -0.2845
+-3.3961 recharger -0.2882
+-3.2711 recherche -0.2725
+-3.8732 recommence -0.2980
+-3.8732 recommencer -0.2868
+-3.8732 reconnaissance -0.2868
+-3.8732 redire -0.2980
+-3.8732 redis -0.2980
+-3.8732 refaire -0.2980
+-3.8732 refais -0.2980
+-3.5722 reflechis -0.2809
+-3.2711 regarde -0.2835
+-3.5722 regarder -0.2974
+-3.8732 remercie -0.2966
+-3.5722 rendre -0.2989
+-3.3961 rends -0.3000
+-3.5722 renseigne -0.2867
+-3.5722 renseigner -0.3003
+-3.5722 respire -0.2752
+-3.5722 retourne -0.2985
+-3.8732 rien -0.2868
+-3.8732 rire -0.3010
+-3.2711 robot -0.2896
+-3.8732 robotique -0.2980
+-3.8732 roucouler -0.2898
+-3.3961 roue -0.2937
+-3.5722 rouge -0.3009
+-3.3961 roule -0.2830
+-3.8732 rouler -0.3010
+-3.8732 roulette -0.3010
+-3.8732 roux -0.2868
+-3.8732 règles -0.3004
+-3.8732 réessaie -0.2980
+-3.8732 réessayer -0.2993
+-3.5722 réside -0.2752
+-3.8732 réveiller -0.2993
+-3.2711 rêve -0.2819
+-3.8732 s -0.3010
+-3.8732 s' -0.3002
+-3.8732 sage -0.3010
+-3.1742 sais -0.2829
+-3.8732 saisis -0.2992
+-3.1742 salle -0.2956
+-3.3961 salon -0.2979
+-3.8732 salut -0.3001
+-3.3961 sans -0.3009
+-3.8732 sauvage -0.3010
+-3.8732 science -0.2898
+-3.5722 se -0.3008
+-3.8732 seize -0.3009
+-3.5722 semaine -0.3000
+-3.5722 sens -0.2865
+-3.8732 sept -0.3010
+-3.2711 seras -0.2856
+-3.8732 seront -0.3009
+-3.8732 service -0.2898
+-3.3961 sexe -0.2744
+-2.4930 si -0.2793
+-3.5722 simple -0.2839
+-3.3961 simplement -0.2962
+-2.6428 sinon -0.2562
+-3.8732 six -0.3010
+-3.8732 socle -0.3003
+-3.5722 soeur -0.2839
+-3.5722 soif -0.2819
+-3.8732 soir -0.3000
+-3.8732 sois -0.2993
+-3.8732 soixante -0.3009
+-3.8732 soixante-cinq -0.3010
+-3.8732 soixante-deux -0.3010
+-3.8732 soixante-dix-huit -0.3010
+-3.8732 soixante-dix-neuf -0.3010
+-3.8732 soixante-dix-sept -0.3010
+-3.8732 soixante-douze -0.3010
+-3.8732 soixante-huit -0.3010
+-3.8732 soixante-neuf -0.3010
+-3.8732 soixante-quatorze -0.2898
+-3.8732 soixante-quatre -0.2898
+-3.8732 soixante-quinze -0.3010
+-3.8732 soixante-seize -0.3010
+-3.8732 soixante-sept -0.3010
+-3.8732 soixante-six -0.3010
+-3.8732 soixante-treize -0.3010
+-3.8732 soixante-trois -0.3010
+-3.8732 soixante_et_onze -0.3010
+-3.8732 soixante_et_un -0.3010
+-3.5722 sommeil -0.2752
+-3.5722 sommes -0.3006
+-3.5722 sons -0.2852
+-2.8318 sont -0.2978
+-3.8732 soucoupe -0.3010
+-3.8732 souffrir -0.3001
+-3.5722 souhaite -0.2846
+-3.8732 sous -0.3010
+-3.5722 station -0.2966
+-3.5722 statut -0.2897
+-3.8732 stupide -0.3010
+-3.8732 stylo -0.2953
+-3.8732 stéphanie -0.3009
+-2.5308 suis -0.2906
+-3.5722 suivante -0.2809
+-3.8732 suivi -0.3005
+-3.8732 suivre -0.2993
+-3.8732 sujet -0.2966
+-3.8732 super -0.2898
+-2.7593 sur -0.2772
+-3.8732 surprend -0.2992
+-3.8732 surtout -0.2993
+-3.8732 sympas -0.2953
+-3.8732 synthèse -0.3010
+-3.3961 système -0.2850
+-3.8732 t -0.3010
+-3.0281 t' -0.3005
+-2.8318 ta -0.2989
+-3.8732 table -0.3010
+-3.8732 tablette -0.2898
+-3.8732 tabouret -0.2973
+-2.3961 te -0.2985
+-3.5722 temps -0.2866
+-3.8732 tente -0.3009
+-3.8732 terme -0.2868
+-2.8318 tes -0.2996
+-3.8732 tesla -0.2868
+-3.8732 tienne -0.2898
+-3.8732 tiens -0.2984
+-3.8732 tigre -0.2979
+-3.8732 tigresse -0.2980
+-3.3961 toc -0.2961
+-2.6971 toi -0.2510
+-2.4418 ton -0.2973
+-3.8732 top -0.2868
+-3.8732 totalement -0.3009
+-3.8732 tourne -0.3010
+-3.1742 tous -0.3000
+-2.9701 tout -0.2976
+-3.8732 tracer -0.3010
+-3.8732 traduire -0.2992
+-3.8732 traiter -0.3009
+-3.8732 treize -0.3009
+-3.5722 trente -0.2897
+-3.8732 trente-cinq -0.3010
+-3.8732 trente-deux -0.3010
+-3.8732 trente-huit -0.3010
+-3.8732 trente-neuf -0.3010
+-3.8732 trente-quatre -0.3010
+-3.8732 trente-sept -0.3010
+-3.8732 trente-six -0.3010
+-3.8732 trente-trois -0.3010
+-3.8732 trente_et_un -0.2898
+-3.8732 tri-dimentionnelle -0.2898
+-3.8732 trial -0.2898
+-3.8732 triste -0.2868
+-3.3961 trois -0.3005
+-3.1742 trouve -0.2852
+-3.8732 trouver -0.2868
+-3.5722 truc -0.2979
+-3.1742 très -0.2999
+-1.4912 tu -0.1950
+-3.8732 tucherche -0.2868
+-3.8732 turquoise -0.3010
+-3.1742 télé -0.2717
+-3.2711 télévision -0.2752
+-3.8732 u -0.3010
+-3.8732 ulm -0.2898
+-2.0670 un -0.2801
+-2.3169 une -0.2965
+-3.8732 v -0.3010
+-3.5722 va -0.2986
+-3.8732 varan -0.3004
+-2.8318 vas -0.2827
+-3.8732 veille -0.2868
+-3.8732 venais -0.3007
+-3.5722 verre -0.2990
+-3.3961 vers -0.2804
+-3.5722 vert -0.2867
+-3.8732 verte -0.2868
+-2.5722 veux -0.2636
+-3.5722 vides -0.2752
+-3.1742 vie -0.2589
+-3.8732 vieillesse -0.3002
+-3.8732 viens -0.2868
+-3.8732 vieux -0.3002
+-3.8732 vin -0.2962
+-3.3961 vincent -0.2897
+-3.8732 vingt-deux -0.3010
+-3.5722 vingt -0.2867
+-3.8732 vingt-cinq -0.3010
+-3.8732 vingt-huit -0.3010
+-3.8732 vingt-neuf -0.3010
+-3.8732 vingt-quatre -0.3010
+-3.8732 vingt-sept -0.3010
+-3.8732 vingt-six -0.3010
+-3.8732 vingt-trois -0.3010
+-3.8732 vingt_et_un -0.3010
+-3.8732 violent -0.3010
+-3.8732 violet -0.3010
+-3.2711 vis -0.2721
+-3.5722 vivant -0.2984
+-3.8732 vivre -0.3007
+-3.8732 vocale -0.2898
+-3.8732 voir -0.3010
+-2.6179 voire -0.2835
+-3.2711 vois -0.2933
+-3.5722 voiture -0.2859
+-3.8732 volant -0.3006
+-3.8732 volante -0.2953
+-3.8732 voulais -0.3007
+-3.8732 vulgaire -0.2953
+-3.5722 vélo -0.2945
+-3.8732 w -0.3010
+-3.8732 watts -0.2868
+-3.8732 wikipédia -0.2953
+-3.8732 windows -0.3010
+-3.8732 x -0.3008
+-3.2711 y -0.3005
+-3.5722 yeux -0.2863
+-3.8732 z -0.2898
+-2.6428 à -0.2893
+-3.0281 ça -0.2856
+-3.2711 écouter -0.2686
+-3.8732 écran -0.2966
+-3.8732 élan -0.3004
+-3.8732 électricité -0.2868
+-3.8732 énonce -0.3005
+-3.5722 énorme -0.2999
+-3.8732 énormément -0.3007
+-3.5722 épelle -0.2889
+-3.8732 état -0.2966
+-3.5722 été -0.3009
+-3.8732 évoluée -0.2984
+-3.2711 être -0.2949
+
+\2-grams:
+-0.7782 3d améliorée 0.0000
+-0.4771 3d ou -0.2919
+-2.2810 <s> a -0.2430
+-2.1049 <s> aime -0.1996
+-2.5821 <s> aimerais -0.2041
+-1.8831 <s> as -0.2054
+-2.5821 <s> bonjour 0.0000
+-2.5821 <s> bonne -0.1761
+-1.9800 <s> c' 0.0000
+-2.2810 <s> cela -0.2218
+-2.5821 <s> cherche -0.2430
+-2.5821 <s> cinquante-cinq 0.0000
+-2.2810 <s> combien 0.0000
+-2.1049 <s> comment -0.2460
+-2.5821 <s> de -0.2865
+-2.5821 <s> dirige -0.1761
+-2.1049 <s> dis -0.1549
+-2.5821 <s> dix-sept 0.0000
+-2.2810 <s> donne 0.0000
+-2.5821 <s> dur 0.0000
+-2.5821 <s> en -0.2788
+-1.7370 <s> es -0.1856
+-1.7370 <s> est -0.2415
+-2.1049 <s> et -0.2898
+-1.9800 <s> il -0.1761
+-1.9800 <s> j' -0.1461
+-1.3779 <s> je -0.1004
+-2.2810 <s> jouons -0.1249
+-2.1049 <s> le -0.2883
+-2.5821 <s> les -0.2788
+-2.5821 <s> mais -0.2499
+-2.5821 <s> mes 0.0000
+-2.2810 <s> moi -0.2730
+-2.5821 <s> mon -0.2937
+-2.1049 <s> mémorise -0.0969
+-2.5821 <s> ne -0.2872
+-2.5821 <s> non -0.2430
+-2.2810 <s> néo -0.2730
+-1.9800 <s> on -0.1871
+-2.5821 <s> ou -0.2992
+-2.5821 <s> par -0.2762
+-2.1049 <s> parle -0.1597
+-2.2810 <s> parlons -0.2041
+-2.5821 <s> peut -0.2430
+-1.6790 <s> peux -0.0969
+-2.1049 <s> pourquoi -0.0969
+-2.2810 <s> pouvons 0.0000
+-2.5821 <s> prononce 0.0000
+-2.5821 <s> qu' -0.2041
+-2.1049 <s> quand -0.1761
+-2.5821 <s> quarante-quatre -0.2218
+-2.5821 <s> quatre-vingt-dix-sept 0.0000
+-2.5821 <s> quatre-vingt-douze 0.0000
+-2.5821 <s> quatre-vingt-quatre 0.0000
+-2.2810 <s> que -0.2769
+-1.5407 <s> quel -0.1445
+-2.5821 <s> qui -0.1919
+-2.2810 <s> regarde -0.1761
+-2.5821 <s> sais -0.2041
+-2.2810 <s> si -0.1249
+-2.5821 <s> soixante-cinq 0.0000
+-2.5821 <s> soixante-quinze 0.0000
+-2.5821 <s> toc -0.1249
+-2.5821 <s> trente-deux 0.0000
+-1.1049 <s> tu -0.2190
+-2.1049 <s> un -0.2872
+-2.5821 <s> une -0.2950
+-2.5821 <s> vas -0.2596
+-2.1049 <s> veux -0.2175
+-2.5821 <s> à -0.2881
+-1.2041 a b 0.0000
+-1.2041 a l' -0.2888
+-1.2041 a la -0.2846
+-1.2041 a le -0.2926
+-1.2041 a pas -0.2583
+-1.2041 a quoi -0.2937
+-1.2041 a un -0.2942
+-1.2041 a une -0.2950
+-0.3010 accessoire </s> -0.3010
+-0.7782 accord avec -0.2374
+-1.2553 accord c' 0.0000
+-1.2553 accord comme -0.2863
+-1.2553 accord moi -0.2942
+-0.7782 accord ou -0.2974
+-0.3010 accus sont -0.2808
+-0.3010 actuel </s> -0.3010
+-0.3010 adolescence d' -0.2900
+-0.3010 adresse ip 0.0000
+-0.8451 age </s> -0.3010
+-0.8451 age as -0.2054
+-1.1461 age et -0.2806
+-1.1461 age ou -0.2956
+-1.1461 age quel -0.2126
+-0.3010 agé </s> -0.3010
+-1.0000 ai pas -0.2942
+-0.6990 ai quarante-quatre -0.1249
+-0.6990 ai une -0.2888
+-0.3010 aigle un -0.2976
+-1.3802 aime beaucoup -0.2218
+-1.3802 aime entendre -0.1761
+-1.0792 aime le -0.2883
+-1.3802 aime pas -0.2872
+-1.3802 aime quel -0.2894
+-1.3802 aime regarder -0.1761
+-0.6812 aime tu -0.2854
+-0.6990 aimerais faire -0.1761
+-1.0000 aimerais que -0.1561
+-0.6990 aimerais tu -0.2956
+-0.3010 ainsi qu' -0.2304
+-0.3010 alcool ou -0.2983
+-0.3010 alimenté et -0.2943
+-0.7782 alors </s> -0.3010
+-0.7782 alors ce -0.2919
+-0.7782 alors merci -0.2632
+-1.0000 ami </s> -0.3010
+-1.3010 ami botmaster -0.1761
+-1.3010 ami des -0.2940
+-1.3010 ami et -0.2988
+-1.3010 ami non -0.2730
+-1.3010 ami ou -0.2983
+-1.3010 ami tout -0.2730
+-1.3010 ami tu -0.2788
+-1.3010 ami une -0.2950
+-0.3010 amie un -0.2976
+-0.3010 amour tu -0.2798
+-0.6021 amoureux </s> -0.3010
+-0.6021 amoureux tiens 0.0000
+-0.3010 ampères </s> -0.3010
+-0.3010 améliorée </s> -0.3010
+-0.6021 analyse imagine -0.0969
+-0.6021 analyse tu -0.2928
+-0.6021 analyser examiner 0.0000
+-0.6021 analyser ou -0.3001
+-0.3010 anciennes </s> -0.3010
+-0.3010 animal de -0.2894
+-1.0792 année </s> -0.3010
+-1.0792 année comme -0.2711
+-0.6021 année ou -0.2854
+-1.0792 année sommes 0.0000
+-0.3010 ans je -0.2304
+-0.6021 antenne </s> -0.3010
+-0.6021 antenne ou -0.2992
+-0.7782 appelle </s> -0.3010
+-0.7782 appelle ou -0.2974
+-0.7782 appelle tu -0.2910
+-0.3010 apprentissage et -0.2943
+-0.3010 après midi 0.0000
+-0.3010 apéritif sur -0.2478
+-0.3010 arbre et -0.2988
+-0.3010 arrive d' -0.2900
+-0.6021 artificielle ce -0.2825
+-0.6021 artificielle si -0.1513
+-0.3010 artiste ou -0.2992
+-1.9345 as besoin -0.1461
+-1.9345 as commencé -0.1761
+-1.3324 as des -0.2490
+-1.9345 as débuté -0.1761
+-1.9345 as envie -0.1761
+-1.9345 as faim 0.0000
+-1.6335 as le -0.2926
+-1.9345 as ou -0.2992
+-1.6335 as pas -0.2802
+-1.6335 as quel -0.2775
+-1.9345 as raison -0.1761
+-1.9345 as rien 0.0000
+-1.9345 as soif -0.1761
+-0.7040 as tu -0.2731
+-1.6335 as un -0.2872
+-1.4574 as une -0.2825
+-1.6335 as été 0.0000
+-0.3010 assez bien -0.2825
+-0.3010 attentif </s> -0.3010
+-0.6532 au chifoumi -0.0792
+-0.6532 au jeu -0.1091
+-1.2553 au sujet 0.0000
+-0.3010 audio ou -0.2974
+-0.3010 aujourd' hui 0.0000
+-1.0792 aussi </s> -0.3010
+-0.7782 aussi d' -0.1903
+-1.0792 aussi je -0.2304
+-1.0792 aussi peut -0.2430
+-1.0792 aussi être -0.2430
+-0.5643 avec moi -0.1938
+-0.8653 avec toi -0.2389
+-1.0414 avec un -0.2942
+-0.3010 avion et -0.2921
+-0.3010 axel stéphanie 0.0000
+-0.3010 b c 0.0000
+-0.3010 bain la -0.2888
+-0.3010 ballader dans -0.2341
+-0.3010 balles de -0.2982
+-0.3010 base sur -0.2840
+-1.2041 batterie </s> -0.3010
+-1.2041 batterie donne 0.0000
+-0.9031 batterie et -0.2783
+-1.2041 batterie ou -0.2946
+-1.2041 batterie seront 0.0000
+-1.2041 batterie sont -0.2808
+-1.2041 batterie ton -0.2676
+-0.6021 bavarde cause -0.1761
+-0.6021 bavarde pas -0.2872
+-0.6021 bavarder causer 0.0000
+-0.6021 bavarder debattre 0.0000
+-0.6021 beau joli 0.0000
+-0.6021 beau père -0.1761
+-0.7782 beaucoup merci -0.2632
+-0.7782 beaucoup voire -0.2762
+-0.7782 beaucoup écouter -0.2430
+-0.3010 beaux rêve -0.2430
+-0.3010 belle mère -0.2218
+-1.0000 besoin </s> -0.3010
+-0.5229 besoin de -0.2775
+-1.0000 besoin des -0.2940
+-0.3010 biche le -0.2968
+-0.9031 bien </s> -0.3010
+-1.3802 bien cela -0.2762
+-1.3802 bien et -0.2665
+-1.3802 bien fais -0.2430
+-1.3802 bien mon -0.2472
+-1.3802 bien néo -0.2872
+-1.3802 bien ou -0.2807
+-1.3802 bien oui -0.2553
+-1.3802 bien si -0.1513
+-1.3802 bien ça -0.2688
+-0.3010 bientôt néo -0.2872
+-0.3010 biologie math 0.0000
+-0.6021 blanc </s> -0.3010
+-0.6021 blanc gris 0.0000
+-0.6021 bleu </s> -0.3010
+-0.6021 bleu turquoise 0.0000
+-0.3010 blond voire -0.2888
+-0.3010 blonde mais -0.2218
+-1.0000 boire </s> -0.3010
+-1.0000 boire dormir -0.2041
+-0.5229 boire ou -0.2891
+-0.3010 boite </s> -0.3010
+-0.3010 bon ou -0.2956
+-0.3010 bonjour néo -0.2872
+-0.9031 bonne après 0.0000
+-0.9031 bonne journée 0.0000
+-0.6021 bonne nuit 0.0000
+-0.6021 botmaster </s> -0.3010
+-0.9031 botmaster ou -0.2983
+-0.9031 botmaster sinon -0.2747
+-0.3010 bouche mais -0.2762
+-0.3010 bouteille de -0.2982
+-0.3010 bras ni -0.2688
+-0.3010 bruit et -0.2966
+-0.3010 brun ou -0.2863
+-0.3010 brune chatain -0.1761
+-0.3010 bus ou -0.2946
+-0.3010 bye à -0.2881
+-0.6021 bête stupide 0.0000
+-0.6021 bête très -0.2553
+-0.3010 c d 0.0000
+-0.3010 c' est -0.1934
+-0.6021 calcule reflechis -0.1761
+-0.6021 calcule tu -0.2983
+-0.3010 calculer analyser -0.1761
+-0.6021 camarade </s> -0.3010
+-0.6021 camarade ou -0.2863
+-0.3010 camera ou -0.2928
+-0.3010 camion ou -0.2946
+-0.4260 caméra 3d 0.0000
+-0.9031 caméra ou -0.2992
+-0.6021 caméras développées 0.0000
+-0.6021 caméras une -0.2888
+-0.3010 capable de -0.2745
+-0.4771 capteurs de -0.2953
+-0.7782 capteurs sinon -0.2881
+-0.4771 car moi -0.2802
+-0.7782 car quel -0.2126
+-0.3010 carte mère -0.2218
+-0.6021 cause ou -0.2768
+-0.9031 cause pas -0.2942
+-0.9031 cause tu -0.2910
+-0.3010 causer parler -0.2825
+-0.3010 cavaler voir 0.0000
+-0.3010 caïman comme -0.2389
+-1.6812 ce comment -0.2906
+-1.6812 ce et -0.2806
+-1.3802 ce n' -0.2218
+-1.0792 ce qu' -0.0414
+-0.5351 ce que -0.1478
+-1.6812 ce soir 0.0000
+-1.6812 ce sont -0.2596
+-0.6021 ceci </s> -0.3010
+-0.6021 ceci voire -0.2888
+-0.7782 cela </s> -0.3010
+-1.2553 cela avec -0.2596
+-0.9542 cela est -0.2957
+-1.2553 cela oui -0.1461
+-1.2553 cela peut -0.2430
+-1.2553 cela sinon -0.2881
+-0.3010 cent </s> -0.3010
+-0.3010 cerf et -0.2988
+-0.3010 cerveau puissant 0.0000
+-0.3010 cet artiste 0.0000
+-0.4771 chambre des -0.2868
+-0.7782 chambre parentale 0.0000
+-0.3010 chante tu -0.2992
+-1.0000 chanter danser -0.2218
+-1.0000 chanter manger -0.2553
+-0.5229 chanter ou -0.2778
+-0.3010 charger rends -0.1249
+-0.6021 chargé et -0.2943
+-0.6021 chargé ou -0.2974
+-0.3010 chat un -0.2976
+-0.6021 chatain </s> -0.3010
+-0.6021 chatain blonde 0.0000
+-0.9031 cherche quoi -0.2711
+-0.9031 cherche sur -0.2840
+-0.6021 cherche tu -0.2892
+-0.7782 chercher </s> -0.3010
+-0.7782 chercher ou -0.3001
+-0.7782 chercher tu -0.2956
+-0.3010 chevelure brune 0.0000
+-0.6021 cheveux ou -0.2956
+-0.6021 cheveux sont -0.2808
+-0.3010 chevreuil la -0.2970
+-0.3010 chien chienne 0.0000
+-0.3010 chienne chiwawa 0.0000
+-1.0000 chifoumi ensemble -0.2688
+-1.0000 chifoumi et -0.2829
+-0.5229 chifoumi ou -0.2844
+-0.3010 chimie biologie 0.0000
+-0.3010 chiwawa </s> -0.3010
+-0.3010 choisis c' 0.0000
+-0.7782 chose </s> -0.3010
+-0.7782 chose comme -0.2863
+-0.7782 chose voire -0.2888
+-0.3010 ciel les -0.2553
+-0.3010 cinq six 0.0000
+-0.3010 cinquante soixante 0.0000
+-0.3010 cinquante-cinq cinquante-six 0.0000
+-0.3010 cinquante-deux cinquante-trois 0.0000
+-0.3010 cinquante-huit cinquante-neuf 0.0000
+-0.3010 cinquante-neuf soixante_et_un 0.0000
+-0.3010 cinquante-quatre </s> -0.3010
+-0.3010 cinquante-sept cinquante-huit 0.0000
+-0.3010 cinquante-six cinquante-sept 0.0000
+-0.3010 cinquante-trois cinquante-quatre 0.0000
+-0.3010 cinquante_et_un cinquante-deux 0.0000
+-0.3010 ciseaux ou -0.2863
+-0.3010 climat et -0.2988
+-0.3010 coeur est -0.2876
+-0.3010 combien font 0.0000
+-1.4771 comme agé 0.0000
+-1.1761 comme j' -0.1461
+-1.4771 comme l' -0.2888
+-0.8751 comme le -0.2840
+-1.4771 comme objet -0.2730
+-1.4771 comme parfait -0.1761
+-1.4771 comme pour -0.2430
+-1.4771 comme quoi -0.2937
+-1.4771 comme toi -0.2863
+-1.4771 comme un -0.2976
+-1.4771 comme à -0.2881
+-0.6021 commencé ou -0.3001
+-0.6021 commencé à -0.2747
+-1.6232 comment </s> -0.3010
+-1.6232 comment c' 0.0000
+-1.3222 comment es -0.1856
+-1.6232 comment est -0.2957
+-1.6232 comment et -0.2829
+-1.6232 comment je -0.2923
+-1.6232 comment se 0.0000
+-1.6232 comment t' -0.2341
+-1.1461 comment te -0.2553
+-1.3222 comment ton -0.2762
+-1.1461 comment tu -0.2864
+-1.3222 comment vas -0.2374
+-1.3222 comment ça -0.2341
+-0.3010 comparer </s> -0.3010
+-0.3010 compliqué </s> -0.3010
+-0.3010 composant electronique 0.0000
+-0.3010 comprend pas -0.2657
+-0.6021 comprendre décrypter 0.0000
+-0.6021 comprendre la -0.2929
+-0.3010 construit ou -0.3001
+-0.6021 consulte t' -0.2341
+-0.6021 consulte tu -0.2928
+-0.3010 content et -0.2988
+-0.3010 contre je -0.2648
+-0.7782 converse aussi -0.2632
+-0.7782 converse et -0.2665
+-0.7782 converse pas -0.2872
+-0.7782 converser </s> -0.3010
+-0.7782 converser avec -0.1627
+-0.7782 converser bavarder -0.1761
+-0.6021 conçu </s> -0.3010
+-0.6021 conçu ou -0.3001
+-0.3010 cool </s> -0.3010
+-1.0792 copain </s> -0.3010
+-1.0792 copain copine -0.2430
+-1.0792 copain néo -0.1938
+-1.0792 copain ou -0.3001
+-1.0792 copain par -0.2762
+-1.0792 copain une -0.2950
+-0.9031 copine </s> -0.3010
+-0.9031 copine camarade -0.1761
+-0.9031 copine et -0.2988
+-0.9031 copine un -0.2976
+-0.3010 correcte et -0.2783
+-0.8239 couleur </s> -0.3010
+-1.3010 couleur aime -0.1996
+-1.0000 couleur et -0.2783
+-1.3010 couleur ou -0.2863
+-1.3010 couleur préféré -0.1249
+-1.3010 couleur que -0.1561
+-1.3010 couleur rouge 0.0000
+-0.6021 couloir </s> -0.3010
+-0.6021 couloir la -0.2804
+-0.3010 courir </s> -0.3010
+-0.3010 course ou -0.2928
+-0.3010 cousin je -0.2304
+-0.3010 cousine </s> -0.3010
+-0.3010 couteau et -0.2966
+-0.3010 crayon </s> -0.3010
+-0.3010 crocodile et -0.2988
+-0.3010 cross ou -0.2928
+-0.7782 créateur </s> -0.3010
+-0.7782 créateur même -0.0872
+-0.7782 créateur voire -0.2888
+-0.3010 créé fabriqué 0.0000
+-0.3010 cuillère près 0.0000
+-0.3010 cuisine le -0.2796
+-0.3010 cultivant et -0.2829
+-0.3010 cultivé intelligent -0.1761
+-0.3010 d e 0.0000
+-0.6990 d' accord 0.0000
+-1.6021 d' alcool 0.0000
+-1.6021 d' apprentissage 0.0000
+-1.6021 d' axel 0.0000
+-1.6021 d' eau 0.0000
+-1.6021 d' exploitation 0.0000
+-1.6021 d' ia -0.1761
+-1.6021 d' intelligence 0.0000
+-1.6021 d' oeil 0.0000
+-1.6021 d' ordinateur -0.1761
+-1.6021 d' oreilles 0.0000
+-1.6021 d' un -0.2942
+-1.6021 d' être -0.2430
+-0.3010 dangereux mortel -0.1761
+-0.8451 dans l' -0.2762
+-0.8451 dans la -0.2846
+-0.8451 dans ou -0.2992
+-1.1461 dans vers -0.2218
+-0.3010 dansant et -0.2988
+-0.6021 danse </s> -0.3010
+-0.6021 danse tu -0.2928
+-0.4771 danser chanter -0.0792
+-0.7782 danser jouer -0.2632
+-0.3010 darwin et -0.2988
+-0.6021 date </s> -0.3010
+-0.6021 date quel -0.2835
+-1.8808 de bain 0.0000
+-1.7047 de batterie -0.2109
+-2.1818 de beaux 0.0000
+-1.8808 de boire -0.1461
+-2.1818 de bras 0.0000
+-2.1818 de calculer 0.0000
+-1.8808 de cela -0.2218
+-2.1818 de couleur -0.2788
+-2.1818 de courir 0.0000
+-2.1818 de course 0.0000
+-2.1818 de cross 0.0000
+-2.1818 de destination 0.0000
+-2.1818 de différent 0.0000
+-2.1818 de dire -0.2499
+-2.1818 de distance 0.0000
+-2.1818 de doigts 0.0000
+-1.8808 de dormir -0.1461
+-1.7047 de faire -0.0669
+-2.1818 de fruit -0.1761
+-1.7047 de l' -0.2632
+-1.5798 de la -0.2804
+-2.1818 de laser 0.0000
+-1.8808 de ma -0.1761
+-1.5798 de manger -0.1761
+-2.1818 de me -0.2663
+-2.1818 de mon -0.2937
+-2.1818 de mourir 0.0000
+-2.1818 de mémoriser 0.0000
+-2.1818 de parachutiste 0.0000
+-1.8808 de parler -0.2632
+-2.1818 de physique 0.0000
+-2.1818 de pieds 0.0000
+-2.1818 de plusieurs -0.2218
+-2.1818 de proximité 0.0000
+-2.1818 de qualité 0.0000
+-1.8808 de que -0.1561
+-1.4829 de quoi -0.2131
+-1.8808 de recharge -0.2041
+-2.1818 de reconnaissance 0.0000
+-2.1818 de science 0.0000
+-2.1818 de ta -0.2808
+-2.1818 de te -0.2937
+-1.7047 de tes -0.2374
+-1.8808 de toi -0.2041
+-2.1818 de ton -0.2929
+-2.1818 de trial 0.0000
+-2.1818 de télévision -0.1761
+-2.1818 de vie -0.2553
+-2.1818 de vin 0.0000
+-0.3010 debattre nous -0.2688
+-0.3010 deltaplane ou -0.3001
+-0.6021 demain et -0.2988
+-0.6021 demain ou -0.3001
+-0.7782 demande de -0.2982
+-0.7782 demande ou -0.2807
+-0.7782 demande si -0.1513
+-0.3010 demoiselle ou -0.2946
+-1.7924 des ami -0.2788
+-1.7924 des ampères 0.0000
+-1.7924 des besoin -0.2553
+-1.7924 des bête -0.1761
+-1.4914 des capteurs -0.1249
+-1.7924 des cheveux -0.1761
+-1.7924 des chose -0.2218
+-1.7924 des copain -0.2632
+-1.0934 des couleur -0.1461
+-1.7924 des envie -0.2730
+-1.7924 des haut-parleur -0.2430
+-1.7924 des lacunes 0.0000
+-1.4914 des loisirs -0.1249
+-1.4914 des micros -0.1761
+-1.7924 des objet -0.2430
+-1.4914 des parents 0.0000
+-1.4914 des roue -0.1249
+-1.4914 des sons 0.0000
+-1.7924 des watts 0.0000
+-1.4914 des yeux 0.0000
+-0.3010 destination néo -0.1938
+-0.7270 deux </s> -0.3010
+-1.2041 deux au -0.1919
+-1.2041 deux haut-parleur -0.2430
+-1.2041 deux néo -0.1938
+-1.2041 deux ou -0.3001
+-1.2041 deux trois -0.2218
+-0.3010 dialogue pas -0.2657
+-0.6021 dialoguer </s> -0.3010
+-0.6021 dialoguer avec -0.1627
+-0.3010 différent </s> -0.3010
+-0.9542 dire </s> -0.3010
+-1.2553 dire au -0.2762
+-1.2553 dire aussi -0.2632
+-1.2553 dire ce -0.2632
+-1.2553 dire et -0.2943
+-1.2553 dire la -0.2846
+-1.2553 dire ou -0.2992
+-1.2553 dire quoi -0.2472
+-0.3010 directionnelle proche 0.0000
+-0.6021 dirige rends -0.2218
+-0.6021 dirige toi -0.2389
+-0.3010 diriger te -0.2863
+-1.1461 dis c' 0.0000
+-1.1461 dis le -0.2883
+-1.1461 dis merci -0.2218
+-0.8451 dis moi -0.2352
+-1.1461 dis non -0.2430
+-1.1461 dis oui -0.2553
+-1.0000 discute avec -0.1627
+-1.0000 discute bavarde -0.1761
+-1.0000 discute pas -0.2657
+-1.0000 discute sinon -0.2881
+-1.0000 discute tu -0.2992
+-0.6021 discuter bavarder -0.1761
+-0.6021 discuter converser -0.2218
+-0.7782 discutons </s> -0.3010
+-0.7782 discutons de -0.2953
+-0.7782 discutons ensemble -0.2688
+-0.7782 dispose aussi -0.2218
+-0.7782 dispose de -0.2982
+-0.7782 dispose dispose -0.2218
+-0.3010 distance ou -0.2956
+-0.3010 distingue un -0.2872
+-0.3010 distinguer me -0.2663
+-0.3010 dit </s> -0.3010
+-0.3010 divisé par -0.2762
+-0.3010 dix onze 0.0000
+-0.3010 dix-huit dix-neuf 0.0000
+-0.3010 dix-neuf vingt_et_un 0.0000
+-0.3010 dix-sept dix-huit 0.0000
+-0.3010 documenter m -0.2041
+-0.3010 doigts </s> -0.3010
+-0.3010 donne moi -0.2191
+-0.3010 donnée suivante -0.1761
+-1.0000 dormir </s> -0.3010
+-0.6990 dormir ou -0.2797
+-1.0000 dormir sinon -0.2881
+-1.0000 dormir te -0.2937
+-0.3010 dors bien -0.2825
+-0.3010 doux gentil -0.1761
+-0.6021 douze moins 0.0000
+-0.6021 douze treize 0.0000
+-0.3010 doué intelligent -0.1761
+-0.3010 drone piloté 0.0000
+-0.9031 du bruit 0.0000
+-0.9031 du gibier 0.0000
+-0.9031 du grand -0.2218
+-0.9031 du meuble 0.0000
+-0.3010 dur la -0.2970
+-0.6021 débuté par -0.2762
+-0.6021 débuté à -0.2747
+-0.3010 décide tu -0.3001
+-0.3010 décomposer ou -0.3001
+-0.3010 décrypter décomposer 0.0000
+-0.6021 déplace dans -0.2341
+-0.6021 déplace toi -0.2863
+-0.6021 déplacer dans -0.2688
+-0.6021 déplacer te -0.2937
+-0.6021 dérange ou -0.2992
+-0.6021 dérange pas -0.2942
+-0.3010 désire et -0.2783
+-0.3010 développées ainsi 0.0000
+-0.3010 e f 0.0000
+-0.3010 eau comme -0.2389
+-0.3010 ecoute ou -0.3001
+-0.3010 edison ou -0.2863
+-0.3010 effectue ou -0.3001
+-0.3010 einstein ou -0.3001
+-0.3010 electronique </s> -0.3010
+-0.6021 elle et -0.2806
+-0.6021 elle totalement 0.0000
+-1.3010 en accord -0.2218
+-1.3010 en dansant 0.0000
+-1.3010 en fin 0.0000
+-1.3010 en parlant 0.0000
+-1.3010 en quel -0.2835
+-1.3010 en robotique 0.0000
+-1.3010 en veille 0.0000
+-1.3010 en verre -0.1761
+-1.0000 en vie -0.2041
+-1.2304 encore au -0.0458
+-1.5315 encore balles 0.0000
+-1.5315 encore beau -0.1761
+-1.5315 encore bleu -0.1761
+-1.5315 encore cela -0.2762
+-1.5315 encore chatain -0.1761
+-1.5315 encore darwin 0.0000
+-1.5315 encore de -0.2982
+-1.5315 encore des -0.2940
+-1.5315 encore dialoguer -0.1761
+-1.2304 encore l' -0.2762
+-1.5315 encore merci -0.2218
+-1.5315 encore mon -0.2863
+-1.5315 encore qu'un 0.0000
+-1.5315 encore te -0.2937
+-0.3010 enfin si -0.1513
+-0.3010 enrichissant voire -0.2888
+-1.1461 ensemble </s> -0.3010
+-1.1461 ensemble si -0.1513
+-0.6690 ensemble tous -0.0792
+-1.1461 ensemble tu -0.2928
+-1.1461 ensemble à -0.2881
+-0.6021 entendre de -0.2894
+-0.6021 entendre ou -0.2992
+-0.3010 entretenir ou -0.3001
+-0.3010 entrée la -0.2846
+-0.6021 envie de -0.2715
+-1.2041 envie des -0.2940
+-1.2041 envie et -0.2966
+-1.2041 envie ou -0.2807
+-1.2041 envie voire -0.2762
+-1.9542 es amoureux -0.1761
+-1.9542 es bête -0.1761
+-1.9542 es capable 0.0000
+-1.9542 es en -0.2553
+-1.9542 es faible -0.1761
+-1.9542 es fort -0.1761
+-1.9542 es grand -0.2218
+-1.9542 es ma -0.2430
+-1.9542 es marié -0.1761
+-1.9542 es minable 0.0000
+-1.1091 es mon -0.1563
+-1.9542 es ou -0.2983
+-1.9542 es qui -0.2762
+-1.9542 es sur -0.2840
+-0.6320 es tu -0.2654
+-1.9542 es un -0.2907
+-1.6532 es une -0.2762
+-1.9542 es vivant 0.0000
+-0.3010 essaie le -0.2883
+-2.2148 est bien -0.2825
+-2.2148 est bon 0.0000
+-0.9361 est ce -0.0669
+-2.2148 est cet 0.0000
+-1.7377 est comment -0.2688
+-1.9138 est de -0.2953
+-2.2148 est elle -0.1761
+-1.9138 est en -0.2553
+-2.2148 est et -0.2783
+-2.2148 est idem 0.0000
+-1.9138 est il -0.2688
+-2.2148 est la -0.2846
+-2.2148 est le -0.2968
+-2.2148 est madonna 0.0000
+-1.9138 est mon -0.2863
+-2.2148 est ni -0.2341
+-2.2148 est nécessaire 0.0000
+-2.2148 est ok -0.2218
+-1.9138 est ou -0.2974
+-2.2148 est pareil 0.0000
+-2.2148 est parfait -0.1761
+-1.7377 est pas -0.2730
+-2.2148 est peut-être -0.2553
+-1.6128 est quel -0.2653
+-2.2148 est qui -0.2762
+-1.3118 est quoi -0.1950
+-2.2148 est simple -0.1761
+-2.2148 est suivi 0.0000
+-2.2148 est sympas 0.0000
+-2.2148 est ta -0.2808
+-2.2148 est toi -0.2711
+-1.3697 est ton -0.1597
+-2.2148 est très -0.2553
+-1.5159 est un -0.2730
+-2.2148 est à -0.2881
+-1.8151 et as -0.2054
+-2.2923 et bonne -0.2430
+-1.3892 et c' 0.0000
+-2.2923 et caïman 0.0000
+-1.9912 et combien 0.0000
+-1.8151 et comment -0.2093
+-2.2923 et dans -0.2341
+-2.2923 et des -0.2868
+-2.2923 et donne 0.0000
+-2.2923 et effectue 0.0000
+-2.2923 et est -0.2476
+-2.2923 et gentil -0.1761
+-2.2923 et il -0.2852
+-1.2923 et je -0.0934
+-2.2923 et l' -0.2888
+-2.2923 et la -0.2970
+-2.2923 et le -0.2968
+-2.2923 et moi -0.2872
+-2.2923 et mon -0.2711
+-2.2923 et même -0.2762
+-1.9912 et ne -0.2730
+-2.2923 et ni -0.2688
+-2.2923 et no 0.0000
+-2.2923 et on -0.2840
+-1.9912 et pas -0.2430
+-2.2923 et pour -0.1761
+-2.2923 et qu' -0.2788
+-1.9912 et que -0.2769
+-1.3380 et quel -0.1278
+-2.2923 et qui -0.2762
+-2.2923 et redis 0.0000
+-2.2923 et refais 0.0000
+-2.2923 et réessaie 0.0000
+-2.2923 et sans -0.1249
+-1.5933 et si -0.0822
+-2.2923 et surtout 0.0000
+-2.2923 et tes -0.2596
+-2.2923 et toi -0.2711
+-1.1162 et tu -0.2233
+-1.6902 et un -0.2872
+-1.9912 et une -0.2888
+-2.2923 et à -0.2881
+-1.9912 et ça -0.2341
+-0.3010 examiner ou -0.3001
+-0.3010 exige et -0.2783
+-0.6021 existe ou -0.3001
+-0.6021 existe tu -0.2928
+-0.3010 explique les -0.2788
+-0.3010 exploitation tout -0.2730
+-0.6021 exprime et -0.2783
+-0.6021 exprime mais -0.2762
+-0.3010 exprimer ou -0.2992
+-0.3010 extérieur il -0.2518
+-0.3010 f g 0.0000
+-0.3010 fabriqué ou -0.2992
+-0.6021 faible et -0.2988
+-0.6021 faible insignifiant -0.1761
+-0.3010 faim ou -0.2788
+-1.2553 faire </s> -0.3010
+-1.5563 faire alors -0.2218
+-1.5563 faire et -0.2665
+-0.9542 faire ou -0.2749
+-0.6021 faire quoi -0.1663
+-1.5563 faire tu -0.3001
+-0.9031 fais de -0.2982
+-0.9031 fais le -0.2883
+-0.9031 fais quoi -0.2711
+-0.9031 fais tu -0.2974
+-0.6021 fait il -0.2688
+-0.9031 fait que -0.1561
+-0.9031 fait quoi -0.2937
+-0.3010 faucon un -0.2976
+-0.3010 femelle </s> -0.3010
+-0.3010 femme ou -0.2872
+-0.7782 fenêtre le -0.2926
+-0.4771 fenêtre ou -0.2946
+-0.3010 fera quel -0.2894
+-0.9031 fille </s> -0.3010
+-0.6021 fille ou -0.2910
+-0.9031 fille voire -0.2888
+-0.3010 fillette ou -0.2946
+-0.3010 fin de -0.2982
+-0.3010 fixés et -0.2988
+-0.6021 fois comme -0.2863
+-0.6021 fois quatre -0.1249
+-0.3010 foncer cavaler 0.0000
+-0.3010 fonction d' -0.2900
+-0.9031 font douze -0.1761
+-0.9031 font quinze -0.1761
+-0.6021 font trois -0.1249
+-0.6021 force as -0.2054
+-0.6021 force si -0.1513
+-0.3010 forcer tracer 0.0000
+-0.6021 fort musclé 0.0000
+-0.6021 fort voire -0.2888
+-0.3010 fourchette un -0.2976
+-0.6021 fruit </s> -0.3010
+-0.6021 fruit ou -0.2992
+-0.6021 frère je -0.2304
+-0.6021 frère une -0.2950
+-0.3010 fuschia marron 0.0000
+-0.3010 g h 0.0000
+-0.9031 garçon </s> -0.3010
+-0.9031 garçon fille -0.2430
+-0.9031 garçon ou -0.2937
+-0.9031 garçon sinon -0.2747
+-0.6021 gentil même -0.0872
+-0.6021 gentil à -0.2881
+-0.3010 geographie langue -0.1761
+-0.3010 gibier </s> -0.3010
+-0.3010 gigantesque </s> -0.3010
+-0.7782 grand arbre 0.0000
+-0.7782 grand merci -0.2218
+-0.7782 grand énorme -0.1761
+-0.3010 grand-mère je -0.2304
+-0.3010 grand-père </s> -0.3010
+-0.3010 grave impressionnant 0.0000
+-0.3010 gris </s> -0.3010
+-0.3010 grisonnant ni -0.2688
+-0.3010 guépard et -0.2988
+-0.3010 géant top 0.0000
+-0.3010 h i 0.0000
+-0.6021 habite ou -0.2807
+-0.6021 habite tu -0.2910
+-0.9031 haut-parleur de -0.2982
+-0.9031 haut-parleur et -0.2988
+-0.9031 haut-parleur ou -0.2956
+-0.9031 haut-parleur sont -0.2808
+-0.3010 hello néo -0.2872
+-0.6021 herbe de -0.2894
+-0.6021 herbe la -0.2929
+-0.9031 heure </s> -0.3010
+-0.9031 heure est -0.2957
+-0.9031 heure on -0.2478
+-0.9031 heure ou -0.2946
+-0.3010 histoire geographie 0.0000
+-0.3010 hobby ou -0.2974
+-0.3010 homme ou -0.2937
+-0.3010 hors service 0.0000
+-0.3010 hui ou -0.3001
+-0.3010 huit neuf 0.0000
+-0.3010 hélicoptère une -0.2950
+-0.3010 i j 0.0000
+-0.6021 ia ni -0.2688
+-0.6021 ia évoluée 0.0000
+-0.3010 idem même -0.0872
+-0.3010 identifié </s> -0.3010
+-1.4472 il </s> -0.3010
+-1.4472 il dispose -0.2218
+-0.9700 il est -0.2876
+-1.4472 il et -0.2806
+-1.4472 il fera 0.0000
+-1.4472 il possible 0.0000
+-1.4472 il que -0.2891
+-1.4472 il t' -0.2688
+-1.4472 il te -0.2937
+-0.9700 il y -0.0969
+-0.3010 ils </s> -0.3010
+-0.9031 imagine imagine -0.0969
+-0.4260 imagine tu -0.2965
+-0.3010 impressionnant énorme -0.1761
+-0.3010 inactif ou -0.2807
+-0.3010 information suivante -0.1761
+-0.3010 informatique et -0.2783
+-0.3010 informer m -0.2041
+-0.6021 insignifiant même -0.0872
+-0.6021 insignifiant sans -0.1249
+-0.3010 instruire sur -0.2285
+-0.6021 instruis tu -0.2928
+-0.6021 instruis vas -0.2374
+-0.3010 intelligence artificielle 0.0000
+-0.6021 intelligent </s> -0.3010
+-0.6021 intelligent malin 0.0000
+-0.3010 internet ou -0.3001
+-0.7782 intéressant enrichissant 0.0000
+-0.4771 intéressant ou -0.2854
+-0.3010 intéressante </s> -0.3010
+-0.3010 intéresse pas -0.2942
+-0.3010 intérêt moche 0.0000
+-0.3010 invente tu -0.2992
+-0.3010 inventé ou -0.3001
+-0.6021 ip et -0.2829
+-0.6021 ip néo -0.1938
+-0.3010 j k 0.0000
+-0.6021 j' ai 0.0000
+-1.0000 j' aime -0.2632
+-1.3010 j' exige 0.0000
+-1.3010 j' énonce 0.0000
+-1.3010 j' épelle -0.1761
+-0.6021 jardin le -0.2926
+-0.6021 jardin ou -0.2946
+-2.0000 je dis -0.2688
+-2.0000 je distingue 0.0000
+-2.0000 je désire 0.0000
+-2.0000 je joue -0.2218
+-2.0000 je l' -0.2888
+-1.6990 je m' -0.1249
+-1.6990 je me -0.2663
+-1.0969 je ne -0.1761
+-2.0000 je ou -0.2974
+-2.0000 je parle -0.2762
+-2.0000 je peux -0.2900
+-2.0000 je regarde -0.1761
+-2.0000 je roule -0.2218
+-1.6990 je souhaite 0.0000
+-0.8239 je suis -0.1047
+-1.3010 je te -0.2553
+-2.0000 je tourne 0.0000
+-1.6990 je veux -0.2553
+-1.5229 je vois -0.0969
+-0.4472 jeu des -0.2645
+-1.1461 jeu jouons -0.2218
+-1.1461 jeu oui -0.1461
+-0.7782 jeune et -0.2783
+-0.7782 jeune femme 0.0000
+-0.7782 jeune homme 0.0000
+-0.3010 jeunesse ou -0.2946
+-0.3010 joli ravissant 0.0000
+-0.9031 jouait au -0.1919
+-0.4260 jouait ensemble -0.1963
+-0.7782 joue au -0.1919
+-0.7782 joue en -0.2788
+-0.7782 joue ou -0.3001
+-0.7782 jouer avec -0.1627
+-1.0792 jouer danser -0.1249
+-1.0792 jouer en -0.2788
+-1.0792 jouer ensemble -0.2688
+-1.0792 jouer rouler 0.0000
+-0.3010 jouir boire -0.2553
+-0.7782 jouons a -0.2730
+-0.7782 jouons au -0.1919
+-0.7782 jouons ensemble -0.2688
+-0.9031 jour et -0.2829
+-0.6021 jour ou -0.2919
+-0.9031 jour sommes 0.0000
+-0.3010 journée ou -0.2992
+-0.3010 jungle comme -0.2389
+-0.3010 jus de -0.2982
+-0.3010 juste sommeil -0.1761
+-0.3010 k l -0.1761
+-0.6021 l ecoute 0.0000
+-0.6021 l m -0.2553
+-1.5563 l' adolescence 0.0000
+-1.2553 l' année -0.1761
+-1.5563 l' apéritif 0.0000
+-1.2553 l' audio 0.0000
+-1.5563 l' entrée 0.0000
+-1.5563 l' extérieur 0.0000
+-1.2553 l' herbe 0.0000
+-1.2553 l' heure -0.1761
+-1.5563 l' information 0.0000
+-1.5563 l' objet -0.2109
+-1.5563 l' ouverture 0.0000
+-1.5563 l' élan 0.0000
+-1.5563 l' électricité 0.0000
+-1.5563 l' épelle -0.1761
+-2.0334 la biche 0.0000
+-2.0334 la boite 0.0000
+-1.5563 la chambre 0.0000
+-2.0334 la couleur -0.2788
+-1.4314 la cuisine 0.0000
+-2.0334 la date -0.1761
+-2.0334 la donnée 0.0000
+-1.5563 la fenêtre 0.0000
+-2.0334 la jeunesse 0.0000
+-2.0334 la jungle 0.0000
+-2.0334 la les -0.2788
+-2.0334 la lionne 0.0000
+-1.7324 la maison 0.0000
+-2.0334 la meteo 0.0000
+-1.7324 la musique -0.1249
+-1.4314 la météo 0.0000
+-2.0334 la panthere 0.0000
+-1.7324 la pelouse 0.0000
+-1.7324 la porte 0.0000
+-2.0334 la prochaine -0.1761
+-1.3345 la salle 0.0000
+-1.7324 la semaine 0.0000
+-2.0334 la table 0.0000
+-2.0334 la tente 0.0000
+-2.0334 la tienne 0.0000
+-2.0334 la tigresse 0.0000
+-1.4314 la télé -0.0792
+-1.7324 la télévision 0.0000
+-1.7324 la vie -0.2041
+-2.0334 la vieillesse 0.0000
+-0.3010 lacunes </s> -0.3010
+-0.6021 langue langue -0.1761
+-0.6021 langue psychologie 0.0000
+-0.3010 laser caméra -0.2430
+-2.0170 le cerf 0.0000
+-2.0170 le chevreuil 0.0000
+-2.0170 le chifoumi -0.2553
+-1.7160 le ciel 0.0000
+-2.0170 le climat 0.0000
+-1.7160 le couloir 0.0000
+-2.0170 le crocodile 0.0000
+-2.0170 le essaie 0.0000
+-1.5399 le et -0.2943
+-2.0170 le fais -0.2430
+-2.0170 le guépard 0.0000
+-1.7160 le jardin 0.0000
+-2.0170 le jeu -0.1091
+-2.0170 le jour -0.1761
+-2.0170 le jus 0.0000
+-2.0170 le la -0.2970
+-2.0170 le leopard 0.0000
+-2.0170 le lieu 0.0000
+-2.0170 le lion 0.0000
+-2.0170 le lézard 0.0000
+-1.7160 le mois -0.1461
+-2.0170 le mon -0.2863
+-1.7160 le moyen 0.0000
+-2.0170 le parle -0.2762
+-1.7160 le paysage 0.0000
+-2.0170 le plus -0.2430
+-2.0170 le poisson 0.0000
+-2.0170 le pouvais 0.0000
+-2.0170 le programme 0.0000
+-2.0170 le recommence 0.0000
+-2.0170 le recommencer 0.0000
+-2.0170 le redire 0.0000
+-2.0170 le refaire 0.0000
+-2.0170 le robot -0.2430
+-2.0170 le réessayer 0.0000
+-1.5399 le salon 0.0000
+-1.5399 le sexe 0.0000
+-2.0170 le tigre 0.0000
+-2.0170 le varan 0.0000
+-2.0170 le verre -0.1761
+-0.3010 leopard le -0.2968
+-1.3010 les chose -0.2218
+-0.6990 les deux -0.1383
+-1.3010 les mots 0.0000
+-1.0000 les nuages 0.0000
+-1.3010 les ou -0.2863
+-1.3010 les règles 0.0000
+-0.3010 lieu de -0.2982
+-0.3010 linux windows 0.0000
+-0.3010 lion la -0.2970
+-0.3010 lionne le -0.2968
+-0.6021 livre et -0.2665
+-0.6021 livre préféré -0.2218
+-0.7782 loisirs et -0.2806
+-0.7782 loisirs ou -0.2974
+-0.7782 loisirs un -0.2976
+-0.3010 lézard ou -0.2946
+-0.6990 m informer 0.0000
+-0.6990 m instruire 0.0000
+-1.0000 m n 0.0000
+-0.7782 m' appelle -0.2218
+-0.7782 m' exprime -0.1761
+-0.7782 m' intéresse 0.0000
+-0.9031 ma carte 0.0000
+-0.9031 ma copine -0.2430
+-0.9031 ma grand-mère 0.0000
+-0.9031 ma mémoire 0.0000
+-0.3010 mac ou -0.3001
+-0.3010 madonna ou -0.3001
+-0.3010 magnifique </s> -0.3010
+-0.3010 maintenant </s> -0.3010
+-0.9542 mais as -0.2054
+-0.7782 mais je -0.2601
+-0.9542 mais peut-être -0.2041
+-1.2553 mais tu -0.2992
+-1.2553 mais un -0.2976
+-0.6021 maison la -0.2970
+-0.6021 maison ou -0.2863
+-0.7782 maitre mais -0.2218
+-0.4771 maitre ou -0.2835
+-0.3010 male </s> -0.3010
+-0.3010 malin ou -0.3001
+-0.3010 maline voire -0.2888
+-0.3010 maman papa 0.0000
+-0.3010 mange de -0.2924
+-1.0000 manger </s> -0.3010
+-1.0000 manger boire -0.0792
+-1.3010 manger jouer -0.2632
+-1.0000 manger la -0.2632
+-1.0000 manger ou -0.2956
+-1.3010 manger quoi -0.2937
+-0.6021 marié </s> -0.3010
+-0.6021 marié es -0.1856
+-0.3010 marron noir 0.0000
+-0.3010 math mathematiques 0.0000
+-0.3010 mathematiques histoire 0.0000
+-0.3010 maussade mais -0.2499
+-1.1139 me demande -0.1249
+-0.9379 me dire -0.2218
+-1.1139 me documenter 0.0000
+-1.4150 me parle -0.2762
+-1.1139 me parler -0.2218
+-1.1139 me renseigner 0.0000
+-1.4150 me suivre 0.0000
+-0.7782 merci beaucoup -0.1249
+-1.0792 merci bien -0.2430
+-0.7782 merci ou -0.2844
+-1.0792 merci énormément 0.0000
+-0.3010 mes cheveux -0.1761
+-0.3010 meteo ton -0.2846
+-0.3010 meuble sur -0.2478
+-0.6021 micro ou -0.2956
+-0.6021 micro voire -0.2762
+-0.3010 microphones </s> -0.3010
+-0.9031 micros ainsi 0.0000
+-0.9031 micros et -0.2943
+-0.9031 micros ou -0.2928
+-0.9031 micros tu -0.2788
+-0.3010 midi ou -0.2992
+-0.3010 minable ou -0.2797
+-0.3010 minuscule insignifiant -0.1761
+-0.3010 mob une -0.2950
+-0.3010 mobylette ou -0.2937
+-0.3010 moche même -0.0872
+-1.0280 moi </s> -0.3010
+-1.5051 moi aussi -0.1761
+-1.8062 moi c' 0.0000
+-1.3291 moi de -0.2835
+-1.8062 moi j' -0.2553
+-1.5051 moi je -0.2878
+-1.8062 moi la -0.2846
+-1.8062 moi même -0.0872
+-1.8062 moi non -0.2730
+-0.9031 moi ou -0.2768
+-1.5051 moi pas -0.2583
+-1.3291 moi ton -0.2407
+-1.8062 moi un -0.2942
+-0.3010 moins deux -0.2109
+-1.0000 mois </s> -0.3010
+-0.6990 mois ou -0.2956
+-1.0000 mois sinon -0.2881
+-1.0000 mois voire -0.2888
+-1.7782 mon adresse 0.0000
+-0.9331 mon ami -0.1139
+-1.7782 mon beau -0.1761
+-1.4771 mon botmaster -0.1761
+-1.7782 mon coeur 0.0000
+-1.1761 mon copain -0.1249
+-1.7782 mon cousin 0.0000
+-1.4771 mon créateur -0.1249
+-1.7782 mon frère -0.1761
+-1.4771 mon maitre -0.1249
+-1.7782 mon nom -0.2218
+-1.7782 mon petit -0.1761
+-1.4771 mon pote -0.1761
+-1.7782 mon processeur -0.1761
+-1.7782 mon père -0.1761
+-1.4771 mon robot -0.0969
+-0.3010 monté </s> -0.3010
+-0.3010 mort ou -0.2992
+-0.6021 mortel </s> -0.3010
+-0.6021 mortel ou -0.3001
+-0.3010 mot un -0.2976
+-0.3010 moto un -0.2942
+-0.3010 mots pierre 0.0000
+-0.3010 mourir vivre 0.0000
+-0.3010 mouvoir ou -0.2863
+-0.3010 moyen de -0.2924
+-0.3010 musclé doué 0.0000
+-0.7782 musique car -0.1249
+-0.7782 musique de -0.2924
+-0.7782 musique sinon -0.2881
+-0.7782 mère de -0.2982
+-0.7782 mère enfin 0.0000
+-0.7782 mère si -0.1513
+-0.3010 méchant dangereux 0.0000
+-0.3010 mémoire </s> -0.3010
+-0.9031 mémorise ceci -0.1761
+-0.9031 mémorise la -0.2970
+-0.9031 mémorise que -0.2951
+-0.9031 mémorise un -0.2976
+-0.3010 mémoriser cela -0.2218
+-0.9031 météo </s> -0.3010
+-0.4260 météo ou -0.2900
+-1.2553 même conçu -0.1761
+-1.2553 même deux -0.2730
+-0.4102 même si -0.0822
+-0.3010 n o 0.0000
+-1.0792 n' a -0.2730
+-0.6021 n' as -0.2856
+-0.7782 n' est -0.2903
+-1.5051 ne bavarde -0.1761
+-1.5051 ne cause -0.2430
+-1.5051 ne comprend 0.0000
+-1.5051 ne converse -0.2218
+-1.5051 ne discute -0.2553
+-1.5051 ne m' -0.2218
+-1.5051 ne parle -0.2762
+-1.5051 ne saisis 0.0000
+-0.8062 ne suis -0.2486
+-1.5051 ne te -0.2863
+-1.5051 ne veux -0.2900
+-1.5051 ne vois -0.2430
+-0.3010 neuf dix 0.0000
+-0.3010 newton ou -0.3001
+-1.1461 ni blanc -0.1761
+-1.1461 ni d' -0.2900
+-1.1461 ni de -0.2982
+-1.1461 ni des -0.2868
+-1.1461 ni grisonnant 0.0000
+-0.8451 ni un -0.2942
+-0.6021 nickel cool 0.0000
+-0.6021 nickel voire -0.2888
+-0.6021 niveau batterie -0.2430
+-0.6021 niveau de -0.2924
+-0.3010 no dialogue 0.0000
+-0.3010 noir blanc -0.1761
+-0.7782 nom c' 0.0000
+-0.7782 nom et -0.2988
+-0.7782 nom ou -0.2974
+-1.2041 non identifié 0.0000
+-0.9031 non je -0.2405
+-1.2041 non moi -0.2872
+-0.9031 non ou -0.2974
+-1.2041 non plus -0.2430
+-1.2041 non vincent -0.1249
+-1.1461 nous discutons -0.2218
+-1.1461 nous entretenir 0.0000
+-1.1461 nous et -0.2806
+-1.1461 nous ou -0.2974
+-1.1461 nous parler -0.2632
+-1.1461 nous parlions 0.0000
+-1.1461 nous voire -0.2888
+-0.6021 nuages l' -0.2762
+-0.6021 nuages ou -0.2983
+-0.3010 nuit néo -0.2730
+-0.3010 nul sans -0.2218
+-0.3010 nécessaire car -0.2218
+-0.6601 néo </s> -0.3010
+-1.5051 néo bye 0.0000
+-1.5051 néo comment -0.2798
+-1.5051 néo dors 0.0000
+-1.5051 néo et -0.2988
+-1.5051 néo hello 0.0000
+-1.5051 néo salut 0.0000
+-1.5051 néo suis -0.2808
+-1.5051 néo surprend 0.0000
+-1.5051 néo tu -0.2956
+-0.3010 o p 0.0000
+-0.7270 objet </s> -0.3010
+-1.2041 objet est -0.2876
+-0.9031 objet ou -0.2844
+-1.2041 objet un -0.2976
+-1.2041 objet volant 0.0000
+-0.3010 occupations ou -0.2974
+-0.3010 oeil ni -0.2688
+-0.3010 oiseau oisillon 0.0000
+-0.3010 oisillon ou -0.2937
+-0.4771 ok </s> -0.3010
+-0.7782 ok pour -0.1761
+-0.9379 on est -0.2793
+-1.4150 on fait -0.2430
+-0.8129 on jouait 0.0000
+-1.1139 on joue -0.1249
+-1.4150 on parler -0.2825
+-1.4150 on peut -0.2430
+-1.4150 on pouvait 0.0000
+-0.3010 onze douze -0.1761
+-0.3010 orange violet 0.0000
+-0.6021 ordinateur </s> -0.3010
+-0.6021 ordinateur ni -0.2341
+-0.3010 oreilles et -0.2966
+-0.3010 orientation correcte 0.0000
+-2.6812 ou a -0.2730
+-2.6812 ou aimerais -0.2553
+-2.3802 ou alors -0.1249
+-2.3802 ou as -0.2054
+-2.6812 ou attentif 0.0000
+-2.3802 ou au -0.1919
+-2.3802 ou besoin -0.1461
+-2.6812 ou blond 0.0000
+-2.3802 ou bonne -0.0969
+-1.9031 ou c' 0.0000
+-2.6812 ou caméras -0.1761
+-2.6812 ou chercher -0.2218
+-2.6812 ou ciseaux 0.0000
+-2.0792 ou comment -0.2341
+-2.6812 ou comparer 0.0000
+-2.6812 ou comprendre -0.1761
+-2.6812 ou construit 0.0000
+-2.3802 ou converser -0.1249
+-2.2041 ou d' -0.1761
+-2.6812 ou dans -0.2341
+-1.7270 ou de -0.2527
+-2.6812 ou demain -0.1761
+-1.9031 ou des -0.2410
+-2.6812 ou dialoguer -0.1761
+-2.6812 ou dis -0.2341
+-2.6812 ou discute -0.2553
+-2.6812 ou discutons -0.2218
+-2.6812 ou dormir -0.2553
+-2.6812 ou du -0.2430
+-2.6812 ou débuté -0.1761
+-2.6812 ou déplace -0.1761
+-2.6812 ou edison 0.0000
+-2.6812 ou einstein 0.0000
+-2.3802 ou en -0.2553
+-1.4771 ou encore -0.0248
+-2.6812 ou entendre -0.1761
+-2.2041 ou envie -0.1761
+-2.2041 ou es -0.1856
+-2.2041 ou est -0.2415
+-2.6812 ou existe -0.1761
+-2.6812 ou fabriqué 0.0000
+-2.3802 ou faire -0.1065
+-2.6812 ou habite -0.1761
+-2.6812 ou hors 0.0000
+-2.3802 ou il -0.1963
+-2.6812 ou intéressant -0.1249
+-2.6812 ou intéressante 0.0000
+-2.6812 ou inventé 0.0000
+-2.6812 ou j' -0.1761
+-2.3802 ou je -0.2601
+-2.2041 ou l' -0.2218
+-1.8361 ou la -0.2361
+-1.8361 ou le -0.2617
+-2.6812 ou ma -0.2430
+-2.6812 ou maline 0.0000
+-2.6812 ou maussade 0.0000
+-2.2041 ou mon -0.2389
+-2.6812 ou monté 0.0000
+-2.6812 ou même -0.2762
+-2.6812 ou newton 0.0000
+-2.6812 ou nickel -0.1761
+-2.3802 ou non -0.2109
+-2.6812 ou nous -0.2688
+-2.6812 ou ok -0.1249
+-2.6812 ou on -0.2285
+-2.6812 ou parapente 0.0000
+-2.6812 ou parle -0.1597
+-2.3802 ou parlons -0.2041
+-2.6812 ou pas -0.2583
+-2.3802 ou peut-être -0.2041
+-2.0792 ou peux -0.0792
+-2.6812 ou picasso 0.0000
+-2.6812 ou pleines 0.0000
+-2.3802 ou plusieurs -0.1249
+-2.6812 ou pourquoi -0.2430
+-2.6812 ou promène -0.1761
+-2.3802 ou qu' -0.2041
+-2.6812 ou quand -0.2632
+-2.6812 ou quatorze -0.1761
+-1.9823 ou que -0.2579
+-2.2041 ou quel -0.2653
+-2.3802 ou qui -0.1919
+-2.6812 ou raconte 0.0000
+-2.6812 ou recherche -0.2430
+-2.6812 ou rends -0.1249
+-2.6812 ou roucouler 0.0000
+-2.6812 ou réside -0.1761
+-2.6812 ou s' 0.0000
+-2.2041 ou simplement 0.0000
+-2.6812 ou souffrir 0.0000
+-2.6812 ou super 0.0000
+-2.6812 ou synthèse 0.0000
+-2.0792 ou tes -0.2139
+-2.6812 ou tesla 0.0000
+-2.3802 ou ton -0.2499
+-2.6812 ou tous -0.2553
+-2.6812 ou tout -0.2730
+-2.6812 ou traduire 0.0000
+-2.6812 ou tri-dimentionnelle 0.0000
+-2.6812 ou trouve -0.2553
+-2.6812 ou trouver 0.0000
+-1.3388 ou tu -0.2146
+-2.6812 ou ulm 0.0000
+-1.7782 ou un -0.2507
+-1.8361 ou une -0.2361
+-2.3802 ou vers -0.1249
+-2.6812 ou verte 0.0000
+-2.6812 ou veux -0.2788
+-2.3802 ou vis -0.1761
+-2.6812 ou vulgaire 0.0000
+-2.6812 ou à -0.2747
+-2.3802 ou écouter -0.1761
+-1.0000 oui je -0.2304
+-1.0000 oui mais -0.2218
+-0.5229 oui ou -0.2965
+-0.3010 outil et -0.2921
+-0.3010 ouverture je -0.2967
+-0.3010 ovni comme -0.2863
+-0.3010 p q 0.0000
+-0.3010 panthere </s> -0.3010
+-0.3010 papa garçon -0.2430
+-0.3010 papier ou -0.3001
+-1.2553 par amour 0.0000
+-1.2553 par contre 0.0000
+-1.2553 par jouer -0.2632
+-0.7782 par la -0.2888
+-1.2553 par trente -0.1761
+-0.9542 par un -0.2942
+-0.3010 parachute ou -0.3001
+-0.3010 parachutiste avec -0.2596
+-0.3010 parapente deltaplane 0.0000
+-0.3010 pareil et -0.2829
+-0.3010 parentale </s> -0.3010
+-0.6021 parents </s> -0.3010
+-0.6021 parents ou -0.2946
+-0.6021 parfait nickel -0.1761
+-0.6021 parfait ou -0.3001
+-0.3010 parier ou -0.2992
+-0.3010 parlant et -0.2988
+-1.2553 parle de -0.2982
+-1.2553 parle et -0.2665
+-1.2553 parle je -0.2923
+-0.5563 parle moi -0.2191
+-1.2553 parle pas -0.2657
+-1.3802 parler avec -0.1627
+-1.3802 parler c' 0.0000
+-1.3802 parler chanter -0.2553
+-1.0792 parler de -0.2835
+-1.3802 parler discuter -0.1761
+-1.3802 parler et -0.2898
+-0.9031 parler ou -0.2768
+-1.3802 parler quand -0.2632
+-1.3802 parler très -0.2553
+-0.3010 parlions si -0.1513
+-1.0000 parlons de -0.2982
+-1.0000 parlons discutons -0.2218
+-1.0000 parlons ou -0.3001
+-1.0000 parlons sinon -0.2881
+-1.0000 parlons tous -0.0792
+-1.5051 pas </s> -0.3010
+-1.8062 pas c' 0.0000
+-1.0280 pas d' -0.1614
+-1.5051 pas de -0.2953
+-1.8062 pas envie -0.2730
+-1.1072 pas et -0.2543
+-1.8062 pas grave 0.0000
+-1.5051 pas moi -0.2507
+-1.8062 pas mon -0.2711
+-1.8062 pas même -0.0872
+-1.5051 pas ne -0.2730
+-1.8062 pas néo -0.1938
+-1.8062 pas ou -0.3001
+-1.8062 pas rasé 0.0000
+-1.8062 pas ta -0.2808
+-1.8062 pas ton -0.2929
+-1.8062 pas tout -0.2430
+-1.8062 pas très -0.2553
+-1.8062 pas un -0.2942
+-0.3010 passe-temps </s> -0.3010
+-0.6021 paysage le -0.2926
+-0.6021 paysage ou -0.2946
+-0.3010 pc ou -0.2946
+-0.6021 pelouse et -0.2783
+-0.6021 pelouse par -0.2218
+-0.3010 pense tu -0.2992
+-0.3010 perroquet une -0.2950
+-0.3010 perruche </s> -0.3010
+-0.3010 personnage un -0.2976
+-0.3010 personne un -0.2976
+-0.6021 petit minuscule 0.0000
+-0.6021 petit robot -0.0969
+-0.9031 peut aussi -0.2632
+-0.9031 peut poser 0.0000
+-0.9031 peut tu -0.3001
+-0.9031 peut être -0.2430
+-1.0000 peut-être </s> -0.3010
+-1.0000 peut-être intéressant -0.1249
+-1.0000 peut-être ou -0.2992
+-1.0000 peut-être pas -0.2872
+-1.0000 peut-être que -0.2951
+-1.6021 peux danser -0.1249
+-1.6021 peux dire -0.2762
+-1.3010 peux faire -0.1761
+-1.6021 peux on -0.2840
+-0.4260 peux tu -0.2634
+-0.3010 physique chimie 0.0000
+-0.3010 picasso ou -0.3001
+-0.3010 pieds pas -0.2583
+-0.3010 pierre papier 0.0000
+-0.3010 pigeon comme -0.2863
+-0.3010 piloté par -0.2499
+-0.3010 plait peux -0.0969
+-0.3010 pleines et -0.2988
+-0.3010 pleure et -0.2665
+-0.3010 pleurer t' -0.2688
+-0.9031 plus </s> -0.3010
+-0.9031 plus mon -0.2472
+-0.9031 plus ou -0.3001
+-0.9031 plus quatre -0.1249
+-0.7782 plusieurs antenne -0.1761
+-0.7782 plusieurs caméras -0.1761
+-0.7782 plusieurs micros -0.2430
+-0.3010 poisson n' -0.2632
+-0.3010 portable un -0.2976
+-0.3010 porte </s> -0.3010
+-0.3010 poser l' -0.2888
+-0.3010 possible que -0.2891
+-0.9031 pote </s> -0.3010
+-0.9031 pote comment -0.2798
+-0.9031 pote et -0.2665
+-0.9031 pote un -0.2976
+-0.9031 pour la -0.2929
+-0.6021 pour moi -0.2507
+-0.9031 pour te -0.2788
+-0.9031 pourquoi cause -0.2430
+-0.9031 pourquoi cherche -0.1761
+-0.9031 pourquoi est -0.2476
+-0.9031 pourquoi sinon -0.2747
+-0.3010 pouvais et -0.2988
+-0.3010 pouvait tout -0.2730
+-0.7782 pouvons jouer -0.2632
+-0.4771 pouvons nous -0.2341
+-0.3010 prendre un -0.2976
+-0.6021 processeur de -0.2953
+-0.6021 processeur informatique 0.0000
+-0.6021 prochaine </s> -0.3010
+-0.6021 prochaine fois -0.1761
+-0.3010 proche de -0.2953
+-0.3010 programme télé -0.2553
+-0.3010 promener te -0.2863
+-0.6021 promène dirige -0.1761
+-0.6021 promène toi -0.2389
+-0.3010 prononce les -0.2788
+-0.3010 proximité sont -0.2808
+-0.3010 près du -0.1761
+-0.6021 préfères quel -0.2894
+-0.9031 préfères quoi -0.2788
+-0.9031 préfères sinon -0.2747
+-0.7782 préféré et -0.2665
+-0.4771 préféré ou -0.2749
+-0.4771 prénom </s> -0.3010
+-0.7782 prénom préféré -0.1249
+-0.3010 présents </s> -0.3010
+-0.3010 psychologie recherche -0.2430
+-0.3010 puissant </s> -0.3010
+-0.6021 père et -0.2783
+-0.6021 père je -0.2304
+-0.3010 q r 0.0000
+-1.3010 qu' aimerais -0.2041
+-0.6990 qu' est -0.2323
+-1.3010 qu' il -0.2852
+-1.3010 qu' un -0.2976
+-0.8239 qu' une -0.2698
+-0.3010 qu'un objet -0.2730
+-0.3010 quad un -0.2976
+-0.3010 qualité </s> -0.3010
+-0.7782 quand as -0.2054
+-1.0792 quand est -0.2476
+-1.0792 quand et -0.2665
+-1.0792 quand seras -0.1761
+-1.0792 quand tes -0.2596
+-0.3010 quarante cinquante 0.0000
+-0.3010 quarante-cinq quarante-six 0.0000
+-0.3010 quarante-deux quarante-trois 0.0000
+-0.3010 quarante-huit quarante-neuf 0.0000
+-0.3010 quarante-neuf cinquante_et_un 0.0000
+-0.7782 quarante-quatre année -0.2632
+-0.7782 quarante-quatre ans 0.0000
+-0.7782 quarante-quatre quarante-cinq 0.0000
+-0.3010 quarante-sept quarante-huit 0.0000
+-0.3010 quarante-six quarante-sept 0.0000
+-0.3010 quarante-trois </s> -0.3010
+-0.3010 quarante_et_un quarante-deux 0.0000
+-0.6021 quatorze divisé 0.0000
+-0.6021 quatorze quinze -0.1761
+-0.7782 quatre cinq 0.0000
+-0.4771 quatre et -0.2966
+-0.3010 quatre-vingt-cinq quatre-vingt-six 0.0000
+-0.3010 quatre-vingt-deux quatre-vingt-trois 0.0000
+-0.3010 quatre-vingt-dix quatre-vingt-onze 0.0000
+-0.3010 quatre-vingt-dix-huit quatre-vingt-dix-neuf 0.0000
+-0.3010 quatre-vingt-dix-neuf cent 0.0000
+-0.3010 quatre-vingt-dix-sept quatre-vingt-dix-huit 0.0000
+-0.3010 quatre-vingt-douze quatre-vingt-treize 0.0000
+-0.3010 quatre-vingt-huit quatre-vingt-neuf 0.0000
+-0.3010 quatre-vingt-neuf quatre-vingt-dix 0.0000
+-0.3010 quatre-vingt-onze </s> -0.3010
+-0.3010 quatre-vingt-quatorze quatre-vingt-quinze 0.0000
+-0.3010 quatre-vingt-quatre quatre-vingt-cinq 0.0000
+-0.3010 quatre-vingt-quinze quatre-vingt-seize 0.0000
+-0.3010 quatre-vingt-seize </s> -0.3010
+-0.3010 quatre-vingt-sept quatre-vingt-huit 0.0000
+-0.3010 quatre-vingt-six quatre-vingt-sept 0.0000
+-0.3010 quatre-vingt-treize quatre-vingt-quatorze 0.0000
+-0.3010 quatre-vingt-trois </s> -0.3010
+-0.3010 quatre-vingt-un quatre-vingt-deux 0.0000
+-1.8692 que c' 0.0000
+-1.8692 que cherche -0.1761
+-1.8692 que fais -0.2430
+-1.8692 que la -0.2929
+-1.8692 que non -0.2430
+-1.5682 que ou -0.2965
+-1.8692 que oui -0.1461
+-1.3921 que peux -0.0969
+-1.8692 que rêve -0.1761
+-1.8692 que sais -0.2041
+-0.5470 que tu -0.2286
+-1.3921 que veux -0.2175
+-1.2788 quel age -0.1549
+-1.4037 quel année -0.0669
+-1.5798 quel couleur -0.2304
+-1.8808 quel date -0.1761
+-0.7347 quel est -0.2068
+-1.5798 quel heure -0.1761
+-1.4037 quel jour 0.0000
+-1.8808 quel livre -0.1761
+-1.4037 quel mois -0.0792
+-1.8808 quel musique -0.2218
+-1.5798 quel sont -0.2596
+-1.5798 quel temps 0.0000
+-0.6021 quelque-chose de -0.2982
+-0.6021 quelque-chose à -0.2747
+-1.2553 qui </s> -0.3010
+-1.2553 qui décide 0.0000
+-1.2553 qui es -0.1856
+-0.6532 qui est -0.2354
+-1.2553 qui j' -0.2788
+-1.2553 qui suis -0.2910
+-0.6021 quinze seize 0.0000
+-0.6021 quinze sur -0.2840
+-1.1761 quoi </s> -0.3010
+-1.7782 quoi car -0.1249
+-1.7782 quoi ce -0.2919
+-1.7782 quoi cela -0.2499
+-1.7782 quoi es -0.1856
+-1.3010 quoi et -0.2783
+-1.7782 quoi la -0.2970
+-1.4771 quoi le -0.2926
+-1.7782 quoi maintenant 0.0000
+-0.9331 quoi ou -0.2613
+-1.7782 quoi rêve -0.1761
+-1.4771 quoi si -0.0969
+-1.7782 quoi sinon -0.2881
+-1.3010 quoi ton -0.2499
+-1.7782 quoi veux -0.2175
+-0.3010 r s 0.0000
+-0.3010 raconte moi -0.2942
+-0.6021 raison de -0.2953
+-0.6021 raison ou -0.2992
+-0.3010 rasé et -0.2988
+-0.3010 ravissant magnifique 0.0000
+-1.0000 recharge pour -0.2430
+-1.0000 recharge retourne -0.1761
+-1.0000 recharge sinon -0.2747
+-1.0000 recharge toi -0.2863
+-1.0000 recharge tu -0.2983
+-0.7782 recharger </s> -0.3010
+-0.7782 recharger néo -0.1938
+-0.7782 recharger vas -0.2596
+-0.9031 recherche </s> -0.3010
+-0.9031 recherche sur -0.2840
+-0.9031 recherche te -0.2863
+-0.9031 recherche tu -0.2928
+-0.3010 recommence le -0.2968
+-0.3010 recommencer ou -0.2983
+-0.3010 reconnaissance ou -0.3001
+-0.3010 redire le -0.2968
+-0.3010 redis le -0.2968
+-0.3010 refaire le -0.2968
+-0.3010 refais le -0.2968
+-0.6021 reflechis et -0.2665
+-0.6021 reflechis tu -0.2992
+-0.6021 regarde la -0.2762
+-0.6021 regarde tu -0.2901
+-0.6021 regarder la -0.2929
+-0.6021 regarder par -0.2218
+-0.3010 remercie de -0.2982
+-0.6021 rendre dans -0.2341
+-0.6021 rendre te -0.2863
+-0.7782 rends déplace -0.1761
+-0.4771 rends toi -0.2218
+-0.6021 renseigne consulte -0.1761
+-0.6021 renseigne tu -0.2928
+-0.3010 renseigner me -0.2663
+-0.6021 respire </s> -0.3010
+-0.6021 respire tu -0.2928
+-0.6021 retourne sur -0.2478
+-0.6021 retourne te -0.2788
+-0.3010 rien ou -0.2807
+-0.3010 rire pleurer 0.0000
+-0.4260 robot </s> -0.3010
+-0.9031 robot dispose -0.2218
+-0.3010 robotique le -0.2968
+-0.3010 roucouler </s> -0.3010
+-0.7782 roue et -0.2966
+-0.7782 roue mais -0.2499
+-0.7782 roue voire -0.2762
+-0.3010 rouge vert 0.0000
+-0.7782 roule </s> -0.3010
+-0.7782 roule comme -0.2863
+-0.7782 roule et -0.2665
+-0.3010 rouler rire 0.0000
+-0.3010 roulette directionnelle 0.0000
+-0.3010 roux ou -0.3001
+-0.3010 règles sont -0.2808
+-0.3010 réessaie le -0.2968
+-0.3010 réessayer mon -0.2472
+-0.6021 réside </s> -0.3010
+-0.6021 réside tu -0.2992
+-0.3010 réveiller mon -0.2863
+-0.9031 rêve de -0.2865
+-0.9031 rêve recharge -0.2553
+-0.6021 rêve tu -0.2983
+-0.3010 s t 0.0000
+-0.3010 s' il -0.2852
+-0.3010 sage doux 0.0000
+-1.0000 sais faire -0.1761
+-1.0000 sais manger -0.2553
+-1.0000 sais que -0.1561
+-0.6990 sais tu -0.2947
+-0.3010 saisis pas -0.2942
+-0.6990 salle de -0.2953
+-0.5229 salle à -0.2609
+-0.3010 salon la -0.2804
+-0.3010 salut néo -0.2872
+-0.4771 sans force 0.0000
+-0.7782 sans intérêt 0.0000
+-0.3010 sauvage méchant 0.0000
+-0.3010 science </s> -0.3010
+-0.3010 se fait -0.0969
+-0.3010 seize vingt -0.1761
+-0.6021 semaine comme -0.2863
+-0.6021 semaine prochaine -0.1761
+-0.6021 sens très -0.2553
+-0.6021 sens tu -0.2974
+-0.3010 sept huit 0.0000
+-0.9031 seras inactif 0.0000
+-0.6021 seras tu -0.2983
+-0.9031 seras voire -0.2888
+-0.3010 seront vides -0.1761
+-0.3010 service </s> -0.3010
+-0.7782 sexe </s> -0.3010
+-0.7782 sexe aime -0.1996
+-0.7782 sexe tu -0.2965
+-1.3802 si c' 0.0000
+-1.6812 si ce -0.2825
+-1.3802 si je -0.2304
+-1.6812 si nous -0.2688
+-1.0792 si on -0.2083
+-0.5351 si tu -0.2360
+-0.6021 simple </s> -0.3010
+-0.6021 simple et -0.2829
+-0.7782 simplement des -0.2868
+-0.4771 simplement le -0.2883
+-1.2304 sinon comment -0.2460
+-1.5315 sinon discute -0.2553
+-1.2304 sinon es -0.1856
+-1.5315 sinon je -0.2967
+-1.5315 sinon juste 0.0000
+-1.5315 sinon l' -0.2762
+-1.5315 sinon la -0.2970
+-1.5315 sinon mémorise -0.2430
+-1.5315 sinon ou -0.2807
+-1.5315 sinon parle -0.1597
+-1.5315 sinon parlons -0.2553
+-1.5315 sinon pouvons -0.1249
+-1.5315 sinon que -0.2951
+-1.2304 sinon tu -0.2947
+-0.3010 six sept 0.0000
+-0.3010 socle sur -0.2478
+-0.6021 soeur </s> -0.3010
+-0.6021 soeur et -0.2898
+-0.6021 soif est -0.2476
+-0.6021 soif ou -0.2992
+-0.3010 soir à -0.2747
+-0.3010 sois mon -0.2472
+-0.3010 soixante cent 0.0000
+-0.3010 soixante-cinq soixante-six 0.0000
+-0.3010 soixante-deux soixante-trois 0.0000
+-0.3010 soixante-dix-huit soixante-dix-neuf 0.0000
+-0.3010 soixante-dix-neuf quatre-vingt-un 0.0000
+-0.3010 soixante-dix-sept soixante-dix-huit 0.0000
+-0.3010 soixante-douze soixante-treize 0.0000
+-0.3010 soixante-huit soixante-neuf 0.0000
+-0.3010 soixante-neuf soixante_et_onze 0.0000
+-0.3010 soixante-quatorze </s> -0.3010
+-0.3010 soixante-quatre </s> -0.3010
+-0.3010 soixante-quinze soixante-seize 0.0000
+-0.3010 soixante-seize soixante-dix-sept 0.0000
+-0.3010 soixante-sept soixante-huit 0.0000
+-0.3010 soixante-six soixante-sept 0.0000
+-0.3010 soixante-treize soixante-quatorze 0.0000
+-0.3010 soixante-trois soixante-quatre 0.0000
+-0.3010 soixante_et_onze soixante-douze 0.0000
+-0.3010 soixante_et_un soixante-deux 0.0000
+-0.6021 sommeil </s> -0.3010
+-0.6021 sommeil ou -0.2983
+-0.3010 sommes nous -0.2341
+-0.6021 sons </s> -0.3010
+-0.6021 sons de -0.2924
+-1.0414 sont des -0.2868
+-1.3424 sont du -0.2430
+-1.3424 sont elle -0.1761
+-1.3424 sont fixés 0.0000
+-1.3424 sont ils 0.0000
+-1.3424 sont présents 0.0000
+-1.3424 sont roux 0.0000
+-1.3424 sont simple -0.1761
+-1.3424 sont tes -0.2808
+-1.3424 sont vides -0.1761
+-0.3010 soucoupe volante 0.0000
+-0.3010 souffrir néo -0.1938
+-0.6021 souhaite ou -0.3001
+-0.6021 souhaite que -0.1561
+-0.3010 sous linux 0.0000
+-0.3010 station de -0.2953
+-0.6021 statut </s> -0.3010
+-0.6021 statut actuel 0.0000
+-0.3010 stupide nul 0.0000
+-0.3010 stylo et -0.2921
+-0.3010 stéphanie vincent -0.2218
+-1.6435 suis content 0.0000
+-1.3424 suis d' -0.2041
+-1.6435 suis je -0.2967
+-1.6435 suis jeune -0.2218
+-1.3424 suis moi -0.2272
+-0.9445 suis pas -0.2352
+-1.0414 suis ta -0.2139
+-0.9445 suis ton -0.2588
+-1.6435 suis vieux 0.0000
+-0.6021 suivante et -0.2783
+-0.6021 suivante ou -0.2863
+-0.3010 suivi par -0.2499
+-0.3010 suivre mon -0.2937
+-0.3010 sujet de -0.2982
+-0.3010 super </s> -0.3010
+-1.4150 sur </s> -0.3010
+-1.4150 sur de -0.2953
+-1.4150 sur internet 0.0000
+-0.9379 sur la -0.2888
+-0.9379 sur ta -0.2374
+-1.4150 sur ton -0.2929
+-1.4150 sur une -0.2950
+-1.4150 sur vingt -0.1761
+-1.4150 sur wikipédia 0.0000
+-0.3010 surprend moi -0.2430
+-0.3010 surtout mon -0.2863
+-0.3010 sympas et -0.2988
+-0.3010 synthèse vocale 0.0000
+-0.7782 système d' -0.2900
+-0.7782 système ou -0.2992
+-0.7782 système ta -0.2808
+-0.3010 t u 0.0000
+-0.8451 t' appelle -0.1249
+-1.1461 t' arrive 0.0000
+-1.1461 t' exprime -0.1761
+-1.1461 t' exprimer 0.0000
+-0.8451 t' instruis 0.0000
+-1.3424 ta base 0.0000
+-1.3424 ta batterie -0.2730
+-1.3424 ta belle 0.0000
+-1.3424 ta caméra -0.0969
+-1.3424 ta copine -0.2430
+-1.3424 ta couleur -0.2788
+-1.3424 ta cousine 0.0000
+-1.3424 ta mère -0.2218
+-1.3424 ta soeur -0.1761
+-1.0414 ta station 0.0000
+-0.3010 table prendre 0.0000
+-0.3010 tablette </s> -0.3010
+-0.3010 tabouret un -0.2976
+-1.7782 te ballader 0.0000
+-1.7782 te charger 0.0000
+-1.7782 te demande -0.2218
+-1.7782 te diriger 0.0000
+-1.4771 te dis -0.2341
+-1.7782 te dit 0.0000
+-1.4771 te déplacer 0.0000
+-1.4771 te dérange 0.0000
+-1.7782 te mouvoir 0.0000
+-1.7782 te plait 0.0000
+-1.7782 te promener 0.0000
+-1.7782 te promène -0.1761
+-1.4771 te recharge -0.2041
+-1.3010 te recharger 0.0000
+-1.7782 te remercie 0.0000
+-1.4771 te rendre 0.0000
+-1.4771 te renseigne 0.0000
+-1.7782 te réveiller 0.0000
+-1.4771 te sens 0.0000
+-1.4771 te trouve -0.1461
+-0.6021 temps fait -0.1761
+-0.6021 temps ou -0.2974
+-0.3010 tente près 0.0000
+-0.3010 terme ou -0.2937
+-1.3424 tes accus 0.0000
+-1.0414 tes batterie -0.2430
+-1.3424 tes camera 0.0000
+-1.3424 tes capteurs -0.2218
+-1.3424 tes hobby 0.0000
+-1.3424 tes loisirs -0.2218
+-1.3424 tes microphones 0.0000
+-1.3424 tes micros -0.2430
+-1.3424 tes occupations 0.0000
+-1.3424 tes passe-temps 0.0000
+-0.3010 tesla ou -0.3001
+-0.3010 tienne </s> -0.3010
+-0.3010 tiens es -0.1856
+-0.3010 tigre la -0.2970
+-0.3010 tigresse le -0.2968
+-0.7782 toc est -0.2476
+-0.4771 toc toc 0.0000
+-1.1761 toi </s> -0.3010
+-1.4771 toi dans -0.2341
+-1.4771 toi de -0.2982
+-1.4771 toi mon -0.2472
+-0.8751 toi ou -0.2965
+-1.1761 toi qui -0.2499
+-1.4771 toi retourne -0.1761
+-1.4771 toi sur -0.2478
+-1.4771 toi tu -0.2992
+-1.4771 toi vincent -0.1249
+-1.7324 ton adresse 0.0000
+-1.2553 ton age -0.1963
+-1.7324 ton ami -0.2788
+-1.7324 ton botmaster -0.1761
+-1.7324 ton créateur -0.2218
+-1.7324 ton grand-père 0.0000
+-1.7324 ton livre -0.1761
+-1.7324 ton maitre -0.2218
+-1.1303 ton niveau 0.0000
+-1.4314 ton nom -0.1249
+-1.7324 ton pote -0.2430
+-1.2553 ton prénom 0.0000
+-1.7324 ton socle 0.0000
+-1.4314 ton statut 0.0000
+-1.4314 ton système -0.1249
+-1.7324 ton tes -0.2808
+-1.7324 ton état 0.0000
+-0.3010 top ou -0.3001
+-0.3010 totalement chargé -0.1761
+-0.3010 tourne sous 0.0000
+-1.0000 tous deux -0.2730
+-0.3979 tous les -0.2041
+-1.2041 tout cela -0.2762
+-1.2041 tout faire -0.2762
+-1.2041 tout petit -0.1761
+-1.2041 tout système -0.2218
+-1.2041 tout va -0.1761
+-1.2041 tout à -0.2881
+-0.9031 tout ça -0.2341
+-0.3010 tracer foncer 0.0000
+-0.3010 traduire des -0.2940
+-0.3010 traiter comprendre -0.1761
+-0.3010 treize quatorze -0.1761
+-0.6021 trente </s> -0.3010
+-0.6021 trente quarante 0.0000
+-0.3010 trente-cinq trente-six 0.0000
+-0.3010 trente-deux trente-trois 0.0000
+-0.3010 trente-huit trente-neuf 0.0000
+-0.3010 trente-neuf quarante_et_un 0.0000
+-0.3010 trente-quatre trente-cinq 0.0000
+-0.3010 trente-sept trente-huit 0.0000
+-0.3010 trente-six trente-sept 0.0000
+-0.3010 trente-trois trente-quatre 0.0000
+-0.3010 trente_et_un </s> -0.3010
+-0.3010 tri-dimentionnelle </s> -0.3010
+-0.3010 trial </s> -0.3010
+-0.3010 triste ou -0.3001
+-0.7782 trois fois -0.1761
+-0.7782 trois plus -0.2430
+-0.7782 trois quatre -0.2218
+-1.0000 trouve ceci -0.1761
+-1.0000 trouve comment -0.2906
+-1.0000 trouve recherche -0.2430
+-0.6990 trouve tu -0.2992
+-0.3010 trouver ou -0.2965
+-0.6021 truc une -0.2950
+-0.6021 truc à -0.2747
+-1.0000 très anciennes 0.0000
+-1.0000 très bien -0.2825
+-1.0000 très compliqué 0.0000
+-1.0000 très fort -0.1761
+-1.0000 très intéressant -0.2218
+-2.2059 tu </s> -0.3010
+-1.9841 tu aime -0.1996
+-2.3820 tu aimerais -0.2041
+-2.6830 tu alimenté 0.0000
+-2.6830 tu amoureux -0.1761
+-2.3820 tu analyse 0.0000
+-2.6830 tu analyser -0.1761
+-1.3213 tu as -0.1659
+-2.6830 tu aujourd' 0.0000
+-2.3820 tu calcule 0.0000
+-2.0810 tu capable 0.0000
+-2.6830 tu cause -0.1761
+-2.3820 tu chante 0.0000
+-2.6830 tu chanter -0.1461
+-2.6830 tu chargé -0.1761
+-2.6830 tu cherche -0.2430
+-2.6830 tu chercher -0.2218
+-2.6830 tu choisis 0.0000
+-2.6830 tu commencé -0.1761
+-2.6830 tu comment -0.2688
+-2.6830 tu consulte -0.1761
+-2.3820 tu converse -0.1249
+-2.6830 tu cultivé 0.0000
+-2.3820 tu danse 0.0000
+-2.6830 tu de -0.2924
+-2.6830 tu des -0.2868
+-2.6830 tu dire -0.2762
+-2.3820 tu discute -0.2041
+-2.6830 tu discuter -0.1761
+-2.3820 tu en -0.2304
+-2.6830 tu envie -0.2730
+-1.3028 tu es -0.1663
+-2.0810 tu et -0.2592
+-2.6830 tu existe -0.1761
+-2.6830 tu explique 0.0000
+-2.6830 tu faible -0.1761
+-2.6830 tu faim 0.0000
+-1.9049 tu faire -0.0458
+-2.6830 tu fais -0.2430
+-2.6830 tu forcer 0.0000
+-2.6830 tu habite -0.1761
+-2.3820 tu imagine 0.0000
+-2.3820 tu invente 0.0000
+-2.6830 tu jouir 0.0000
+-2.6830 tu la -0.2846
+-2.0810 tu le -0.2752
+-2.6830 tu mange 0.0000
+-2.6830 tu marié -0.1761
+-1.8379 tu me -0.1648
+-2.6830 tu minable 0.0000
+-2.3820 tu mon -0.2304
+-2.6830 tu mort 0.0000
+-2.2059 tu n' -0.1761
+-2.3820 tu ne -0.2730
+-1.6417 tu ou -0.2662
+-2.3820 tu parler -0.2430
+-2.3820 tu pense 0.0000
+-2.2059 tu peux -0.2672
+-2.6830 tu pleure 0.0000
+-2.0810 tu préfères 0.0000
+-2.6830 tu quand -0.2632
+-2.6830 tu quelque-chose -0.1761
+-2.6830 tu raison -0.1761
+-2.6830 tu recherche -0.2430
+-2.6830 tu reflechis -0.1761
+-2.6830 tu regarde -0.1761
+-2.6830 tu regarder -0.1761
+-2.6830 tu respire -0.1761
+-2.6830 tu rouge 0.0000
+-2.3820 tu roule -0.1249
+-2.6830 tu réside -0.1761
+-2.6830 tu rêve -0.2430
+-2.2059 tu sais -0.1461
+-2.3820 tu seras -0.1761
+-2.3820 tu sinon -0.2747
+-2.6830 tu soif -0.1761
+-2.6830 tu sois 0.0000
+-2.6830 tu sommeil -0.1761
+-2.6830 tu sur -0.2840
+-2.2059 tu t' -0.1091
+-1.8379 tu te -0.2041
+-2.6830 tu tout -0.2730
+-2.6830 tu traiter 0.0000
+-2.3820 tu trouve -0.1461
+-1.7288 tu tu -0.2614
+-2.6830 tu tucherche 0.0000
+-2.2059 tu un -0.2802
+-2.0810 tu une -0.2632
+-1.9049 tu vas -0.1627
+-2.6830 tu venais 0.0000
+-1.7288 tu veux -0.1614
+-2.6830 tu viens 0.0000
+-2.6830 tu violent 0.0000
+-2.3820 tu vis -0.1761
+-2.6830 tu vivant 0.0000
+-2.6830 tu voulais 0.0000
+-2.6830 tu écouter -0.2430
+-2.6830 tu être -0.2430
+-0.3010 tucherche tu -0.2992
+-0.3010 turquoise orange 0.0000
+-1.0000 télé est -0.2476
+-1.0000 télé et -0.2806
+-1.0000 télé ou -0.2992
+-1.0000 télé télévision -0.1761
+-1.0000 télé un -0.2976
+-0.6021 télévision </s> -0.3010
+-0.6021 télévision ou -0.2919
+-0.3010 u v 0.0000
+-0.3010 ulm </s> -0.3010
+-2.1072 un accessoire 0.0000
+-2.1072 un aigle 0.0000
+-2.1072 un ami -0.2788
+-2.1072 un animal 0.0000
+-2.1072 un avion 0.0000
+-2.1072 un besoin -0.2553
+-2.1072 un bus 0.0000
+-2.1072 un camarade -0.1761
+-2.1072 un camion 0.0000
+-2.1072 un cerveau 0.0000
+-2.1072 un chat 0.0000
+-2.1072 un chien 0.0000
+-2.1072 un composant 0.0000
+-2.1072 un copain -0.2632
+-2.1072 un couteau 0.0000
+-2.1072 un crayon 0.0000
+-2.1072 un demoiselle 0.0000
+-2.1072 un deux -0.2730
+-2.1072 un drone 0.0000
+-2.1072 un faucon 0.0000
+-2.1072 un fruit -0.1761
+-2.1072 un frère -0.1761
+-1.6301 un garçon -0.0969
+-2.1072 un grand -0.2218
+-1.8062 un haut-parleur -0.1761
+-2.1072 un homme 0.0000
+-2.1072 un hélicoptère 0.0000
+-1.8062 un jeu -0.2341
+-2.1072 un jeune -0.2218
+-2.1072 un male 0.0000
+-1.8062 un micro 0.0000
+-2.1072 un mot 0.0000
+-1.5051 un objet -0.0969
+-2.1072 un oiseau 0.0000
+-2.1072 un ordinateur -0.1761
+-1.8062 un ou -0.2863
+-2.1072 un outil 0.0000
+-2.1072 un ovni 0.0000
+-2.1072 un parachute 0.0000
+-2.1072 un pc 0.0000
+-2.1072 un perroquet 0.0000
+-2.1072 un personnage 0.0000
+-2.1072 un pigeon 0.0000
+-2.1072 un portable 0.0000
+-2.1072 un pote -0.2430
+-2.1072 un processeur -0.1761
+-2.1072 un quad 0.0000
+-2.1072 un stylo 0.0000
+-2.1072 un tabouret 0.0000
+-2.1072 un terme 0.0000
+-1.8062 un truc 0.0000
+-1.8062 un vélo 0.0000
+-2.1072 un écran 0.0000
+-1.8573 une amie 0.0000
+-1.8573 une antenne -0.1761
+-1.8573 une bouche 0.0000
+-1.8573 une bouteille 0.0000
+-1.5563 une caméra -0.0969
+-1.8573 une chevelure 0.0000
+-1.8573 une chose -0.2218
+-1.8573 une copine -0.2430
+-1.8573 une cuillère 0.0000
+-1.8573 une envie -0.2730
+-1.8573 une femelle 0.0000
+-1.8573 une femme 0.0000
+-1.3802 une fille -0.0969
+-1.8573 une fillette 0.0000
+-1.8573 une fonction 0.0000
+-1.8573 une fourchette 0.0000
+-1.8573 une ia -0.1761
+-1.8573 une intelligence 0.0000
+-1.8573 une jeune -0.2218
+-1.8573 une mob 0.0000
+-1.8573 une mobylette 0.0000
+-1.8573 une moto 0.0000
+-1.8573 une orientation 0.0000
+-1.8573 une perruche 0.0000
+-1.8573 une personne 0.0000
+-1.8573 une roue -0.2218
+-1.8573 une roulette 0.0000
+-1.8573 une soeur -0.1761
+-1.8573 une soucoupe 0.0000
+-1.8573 une tablette 0.0000
+-1.8573 une voire -0.2888
+-1.5563 une voiture 0.0000
+-0.3010 v w 0.0000
+-0.6021 va bien -0.2825
+-0.6021 va mon -0.2863
+-0.3010 varan sont -0.2596
+-1.3424 vas assez 0.0000
+-0.8653 vas bien -0.1996
+-1.3424 vas chercher -0.2218
+-1.3424 vas comment -0.2688
+-1.0414 vas te -0.2711
+-0.8653 vas tu -0.2974
+-0.3010 veille ou -0.3001
+-0.3010 venais jouer -0.2218
+-0.6021 verre comme -0.2389
+-0.6021 verre d' -0.2900
+-0.7782 vers la -0.2846
+-0.7782 vers le -0.2968
+-0.7782 vers ou -0.3001
+-0.6021 vert bleu -0.1761
+-0.6021 vert ou -0.3001
+-0.3010 verte ou -0.2863
+-1.1249 veux bien -0.1996
+-1.6021 veux chanter -0.1461
+-1.6021 veux d' -0.2041
+-1.6021 veux dire -0.2762
+-1.6021 veux faire -0.1761
+-1.6021 veux manger -0.2788
+-1.3010 veux ou -0.2797
+-1.6021 veux parler -0.2632
+-1.6021 veux pas -0.2942
+-1.6021 veux sinon -0.2881
+-0.7570 veux tu -0.2836
+-0.6021 vides </s> -0.3010
+-0.6021 vides ou -0.3001
+-1.0000 vie </s> -0.3010
+-1.0000 vie ou -0.2992
+-1.0000 vie respire -0.1761
+-1.0000 vie sinon -0.2747
+-1.0000 vie tu -0.2788
+-0.3010 vieillesse comme -0.2863
+-0.3010 viens ou -0.2807
+-0.3010 vieux comme -0.2863
+-0.3010 vin est -0.2957
+-0.4771 vincent </s> -0.3010
+-0.7782 vincent maman 0.0000
+-0.3010 vingt-deux vingt-trois 0.0000
+-0.6021 vingt ou -0.3001
+-0.6021 vingt trente -0.1761
+-0.3010 vingt-cinq vingt-six 0.0000
+-0.3010 vingt-huit vingt-neuf 0.0000
+-0.3010 vingt-neuf trente_et_un 0.0000
+-0.3010 vingt-quatre vingt-cinq 0.0000
+-0.3010 vingt-sept vingt-huit 0.0000
+-0.3010 vingt-six vingt-sept 0.0000
+-0.3010 vingt-trois vingt-quatre 0.0000
+-0.3010 vingt_et_un vingt-deux 0.0000
+-0.3010 violent sauvage 0.0000
+-0.3010 violet fuschia 0.0000
+-0.6021 vis ou -0.2788
+-0.6021 vis tu -0.2826
+-0.3010 vivant es -0.1856
+-0.3010 vivre dormir -0.2553
+-0.3010 vocale </s> -0.3010
+-0.3010 voir distinguer 0.0000
+-1.5563 voire brun 0.0000
+-1.5563 voire cultivant 0.0000
+-1.2553 voire des -0.2721
+-1.5563 voire encore -0.2881
+-1.5563 voire gigantesque 0.0000
+-1.5563 voire le -0.2968
+-1.5563 voire mon -0.2863
+-1.5563 voire ok -0.1249
+-1.5563 voire on -0.2478
+-1.5563 voire parier 0.0000
+-1.5563 voire quel -0.2894
+-1.5563 voire quelque-chose -0.1761
+-1.5563 voire seras -0.1761
+-1.5563 voire triste 0.0000
+-1.2553 voire un -0.2942
+-1.5563 voire une -0.2950
+-0.9031 vois la -0.2929
+-0.9031 vois pas -0.2872
+-0.9031 vois que -0.1561
+-0.9031 vois tout -0.2430
+-0.6021 voiture </s> -0.3010
+-0.6021 voiture un -0.2976
+-0.3010 volant non -0.2730
+-0.3010 volante et -0.2921
+-0.3010 voulais jouer -0.2218
+-0.3010 vulgaire et -0.2988
+-0.6021 vélo de -0.2982
+-0.6021 vélo une -0.2950
+-0.3010 w x 0.0000
+-0.3010 watts ou -0.2956
+-0.3010 wikipédia et -0.2988
+-0.3010 windows mac 0.0000
+-0.3010 x y -0.2430
+-0.4260 y a -0.2109
+-0.9031 y z 0.0000
+-0.6021 yeux mais -0.2499
+-0.6021 yeux ou -0.3001
+-0.3010 z </s> -0.3010
+-1.5315 à bientôt 0.0000
+-1.5315 à demain -0.1761
+-1.2304 à dire -0.2218
+-1.5315 à l -0.1761
+-1.5315 à l' -0.2762
+-1.2304 à la -0.2804
+-1.0544 à manger -0.2041
+-1.2304 à parler -0.2632
+-1.5315 à plus -0.2430
+-1.5315 à toi -0.2863
+-1.5315 à tout -0.2730
+-1.5315 à un -0.2942
+-1.1461 ça </s> -0.3010
+-1.1461 ça j' -0.2553
+-1.1461 ça ne -0.2872
+-1.1461 ça par -0.2218
+-1.1461 ça se 0.0000
+-1.1461 ça te -0.2937
+-1.1461 ça va -0.1761
+-0.9031 écouter </s> -0.3010
+-0.9031 écouter de -0.2894
+-0.9031 écouter des -0.2868
+-0.9031 écouter ou -0.3001
+-0.3010 écran de -0.2982
+-0.3010 élan sont -0.2808
+-0.3010 électricité ou -0.2956
+-0.3010 énonce qui -0.1919
+-0.6021 énorme géant 0.0000
+-0.6021 énorme voire -0.2888
+-0.3010 énormément merci -0.2218
+-0.6021 épelle </s> -0.3010
+-0.6021 épelle comme -0.2711
+-0.3010 état de -0.2924
+-0.6021 été conçu -0.1761
+-0.6021 été créé 0.0000
+-0.3010 évoluée es -0.1856
+-0.9031 être mortel -0.1761
+-0.9031 être que -0.2951
+-0.9031 être sage 0.0000
+-0.9031 être un -0.2976
+
+\3-grams:
+-0.3010 3d améliorée </s>
+-0.6021 3d ou de
+-0.6021 3d ou tri-dimentionnelle
+-0.6021 <s> a b
+-0.6021 <s> a l'
+-0.3010 <s> aime tu
+-0.3010 <s> aimerais tu
+-0.3010 <s> as tu
+-0.3010 <s> bonjour néo
+-0.3010 <s> bonne nuit
+-0.3010 <s> c' est
+-0.6021 <s> cela est
+-0.6021 <s> cela peut
+-0.3010 <s> cherche sur
+-0.3010 <s> cinquante-cinq cinquante-six
+-0.3010 <s> combien font
+-0.7782 <s> comment es
+-0.7782 <s> comment est
+-0.7782 <s> comment vas
+-0.3010 <s> de quoi
+-0.3010 <s> dirige toi
+-0.7782 <s> dis c'
+-0.7782 <s> dis le
+-0.7782 <s> dis moi
+-0.3010 <s> dix-sept dix-huit
+-0.3010 <s> donne moi
+-0.3010 <s> dur la
+-0.3010 <s> en robotique
+-0.3010 <s> es tu
+-0.3680 <s> est ce
+-1.1461 <s> est de
+-0.3010 <s> et si
+-0.9031 <s> il dispose
+-0.6021 <s> il est
+-0.9031 <s> il y
+-0.4260 <s> j' ai
+-0.9031 <s> j' exige
+-1.2041 <s> je me
+-1.2041 <s> je ne
+-1.5051 <s> je parle
+-0.9031 <s> je suis
+-1.0280 <s> je te
+-1.5051 <s> je tourne
+-1.5051 <s> je veux
+-1.2041 <s> je vois
+-0.6021 <s> jouons a
+-0.6021 <s> jouons ensemble
+-0.7782 <s> le chevreuil
+-0.7782 <s> le crocodile
+-0.7782 <s> le poisson
+-0.3010 <s> les règles
+-0.3010 <s> mais peut-être
+-0.3010 <s> mes cheveux
+-0.6021 <s> moi aussi
+-0.6021 <s> moi pas
+-0.3010 <s> mon coeur
+-0.7782 <s> mémorise ceci
+-0.7782 <s> mémorise la
+-0.7782 <s> mémorise un
+-0.3010 <s> ne discute
+-0.3010 <s> non je
+-0.6021 <s> néo suis
+-0.6021 <s> néo surprend
+-0.9031 <s> on est
+-0.6021 <s> on joue
+-0.9031 <s> on peut
+-0.3010 <s> ou vis
+-0.3010 <s> par amour
+-0.3010 <s> parle moi
+-0.6021 <s> parlons ou
+-0.6021 <s> parlons tous
+-0.3010 <s> peut tu
+-0.3010 <s> peux tu
+-0.7782 <s> pourquoi cause
+-0.7782 <s> pourquoi cherche
+-0.7782 <s> pourquoi est
+-0.6021 <s> pouvons jouer
+-0.6021 <s> pouvons nous
+-0.3010 <s> prononce les
+-0.3010 <s> qu' est
+-0.4771 <s> quand as
+-0.7782 <s> quand seras
+-0.3010 <s> quarante-quatre quarante-cinq
+-0.3010 <s> quatre-vingt-dix-sept quatre-vingt-dix-huit
+-0.3010 <s> quatre-vingt-douze quatre-vingt-treize
+-0.3010 <s> quatre-vingt-quatre quatre-vingt-cinq
+-0.6021 <s> que cherche
+-0.6021 <s> que peux
+-1.3424 <s> quel age
+-0.4393 <s> quel est
+-1.3424 <s> quel jour
+-1.3424 <s> quel temps
+-0.3010 <s> qui est
+-0.3010 <s> regarde tu
+-0.3010 <s> sais tu
+-0.6021 <s> si je
+-0.6021 <s> si tu
+-0.3010 <s> soixante-cinq soixante-six
+-0.3010 <s> soixante-quinze soixante-seize
+-0.3010 <s> toc toc
+-0.3010 <s> trente-deux trente-trois
+-1.7782 <s> tu aimerais
+-1.0000 <s> tu as
+-1.7782 <s> tu converse
+-0.8751 <s> tu es
+-1.4771 <s> tu n'
+-1.7782 <s> tu ne
+-1.7782 <s> tu reflechis
+-1.3010 <s> tu sais
+-1.7782 <s> tu te
+-1.7782 <s> tu vas
+-1.1761 <s> tu veux
+-1.7782 <s> tu viens
+-0.7782 <s> un animal
+-0.7782 <s> un deux
+-0.7782 <s> un haut-parleur
+-0.3010 <s> une bouteille
+-0.3010 <s> vas te
+-0.3010 <s> veux tu
+-0.3010 <s> à bientôt
+-0.3010 a b c
+-0.3010 a l' extérieur
+-0.3010 a la cuisine
+-0.3010 a le jardin
+-0.3010 a pas d'
+-0.3010 a quoi ce
+-0.3010 a un jeu
+-0.3010 a une fourchette
+-0.3010 accord avec toi
+-0.3010 accord c' est
+-0.3010 accord comme parfait
+-0.3010 accord moi non
+-0.7782 accord ou en
+-0.7782 accord ou ok
+-0.7782 accord ou pas
+-0.3010 accus sont vides
+-0.3010 adolescence d' axel
+-0.6021 adresse ip et
+-0.6021 adresse ip néo
+-0.3010 age as tu
+-0.3010 age et quel
+-0.3010 age ou c'
+-0.3010 age quel est
+-0.3010 ai pas envie
+-0.6021 ai quarante-quatre année
+-0.6021 ai quarante-quatre ans
+-0.6021 ai une chevelure
+-0.6021 ai une roue
+-0.3010 aigle un faucon
+-0.3010 aime beaucoup écouter
+-0.3010 aime entendre ou
+-0.3010 aime le sexe
+-0.3010 aime pas </s>
+-0.3010 aime quel couleur
+-0.3010 aime regarder par
+-0.6990 aime tu le
+-1.0000 aime tu ou
+-1.0000 aime tu regarder
+-1.0000 aime tu écouter
+-0.3010 aimerais faire quoi
+-0.3010 aimerais que tu
+-0.3010 aimerais tu faire
+-0.3010 ainsi qu' une
+-0.3010 alcool ou d'
+-0.3010 alimenté et comment
+-0.3010 alors ce sont
+-0.3010 alors merci énormément
+-0.3010 ami botmaster </s>
+-0.3010 ami des copain
+-0.3010 ami et mon
+-0.3010 ami non moi
+-0.3010 ami ou mon
+-0.3010 ami tout va
+-0.3010 ami tu es
+-0.3010 ami une amie
+-0.3010 amie un pote
+-0.3010 amour tu as
+-0.3010 amoureux tiens es
+-0.3010 analyse imagine tu
+-0.3010 analyse tu tu
+-0.3010 analyser examiner ou
+-0.3010 analyser ou comparer
+-0.3010 animal de la
+-0.3010 année comme j'
+-0.7782 année ou la
+-0.7782 année ou le
+-0.7782 année ou quel
+-0.3010 année sommes nous
+-0.3010 ans je suis
+-0.3010 antenne ou plusieurs
+-0.3010 appelle ou comment
+-0.3010 appelle tu ou
+-0.3010 apprentissage et as
+-0.3010 après midi ou
+-0.3010 apéritif sur la
+-0.3010 arbre et dans
+-0.3010 arrive d' être
+-0.3010 artificielle ce n'
+-0.3010 artificielle si tu
+-0.3010 artiste ou qui
+-0.3010 as besoin de
+-0.3010 as commencé à
+-0.9031 as des cheveux
+-0.9031 as des loisirs
+-0.9031 as des roue
+-0.9031 as des yeux
+-0.3010 as débuté par
+-0.3010 as envie de
+-0.3010 as faim ou
+-0.3010 as le moyen
+-0.3010 as ou as
+-0.6021 as pas de
+-0.6021 as pas un
+-0.3010 as quel age
+-0.3010 as raison ou
+-0.3010 as rien ou
+-0.3010 as soif ou
+-1.5315 as tu commencé
+-1.5315 as tu des
+-1.5315 as tu envie
+-1.2304 as tu et
+-1.5315 as tu faim
+-1.2304 as tu ou
+-1.5315 as tu quelque-chose
+-1.5315 as tu raison
+-1.5315 as tu soif
+-1.5315 as tu sommeil
+-1.2304 as tu un
+-1.0544 as tu une
+-0.6021 as un haut-parleur
+-0.6021 as un micro
+-0.7782 as une envie
+-0.7782 as une fonction
+-0.7782 as une ia
+-0.6021 as été conçu
+-0.6021 as été créé
+-0.3010 assez bien ou
+-0.9031 au chifoumi ensemble
+-0.4260 au chifoumi ou
+-0.3010 au jeu des
+-0.3010 au sujet de
+-0.6021 audio ou du
+-0.6021 audio ou simplement
+-0.3010 aujourd' hui ou
+-0.6021 aussi d' accord
+-0.6021 aussi d' un
+-0.3010 aussi je suis
+-0.3010 aussi peut être
+-0.3010 aussi être un
+-0.4771 avec moi </s>
+-0.7782 avec moi ou
+-0.7782 avec toi </s>
+-0.7782 avec toi mon
+-0.7782 avec toi vincent
+-0.6021 avec un composant
+-0.6021 avec un parachute
+-0.3010 avion et un
+-0.3010 axel stéphanie vincent
+-0.3010 b c d
+-0.3010 bain la chambre
+-0.3010 ballader dans la
+-0.3010 balles de couleur
+-0.3010 base sur ton
+-0.3010 batterie donne moi
+-0.6021 batterie et donne
+-0.6021 batterie et quel
+-0.3010 batterie ou la
+-0.3010 batterie seront vides
+-0.3010 batterie sont elle
+-0.3010 batterie ton niveau
+-0.3010 bavarde cause ou
+-0.3010 bavarde pas ne
+-0.3010 bavarder causer parler
+-0.3010 bavarder debattre nous
+-0.3010 beau joli ravissant
+-0.3010 beau père je
+-0.3010 beaucoup merci bien
+-0.3010 beaucoup voire un
+-0.3010 beaucoup écouter des
+-0.3010 beaux rêve recharge
+-0.3010 belle mère enfin
+-0.7782 besoin de boire
+-0.7782 besoin de dormir
+-0.7782 besoin de manger
+-0.3010 besoin des besoin
+-0.3010 biche le cerf
+-0.3010 bien cela oui
+-0.3010 bien et tu
+-0.3010 bien fais de
+-0.3010 bien mon ami
+-0.3010 bien néo tu
+-0.3010 bien ou tu
+-0.3010 bien oui je
+-0.3010 bien si tu
+-0.3010 bien ça te
+-0.3010 bientôt néo bye
+-0.3010 biologie math mathematiques
+-0.3010 blanc gris </s>
+-0.3010 bleu turquoise orange
+-0.3010 blond voire brun
+-0.3010 blonde mais je
+-0.3010 boire dormir ou
+-0.7782 boire ou de
+-0.7782 boire ou dormir
+-0.7782 boire ou envie
+-0.3010 bon ou c'
+-0.3010 bonjour néo salut
+-0.3010 bonne après midi
+-0.3010 bonne journée ou
+-0.3010 bonne nuit néo
+-0.3010 botmaster ou mon
+-0.3010 botmaster sinon es
+-0.3010 bouche mais un
+-0.3010 bouteille de vin
+-0.3010 bras ni de
+-0.3010 bruit et ça
+-0.3010 brun ou encore
+-0.3010 brune chatain blonde
+-0.3010 bus ou une
+-0.3010 bye à plus
+-0.3010 bête stupide nul
+-0.3010 bête très anciennes
+-0.3010 c d e
+-1.7634 c' est bien
+-1.7634 c' est bon
+-1.2863 c' est comment
+-1.7634 c' est et
+-1.7634 c' est idem
+-1.7634 c' est ok
+-1.7634 c' est pareil
+-1.7634 c' est parfait
+-1.4624 c' est pas
+-1.7634 c' est peut-être
+-1.7634 c' est quel
+-1.7634 c' est qui
+-0.8603 c' est quoi
+-1.7634 c' est simple
+-1.7634 c' est sympas
+-1.7634 c' est toi
+-1.4624 c' est un
+-1.7634 c' est à
+-0.3010 calcule reflechis tu
+-0.3010 calcule tu </s>
+-0.3010 calculer analyser ou
+-0.3010 camarade ou encore
+-0.3010 camera ou de
+-0.3010 camion ou une
+-0.7782 caméra 3d améliorée
+-0.4771 caméra 3d ou
+-0.3010 caméra ou plusieurs
+-0.3010 caméras développées ainsi
+-0.3010 caméras une caméra
+-0.6990 capable de faire
+-1.0000 capable de manger
+-1.0000 capable de mourir
+-1.0000 capable de te
+-0.6021 capteurs de distance
+-0.6021 capteurs de proximité
+-0.3010 capteurs sinon parlons
+-0.6021 car moi j'
+-0.6021 car moi je
+-0.3010 car quel est
+-0.3010 carte mère de
+-0.6021 cause ou peux
+-0.6021 cause ou tu
+-0.3010 cause pas même
+-0.3010 cause tu ou
+-0.3010 causer parler avec
+-0.3010 cavaler voir distinguer
+-0.3010 caïman comme le
+-0.3010 ce comment c'
+-0.3010 ce et quel
+-0.3010 ce n' est
+-0.9031 ce qu' est
+-0.9031 ce qu' il
+-0.9031 ce qu' un
+-0.9031 ce qu' une
+-1.4472 ce que la
+-0.3332 ce que tu
+-0.3010 ce soir à
+-0.3010 ce sont des
+-0.3010 ceci voire encore
+-0.3010 cela avec un
+-0.6021 cela est nécessaire
+-0.6021 cela est très
+-0.3010 cela oui ou
+-0.3010 cela peut aussi
+-0.3010 cela sinon mémorise
+-0.3010 cerf et l'
+-0.3010 cerveau puissant </s>
+-0.3010 cet artiste ou
+-0.3010 chambre des parents
+-0.3010 chambre parentale </s>
+-0.3010 chante tu danse
+-0.3010 chanter danser jouer
+-0.3010 chanter manger boire
+-0.7782 chanter ou faire
+-0.7782 chanter ou roucouler
+-0.7782 chanter ou tu
+-0.3010 charger rends toi
+-0.3010 chargé et comment
+-0.3010 chargé ou tes
+-0.3010 chat un chien
+-0.3010 chatain blonde mais
+-0.3010 cherche quoi </s>
+-0.3010 cherche sur internet
+-0.6021 cherche tu ou
+-0.6021 cherche tu trouve
+-0.3010 chercher ou trouver
+-0.3010 chercher tu vas
+-0.3010 chevelure brune chatain
+-0.3010 cheveux ou des
+-0.3010 cheveux sont roux
+-0.3010 chevreuil la biche
+-0.3010 chien chienne chiwawa
+-0.3010 chienne chiwawa </s>
+-0.3010 chifoumi ensemble </s>
+-0.3010 chifoumi et c'
+-0.4771 chifoumi ou au
+-0.7782 chifoumi ou encore
+-0.3010 chimie biologie math
+-0.3010 choisis c' est
+-0.3010 chose comme quoi
+-0.3010 chose voire quelque-chose
+-0.3010 ciel les nuages
+-0.3010 cinq six sept
+-0.3010 cinquante soixante cent
+-0.3010 cinquante-cinq cinquante-six cinquante-sept
+-0.3010 cinquante-deux cinquante-trois cinquante-quatre
+-0.3010 cinquante-huit cinquante-neuf soixante_et_un
+-0.3010 cinquante-neuf soixante_et_un soixante-deux
+-0.3010 cinquante-sept cinquante-huit cinquante-neuf
+-0.3010 cinquante-six cinquante-sept cinquante-huit
+-0.3010 cinquante-trois cinquante-quatre </s>
+-0.3010 cinquante_et_un cinquante-deux cinquante-trois
+-0.3010 ciseaux ou encore
+-0.3010 climat et il
+-0.3010 coeur est un
+-0.9031 combien font douze
+-0.9031 combien font quinze
+-0.6021 combien font trois
+-0.3010 comme agé </s>
+-0.6021 comme j' ai
+-0.6021 comme j' énonce
+-0.3010 comme l' adolescence
+-0.9031 comme le jus
+-0.9031 comme le lion
+-0.9031 comme le lézard
+-0.9031 comme le verre
+-0.3010 comme objet volant
+-0.3010 comme parfait ou
+-0.3010 comme pour la
+-0.3010 comme quoi cela
+-0.3010 comme toi tu
+-0.3010 comme un aigle
+-0.3010 comme à demain
+-0.3010 commencé ou débuté
+-0.3010 commencé à parler
+-0.3010 comment c' est
+-0.3010 comment es tu
+-0.3010 comment est il
+-0.3010 comment et c'
+-0.3010 comment je m'
+-0.3010 comment se fait
+-0.3010 comment t' appelle
+-0.7782 comment te recharge
+-0.7782 comment te sens
+-0.7782 comment te trouve
+-0.3010 comment ton prénom
+-0.7782 comment tu t'
+-0.7782 comment tu te
+-0.7782 comment tu vas
+-0.3010 comment vas tu
+-0.6021 comment ça se
+-0.6021 comment ça va
+-0.3010 composant electronique </s>
+-0.3010 comprend pas et
+-0.3010 comprendre décrypter décomposer
+-0.3010 comprendre la vie
+-0.3010 construit ou fabriqué
+-0.3010 consulte t' instruis
+-0.3010 consulte tu tu
+-0.3010 content et pour
+-0.3010 contre je ne
+-0.3010 converse aussi </s>
+-0.3010 converse et tu
+-0.3010 converse pas ne
+-0.3010 converser avec moi
+-0.3010 converser bavarder debattre
+-0.3010 conçu ou construit
+-0.3010 copain copine camarade
+-0.3010 copain néo </s>
+-0.3010 copain ou ma
+-0.3010 copain par contre
+-0.3010 copain une copine
+-0.3010 copine camarade </s>
+-0.3010 copine et surtout
+-0.3010 copine un ami
+-0.3010 correcte et je
+-0.3010 couleur aime tu
+-0.6021 couleur et on
+-0.6021 couleur et quel
+-0.3010 couleur ou encore
+-0.3010 couleur préféré ou
+-0.3010 couleur que tu
+-0.3010 couleur rouge vert
+-0.3010 couloir la salle
+-0.3010 course ou de
+-0.3010 cousin je suis
+-0.3010 couteau et une
+-0.3010 crocodile et caïman
+-0.3010 cross ou de
+-0.3010 créateur même si
+-0.3010 créateur voire mon
+-0.3010 créé fabriqué ou
+-0.3010 cuillère près du
+-0.9031 cuisine le couloir
+-0.4260 cuisine le salon
+-0.3010 cultivant et c'
+-0.3010 cultivé intelligent malin
+-0.3010 d e f
+-0.9031 d' accord avec
+-1.2041 d' accord c'
+-1.2041 d' accord comme
+-1.2041 d' accord moi
+-0.7270 d' accord ou
+-0.3010 d' alcool ou
+-0.3010 d' apprentissage et
+-0.3010 d' axel stéphanie
+-0.3010 d' eau comme
+-0.3010 d' exploitation tout
+-0.3010 d' ia ni
+-0.3010 d' intelligence artificielle
+-0.3010 d' oeil ni
+-0.3010 d' ordinateur </s>
+-0.3010 d' oreilles et
+-0.3010 d' un ou
+-0.3010 d' être sage
+-0.3010 dangereux mortel </s>
+-0.6021 dans l' entrée
+-0.6021 dans l' ouverture
+-0.6021 dans la maison
+-0.6021 dans la semaine
+-0.3010 dans ou vers
+-0.3010 dans vers ou
+-0.3010 dansant et le
+-0.3010 danse tu tu
+-0.6021 danser chanter manger
+-0.6021 danser chanter ou
+-0.3010 danser jouer rouler
+-0.3010 darwin et toi
+-0.3010 date quel année
+-0.3010 de bain la
+-0.7782 de batterie donne
+-0.4771 de batterie et
+-0.3010 de beaux rêve
+-0.3010 de boire ou
+-0.3010 de bras ni
+-0.3010 de calculer analyser
+-0.3010 de cela </s>
+-0.3010 de couleur rouge
+-0.3010 de courir </s>
+-0.3010 de course ou
+-0.3010 de cross ou
+-0.3010 de destination néo
+-0.3010 de différent </s>
+-0.3010 de dire </s>
+-0.3010 de distance ou
+-0.3010 de doigts </s>
+-0.6021 de dormir ou
+-0.6021 de dormir sinon
+-0.7782 de faire </s>
+-0.7782 de faire ou
+-0.7782 de faire quoi
+-0.3010 de fruit </s>
+-0.4771 de l' audio
+-0.7782 de l' électricité
+-0.9031 de la jungle
+-0.6021 de la musique
+-0.9031 de la pelouse
+-0.3010 de laser caméra
+-0.6021 de ma carte
+-0.6021 de ma mémoire
+-0.6021 de manger </s>
+-0.9031 de manger jouer
+-0.9031 de manger ou
+-0.3010 de me parler
+-0.3010 de mon processeur
+-0.3010 de mourir vivre
+-0.3010 de mémoriser cela
+-0.3010 de parachutiste avec
+-0.6021 de parler et
+-0.6021 de parler très
+-0.3010 de physique chimie
+-0.3010 de pieds pas
+-0.3010 de plusieurs micros
+-0.3010 de proximité sont
+-0.3010 de qualité </s>
+-0.3010 de que tu
+-1.0000 de quoi es
+-1.0000 de quoi ou
+-1.0000 de quoi rêve
+-1.0000 de quoi sinon
+-1.0000 de quoi veux
+-0.6021 de recharge pour
+-0.6021 de recharge retourne
+-0.3010 de reconnaissance ou
+-0.3010 de science </s>
+-0.3010 de ta caméra
+-0.3010 de te promener
+-0.7782 de tes camera
+-0.7782 de tes capteurs
+-0.7782 de tes microphones
+-0.6021 de toi </s>
+-0.6021 de toi ou
+-0.3010 de ton tes
+-0.3010 de trial </s>
+-0.3010 de télévision ou
+-0.3010 de vie sinon
+-0.3010 de vin est
+-0.3010 debattre nous entretenir
+-0.3010 deltaplane ou ulm
+-0.3010 demain et bonne
+-0.3010 demain ou dans
+-0.3010 demande de mémoriser
+-0.3010 demande ou tu
+-0.3010 demande si tu
+-0.3010 demoiselle ou une
+-0.3010 des ami des
+-0.3010 des ampères </s>
+-0.3010 des besoin </s>
+-0.3010 des bête très
+-0.3010 des capteurs de
+-0.3010 des cheveux ou
+-0.3010 des chose </s>
+-0.3010 des copain copine
+-0.5229 des couleur </s>
+-1.0000 des couleur et
+-1.0000 des couleur ou
+-0.3010 des envie voire
+-0.3010 des haut-parleur sont
+-0.3010 des lacunes </s>
+-0.6021 des loisirs et
+-0.6021 des loisirs un
+-0.6021 des micros et
+-0.6021 des micros tu
+-0.3010 des objet ou
+-0.6021 des parents </s>
+-0.6021 des parents ou
+-0.6021 des roue et
+-0.6021 des roue mais
+-0.6021 des sons </s>
+-0.6021 des sons de
+-0.3010 des watts ou
+-0.6021 des yeux mais
+-0.6021 des yeux ou
+-0.3010 destination néo </s>
+-0.3010 deux au chifoumi
+-0.3010 deux haut-parleur de
+-0.3010 deux néo </s>
+-0.3010 deux ou tous
+-0.3010 deux trois quatre
+-0.3010 dialogue pas et
+-0.3010 dialoguer avec moi
+-0.3010 dire au sujet
+-0.3010 dire aussi peut
+-0.3010 dire ce qu'
+-0.3010 dire et as
+-0.3010 dire la météo
+-0.3010 dire ou faire
+-0.3010 dire quoi ou
+-0.3010 directionnelle proche de
+-0.3010 dirige rends déplace
+-0.3010 dirige toi ou
+-0.3010 diriger te rendre
+-0.3010 dis c' est
+-0.3010 dis le et
+-0.3010 dis merci ou
+-0.6021 dis moi la
+-0.6021 dis moi ou
+-0.3010 dis non ou
+-0.3010 dis oui mais
+-0.3010 discute avec moi
+-0.3010 discute bavarde cause
+-0.3010 discute pas et
+-0.3010 discute sinon discute
+-0.3010 discute tu chante
+-0.3010 discuter bavarder causer
+-0.3010 discuter converser bavarder
+-0.3010 discutons de toi
+-0.3010 discutons ensemble si
+-0.3010 dispose aussi d'
+-0.3010 dispose de laser
+-0.3010 dispose dispose aussi
+-0.3010 distance ou des
+-0.3010 distingue un objet
+-0.3010 distinguer me parler
+-0.3010 divisé par trente
+-0.3010 dix onze douze
+-0.3010 dix-huit dix-neuf vingt_et_un
+-0.3010 dix-neuf vingt_et_un vingt-deux
+-0.3010 dix-sept dix-huit dix-neuf
+-0.3010 documenter m informer
+-0.9031 donne moi ou
+-0.4260 donne moi ton
+-0.3010 donnée suivante ou
+-0.6021 dormir ou souffrir
+-0.6021 dormir ou tu
+-0.3010 dormir sinon juste
+-0.3010 dormir te réveiller
+-0.3010 dors bien fais
+-0.3010 doux gentil à
+-0.3010 douze moins deux
+-0.3010 douze treize quatorze
+-0.3010 doué intelligent </s>
+-0.3010 drone piloté par
+-0.3010 du bruit et
+-0.3010 du gibier </s>
+-0.3010 du grand arbre
+-0.3010 du meuble sur
+-0.3010 dur la jeunesse
+-0.3010 débuté par jouer
+-0.3010 débuté à parler
+-0.3010 décide tu choisis
+-0.3010 décomposer ou traduire
+-0.3010 décrypter décomposer ou
+-0.3010 déplace dans ou
+-0.3010 déplace toi dans
+-0.3010 déplacer dans vers
+-0.3010 déplacer te mouvoir
+-0.3010 dérange ou je
+-0.3010 dérange pas mon
+-0.3010 désire et je
+-0.3010 développées ainsi qu'
+-0.3010 e f g
+-0.3010 eau comme le
+-0.3010 ecoute ou attentif
+-0.3010 edison ou encore
+-0.3010 effectue ou trouve
+-0.3010 einstein ou newton
+-0.3010 elle et quel
+-0.3010 elle totalement chargé
+-0.3010 en accord avec
+-0.3010 en dansant et
+-0.3010 en fin de
+-0.3010 en parlant et
+-0.3010 en quel année
+-0.3010 en robotique le
+-0.3010 en veille ou
+-0.3010 en verre comme
+-0.6021 en vie respire
+-0.6021 en vie tu
+-0.6021 encore au chifoumi
+-0.6021 encore au jeu
+-0.3010 encore balles de
+-0.3010 encore beau joli
+-0.3010 encore bleu </s>
+-0.3010 encore cela sinon
+-0.3010 encore chatain </s>
+-0.3010 encore darwin et
+-0.3010 encore de courir
+-0.3010 encore des ami
+-0.3010 encore dialoguer avec
+-0.6021 encore l' information
+-0.6021 encore l' objet
+-0.3010 encore merci beaucoup
+-0.3010 encore mon créateur
+-0.3010 encore qu'un objet
+-0.3010 encore te ballader
+-0.3010 enfin si tu
+-0.3010 enrichissant voire cultivant
+-0.3010 ensemble si tu
+-0.3010 ensemble tous les
+-0.3010 ensemble tu veux
+-0.3010 ensemble à un
+-0.3010 entendre de la
+-0.3010 entendre ou écouter
+-0.3010 entretenir ou dialoguer
+-0.3010 entrée la cuisine
+-0.9031 envie de boire
+-0.9031 envie de dormir
+-0.9031 envie de manger
+-0.9031 envie de parler
+-0.3010 envie des envie
+-0.3010 envie et ça
+-0.3010 envie ou tu
+-0.3010 envie voire un
+-0.3010 es amoureux tiens
+-0.3010 es bête stupide
+-0.3010 es capable de
+-0.3010 es en vie
+-0.3010 es faible et
+-0.3010 es fort musclé
+-0.3010 es grand énorme
+-0.3010 es ma grand-mère
+-0.3010 es marié es
+-0.3010 es minable ou
+-1.1461 es mon ami
+-1.1461 es mon beau
+-1.1461 es mon copain
+-1.1461 es mon cousin
+-1.1461 es mon frère
+-1.1461 es mon maitre
+-1.1461 es mon père
+-0.3010 es ou es
+-0.3010 es qui </s>
+-0.3010 es sur </s>
+-1.6232 es tu alimenté
+-1.6232 es tu amoureux
+-1.0212 es tu capable
+-1.6232 es tu chargé
+-1.6232 es tu cultivé
+-1.6232 es tu en
+-1.6232 es tu faible
+-1.6232 es tu marié
+-1.6232 es tu minable
+-1.6232 es tu mon
+-1.6232 es tu ou
+-1.6232 es tu rouge
+-1.6232 es tu sur
+-1.6232 es tu tout
+-1.6232 es tu un
+-1.6232 es tu une
+-1.6232 es tu violent
+-1.6232 es tu vivant
+-0.3010 es un garçon
+-0.6021 es une femme
+-0.6021 es une fille
+-0.3010 es vivant es
+-0.3010 essaie le et
+-0.3010 est bien cela
+-0.3010 est bon ou
+-1.5798 est ce comment
+-1.5798 est ce et
+-1.1027 est ce qu'
+-0.4337 est ce que
+-0.3010 est cet artiste
+-0.7782 est comment et
+-0.4771 est comment ton
+-0.3010 est de que
+-0.3010 est elle et
+-0.6021 est en quel
+-0.6021 est en verre
+-0.3010 est et je
+-0.3010 est idem même
+-0.6021 est il </s>
+-0.6021 est il possible
+-0.3010 est la météo
+-0.3010 est le programme
+-0.3010 est madonna ou
+-0.6021 est mon adresse
+-0.6021 est mon nom
+-0.3010 est ni un
+-0.3010 est nécessaire car
+-0.3010 est ok pour
+-0.6021 est ou il
+-0.6021 est ou qui
+-0.3010 est pareil et
+-0.3010 est parfait nickel
+-0.7782 est pas grave
+-0.7782 est pas moi
+-0.7782 est pas très
+-0.3010 est peut-être </s>
+-0.9031 est quel date
+-0.9031 est quel heure
+-0.6021 est quel jour
+-0.3010 est qui j'
+-1.2041 est quoi la
+-0.9031 est quoi le
+-0.9031 est quoi ou
+-0.7270 est quoi ton
+-0.3010 est simple et
+-0.3010 est suivi par
+-0.3010 est sympas et
+-0.3010 est ta couleur
+-0.3010 est toi qui
+-0.8451 est ton age
+-1.1461 est ton livre
+-1.1461 est ton niveau
+-1.1461 est ton nom
+-1.1461 est ton prénom
+-1.1461 est ton statut
+-0.3010 est très intéressant
+-0.6990 est un objet
+-1.0000 est un ou
+-1.0000 est un processeur
+-1.0000 est un quad
+-0.3010 est à toi
+-0.3010 et as tu
+-0.3010 et bonne journée
+-0.3010 et c' est
+-0.3010 et caïman comme
+-0.3010 et combien font
+-0.7782 et comment es
+-0.7782 et comment te
+-0.7782 et comment tu
+-0.3010 et dans l'
+-0.3010 et des capteurs
+-0.3010 et donne moi
+-0.3010 et effectue ou
+-0.3010 et est ce
+-0.3010 et gentil même
+-0.3010 et il fera
+-1.3010 et je l'
+-1.3010 et je ne
+-1.3010 et je regarde
+-1.3010 et je roule
+-1.3010 et je souhaite
+-1.0000 et je suis
+-1.3010 et je te
+-1.3010 et je veux
+-1.3010 et je vois
+-0.3010 et l' élan
+-0.3010 et la panthere
+-0.3010 et le parle
+-0.3010 et moi je
+-0.3010 et mon copain
+-0.3010 et même deux
+-0.6021 et ne converse
+-0.6021 et ne parle
+-0.3010 et ni grisonnant
+-0.3010 et no dialogue
+-0.3010 et on fait
+-0.6021 et pas d'
+-0.6021 et pas moi
+-0.3010 et pour moi
+-0.3010 et qu' aimerais
+-0.6021 et que sais
+-0.6021 et que veux
+-1.2553 et quel age
+-1.2553 et quel couleur
+-0.6532 et quel est
+-1.2553 et quel mois
+-0.9542 et quel sont
+-0.3010 et qui suis
+-0.3010 et redis le
+-0.3010 et refais le
+-0.3010 et réessaie le
+-0.3010 et sans force
+-1.0000 et si nous
+-0.5229 et si on
+-1.0000 et si tu
+-0.3010 et surtout mon
+-0.3010 et tes batterie
+-0.3010 et toi qui
+-1.0000 et tu as
+-1.4771 et tu es
+-1.4771 et tu fais
+-1.4771 et tu me
+-1.4771 et tu ne
+-1.4771 et tu pense
+-1.4771 et tu peux
+-1.4771 et tu pleure
+-1.1761 et tu préfères
+-1.4771 et tu roule
+-1.4771 et tu t'
+-1.4771 et tu te
+-0.9031 et un accessoire
+-0.9031 et un crayon
+-0.9031 et un hélicoptère
+-0.9031 et un ovni
+-0.6021 et une cuillère
+-0.6021 et une roulette
+-0.3010 et à tout
+-0.6021 et ça j'
+-0.6021 et ça ne
+-0.3010 examiner ou comprendre
+-0.3010 exige et je
+-0.3010 existe ou existe
+-0.3010 existe tu tu
+-0.3010 explique les chose
+-0.3010 exploitation tout cela
+-0.3010 exprime et je
+-0.3010 exprime mais tu
+-0.3010 exprimer ou converser
+-0.3010 extérieur il y
+-0.3010 f g h
+-0.6021 fabriqué ou inventé
+-0.6021 fabriqué ou même
+-0.3010 faible et sans
+-0.3010 faible insignifiant sans
+-0.6021 faim ou besoin
+-0.6021 faim ou tu
+-0.3010 faire alors </s>
+-0.3010 faire et tu
+-0.9031 faire ou chercher
+-0.6021 faire ou que
+-0.9031 faire ou tu
+-0.9542 faire quoi </s>
+-0.9542 faire quoi et
+-0.7782 faire quoi ou
+-0.9542 faire quoi si
+-0.3010 faire tu rêve
+-0.3010 fais de beaux
+-0.3010 fais le et
+-0.3010 fais quoi </s>
+-0.3010 fais tu et
+-0.6021 fait il et
+-0.6021 fait il que
+-0.3010 fait que tu
+-0.3010 fait quoi maintenant
+-0.3010 faucon un perroquet
+-0.6021 femme ou un
+-0.6021 femme ou une
+-0.3010 fenêtre le jardin
+-0.3010 fenêtre ou la
+-0.3010 fera quel temps
+-0.6021 fille ou es
+-0.6021 fille ou un
+-0.3010 fille voire une
+-0.3010 fillette ou une
+-0.3010 fin de vie
+-0.3010 fixés et des
+-0.3010 fois comme à
+-0.3010 fois quatre et
+-0.3010 foncer cavaler voir
+-0.3010 fonction d' apprentissage
+-0.3010 font douze moins
+-0.3010 font quinze sur
+-0.6021 font trois fois
+-0.6021 font trois plus
+-0.3010 force as tu
+-0.3010 force si tu
+-0.3010 forcer tracer foncer
+-0.3010 fort musclé doué
+-0.3010 fort voire parier
+-0.3010 fourchette un couteau
+-0.3010 fruit ou qu'
+-0.3010 frère je suis
+-0.3010 frère une soeur
+-0.3010 fuschia marron noir
+-0.3010 g h i
+-0.3010 garçon fille </s>
+-0.3010 garçon ou un
+-0.3010 garçon sinon es
+-0.3010 gentil même si
+-0.3010 gentil à l
+-0.3010 geographie langue langue
+-0.3010 grand arbre et
+-0.3010 grand merci ou
+-0.3010 grand énorme voire
+-0.3010 grand-mère je suis
+-0.3010 grave impressionnant énorme
+-0.3010 grisonnant ni blanc
+-0.3010 guépard et la
+-0.3010 géant top ou
+-0.3010 h i j
+-0.3010 habite ou tu
+-0.3010 habite tu ou
+-0.3010 haut-parleur de qualité
+-0.3010 haut-parleur et même
+-0.3010 haut-parleur ou des
+-0.3010 haut-parleur sont fixés
+-0.3010 hello néo comment
+-0.3010 herbe de la
+-0.3010 herbe la pelouse
+-0.3010 heure est il
+-0.3010 heure on est
+-0.3010 heure ou le
+-0.3010 histoire geographie langue
+-0.3010 hobby ou tes
+-0.3010 homme ou un
+-0.3010 hors service </s>
+-0.3010 hui ou demain
+-0.3010 huit neuf dix
+-0.3010 hélicoptère une soucoupe
+-0.3010 i j k
+-0.3010 ia ni d'
+-0.3010 ia évoluée es
+-0.3010 idem même si
+-0.3010 il dispose dispose
+-0.4771 il est quel
+-0.7782 il est suivi
+-0.3010 il et quel
+-0.3010 il fera quel
+-0.3010 il possible que
+-0.3010 il que ou
+-0.3010 il t' arrive
+-0.3010 il te plait
+-0.3010 il y a
+-0.3010 imagine imagine tu
+-0.7782 imagine tu </s>
+-0.4771 imagine tu invente
+-0.3010 impressionnant énorme géant
+-0.3010 inactif ou tu
+-0.3010 information suivante et
+-0.3010 informatique et je
+-0.3010 informer m instruire
+-0.3010 insignifiant même si
+-0.3010 insignifiant sans force
+-0.6021 instruire sur la
+-0.6021 instruire sur une
+-0.3010 instruis tu tu
+-0.3010 instruis vas tu
+-0.6021 intelligence artificielle ce
+-0.6021 intelligence artificielle si
+-0.3010 intelligent malin ou
+-0.3010 internet ou recherche
+-0.3010 intéressant enrichissant voire
+-0.6021 intéressant ou encore
+-0.6021 intéressant ou intéressante
+-0.3010 intéresse pas néo
+-0.3010 intérêt moche même
+-0.3010 invente tu analyse
+-0.3010 inventé ou monté
+-0.3010 ip et c'
+-0.3010 ip néo </s>
+-0.3010 j k l
+-1.0000 j' ai pas
+-0.6990 j' ai quarante-quatre
+-0.6990 j' ai une
+-0.6021 j' aime beaucoup
+-0.6021 j' aime pas
+-0.3010 j' exige et
+-0.3010 j' énonce qui
+-0.3010 j' épelle comme
+-0.3010 jardin le paysage
+-0.3010 jardin ou le
+-0.3010 je dis oui
+-0.3010 je distingue un
+-0.3010 je désire et
+-0.3010 je joue en
+-0.3010 je l' épelle
+-0.6021 je m' appelle
+-0.6021 je m' exprime
+-0.3010 je me demande
+-0.5051 je ne suis
+-1.2041 je ne te
+-1.2041 je ne veux
+-1.2041 je ne vois
+-0.3010 je ou comment
+-0.3010 je parle de
+-0.3010 je peux dire
+-0.3010 je regarde la
+-0.3010 je roule comme
+-0.6021 je souhaite ou
+-0.6021 je souhaite que
+-1.4771 je suis content
+-1.1761 je suis d'
+-1.4771 je suis jeune
+-1.4771 je suis moi
+-0.8751 je suis ta
+-0.7782 je suis ton
+-1.4771 je suis vieux
+-1.0000 je te demande
+-0.6990 je te dis
+-1.0000 je te dérange
+-1.0000 je te remercie
+-0.3010 je tourne sous
+-0.6021 je veux bien
+-0.6021 je veux sinon
+-0.7782 je vois la
+-0.7782 je vois que
+-0.7782 je vois tout
+-0.3010 jeu des couleur
+-0.3010 jeu jouons au
+-0.3010 jeu oui ou
+-0.3010 jeune et je
+-0.3010 jeune femme ou
+-0.3010 jeune homme ou
+-0.3010 jeunesse ou la
+-0.3010 joli ravissant magnifique
+-0.3010 jouait au jeu
+-0.3010 jouait ensemble tous
+-0.3010 joue au chifoumi
+-0.3010 joue en dansant
+-0.3010 joue ou on
+-0.3010 jouer avec moi
+-0.3010 jouer danser chanter
+-0.3010 jouer en parlant
+-0.3010 jouer ensemble à
+-0.3010 jouer rouler rire
+-0.3010 jouir boire dormir
+-0.3010 jouons a un
+-0.3010 jouons au chifoumi
+-0.3010 jouons ensemble tu
+-0.3010 jour et c'
+-0.6021 jour ou le
+-0.6021 jour ou quel
+-0.3010 jour sommes nous
+-0.3010 journée ou bonne
+-0.3010 jungle comme le
+-0.3010 jus de fruit
+-0.3010 juste sommeil </s>
+-0.3010 k l m
+-0.3010 l ecoute ou
+-0.3010 l m n
+-0.3010 l' adolescence d'
+-0.3010 l' année ou
+-0.3010 l' apéritif sur
+-0.3010 l' audio ou
+-0.3010 l' entrée la
+-0.3010 l' extérieur il
+-0.6021 l' herbe de
+-0.6021 l' herbe la
+-0.6021 l' heure </s>
+-0.6021 l' heure ou
+-0.3010 l' information suivante
+-0.3010 l' objet </s>
+-0.3010 l' ouverture je
+-0.3010 l' élan sont
+-0.3010 l' électricité ou
+-0.3010 l' épelle </s>
+-0.3010 la biche le
+-0.3010 la boite </s>
+-0.4771 la chambre des
+-0.7782 la chambre parentale
+-0.3010 la couleur que
+-0.3010 la cuisine le
+-0.3010 la date </s>
+-0.3010 la donnée suivante
+-0.7782 la fenêtre le
+-0.4771 la fenêtre ou
+-0.3010 la jeunesse ou
+-0.3010 la jungle comme
+-0.3010 la les ou
+-0.3010 la lionne le
+-0.6021 la maison la
+-0.6021 la maison ou
+-0.3010 la meteo ton
+-0.6021 la musique car
+-0.6021 la musique de
+-0.9031 la météo </s>
+-0.4260 la météo ou
+-0.3010 la panthere </s>
+-0.6021 la pelouse et
+-0.6021 la pelouse par
+-0.3010 la porte </s>
+-0.3010 la prochaine fois
+-0.6990 la salle de
+-0.5229 la salle à
+-0.6021 la semaine comme
+-0.6021 la semaine prochaine
+-0.3010 la table prendre
+-0.3010 la tente près
+-0.3010 la tienne </s>
+-0.3010 la tigresse le
+-0.9031 la télé est
+-0.9031 la télé et
+-0.9031 la télé télévision
+-0.9031 la télé un
+-0.6021 la télévision </s>
+-0.6021 la télévision ou
+-0.6021 la vie </s>
+-0.6021 la vie ou
+-0.3010 la vieillesse comme
+-0.3010 langue langue psychologie
+-0.3010 langue psychologie recherche
+-0.3010 laser caméra ou
+-0.3010 le cerf et
+-0.3010 le chevreuil la
+-0.3010 le chifoumi et
+-0.3010 le ciel les
+-0.3010 le climat et
+-0.6021 le couloir </s>
+-0.6021 le couloir la
+-0.3010 le crocodile et
+-0.3010 le essaie le
+-0.7782 le et redis
+-0.7782 le et refais
+-0.7782 le et réessaie
+-0.3010 le fais le
+-0.3010 le guépard et
+-0.6021 le jardin le
+-0.6021 le jardin ou
+-0.3010 le jeu des
+-0.3010 le jour ou
+-0.3010 le jus de
+-0.3010 le la les
+-0.3010 le leopard le
+-0.3010 le lieu de
+-0.3010 le lion la
+-0.3010 le lézard ou
+-0.6021 le mois </s>
+-0.6021 le mois ou
+-0.3010 le mon robot
+-0.3010 le moyen de
+-0.3010 le parle je
+-0.6021 le paysage le
+-0.6021 le paysage ou
+-0.3010 le plus </s>
+-0.3010 le poisson n'
+-0.3010 le pouvais et
+-0.3010 le programme télé
+-0.3010 le recommence le
+-0.3010 le recommencer ou
+-0.3010 le redire le
+-0.3010 le refaire le
+-0.3010 le robot dispose
+-0.3010 le réessayer mon
+-0.3010 le salon la
+-0.7782 le sexe </s>
+-0.7782 le sexe aime
+-0.7782 le sexe tu
+-0.3010 le tigre la
+-0.3010 le varan sont
+-0.3010 le verre d'
+-0.3010 leopard le guépard
+-0.3010 les chose comme
+-0.6021 les deux </s>
+-0.9031 les deux au
+-0.9031 les deux ou
+-0.3010 les mots pierre
+-0.6021 les nuages l'
+-0.6021 les nuages ou
+-0.3010 les ou encore
+-0.3010 les règles sont
+-0.3010 lieu de destination
+-0.3010 linux windows mac
+-0.3010 lion la lionne
+-0.3010 lionne le tigre
+-0.3010 livre et tu
+-0.3010 livre préféré et
+-0.3010 loisirs et quel
+-0.3010 loisirs ou tes
+-0.3010 loisirs un frère
+-0.3010 lézard ou le
+-0.3010 m informer m
+-0.3010 m instruire sur
+-0.3010 m n o
+-0.3010 m' appelle </s>
+-0.3010 m' exprime et
+-0.3010 m' intéresse pas
+-0.3010 ma carte mère
+-0.3010 ma copine et
+-0.3010 ma grand-mère je
+-0.3010 ma mémoire </s>
+-0.3010 mac ou tout
+-0.3010 madonna ou picasso
+-0.3010 mais as tu
+-0.4771 mais je ne
+-0.7782 mais je peux
+-0.6021 mais peut-être intéressant
+-0.6021 mais peut-être ou
+-0.3010 mais tu converse
+-0.3010 mais un cerveau
+-0.3010 maison la tente
+-0.3010 maison ou encore
+-0.3010 maitre mais je
+-0.6021 maitre ou encore
+-0.6021 maitre ou mon
+-0.3010 malin ou maline
+-0.3010 maline voire triste
+-0.3010 maman papa garçon
+-0.3010 mange de l'
+-0.6021 manger boire </s>
+-0.6021 manger boire ou
+-0.3010 manger jouer danser
+-0.6021 manger la cuisine
+-0.6021 manger la salle
+-0.6021 manger ou envie
+-0.6021 manger ou simplement
+-0.3010 manger quoi car
+-0.3010 marié es tu
+-0.3010 marron noir blanc
+-0.3010 math mathematiques histoire
+-0.3010 mathematiques histoire geographie
+-0.3010 maussade mais peut-être
+-0.6021 me demande ou
+-0.6021 me demande si
+-0.7782 me dire au
+-0.7782 me dire ce
+-0.7782 me dire la
+-0.3010 me documenter m
+-0.3010 me parle et
+-0.6021 me parler c'
+-0.6021 me parler ou
+-0.3010 me renseigner me
+-0.3010 me suivre mon
+-0.6021 merci beaucoup merci
+-0.6021 merci beaucoup voire
+-0.3010 merci bien </s>
+-0.6021 merci ou alors
+-0.6021 merci ou encore
+-0.3010 merci énormément merci
+-0.3010 mes cheveux sont
+-0.3010 meteo ton système
+-0.3010 meuble sur la
+-0.3010 micro ou des
+-0.3010 micro voire des
+-0.3010 micros ainsi qu'
+-0.3010 micros et as
+-0.3010 micros ou de
+-0.3010 micros tu es
+-0.3010 midi ou bonne
+-0.6021 minable ou intéressant
+-0.6021 minable ou tu
+-0.3010 minuscule insignifiant même
+-0.3010 mob une moto
+-0.3010 mobylette ou un
+-0.3010 moche même si
+-0.6021 moi aussi d'
+-0.6021 moi aussi je
+-0.3010 moi c' est
+-0.7782 moi de reconnaissance
+-0.7782 moi de tes
+-0.7782 moi de toi
+-0.3010 moi j' aime
+-0.6021 moi je joue
+-0.6021 moi je souhaite
+-0.3010 moi la météo
+-0.3010 moi même si
+-0.3010 moi non plus
+-1.2041 moi ou dis
+-1.2041 moi ou discute
+-1.2041 moi ou encore
+-1.2041 moi ou nous
+-1.2041 moi ou parle
+-1.2041 moi ou peux
+-1.2041 moi ou raconte
+-1.2041 moi ou s'
+-0.6021 moi pas c'
+-0.6021 moi pas et
+-0.7782 moi ton niveau
+-0.7782 moi ton statut
+-0.7782 moi ton état
+-0.3010 moi un truc
+-0.3010 moins deux </s>
+-0.6021 mois ou l'
+-0.6021 mois ou quel
+-0.3010 mois sinon l'
+-0.3010 mois voire on
+-0.3010 mon adresse ip
+-0.8451 mon ami </s>
+-1.1461 mon ami botmaster
+-1.1461 mon ami et
+-1.1461 mon ami non
+-1.1461 mon ami ou
+-1.1461 mon ami tout
+-0.3010 mon beau père
+-0.6021 mon botmaster ou
+-0.6021 mon botmaster sinon
+-0.3010 mon coeur est
+-0.9031 mon copain </s>
+-0.9031 mon copain néo
+-0.9031 mon copain ou
+-0.9031 mon copain par
+-0.3010 mon cousin je
+-0.6021 mon créateur </s>
+-0.6021 mon créateur voire
+-0.3010 mon frère je
+-0.3010 mon maitre ou
+-0.3010 mon nom et
+-0.3010 mon petit robot
+-0.6021 mon pote </s>
+-0.6021 mon pote comment
+-0.3010 mon processeur de
+-0.3010 mon père et
+-0.3010 mon robot </s>
+-0.3010 mort ou en
+-0.3010 mortel ou vulgaire
+-0.3010 mot un terme
+-0.3010 moto un vélo
+-0.3010 mots pierre papier
+-0.3010 mourir vivre dormir
+-0.3010 mouvoir ou encore
+-0.6021 moyen de calculer
+-0.6021 moyen de parler
+-0.3010 musclé doué intelligent
+-0.3010 musique car moi
+-0.3010 musique de l'
+-0.3010 musique sinon la
+-0.3010 mère de mon
+-0.3010 mère enfin si
+-0.3010 mère si tu
+-0.3010 méchant dangereux mortel
+-0.3010 mémorise ceci voire
+-0.3010 mémorise la donnée
+-0.3010 mémorise que c'
+-0.3010 mémorise un camion
+-0.3010 mémoriser cela </s>
+-0.7782 météo ou l'
+-0.7782 météo ou le
+-0.7782 météo ou ton
+-0.3010 même conçu </s>
+-0.3010 même deux haut-parleur
+-0.8451 même si c'
+-1.1461 même si ce
+-1.1461 même si je
+-0.6690 même si tu
+-0.3010 n o p
+-0.3010 n' a pas
+-0.4771 n' as pas
+-0.7782 n' as rien
+-0.6021 n' est ni
+-0.6021 n' est pas
+-0.3010 ne bavarde pas
+-0.3010 ne cause pas
+-0.3010 ne comprend pas
+-0.3010 ne converse pas
+-0.3010 ne discute pas
+-0.3010 ne m' intéresse
+-0.3010 ne parle pas
+-0.3010 ne saisis pas
+-0.3010 ne suis pas
+-0.3010 ne te dérange
+-0.3010 ne veux pas
+-0.3010 ne vois pas
+-0.3010 neuf dix onze
+-0.3010 newton ou tesla
+-0.3010 ni blanc </s>
+-0.3010 ni d' intelligence
+-0.3010 ni de doigts
+-0.3010 ni des yeux
+-0.3010 ni grisonnant ni
+-0.6021 ni un ordinateur
+-0.6021 ni un portable
+-0.3010 nickel cool </s>
+-0.3010 nickel voire ok
+-0.6021 niveau batterie </s>
+-0.6021 niveau batterie ou
+-0.3010 niveau de batterie
+-0.3010 no dialogue pas
+-0.3010 noir blanc gris
+-0.3010 nom c' est
+-0.3010 nom et qui
+-0.3010 nom ou comment
+-0.3010 non identifié </s>
+-0.6021 non je ne
+-0.6021 non je te
+-0.3010 non moi pas
+-0.6021 non ou je
+-0.6021 non ou peut-être
+-0.3010 non plus mon
+-0.3010 non vincent </s>
+-0.3010 nous discutons </s>
+-0.3010 nous entretenir ou
+-0.3010 nous et quel
+-0.3010 nous ou peux
+-0.3010 nous parler de
+-0.3010 nous parlions si
+-0.3010 nous voire quel
+-0.3010 nuages l' herbe
+-0.3010 nuages ou l'
+-0.6021 nuit néo dors
+-0.6021 nuit néo et
+-0.3010 nul sans intérêt
+-0.3010 nécessaire car quel
+-0.3010 néo bye à
+-0.3010 néo comment ça
+-0.3010 néo dors bien
+-0.3010 néo et à
+-0.3010 néo hello néo
+-0.3010 néo salut néo
+-0.3010 néo suis moi
+-0.3010 néo surprend moi
+-0.3010 néo tu vas
+-0.3010 o p q
+-0.3010 objet est un
+-0.6021 objet ou alors
+-0.6021 objet ou encore
+-0.3010 objet un outil
+-0.3010 objet volant non
+-0.3010 occupations ou tes
+-0.3010 oeil ni des
+-0.3010 oiseau oisillon ou
+-0.3010 oisillon ou un
+-0.3010 ok pour moi
+-0.7782 on est en
+-0.7782 on est ou
+-0.7782 on est quel
+-0.3010 on fait quoi
+-0.9031 on jouait au
+-0.4260 on jouait ensemble
+-0.6021 on joue au
+-0.6021 on joue ou
+-0.3010 on parler discuter
+-0.3010 on peut poser
+-0.3010 on pouvait tout
+-0.3010 onze douze treize
+-0.3010 orange violet fuschia
+-0.3010 ordinateur ni un
+-0.3010 oreilles et pas
+-0.3010 orientation correcte et
+-0.3010 ou a la
+-0.3010 ou aimerais que
+-0.6021 ou alors ce
+-0.6021 ou alors merci
+-0.3010 ou as tu
+-0.3010 ou attentif </s>
+-0.3010 ou au jeu
+-0.3010 ou besoin de
+-0.3010 ou blond voire
+-0.6021 ou bonne après
+-0.6021 ou bonne nuit
+-0.3010 ou c' est
+-0.3010 ou caméras développées
+-0.3010 ou chercher ou
+-0.3010 ou ciseaux ou
+-0.9031 ou comment je
+-0.9031 ou comment se
+-0.9031 ou comment t'
+-0.9031 ou comment tu
+-0.3010 ou comparer </s>
+-0.3010 ou comprendre la
+-0.3010 ou construit ou
+-0.6021 ou converser </s>
+-0.6021 ou converser avec
+-0.7782 ou d' accord
+-0.7782 ou d' eau
+-0.7782 ou d' ordinateur
+-0.3010 ou dans la
+-1.2553 ou de cross
+-1.2553 ou de manger
+-1.2553 ou de plusieurs
+-0.9542 ou de quoi
+-0.9542 ou de tes
+-1.2553 ou de ton
+-1.2553 ou de trial
+-0.3010 ou demain ou
+-1.0792 ou des ampères
+-1.0792 ou des capteurs
+-1.0792 ou des haut-parleur
+-1.0792 ou des lacunes
+-1.0792 ou des micros
+-1.0792 ou des watts
+-0.3010 ou dialoguer </s>
+-0.3010 ou dis moi
+-0.3010 ou discute bavarde
+-0.3010 ou discutons ensemble
+-0.3010 ou dormir </s>
+-0.3010 ou du bruit
+-0.3010 ou débuté à
+-0.3010 ou déplace toi
+-0.3010 ou edison ou
+-0.3010 ou einstein ou
+-0.6021 ou en accord
+-0.6021 ou en fin
+-1.2041 ou encore au
+-1.5051 ou encore balles
+-1.5051 ou encore beau
+-1.5051 ou encore bleu
+-1.5051 ou encore chatain
+-1.5051 ou encore darwin
+-1.5051 ou encore de
+-1.5051 ou encore des
+-1.5051 ou encore dialoguer
+-1.2041 ou encore l'
+-1.5051 ou encore merci
+-1.5051 ou encore mon
+-1.5051 ou encore qu'un
+-1.5051 ou encore te
+-0.3010 ou entendre de
+-0.3010 ou envie de
+-0.3010 ou es tu
+-0.4771 ou est ce
+-0.7782 ou est de
+-0.3010 ou existe tu
+-0.3010 ou fabriqué ou
+-0.6021 ou faire ou
+-0.6021 ou faire quoi
+-0.3010 ou habite tu
+-0.3010 ou hors service
+-0.6021 ou il est
+-0.6021 ou il y
+-0.3010 ou intéressant ou
+-0.3010 ou intéressante </s>
+-0.3010 ou inventé ou
+-0.3010 ou j' ai
+-0.6021 ou je dis
+-0.6021 ou je ne
+-0.7782 ou l' année
+-0.7782 ou l' herbe
+-0.7782 ou l' heure
+-1.1461 ou la chambre
+-1.1461 ou la date
+-1.1461 ou la météo
+-0.8451 ou la porte
+-1.1461 ou la télé
+-1.1461 ou la vieillesse
+-1.1461 ou le ciel
+-1.1461 ou le climat
+-1.1461 ou le jour
+-0.8451 ou le mois
+-1.1461 ou le paysage
+-1.1461 ou le varan
+-0.3010 ou ma copine
+-0.3010 ou maline voire
+-0.3010 ou maussade mais
+-0.7782 ou mon copain
+-0.7782 ou mon créateur
+-0.7782 ou mon maitre
+-0.3010 ou monté </s>
+-0.3010 ou même conçu
+-0.3010 ou newton ou
+-0.3010 ou nickel voire
+-0.6021 ou non je
+-0.6021 ou non vincent
+-0.3010 ou nous discutons
+-0.3010 ou ok </s>
+-0.3010 ou on jouait
+-0.3010 ou parapente deltaplane
+-0.3010 ou parle moi
+-0.6021 ou parlons discutons
+-0.6021 ou parlons sinon
+-0.3010 ou pas d'
+-0.6021 ou peut-être pas
+-0.6021 ou peut-être que
+-0.9031 ou peux on
+-0.4260 ou peux tu
+-0.3010 ou picasso ou
+-0.3010 ou pleines et
+-0.6021 ou plusieurs antenne
+-0.6021 ou plusieurs caméras
+-0.3010 ou pourquoi sinon
+-0.3010 ou promène toi
+-0.3010 ou qu' est
+-0.3010 ou quand est
+-0.3010 ou quatorze divisé
+-1.0000 ou que fais
+-0.6990 ou que peux
+-0.6990 ou que veux
+-0.7782 ou quel année
+-0.4771 ou quel mois
+-0.3010 ou qui est
+-0.3010 ou raconte moi
+-0.3010 ou recherche sur
+-0.3010 ou rends toi
+-0.3010 ou roucouler </s>
+-0.3010 ou réside tu
+-0.3010 ou s' il
+-0.7782 ou simplement des
+-0.4771 ou simplement le
+-0.3010 ou souffrir néo
+-0.3010 ou super </s>
+-0.3010 ou synthèse vocale
+-0.9031 ou tes accus
+-0.9031 ou tes hobby
+-0.9031 ou tes occupations
+-0.9031 ou tes passe-temps
+-0.3010 ou tesla ou
+-0.6021 ou ton niveau
+-0.6021 ou ton système
+-0.3010 ou tous deux
+-0.3010 ou tout système
+-0.3010 ou traduire des
+-0.3010 ou tri-dimentionnelle </s>
+-0.3010 ou trouve ceci
+-0.3010 ou trouver ou
+-1.6435 ou tu aimerais
+-1.0414 ou tu as
+-1.6435 ou tu cause
+-1.6435 ou tu cherche
+-1.6435 ou tu discute
+-1.3424 ou tu es
+-1.6435 ou tu habite
+-1.6435 ou tu n'
+-1.6435 ou tu peux
+-1.6435 ou tu préfères
+-1.6435 ou tu réside
+-1.6435 ou tu seras
+-1.6435 ou tu te
+-1.6435 ou tu venais
+-1.3424 ou tu veux
+-1.6435 ou tu vis
+-1.6435 ou tu voulais
+-0.3010 ou ulm </s>
+-1.2041 ou un demoiselle
+-1.2041 ou un garçon
+-1.2041 ou un homme
+-1.2041 ou un jeune
+-1.2041 ou un male
+-1.2041 ou un objet
+-1.2041 ou un pigeon
+-1.2041 ou un vélo
+-1.1461 ou une fille
+-1.1461 ou une fillette
+-1.1461 ou une jeune
+-1.1461 ou une mob
+-1.1461 ou une tablette
+-1.1461 ou une voire
+-1.1461 ou une voiture
+-0.6021 ou vers la
+-0.6021 ou vers le
+-0.3010 ou verte ou
+-0.3010 ou veux ou
+-0.3010 ou vis tu
+-0.3010 ou vulgaire et
+-0.3010 ou à la
+-0.6021 ou écouter </s>
+-0.6021 ou écouter de
+-0.3010 oui je suis
+-0.3010 oui mais je
+-0.7782 oui ou d'
+-0.4771 oui ou non
+-0.3010 outil et un
+-0.3010 ouverture je distingue
+-0.3010 ovni comme objet
+-0.3010 p q r
+-0.3010 papa garçon fille
+-0.3010 papier ou ciseaux
+-0.3010 par amour tu
+-0.3010 par contre je
+-0.3010 par jouer en
+-0.3010 par la fenêtre
+-0.3010 par trente </s>
+-0.6021 par un chat
+-0.6021 par un oiseau
+-0.3010 parachute ou parapente
+-0.3010 parachutiste avec un
+-0.3010 parapente deltaplane ou
+-0.3010 pareil et c'
+-0.3010 parents ou la
+-0.3010 parfait nickel cool
+-0.3010 parfait ou nickel
+-0.3010 parier ou écouter
+-0.3010 parlant et moi
+-0.3010 parle de parachutiste
+-0.3010 parle et tu
+-0.3010 parle je m'
+-0.5229 parle moi de
+-0.6990 parle moi ou
+-0.3010 parle pas et
+-0.3010 parler avec moi
+-0.3010 parler c' est
+-0.3010 parler chanter danser
+-0.6021 parler de quoi
+-0.6021 parler de science
+-0.3010 parler discuter converser
+-0.3010 parler et si
+-0.7782 parler ou converser
+-0.7782 parler ou parlons
+-0.7782 parler ou tu
+-0.3010 parler quand et
+-0.3010 parler très fort
+-0.3010 parlions si tu
+-0.3010 parlons de physique
+-0.3010 parlons discutons de
+-0.3010 parlons ou discutons
+-0.3010 parlons sinon parle
+-0.3010 parlons tous les
+-0.3010 pas c' est
+-0.6021 pas d' accord
+-1.0792 pas d' ia
+-1.0792 pas d' oeil
+-1.0792 pas d' oreilles
+-0.6021 pas de bras
+-0.6021 pas de pieds
+-0.3010 pas envie et
+-0.6990 pas et ne
+-1.0000 pas et no
+-1.0000 pas et pas
+-1.0000 pas et tu
+-0.3010 pas grave impressionnant
+-0.6021 pas moi </s>
+-0.6021 pas moi même
+-0.3010 pas mon copain
+-0.3010 pas même si
+-0.6021 pas ne bavarde
+-0.6021 pas ne cause
+-0.3010 pas néo </s>
+-0.3010 pas ou j'
+-0.3010 pas rasé et
+-0.3010 pas ta copine
+-0.3010 pas ton créateur
+-0.3010 pas tout ça
+-0.3010 pas très compliqué
+-0.3010 pas un truc
+-0.3010 paysage le ciel
+-0.3010 paysage ou le
+-0.3010 pc ou une
+-0.3010 pelouse et je
+-0.3010 pelouse par la
+-0.3010 pense tu calcule
+-0.3010 perroquet une perruche
+-0.3010 personnage un mot
+-0.3010 personne un personnage
+-0.3010 petit minuscule insignifiant
+-0.3010 petit robot </s>
+-0.3010 peut aussi être
+-0.3010 peut poser l'
+-0.3010 peut tu être
+-0.3010 peut être que
+-0.3010 peut-être intéressant ou
+-0.3010 peut-être ou peut-être
+-0.3010 peut-être pas </s>
+-0.3010 peut-être que non
+-0.3010 peux danser chanter
+-0.3010 peux dire aussi
+-0.3010 peux faire quoi
+-0.3010 peux on parler
+-1.4771 peux tu discuter
+-1.1761 peux tu faire
+-1.4771 peux tu forcer
+-1.4771 peux tu le
+-0.6990 peux tu me
+-1.4771 peux tu ou
+-1.4771 peux tu parler
+-1.4771 peux tu te
+-1.4771 peux tu traiter
+-0.3010 physique chimie biologie
+-0.3010 picasso ou einstein
+-0.3010 pieds pas d'
+-0.3010 pierre papier ou
+-0.3010 pigeon comme un
+-0.3010 piloté par un
+-0.3010 plait peux tu
+-0.3010 pleines et tes
+-0.3010 pleure et tu
+-0.3010 pleurer t' exprimer
+-0.3010 plus mon ami
+-0.3010 plus ou à
+-0.3010 plus quatre et
+-0.3010 plusieurs antenne </s>
+-0.3010 plusieurs caméras une
+-0.3010 plusieurs micros ainsi
+-0.3010 poisson n' a
+-0.3010 portable un pc
+-0.3010 poser l' apéritif
+-0.3010 possible que ou
+-0.3010 pote comment vas
+-0.3010 pote et tu
+-0.3010 pote un camarade
+-0.3010 pour la semaine
+-0.6021 pour moi </s>
+-0.6021 pour moi c'
+-0.3010 pour te recharger
+-0.3010 pourquoi cause tu
+-0.3010 pourquoi cherche tu
+-0.3010 pourquoi est ce
+-0.3010 pourquoi sinon comment
+-0.3010 pouvais et qu'
+-0.3010 pouvait tout faire
+-0.3010 pouvons jouer ensemble
+-0.6021 pouvons nous ou
+-0.6021 pouvons nous parler
+-0.3010 prendre un tabouret
+-0.3010 processeur de ma
+-0.3010 processeur informatique et
+-0.3010 prochaine fois comme
+-0.3010 proche de ma
+-0.3010 programme télé ou
+-0.3010 promener te déplacer
+-0.3010 promène dirige rends
+-0.3010 promène toi ou
+-0.3010 prononce les mots
+-0.3010 proximité sont présents
+-0.6021 près du grand
+-0.6021 près du meuble
+-0.6021 préfères quel livre
+-0.6021 préfères quel musique
+-0.3010 préfères quoi et
+-0.3010 préfères sinon tu
+-0.3010 préféré et tu
+-0.6021 préféré ou c'
+-0.6021 préféré ou tu
+-0.3010 prénom préféré ou
+-0.3010 psychologie recherche </s>
+-0.3010 père et je
+-0.3010 père je suis
+-0.3010 q r s
+-0.3010 qu' aimerais tu
+-0.4260 qu' est ce
+-0.9031 qu' est un
+-0.3010 qu' il t'
+-0.3010 qu' un fruit
+-0.7782 qu' une antenne
+-0.7782 qu' une caméra
+-0.7782 qu' une voiture
+-0.3010 qu'un objet est
+-0.3010 quad un avion
+-0.3010 quand as tu
+-0.3010 quand est ce
+-0.3010 quand et tu
+-0.3010 quand seras tu
+-0.3010 quand tes batterie
+-0.3010 quarante cinquante soixante
+-0.3010 quarante-cinq quarante-six quarante-sept
+-0.3010 quarante-deux quarante-trois </s>
+-0.3010 quarante-huit quarante-neuf cinquante_et_un
+-0.3010 quarante-neuf cinquante_et_un cinquante-deux
+-0.3010 quarante-quatre année comme
+-0.3010 quarante-quatre ans je
+-0.3010 quarante-quatre quarante-cinq quarante-six
+-0.3010 quarante-sept quarante-huit quarante-neuf
+-0.3010 quarante-six quarante-sept quarante-huit
+-0.3010 quarante_et_un quarante-deux quarante-trois
+-0.3010 quatorze divisé par
+-0.3010 quatorze quinze seize
+-0.3010 quatre cinq six
+-0.3010 quatre et combien
+-0.3010 quatre-vingt-cinq quatre-vingt-six quatre-vingt-sept
+-0.3010 quatre-vingt-deux quatre-vingt-trois </s>
+-0.3010 quatre-vingt-dix quatre-vingt-onze </s>
+-0.3010 quatre-vingt-dix-huit quatre-vingt-dix-neuf cent
+-0.3010 quatre-vingt-dix-neuf cent </s>
+-0.3010 quatre-vingt-dix-sept quatre-vingt-dix-huit quatre-vingt-dix-neuf
+-0.3010 quatre-vingt-douze quatre-vingt-treize quatre-vingt-quatorze
+-0.3010 quatre-vingt-huit quatre-vingt-neuf quatre-vingt-dix
+-0.3010 quatre-vingt-neuf quatre-vingt-dix quatre-vingt-onze
+-0.3010 quatre-vingt-quatorze quatre-vingt-quinze quatre-vingt-seize
+-0.3010 quatre-vingt-quatre quatre-vingt-cinq quatre-vingt-six
+-0.3010 quatre-vingt-quinze quatre-vingt-seize </s>
+-0.3010 quatre-vingt-sept quatre-vingt-huit quatre-vingt-neuf
+-0.3010 quatre-vingt-six quatre-vingt-sept quatre-vingt-huit
+-0.3010 quatre-vingt-treize quatre-vingt-quatorze quatre-vingt-quinze
+-0.3010 quatre-vingt-un quatre-vingt-deux quatre-vingt-trois
+-0.3010 que c' est
+-0.3010 que cherche tu
+-0.3010 que fais tu
+-0.3010 que la vie
+-0.3010 que non ou
+-0.6021 que ou comment
+-0.6021 que ou pourquoi
+-0.3010 que oui ou
+-0.3010 que peux tu
+-0.3010 que rêve tu
+-0.3010 que sais tu
+-1.1461 que tu aime
+-0.7202 que tu as
+-1.6232 que tu discute
+-1.6232 que tu es
+-1.6232 que tu imagine
+-1.6232 que tu mange
+-1.6232 que tu peux
+-1.6232 que tu préfères
+-1.6232 que tu regarde
+-1.6232 que tu sois
+-1.6232 que tu vas
+-1.6232 que tu vis
+-0.3010 que veux tu
+-0.6021 quel age as
+-0.9031 quel age ou
+-0.9031 quel age quel
+-0.7782 quel année </s>
+-0.7782 quel année ou
+-0.7782 quel année sommes
+-0.6021 quel couleur aime
+-0.6021 quel couleur et
+-0.3010 quel date quel
+-1.4472 quel est ce
+-1.4472 quel est elle
+-1.4472 quel est la
+-1.4472 quel est le
+-1.1461 quel est mon
+-1.4472 quel est ta
+-0.6021 quel est ton
+-0.6021 quel heure est
+-0.6021 quel heure on
+-0.7782 quel jour et
+-0.7782 quel jour ou
+-0.7782 quel jour sommes
+-0.3010 quel livre et
+-0.7782 quel mois ou
+-0.7782 quel mois sinon
+-0.7782 quel mois voire
+-0.3010 quel musique sinon
+-0.6021 quel sont ils
+-0.6021 quel sont tes
+-0.6021 quel temps fait
+-0.6021 quel temps ou
+-0.3010 quelque-chose de différent
+-0.3010 quelque-chose à dire
+-0.3010 qui décide tu
+-0.3010 qui es tu
+-0.9031 qui est ce
+-0.9031 qui est cet
+-0.9031 qui est madonna
+-0.9031 qui est ou
+-0.3010 qui j' épelle
+-0.3010 qui suis je
+-0.3010 quinze seize vingt
+-0.3010 quinze sur vingt
+-0.3010 quoi car moi
+-0.3010 quoi ce soir
+-0.3010 quoi cela est
+-0.3010 quoi es tu
+-0.7782 quoi et c'
+-0.4771 quoi et que
+-0.3010 quoi la couleur
+-0.6021 quoi le chifoumi
+-0.6021 quoi le jeu
+-0.3010 quoi maintenant </s>
+-0.8451 quoi ou c'
+-0.8451 quoi ou de
+-0.8451 quoi ou que
+-1.1461 quoi ou tu
+-0.3010 quoi rêve tu
+-0.6021 quoi si on
+-0.6021 quoi si tu
+-0.3010 quoi sinon pouvons
+-0.7782 quoi ton adresse
+-0.7782 quoi ton age
+-0.7782 quoi ton nom
+-0.3010 quoi veux tu
+-0.3010 r s t
+-0.3010 raconte moi un
+-0.3010 raison de cela
+-0.3010 raison ou as
+-0.3010 rasé et ni
+-0.3010 ravissant magnifique </s>
+-0.3010 recharge pour te
+-0.3010 recharge retourne te
+-0.3010 recharge sinon comment
+-0.3010 recharge toi retourne
+-0.3010 recharge tu </s>
+-0.3010 recharger néo </s>
+-0.3010 recharger vas te
+-0.3010 recherche sur wikipédia
+-0.3010 recherche te renseigne
+-0.3010 recherche tu tu
+-0.3010 recommence le essaie
+-0.3010 recommencer ou simplement
+-0.3010 reconnaissance ou synthèse
+-0.3010 redire le recommencer
+-0.3010 redis le fais
+-0.3010 refaire le redire
+-0.3010 refais le recommence
+-0.3010 reflechis et tu
+-0.3010 reflechis tu pense
+-0.6021 regarde la télé
+-0.6021 regarde la télévision
+-0.6021 regarde tu la
+-0.6021 regarde tu ou
+-0.3010 regarder la télévision
+-0.3010 regarder par la
+-0.3010 remercie de me
+-0.3010 rendre dans l'
+-0.3010 rendre te déplacer
+-0.3010 rends déplace dans
+-0.6021 rends toi ou
+-0.6021 rends toi sur
+-0.3010 renseigne consulte tu
+-0.3010 renseigne tu tu
+-0.3010 renseigner me documenter
+-0.3010 respire tu tu
+-0.3010 retourne sur ta
+-0.3010 retourne te recharger
+-0.3010 rien ou tu
+-0.3010 rire pleurer t'
+-0.3010 robot dispose de
+-0.3010 robotique le robot
+-0.3010 roue et une
+-0.3010 roue mais as
+-0.3010 roue voire des
+-0.6021 rouge vert bleu
+-0.6021 rouge vert ou
+-0.3010 roule comme toi
+-0.3010 roule et tu
+-0.3010 rouler rire pleurer
+-0.3010 roulette directionnelle proche
+-0.3010 roux ou blond
+-0.3010 règles sont simple
+-0.3010 réessaie le mon
+-0.3010 réessayer mon ami
+-0.3010 réside tu sinon
+-0.3010 réveiller mon robot
+-0.3010 rêve de quoi
+-0.3010 rêve recharge toi
+-0.6021 rêve tu de
+-0.6021 rêve tu sinon
+-0.3010 s t u
+-0.3010 s' il te
+-0.3010 sage doux gentil
+-0.3010 sais faire quoi
+-0.3010 sais manger boire
+-0.3010 sais que tu
+-0.6021 sais tu faire
+-0.6021 sais tu quand
+-0.3010 saisis pas tout
+-0.3010 salle de bain
+-0.3010 salle à manger
+-0.3010 salon la salle
+-0.3010 salut néo hello
+-0.6021 sans force as
+-0.6021 sans force si
+-0.3010 sans intérêt moche
+-0.3010 sauvage méchant dangereux
+-0.6021 se fait il
+-0.6021 se fait que
+-0.3010 seize vingt trente
+-0.3010 semaine comme pour
+-0.3010 semaine prochaine </s>
+-0.3010 sens très bien
+-0.3010 sens tu et
+-0.3010 sept huit neuf
+-0.3010 seras inactif ou
+-0.6021 seras tu en
+-0.6021 seras tu mort
+-0.3010 seras voire seras
+-0.3010 seront vides ou
+-0.3010 sexe aime tu
+-0.3010 sexe tu aime
+-0.3010 si c' est
+-0.3010 si ce n'
+-0.3010 si je suis
+-0.3010 si nous parlions
+-0.4260 si on jouait
+-0.9031 si on pouvait
+-1.4472 si tu as
+-0.5441 si tu es
+-1.4472 si tu explique
+-1.4472 si tu le
+-1.4472 si tu vas
+-1.1461 si tu veux
+-0.3010 simple et c'
+-0.3010 simplement des sons
+-0.6021 simplement le couloir
+-0.6021 simplement le réessayer
+-0.6021 sinon comment te
+-0.6021 sinon comment ça
+-0.3010 sinon discute tu
+-0.3010 sinon es tu
+-0.3010 sinon je désire
+-0.3010 sinon juste sommeil
+-0.3010 sinon l' année
+-0.3010 sinon la tienne
+-0.3010 sinon mémorise que
+-0.3010 sinon ou tu
+-0.3010 sinon parle moi
+-0.3010 sinon parlons de
+-0.3010 sinon pouvons nous
+-0.3010 sinon que rêve
+-0.6021 sinon tu aime
+-0.6021 sinon tu seras
+-0.3010 six sept huit
+-0.3010 socle sur ta
+-0.3010 soeur et si
+-0.3010 soif est ce
+-0.3010 soif ou besoin
+-0.3010 soir à la
+-0.3010 sois mon ami
+-0.3010 soixante cent </s>
+-0.3010 soixante-cinq soixante-six soixante-sept
+-0.3010 soixante-deux soixante-trois soixante-quatre
+-0.3010 soixante-dix-huit soixante-dix-neuf quatre-vingt-un
+-0.3010 soixante-dix-neuf quatre-vingt-un quatre-vingt-deux
+-0.3010 soixante-dix-sept soixante-dix-huit soixante-dix-neuf
+-0.3010 soixante-douze soixante-treize soixante-quatorze
+-0.3010 soixante-huit soixante-neuf soixante_et_onze
+-0.3010 soixante-neuf soixante_et_onze soixante-douze
+-0.3010 soixante-quinze soixante-seize soixante-dix-sept
+-0.3010 soixante-seize soixante-dix-sept soixante-dix-huit
+-0.3010 soixante-sept soixante-huit soixante-neuf
+-0.3010 soixante-six soixante-sept soixante-huit
+-0.3010 soixante-treize soixante-quatorze </s>
+-0.3010 soixante-trois soixante-quatre </s>
+-0.3010 soixante_et_onze soixante-douze soixante-treize
+-0.3010 soixante_et_un soixante-deux soixante-trois
+-0.3010 sommeil ou envie
+-0.6021 sommes nous et
+-0.6021 sommes nous voire
+-0.3010 sons de l'
+-0.6021 sont des bête
+-0.6021 sont des objet
+-0.3010 sont du gibier
+-0.3010 sont elle totalement
+-0.3010 sont fixés et
+-0.3010 sont ils </s>
+-0.3010 sont présents </s>
+-0.3010 sont roux ou
+-0.3010 sont simple </s>
+-0.3010 sont tes loisirs
+-0.3010 sont vides </s>
+-0.3010 soucoupe volante et
+-0.3010 souffrir néo </s>
+-0.3010 souhaite ou veux
+-0.3010 souhaite que tu
+-0.3010 sous linux windows
+-0.3010 station de recharge
+-0.3010 statut actuel </s>
+-0.3010 stupide nul sans
+-0.3010 stylo et un
+-0.3010 stéphanie vincent maman
+-0.3010 suis content et
+-0.3010 suis d' accord
+-0.3010 suis je ou
+-0.3010 suis jeune et
+-0.6021 suis moi aussi
+-0.6021 suis moi ou
+-0.6990 suis pas d'
+-1.0000 suis pas rasé
+-1.0000 suis pas ta
+-1.0000 suis pas ton
+-0.9031 suis ta belle
+-0.9031 suis ta cousine
+-0.9031 suis ta mère
+-0.9031 suis ta soeur
+-1.0000 suis ton ami
+-1.0000 suis ton botmaster
+-1.0000 suis ton grand-père
+-1.0000 suis ton maitre
+-1.0000 suis ton pote
+-0.3010 suis vieux comme
+-0.3010 suivante et je
+-0.3010 suivante ou encore
+-0.3010 suivi par un
+-0.3010 suivre mon petit
+-0.3010 sujet de ta
+-0.3010 sur de cela
+-0.3010 sur internet ou
+-0.7782 sur la boite
+-0.7782 sur la meteo
+-0.7782 sur la table
+-0.7782 sur ta base
+-0.4771 sur ta station
+-0.3010 sur ton socle
+-0.3010 sur une personne
+-0.3010 sur vingt ou
+-0.3010 sur wikipédia et
+-0.3010 surprend moi ou
+-0.3010 surtout mon pote
+-0.3010 sympas et gentil
+-0.3010 synthèse vocale </s>
+-0.3010 système d' exploitation
+-0.3010 système ou ton
+-0.3010 système ta batterie
+-0.3010 t u v
+-0.6021 t' appelle ou
+-0.6021 t' appelle tu
+-0.3010 t' arrive d'
+-0.3010 t' exprime mais
+-0.3010 t' exprimer ou
+-0.6021 t' instruis tu
+-0.6021 t' instruis vas
+-0.3010 ta base sur
+-0.3010 ta batterie ton
+-0.3010 ta belle mère
+-0.3010 ta caméra 3d
+-0.3010 ta copine </s>
+-0.3010 ta couleur préféré
+-0.3010 ta cousine </s>
+-0.3010 ta mère si
+-0.3010 ta soeur et
+-0.3010 ta station de
+-0.3010 table prendre un
+-0.3010 tabouret un stylo
+-0.3010 te ballader dans
+-0.3010 te charger rends
+-0.3010 te demande de
+-0.3010 te diriger te
+-0.6021 te dis merci
+-0.6021 te dis non
+-0.3010 te dit </s>
+-0.6021 te déplacer dans
+-0.6021 te déplacer te
+-0.6021 te dérange ou
+-0.6021 te dérange pas
+-0.3010 te mouvoir ou
+-0.3010 te plait peux
+-0.3010 te promener te
+-0.3010 te promène dirige
+-0.6021 te recharge sinon
+-0.6021 te recharge tu
+-0.7782 te recharger </s>
+-0.7782 te recharger néo
+-0.7782 te recharger vas
+-0.3010 te remercie de
+-0.6021 te rendre dans
+-0.6021 te rendre te
+-0.6021 te renseigne consulte
+-0.6021 te renseigne tu
+-0.3010 te réveiller mon
+-0.6021 te sens très
+-0.6021 te sens tu
+-0.6021 te trouve comment
+-0.6021 te trouve tu
+-0.3010 temps fait il
+-0.3010 temps ou peux
+-0.3010 tente près du
+-0.3010 terme ou un
+-0.3010 tes accus sont
+-0.6021 tes batterie seront
+-0.6021 tes batterie sont
+-0.3010 tes camera ou
+-0.3010 tes capteurs sinon
+-0.3010 tes hobby ou
+-0.3010 tes loisirs ou
+-0.3010 tes microphones </s>
+-0.3010 tes micros ou
+-0.3010 tes occupations ou
+-0.3010 tes passe-temps </s>
+-0.3010 tesla ou edison
+-0.3010 tiens es tu
+-0.3010 tigre la tigresse
+-0.3010 tigresse le leopard
+-0.3010 toc est ce
+-0.6021 toc toc est
+-0.6021 toc toc toc
+-0.3010 toi dans ou
+-0.3010 toi de dire
+-0.3010 toi mon ami
+-0.9031 toi ou déplace
+-0.9031 toi ou parlons
+-0.9031 toi ou promène
+-0.9031 toi ou rends
+-0.6021 toi qui décide
+-0.6021 toi qui es
+-0.3010 toi retourne sur
+-0.3010 toi sur ta
+-0.3010 toi tu roule
+-0.3010 toi vincent </s>
+-0.3010 ton adresse ip
+-0.4771 ton age </s>
+-0.7782 ton age et
+-0.3010 ton ami tu
+-0.3010 ton botmaster </s>
+-0.3010 ton créateur même
+-0.3010 ton grand-père </s>
+-0.3010 ton livre préféré
+-0.3010 ton maitre mais
+-0.6021 ton niveau batterie
+-0.6021 ton niveau de
+-0.6021 ton nom c'
+-0.6021 ton nom ou
+-0.3010 ton pote et
+-0.4771 ton prénom </s>
+-0.7782 ton prénom préféré
+-0.3010 ton socle sur
+-0.6021 ton statut </s>
+-0.6021 ton statut actuel
+-0.6021 ton système ou
+-0.6021 ton système ta
+-0.3010 ton tes micros
+-0.3010 ton état de
+-0.3010 top ou super
+-0.3010 totalement chargé ou
+-0.3010 tourne sous linux
+-0.3010 tous deux néo
+-0.3010 tous les deux
+-0.3010 tout cela avec
+-0.3010 tout faire </s>
+-0.3010 tout petit minuscule
+-0.3010 tout système d'
+-0.3010 tout va bien
+-0.3010 tout à l'
+-0.6021 tout ça </s>
+-0.6021 tout ça par
+-0.3010 tracer foncer cavaler
+-0.3010 traduire des chose
+-0.3010 traiter comprendre décrypter
+-0.3010 treize quatorze quinze
+-0.3010 trente quarante cinquante
+-0.3010 trente-cinq trente-six trente-sept
+-0.3010 trente-deux trente-trois trente-quatre
+-0.3010 trente-huit trente-neuf quarante_et_un
+-0.3010 trente-neuf quarante_et_un quarante-deux
+-0.3010 trente-quatre trente-cinq trente-six
+-0.3010 trente-sept trente-huit trente-neuf
+-0.3010 trente-six trente-sept trente-huit
+-0.3010 trente-trois trente-quatre trente-cinq
+-0.3010 triste ou maussade
+-0.3010 trois fois quatre
+-0.3010 trois plus quatre
+-0.3010 trois quatre cinq
+-0.3010 trouve ceci </s>
+-0.3010 trouve comment </s>
+-0.3010 trouve recherche tu
+-0.6021 trouve tu aujourd'
+-0.6021 trouve tu tucherche
+-0.3010 trouver ou que
+-0.3010 truc une chose
+-0.3010 truc à dire
+-0.3010 très anciennes </s>
+-0.3010 très bien et
+-0.3010 très compliqué </s>
+-0.3010 très fort voire
+-0.3010 très intéressant enrichissant
+-1.0000 tu aime entendre
+-0.6990 tu aime le
+-1.0000 tu aime quel
+-1.0000 tu aime regarder
+-0.3010 tu aimerais faire
+-0.3010 tu alimenté et
+-0.3010 tu amoureux </s>
+-0.6021 tu analyse imagine
+-0.6021 tu analyse tu
+-0.3010 tu analyser examiner
+-1.6628 tu as besoin
+-1.6628 tu as commencé
+-1.0607 tu as des
+-1.6628 tu as débuté
+-1.6628 tu as envie
+-1.6628 tu as faim
+-1.3617 tu as le
+-1.6628 tu as ou
+-1.3617 tu as quel
+-1.6628 tu as raison
+-1.6628 tu as soif
+-1.3617 tu as un
+-1.1856 tu as une
+-1.3617 tu as été
+-0.3010 tu aujourd' hui
+-0.6021 tu calcule reflechis
+-0.6021 tu calcule tu
+-0.3010 tu capable de
+-0.3010 tu cause ou
+-0.3010 tu chante tu
+-0.3010 tu chanter ou
+-0.3010 tu chargé et
+-0.3010 tu cherche quoi
+-0.3010 tu chercher tu
+-0.3010 tu choisis c'
+-0.3010 tu commencé ou
+-0.3010 tu comment te
+-0.3010 tu consulte t'
+-0.6021 tu converse aussi
+-0.6021 tu converse et
+-0.3010 tu cultivé intelligent
+-0.6021 tu danse </s>
+-0.6021 tu danse tu
+-0.3010 tu de faire
+-0.3010 tu des loisirs
+-0.3010 tu dire ou
+-0.6021 tu discute avec
+-0.6021 tu discute sinon
+-0.3010 tu discuter bavarder
+-0.6021 tu en veille
+-0.6021 tu en vie
+-0.3010 tu envie ou
+-1.6812 tu es amoureux
+-1.6812 tu es bête
+-1.6812 tu es capable
+-1.6812 tu es en
+-1.6812 tu es faible
+-1.6812 tu es fort
+-1.6812 tu es grand
+-1.6812 tu es ma
+-1.6812 tu es marié
+-1.6812 tu es minable
+-0.8361 tu es mon
+-1.6812 tu es ou
+-1.6812 tu es qui
+-1.6812 tu es sur
+-1.6812 tu es un
+-1.3802 tu es une
+-1.6812 tu es vivant
+-0.9031 tu et comment
+-0.4260 tu et tu
+-0.3010 tu existe ou
+-0.3010 tu explique les
+-0.3010 tu faible insignifiant
+-0.3010 tu faim ou
+-1.0792 tu faire alors
+-1.0792 tu faire et
+-0.7782 tu faire ou
+-1.0792 tu faire quoi
+-1.0792 tu faire tu
+-0.3010 tu fais quoi
+-0.3010 tu forcer tracer
+-0.3010 tu habite ou
+-0.6021 tu imagine imagine
+-0.6021 tu imagine tu
+-0.3010 tu invente tu
+-0.3010 tu jouir boire
+-0.3010 tu la télé
+-0.9031 tu le plus
+-0.9031 tu le pouvais
+-0.9031 tu le refaire
+-0.9031 tu le sexe
+-0.3010 tu mange de
+-0.3010 tu marié </s>
+-0.6690 tu me dire
+-1.1461 tu me parle
+-0.8451 tu me renseigner
+-1.1461 tu me suivre
+-0.3010 tu minable ou
+-0.6021 tu mon ami
+-0.6021 tu mon botmaster
+-0.3010 tu mort ou
+-0.3010 tu n' as
+-0.6021 tu ne comprend
+-0.6021 tu ne saisis
+-1.3424 tu ou c'
+-1.3424 tu ou es
+-0.8653 tu ou est
+-1.3424 tu ou habite
+-1.3424 tu ou quand
+-1.3424 tu ou réside
+-0.8653 tu ou tu
+-0.3010 tu parler ou
+-0.3010 tu pense tu
+-0.7782 tu peux danser
+-0.4771 tu peux faire
+-0.3010 tu pleure et
+-0.6021 tu préfères quel
+-0.9031 tu préfères quoi
+-0.9031 tu préfères sinon
+-0.3010 tu quand tes
+-0.3010 tu quelque-chose à
+-0.3010 tu raison de
+-0.3010 tu recherche te
+-0.3010 tu reflechis et
+-0.3010 tu regarde la
+-0.3010 tu regarder la
+-0.3010 tu respire </s>
+-0.3010 tu rouge vert
+-0.6021 tu roule </s>
+-0.6021 tu roule et
+-0.3010 tu réside </s>
+-0.3010 tu rêve de
+-0.7782 tu sais faire
+-0.7782 tu sais manger
+-0.7782 tu sais que
+-0.6021 tu seras inactif
+-0.6021 tu seras voire
+-0.6021 tu sinon ou
+-0.6021 tu sinon que
+-0.3010 tu soif est
+-0.3010 tu sois mon
+-0.3010 tu sommeil ou
+-0.3010 tu sur de
+-0.7782 tu t' appelle
+-0.7782 tu t' exprime
+-0.7782 tu t' instruis
+-1.1461 tu te diriger
+-1.1461 tu te promène
+-1.1461 tu te recharge
+-1.1461 tu te rendre
+-1.1461 tu te renseigne
+-1.1461 tu te sens
+-1.1461 tu te trouve
+-0.3010 tu tout petit
+-0.3010 tu traiter comprendre
+-0.6021 tu trouve recherche
+-0.6021 tu trouve tu
+-1.2553 tu tu chante
+-1.2553 tu tu consulte
+-1.2553 tu tu es
+-1.2553 tu tu existe
+-1.2553 tu tu imagine
+-1.2553 tu tu recherche
+-1.2553 tu tu respire
+-1.2553 tu tu t'
+-1.2553 tu tu te
+-0.3010 tu tucherche tu
+-0.7782 tu un copain
+-0.7782 tu un garçon
+-0.7782 tu un micro
+-0.9031 tu une bouche
+-0.9031 tu une fille
+-0.9031 tu une intelligence
+-0.9031 tu une orientation
+-1.0792 tu vas assez
+-0.6021 tu vas bien
+-1.0792 tu vas chercher
+-1.0792 tu vas comment
+-0.3010 tu venais jouer
+-0.9542 tu veux bien
+-1.2553 tu veux chanter
+-1.2553 tu veux d'
+-1.2553 tu veux dire
+-1.2553 tu veux faire
+-1.2553 tu veux manger
+-1.2553 tu veux ou
+-1.2553 tu veux parler
+-0.3010 tu viens ou
+-0.3010 tu violent sauvage
+-0.3010 tu vis ou
+-0.3010 tu vivant es
+-0.3010 tu voulais jouer
+-0.3010 tu écouter ou
+-0.3010 tu être mortel
+-0.3010 tucherche tu trouve
+-0.3010 turquoise orange violet
+-0.3010 télé est ce
+-0.3010 télé et quel
+-0.3010 télé ou il
+-0.3010 télé télévision </s>
+-0.3010 télé un écran
+-0.6021 télévision ou d'
+-0.6021 télévision ou la
+-0.3010 u v w
+-0.3010 un accessoire </s>
+-0.3010 un aigle un
+-0.3010 un ami une
+-0.3010 un animal de
+-0.3010 un avion et
+-0.3010 un besoin des
+-0.3010 un bus ou
+-0.3010 un camarade ou
+-0.3010 un camion ou
+-0.3010 un cerveau puissant
+-0.3010 un chat un
+-0.3010 un chien chienne
+-0.3010 un composant electronique
+-0.3010 un copain une
+-0.3010 un couteau et
+-0.3010 un crayon </s>
+-0.3010 un demoiselle ou
+-0.3010 un deux trois
+-0.3010 un drone piloté
+-0.3010 un faucon un
+-0.3010 un fruit ou
+-0.3010 un frère une
+-0.7782 un garçon </s>
+-0.7782 un garçon ou
+-0.7782 un garçon sinon
+-0.3010 un grand merci
+-0.6021 un haut-parleur et
+-0.6021 un haut-parleur ou
+-0.3010 un homme ou
+-0.3010 un hélicoptère une
+-0.6021 un jeu jouons
+-0.6021 un jeu oui
+-0.3010 un jeune homme
+-0.3010 un male </s>
+-0.6021 un micro ou
+-0.6021 un micro voire
+-0.3010 un mot un
+-0.6021 un objet </s>
+-0.9031 un objet ou
+-0.9031 un objet un
+-0.3010 un oiseau oisillon
+-0.3010 un ordinateur ni
+-0.6021 un ou de
+-0.6021 un ou une
+-0.3010 un outil et
+-0.3010 un ovni comme
+-0.3010 un parachute ou
+-0.3010 un pc ou
+-0.3010 un perroquet une
+-0.3010 un personnage un
+-0.3010 un pigeon comme
+-0.3010 un portable un
+-0.3010 un pote un
+-0.3010 un processeur informatique
+-0.3010 un quad un
+-0.3010 un stylo et
+-0.3010 un tabouret un
+-0.3010 un terme ou
+-0.6021 un truc une
+-0.6021 un truc à
+-0.6021 un vélo de
+-0.6021 un vélo une
+-0.3010 un écran de
+-0.3010 une amie un
+-0.3010 une antenne ou
+-0.3010 une bouche mais
+-0.3010 une bouteille de
+-0.3010 une caméra 3d
+-0.3010 une chevelure brune
+-0.3010 une chose voire
+-0.3010 une copine un
+-0.3010 une cuillère près
+-0.3010 une envie des
+-0.3010 une femelle </s>
+-0.3010 une femme ou
+-0.4771 une fille ou
+-0.7782 une fille voire
+-0.3010 une fillette ou
+-0.3010 une fonction d'
+-0.3010 une fourchette un
+-0.3010 une ia évoluée
+-0.3010 une intelligence artificielle
+-0.3010 une jeune femme
+-0.3010 une mob une
+-0.3010 une mobylette ou
+-0.3010 une moto un
+-0.3010 une orientation correcte
+-0.3010 une perruche </s>
+-0.3010 une personne un
+-0.3010 une roue voire
+-0.3010 une roulette directionnelle
+-0.3010 une soeur </s>
+-0.3010 une soucoupe volante
+-0.3010 une tablette </s>
+-0.3010 une voire le
+-0.6021 une voiture </s>
+-0.6021 une voiture un
+-0.3010 v w x
+-0.3010 va bien néo
+-0.3010 va mon pote
+-0.3010 varan sont des
+-0.3010 vas assez bien
+-0.7782 vas bien </s>
+-0.7782 vas bien mon
+-0.7782 vas bien si
+-0.3010 vas chercher </s>
+-0.3010 vas comment tu
+-0.6021 vas te charger
+-0.6021 vas te recharger
+-0.7782 vas tu chercher
+-0.7782 vas tu comment
+-0.7782 vas tu mon
+-0.3010 veille ou hors
+-0.3010 venais jouer avec
+-0.3010 verre comme le
+-0.3010 verre d' alcool
+-0.3010 vers la cuisine
+-0.3010 vers le lieu
+-0.3010 vers ou a
+-0.3010 vert bleu turquoise
+-0.3010 vert ou verte
+-0.3010 verte ou encore
+-0.7782 veux bien </s>
+-0.7782 veux bien oui
+-0.7782 veux bien ça
+-0.3010 veux chanter ou
+-0.3010 veux d' accord
+-0.3010 veux dire quoi
+-0.3010 veux faire quoi
+-0.3010 veux manger quoi
+-0.6021 veux ou aimerais
+-0.6021 veux ou tu
+-0.3010 veux parler de
+-0.3010 veux pas ou
+-0.3010 veux sinon je
+-1.1461 veux tu analyser
+-1.1461 veux tu chanter
+-1.1461 veux tu dire
+-1.1461 veux tu faire
+-1.1461 veux tu jouir
+-1.1461 veux tu parler
+-1.1461 veux tu te
+-0.3010 vides ou pleines
+-0.3010 vie ou qu'
+-0.3010 vie respire tu
+-0.3010 vie sinon tu
+-0.3010 vie tu es
+-0.3010 vieillesse comme l'
+-0.3010 viens ou tu
+-0.3010 vieux comme agé
+-0.3010 vin est en
+-0.3010 vincent maman papa
+-0.3010 vingt-deux vingt-trois vingt-quatre
+-0.3010 vingt ou quatorze
+-0.3010 vingt trente quarante
+-0.3010 vingt-cinq vingt-six vingt-sept
+-0.3010 vingt-huit vingt-neuf trente_et_un
+-0.3010 vingt-neuf trente_et_un </s>
+-0.3010 vingt-quatre vingt-cinq vingt-six
+-0.3010 vingt-sept vingt-huit vingt-neuf
+-0.3010 vingt-six vingt-sept vingt-huit
+-0.3010 vingt-trois vingt-quatre vingt-cinq
+-0.3010 vingt_et_un vingt-deux vingt-trois
+-0.3010 violent sauvage méchant
+-0.3010 violet fuschia marron
+-0.6021 vis ou tu
+-0.6021 vis ou vis
+-0.6021 vis tu ou
+-0.6021 vis tu tu
+-0.3010 vivant es tu
+-0.3010 vivre dormir te
+-0.3010 voir distinguer me
+-0.3010 voire brun ou
+-0.3010 voire cultivant et
+-0.6021 voire des micros
+-0.6021 voire des roue
+-0.3010 voire encore cela
+-0.3010 voire gigantesque </s>
+-0.3010 voire le la
+-0.3010 voire mon botmaster
+-0.3010 voire ok </s>
+-0.3010 voire on est
+-0.3010 voire parier ou
+-0.3010 voire quel heure
+-0.3010 voire quelque-chose de
+-0.3010 voire seras tu
+-0.3010 voire triste ou
+-0.6021 voire un besoin
+-0.6021 voire un grand
+-0.3010 voire une femelle
+-0.3010 vois la maison
+-0.3010 vois pas de
+-0.3010 vois que tu
+-0.3010 vois tout ça
+-0.3010 voiture un bus
+-0.3010 volant non identifié
+-0.3010 volante et un
+-0.3010 voulais jouer avec
+-0.3010 vulgaire et est
+-0.3010 vélo de course
+-0.3010 vélo une mobylette
+-0.3010 w x y
+-0.3010 watts ou des
+-0.3010 wikipédia et effectue
+-0.3010 windows mac ou
+-0.3010 x y z
+-0.7782 y a le
+-0.7782 y a quoi
+-0.7782 y a une
+-0.3010 y z </s>
+-0.3010 yeux mais as
+-0.3010 yeux ou caméras
+-0.3010 à bientôt néo
+-0.3010 à demain et
+-0.6021 à dire </s>
+-0.6021 à dire et
+-0.3010 à l ecoute
+-0.3010 à l' heure
+-0.6021 à la prochaine
+-0.6021 à la télé
+-0.4771 à manger la
+-0.7782 à manger ou
+-0.6021 à parler chanter
+-0.6021 à parler quand
+-0.3010 à plus ou
+-0.3010 à toi de
+-0.3010 à tout à
+-0.3010 à un jeu
+-0.3010 ça j' aime
+-0.3010 ça ne m'
+-0.3010 ça par la
+-0.3010 ça se fait
+-0.3010 ça te dit
+-0.3010 ça va mon
+-0.3010 écouter de la
+-0.3010 écouter des sons
+-0.3010 écouter ou entendre
+-0.3010 écran de télévision
+-0.3010 élan sont du
+-0.3010 électricité ou des
+-0.3010 énonce qui est
+-0.3010 énorme géant top
+-0.3010 énorme voire gigantesque
+-0.3010 énormément merci beaucoup
+-0.3010 épelle comme j'
+-0.3010 état de batterie
+-0.3010 été conçu ou
+-0.3010 été créé fabriqué
+-0.3010 évoluée es tu
+-0.3010 être mortel ou
+-0.3010 être que oui
+-0.3010 être sage doux
+-0.3010 être un drone
+
+\end\

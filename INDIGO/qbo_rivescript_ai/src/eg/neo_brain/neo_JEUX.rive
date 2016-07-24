@@ -1,0 +1,53 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
+//-------------------------------------------------------------------------------------------------------------------------
+//  PIERRE - PAPIER - CISEAUX  --------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
++ chifumi
+- Veux tu que je te rappelles les règles ?
+
++ [*] oui [*]
+% veux tu que je te rappelles les règles ?
+- Bien. Tu dois dire un des mots suivants, Pierre, Papier ou Ciseaux.
+^  Je répondrai à mon tour un des 3 mots.
+^  Le principe est le suivant : la pierre casse les ciseaux, les ciseaux coupent le papier, le papier capture la pierre.
+^  Tu vois, c'est simple.
+^  Si, j'ai oublié de te dire, mes réponses seront un peu en retard, mais je te promets que je ne triche pas. tu es prêt ?
+
++ [*] non [*]
+% veux tu que je te rappelles les règles ?
+- Ok. un deux trois,
+
++ [*] oui [*]
+% * mais je te promets que je ne triche pas tu es prêt ?
+- un deux trois
+
++ non [*]
+% * mais je te promets que je ne triche pas tu es prêt ?
+- <reply>
+
++ (pierres|pierre|papiers|papier|ciseaux|ciseau)
+% un deux trois
+- je vois
+
++ chifumi_choix
+- papier {@ chifumi papier}
+- pierre {@ chifumi pierre}
+- ciseaux {@ chifumi ciseaux}
+
++ chifumi papier
+* <input>==papier=>, égalité, on recommence, à toi,
+* <input>==(ciseau|ciseaux)=>, Bravo. tes ciseaux coupent mon papier. un deux trois,
+* <input>==(pierre|pierres)=>, Je gagne. mon papier englobe ta pierre. un deux trois,
+
++ chifumi pierre
+* <input>==(pierre|pierres)=>, égalité, on recommence, à toi,
+* <input>==(papier|papiers)=>, Bravo. ton papier englobe ma pierre. un deux trois,
+* <input>==(ciseau|ciseaux)=>, Je gagne. ma pierre brise tes ciseaux. un deux trois,
+
++ chifumi ciseaux
+* <input>==(ciseau|ciseaux)=>, égalité, on recommence, à toi,
+* <input>==(pierre|pierres)=>, Bravo. ta pierre brise mes ciseaux. un deux trois,
+* <input>==(papier|papiers)=>, Je gagne. les ciseaux coupent le papier. un deux trois,

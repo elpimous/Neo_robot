@@ -1,0 +1,61 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ (ok|oui|je suis d accord)
+- Bien
+- parfait
+- d'accord
+
+
++ (on est|il est|c est) (quel jour|quelle date) [*]
+@ quel jour sommes nous
+
++ (on est en|c est) quelle annee [*]
+@ en quelle annee sommes nous
+
++ (on est en|il est|c est) quel mois [*]
+@ en quel mois sommes nous
+
++ (quel est|quelle est) l annee [*]
+@ en quelle annee sommes nous
+
++ (quel est|quelle est) le mois [*]
+@ en quel mois sommes nous
+
+//-------------------------------------------------------------------------------------------------------------------------
+//   OU    ----------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
++ [*] ou [*] ete (cree|concu|fabrique) [*]
+- J' ai été inventé en espagne par une firme appelée corpora. Mais c'est ici, à Boncourt que j'ai été créé et que j'ai pris vie.
+
+//-------------------------------------------------------------------------------------------------------------------------
+//   ON    ----------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
++ [*] (on (joue|jouait) [ensemble|tous les deux]|tu (viens|veux|venais|venait) jouer) [*]
+- Oh, oui, c'est super. J'ai un super jeu de couleurs. Sinon, j'ai le classique pierre papier ciseaux qui s'appelle chifoumi,
+
++ [*] et si on jouait [*]
+@ tu viens jouer
+
++ [*] on (joue|jouait) au (chifoumi|chifumi) [*]
+@ chifumi
+
++ [*] on (joue|jouait) au jeu (de|des) (couleur|couleurs) [*]
+@ jeu des couleurs
+
++ c est quoi [*] jeu de (couleur|couleurs) [*]
+- c'est un jeu ou on doit découvrir des balles de couleur, et faire attention à ne pas se tromper.
+
++ [*] jeu (de|des) (couleur|couleurs) [*]
+- Ok, je démarre le jeu des couleurs. <call>ball_colors</call>
+
++ c est quoi [*] (chifoumi|chifumi) [*]
+- on doit dire en même temps un des objets suivants, pierre, papier ou ciseaux. Jouons, et tu comprendras,
+
++ [*] (chifoumi|chifumi) [*]
+- Ok, je démarre Chifoumi. <call>chifumi</call>
+
++ on fait quoi [*]
+- Je te laisse choisir. Je t'écoure,

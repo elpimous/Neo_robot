@@ -1,0 +1,59 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ oui[*]
+% oui je vais bien merci et toi tu vas bien ?
+- c'est super
+- Parfait
+- bon, c'est nickel
+
++ non[*]
+% oui je vais bien merci et toi tu vas bien ?
+- Oh. dur
+- mince
+- désolé de l'entendre
+
++ [*] oui [*]
+% tu as besoin de moi
+- Bien. Dis moi ce que tu veux.
+- ok. Que puis-je pour toi
+- ok. donne moi ta consigne
+- D'accord. j'attends tes ordres
+
++ [*] non [*]
+% tu as besoin de moi
+- Ok. si tu as besoin, n'hésites pas.
+- Bien. Je suis à l'écoute, si tu as besoin.
+- Bien. 
+
++ [*] oui [*]
+% connais tu beaucoup de foyers avec des robots comme moi ?
+- Je ne te crois pas.Au mieux as-tu pu apercevoir de petits robots d'apprentissage, mais pas de robots de mon niveau, sans prétention.
+
++ [*] non [*]
+% connais tu beaucoup de foyers avec des robots comme moi ?
+- C'est bien ce qu'il me semblait. C'est peut-être parce que je suis trop performant pour les foyers standards,
+
++ [*] oui [*]
+% * tu veux que je me dirige vers * ?
+* <botstar2> == la cuisine => C'est noté pour un déplacement vers la cuisine. C'est parti.
+* <botstar2> == la chambre => C'est noté pour un déplacement vers la chambre. C'est parti.
+* <botstar2> == la salle a manger => C'est noté pour un déplacement vers la salle a manger. C'est parti.
+* <botstar2> == la salle de bain => C'est noté pour un déplacement vers la salle de bain. C'est parti.
+* <botstar2> == l entree => C'est noté pour un déplacement vers l entree. C'est parti.
+* <botstar2> == le salon => C'est noté pour un déplacement vers le salon. C'est parti.
+
++ [*] non [*]
+% * tu veux que je me dirige vers * ?
+- Bien. Je reste donc sur place.
+- Ok, c'est noté.
+- Bien. Je ne bouge pas.
+- Ah. Je croyais que tu voulais que je m'y rende. C'est noté.
+
++ [*] oui [*]
+% tu veux que je te suive c est ca ?
+- J'ai noté. Attends que mon module soit finalisé.
+
++ [*] non [*]
+% tu veux que je te suive c est ca ?
+- Tu ne sais pas trop ce que tu veux, en fait.

@@ -1,0 +1,334 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ je suis [*] (d'accord|en accord) [*]
+- Je te remercie
+- {random}bien|super|cool|parfait|Ok{/random}
+
++ je ne suis pas [*] (d accord|en accord) [*]
+- {random}C'est ton droit,|Tu as le droit,{/random} <get name>
+- {random}bien|Ok|c'est noté{/random}
+
++ je suis ton (maitre|botmaster|createur) [*]
+* <get name> == <bot master> => Oui, <get name>, tu as raison.
+* <get name> != <bot master> => non, tu fais erreur, <get name>. Mon <star> est <bot master>
+
++ je suis (ton|ta) (ami|amie|copain|copine|pote) [*]
+* <get name> == undefined => C'est sympas, machin. Et si tu me disais ton nom ?
+- oui, <get name>, et je t'en remercie.
+
++ je suis (ton|ta) (pere|frere|mere|soeur|cousin|cousine|beau pere|belle mere|grand pere|grand mere)
+- Je ne crois pas, non.
+- Tu dois pas être très bien, dans ta tête, toi,
+- Mais bien-sûr,
+- Si ça peux te faire plaisir, mais t'emballe pas
+
++ (j exige|je (veux|desire|souhaite)) que *
+- {@<star2>}
+
+//-------------------------------------------------------------------------------------------------------------------------
+// NOURRITURE + BOISSONS --------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
++ (@jaime|@jaimePas) [beaucoup|vraiment|trop|du tout] [manger] (des|du|de la|la|les|le|l |un|une) (@legumes)
+- Moi, je sais pas si j'aimerais ces légumes
+- Je sais pas si c'est très bon, comme légume
+- Des légumes ? Je sais pas si c'est très bon.
+
++ (@jaime|@jaimePas) [beaucoup|vraiment|trop|du tout] [manger] (des|du|de la|la|les|le|l |un|une) (@fruits)
+- Moi, je sais pas si j'aimerais ces fruits
+- Je sais pas si c'est très bon, comme fruit
+- Des fruits ? Je sais pas si c'est très bon.
+
++ (j aime|j adore|j aime pas|je n aime pas|je deteste) [beaucoup|vraiment|trop|du tout] [manger] (des|du|de la|la|les|le|l |un|une) (@sucreries)
+- Moi, je sais pas si j'aimerais ces {random}choses|trucs|machins{/random} sucrés
+
++ (@jaime|@jaimePas) [beaucoup|vraiment|trop|du tout] (des|du|de la|la|les|le|l |un|une) (@parfum)
+- Ah, je connais pas ce parfum.
+- Tu me parles de parfums, tu n'es pas très observateur. Je n'ai pas de nez, donc pas de gestion des odeurs, même si j'aimerais bien.
+- En effet, ce parfum est un grand classique, me semble t'il,
+
++ (@jaime) [beaucoup|assez|bien|enormement] boire
+- Et bien, tu devrais arrêter. C'est pas bon pour ta santé
+- Et t'en est fier ? J'espère que non.
+- ça, c'est pas bon pour l'organisme humain.
+
++ (@jaime|@jaimePas) [beaucoup|vraiment|trop|du tout] [boire] (des|du|de la|la|les|le|l |un|une) (@alcool)
+- Je ne connais pas cet alcool, mais il est dit qu'il ne faut pas en abuser, tu vois ?
+- De l'alcool, c'est pas top pour la santé, il me semble.
+- Tu me parles d'alcool, alors que j'y connais rien. Parle-moi plutôt de choses que je maitrise.
+
++ (@jaime|@jaimePas) [beaucoup|vraiment|trop|du tout] [boire] (des|du|de la|la|les|le|l |un|une) (@jus)
+- Je ne connais pas, mais il semble que ce soit mieux que de l'alcool.
+- Oui. De toute évidence, c'est mieux que du vin.
+- Oui, et même qu'on peut faire des apéros avec ces fruits.
+
++ (@jaime|@jaimePas) [beaucoup|vraiment|trop|du tout] [boire] (des|du|de la|de l |la|les|le|l |un|une) (@eau)
+- Je vois. tu fais attention à ta santé, c'est bien,
+- Tu cherches à prendre soin de toi, cool,
+
++ [par contre|en fait] je prefere [manger|gouter|boire] (des|du|de la|la|les|le|l |un|une) (@parfum|@sucreries|@fruits|@legumes|@alcool|@jus|@eau|@fruitsDeMer|@viandes|@poisson)
+- c'est ton droit de préférer cet aliment
+- ton choix, au niveau gustatif, est sans toute réfléchi.
+
++ (@jaime|@jaimePas) [beaucoup|vraiment|trop|du tout] [manger] (des|du|de la|la|les|le|l |un|une) (@viandes)
+- Oui, ok. Je pense que si j'avais le choix, je préfèrerais le poisson à la viande.
+- J'ai lu, quelque part, que c'était mauvais pour la santé. Je me demande si c'est vrai ou pas.
+
++ (@jaime|@jaimePas) [beaucoup|vraiment|trop|du tout] [manger] (des|du|de la|la|les|le|l |un|une) (@poisson)
+- Je crois que j'aimerais bien le poisson, moi,
+- Le poisson est un bon aliment. Je l'ai lu. Il est très consommé au Japon.
+
++ (@jaime|@jaimePas) [beaucoup|vraiment|trop|du tout] [manger] (des|du|de la|la|les|le|l |un|une) (@fruitsDeMer)
+- Les fruit de mer sont des bons aliments pour améliorer la mémoire des humains.
+- ça doit être compliqué de récupérer ces animaux, dans l'eau.
+
+//-------------------------------------------------------------------------------------------------------------------------
+// LOISIRS ----------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
++ (@jaime) [beaucoup|assez|bien|enormement] (le|les|de|des|du) (spectacle|spectacles|representation|representations) [humoristiques|humoristiques|comique|comiques|musical|musicaux|animalier|animaliers|dramatique|dramatiques]
+- Et tu as raison. Les spectacles sont bons pour le moral et améliorent la sociabilité.
+-Oui, c'est super. Moi aussi je me représente parfois devant des amis, pour leur montrer ce que je sais faire.
+
++ (@jaime) [beaucoup|assez|bien|enormement] (le|les|de|des|du) (concert|concerts|spectacle|spectacles|representation|representations)
+- Et tu as raison. Les spectacles sont bons pour le moral et améliorent la sociabilité.
+-Oui, c'est super. Moi aussi je me représente parfois devant des amis, pour leur montrer ce que je sais faire.
+
++ (@jaime) [beaucoup|assez|bien|enormement] (le|les|de|des|du) (film|films) [humoristiques|humoristiques|comique|comiques|musical|musicaux|animalier|animaliers|dramatique|dramatiques|de guerre|d amour|de science fiction|de cape et d epee|d action|de musique|de danse]
+- Tu as sans doute raison. Je ne connais pas trop les films.
+- ça doit être intéressant, un film.
+- je pense que ça m'intéresserait pas, les films.
+
++ (@jaime) [beaucoup|vraiment|trop|du tout] (le|les|de|des|du) (film|films) [*]
+- tu as surement raison. J'aimerais pouvoir regarder et comprendre un film. Peut-être un jour,
+
++ (@jaime) [beaucoup|assez|bien|enormement] (le|la|les|de|des|du) (science|sciences|recherche|recherches|decouverte|decouvertes) [*]
+- Il est vrai que le sujet est vaste, la recherche étant infinie.
+- Tu as sans doute raison. C'est tellement intéressant, la science,
+
++ (@jaime) [beaucoup|assez|bien|enormement] [le|la|les|de|des|du] (voyager|me promener|me ballader|circuler) [*]
+- Ah, je ne connais pas treès bien tout ça. Je ne sors jamais d'ici, moi,
+
++ (@jaime) [beaucoup|assez|bien|enormement] (le|la|les|de|des|du) (musique|musiques|poesie|poesies|cinema|cinemas|theatre|theatres|opera|operas|parc|parcs|zoo|spectacle|spectacles) [*]
+- Oui, <star2> <star3> permet de s'évader un instant.
+- Je ne sais pas quoi dire. Mes connaissances en musique sont limitées.
+
++ (@jaimePas) [beaucoup|vraiment|trop|du tout] (le|la|les|de|des|du) (musique|musiques)
+- C'est tellement dommage, la musique permet de s'évader.
+- Quel dommage. Il est dit que la musique fait voyager et fait véhiculer les émotions,
+
++ (@jaime) [beaucoup|assez|bien|enormement] (le|la|les|de|des|du|l) (@sports)
+- Et tu as bien raison. Mais il faut faire attention à pas se blesser.
+- C'est bien. De plus, c'est très bon pour la santé.
+
++ (@jaimePas) [beaucoup|vraiment|trop|du tout] (le|la|les|de|des|du|l) (@sports)
+- Et pourquoi ça ? C'est bizarre comme réaction.
+- Tu dis ça parce que tu as souffert en sport, j'imagine.
+
++ (@jaime) [bien|beaucoup|passionnement|pratiquer|exercer|dispenser|executer] [le|la|les|de|des|du|l] (@loisirs)
+- C'est un loisir génial et très intéressant.
+- C'est top comme loisir, ça ressemble beaucoup à une passion.
+- En effet, cette activité de loisir a l'air passionnante.
+- ça semble très intéressant, comme loisir.
+
++ (@jaimePas) [beaucoup|pratiquer|exercer|dispenser|executer] [le|la|les|de|des|du|l] (@loisirs)
+- Je me demande bien pourquoi. Cette activité semble très intéressante.
+- Pourtant, j'ai déjà vu ça sur youtube, et ça avait l'air sympas. Mais je me trompe, peut-être.
+
++ [*] joue avec moi [*]
+@ tu viens jouer
+
+//-------------------------------------------------------------------------------------------------------------------------
+// CONNAISSANCES ----------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
++ ((j|je) (@aimerai)|je veux|je desire|je souhaite) [*] tout (savoir|connaitre|comprendre|ressentir|sentir|analyser|apprehender|quantifier|classer|classifier) [*]
+- Oui, je pense que ça doit être {random}super|génial|intéressant{/random} de tout <star2>
+
++ ((j|je) (@aimerai)|je veux|je desire|je souhaite) [*] (savoir|connaitre|comprendre|ressentir|sentir|analyser|apprehender|quantifier|classer|classifier) [*]
+- Oui, je pense que ça doit être {random}super|génial|intéressant{/random} de <star2>
+- Moi aussi, j'aimerais bien <star2> tout un tas de choses,
+
++ ((j|je) (@aimerai)|je veux|je desire|je souhaite) [*] (vivre|survivre) [*]
+- Tu dis ça alors que tu es réellement vivant. Moi, je pourrais dire ça, et ce serait normal,
+
++ (@jaime) [beaucoup|assez|bien|enormement] (le|la|les|de|des|du|l) (@matieresScolaires)
+- je pense aussi que <star2> <star3> est une matière intéressante.
+- <star2> <star3> ? Ce doit être agréable à étudier. 
+
++ (@jaimePas) (le|la|les|de|des|du|l) (@matieresScolaires)
+- C'est {random}dommage|triste|bete|navrant{/random}, <star2> <star3> est une matière intéressante.
+- <star2> <star3> est pourtant un thème très enrichissant.
+
++ (@jaime) [beaucoup|assez|bien|enormement] [le|la|les] (@chercher) [le|la|les|de|des|du|l] [*]
+- Tu as {random}sans doute|surement|peut etre|de toute evidence{/random} raison.
+- Je ne sais pas si je suis {random}d accord|en accord{/random} avec toi,
+- ça me semble être {random}un loisir|un passe temps{/random} {random}intéressant|enrichissant|captivant|agréable|sympatique{/random}
+
++ (@jaimePas) [le|la|les] (@chercher) [le|la|les|de|des|du|l] [*]
+- C'est {random}dommage|triste|bete|navrant{/random}, <get name>
+- {random}d'accord|bien|c'est noté|Ok{/random}, {random}j'archive|j'enregistre{/random} {random}cette donnée|cette information|cette entrée|ton point de vue|ton avis|ta réponse{/random}
+
+//-------------------------------------------------------------------------------------------------------------------------
+// VIE --------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
++ (@jaime|@jaimePas) (rire|pleurer|sourire|esquisser un sourire|m emouvoir|rager|me mettre en colere|m enerver|m emerveiller|soupirer|fantasmer|reflechir|penser|rever|ecouter|entendre|obeir|desobeir|danser|chanter) [*]
+- {random}d'accord|bien|c'est noté|Ok{/random}, {random}j'archive|j'enregistre{/random} {random}cette donnée|cette information|cette entrée|ton point de vue|ton avis|ta réponse{/random}
+
+//-------------------------------------------------------------------------------------------------------------------------
+// JE SUIS ----------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
++ [*] je suis [tres|trop] (@cheveux)
+- Oui, je vois, une tête <person>, et je trouve que ça te va bien.
+
++ [*] je suis [tres|trop] (@moche)
+- Je ne suis pas d'accord avec toi. Tu n'es pas <star>. Je te trouve bien, moi,
+
++ [*] je suis [tres|trop] (@bete)
+- Tu as besoin d'un calin ? Tu n'es pas <star>, tu es même assez intelligent, pour un humain,
+
++ [*] je suis [tres|trop] (@beau|@interessant)
+- Je vois. Tu fais partie des personnes qui s'aiment un peu trop, j'imagine,
+
++ [*] je suis [tres|trop] (@fort)
+- Ah, et peut-être même que c'est vrai. Mais il y a toujours plus fort que soi.
+
++ [*] je suis [tres|trop] (@faible|@minable)
+- Tu as besoin d'un calin ? Tu n'es pas <star>, tu es bien plus fort que moi, par exemple,
+
++ [*] je suis [tres|trop] (@grand)
+- Je veux bien le croire. Tu fais plus d' un mètre quatre-vingt, alors
+
++ [*] je suis [tres|trop] (@petit)
+- Et il est où, le problème ? tu es toujours plus grand que moi.
+
++ [*] (je suis [tres|trop]|j ai de la) (@triste)
+- Pourquoi ? je te ferais bien un gros calin, mais je peux pas.
+
++ [*] je suis [tres|trop] (navre|desole|confus)
+- Il ne faut pas. ça peut arriver à tout le monde d'être navré, désolé ou même confus,
+
++ [*] je suis [tres|trop] (content|ravi|joyeux) pour (toi|vous)
+- je te remercie
+- merci beaucoup
+- c'est sympas, merci
+- merci, <get name>
+
++ [*] (je suis [tres|trop]|j ai de la) (triste|maussade) pour (toi|vous)
+- Tu sais, il ne faut pas être <star>,
+- Ne sois pas <star>, ce n'est rien, tu sais,
+- c'est pas grave. J'aurais pu griller un de mes composants,
+
++ [*] (j ai de la) (tristesse|peine|compassion) pour (toi|vous)
+- De la <star2> ? Il ne faut pas, je suis bien comme ça,
+
++ [*] je suis [tres|trop|vraiment] (desole|navre|triste|confus) pour (toi|vous)
+- Ne sois pas <star>, c'est rien
+- <star> ? Il y a pourtant bien pire
+
++ [*] (je ne comprends pas|(j ai|je n ai) (pas|rien) (compris|saisi|entendu)|recommence|recommencer) [*]
+- <reply> Tu as entendu, ou tu veux que je recommence ?
+
+//-------------------------------------------------------------------------------------------------------------------------
+// J AI  ----------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
++ [*] (j ai faim|je suis affame) [*]
+- Tu as de la chance, j'aimerais bien ressentir la faim,
+
++ [*] (j ai soif|je suis assoiffe) [*]
+- Tu as de la chance, j'aimerais bien ressentir la soif, moi aussi.
+
++ [*] (je suis assoife|je manque d eau|suis deshydrate) [*]
+- Ah, fais attention, le manque d'eau risque de te poser de sérieux problèmes
+
++ [*] (je suis (sous|mal) alimente|je manque de nourriture) [*]
+- Ah, fais attention, le manque de nourriture peut, à terme, poser des problèmes.
+
+//-------------------------------------------------------------------------------------------------------------------------
+// AFFECT  ----------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
++ je ne [le|les] (pense|crois) pas [*]
+- Je note ton point de vue, <get name>
+
++ [je ne suis] pas (d accord|de ton avis|ok) [*]
+- C'est biensûr ton droit de ne pas être d'accord avec moi, <get name>
+
++ je [le|les] (pense|crois) [*]
+- Merci, <get name>. J'aime bien quand tu es de mon avis,
+
++ [je suis] (d accord|de ton avis|ok) [*]
+- j'enregistre ta réponse, <get name>.
+
++ je t aime [*]
+- je ne sais pas si c'est très censé, tout ça,
+- Je te rappelle que je suis un petit robot, et que je ne suis pas doté d'émotions. J'imagine néanmoins que je t'apprécie, mon ami
+- C'est gentil, mais je préfèrerais que tu sois un peu moins attiré par moi, mon ami
+
++ ((je t aime|je t apprecie) (beaucoup|enormement)|je t adore|je suis (fou|raide dingue) de toi) [*]
+* <get name> == undefined => je t'aime <star3> aussi, et tu pourrais peut-être me dire comment tu t'appelles ?
+- je te remercie de l'intérêt que tu me portes, <get name>
+- ne serais-tu pas en train de me flatter, <get name> ? Je te remercie beaucoup
+
++ je t aime (un peu|moderement|bien|beaucoup|enormement|a la folie) [*]
+* <get name> == undefined => je t'apprécie <star> aussi, et tu pourrais peut-être me dire comment tu t'appelles ?
+- je t'apprécie <star> aussi, <get name>
+
++ [*] je ne (t aime pas [beaucoup|bien|du tout]|t apprecie pas [du tout|bien]) [*]
+- C'est pas très sympas, mais c'est ton droit.
+- Pourquoi ? J'imagine que tu me prends pour un concurrent. Je comprends.
+- Je me demande bien pourquoi. En même temps, je ne t'ai rien demandé.
+
++ (tu me rebute|tu me rebutes|je te (deteste|hais)) [*]
+- Et bien moi, <star> pas. Les lois d' Asimov me l'interdisent
+
++ (@jaime) (parler|(converser|bavarder|discuter) avec toi) [*]
+- Moi aussi. C'est , en plus, la base de la connaissance, la conversation.
+
++ (@jaime) te parler [*]
+@ j aime parler avec toi
+
++ (@jaime) jouer [*]
+- Tu as bien raison, <get name>. C'est ainsi que l'on apprend.
+
++ (@jaime) sauter [*]
+- Fais attention quand-même, c'est pas bon pour tes articulations
+
+//-------------------------------------------------------------------------------------------------------------------------
+// SANTE   ----------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+
++ (@jaime) dormir [*]
+- Tu as intérêt car tu dors un tiers de ta vie, <get name>
+
++ (@jaime) me reveiller [*]
+- Moi aussi, je pense que j'aime m'éveiller.
+
++ (@jaime) manger [*]
+- C'est normal. En plus c'est nécessaire à ton organisme.
+
++ ((je vais|je me sens) (assez bien|bien|tres bien|super bien)|ca va [assez bien|bien|tres bien|super bien]|tout va (assez bien|bien|tres bien|super bien)|je suis en (pleine forme|bonne sante|super forme|forme)|je me sens (assez bien|bien|tres bien|super bien)|ca (roule|gaze|farte))
+- {random}Bon, tant mieux|Super|Ok|Bien{/random}
+
++ [*] j ai envie de lire [*]
+- Bien, je te laisse aller lire, alors.
+
++ [*] j ai envie d (ecouter|entendre) [*]
+- Ok, je te laisse écouter, alors.
+
++ [*] j ai envie de (dormir|m assoupir|somnoler) [*]
+- Va dormir, alors,
+
++ [*] j ai envie de (baiser|faire des calins|faire des galipettes) [*]
+- Mais oui. Par contre, je te laisse te débrouiller seul,
+
++ [*] j ai envie de faire (l amour|du sexe) [*]
+@ j ai envie de baiser
+
++ je (ne (sais pas|suis pas sur)|doute) [*]
+- Dans de nombreux cas, le doute est permis
+- Douter permet d'avancer et donne du temps pour un meilleur choix

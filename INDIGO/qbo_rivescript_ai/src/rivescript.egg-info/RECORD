@@ -1,0 +1,13 @@
+rivescript/__init__.py,sha256=9JtJcbux7TTRs8OB5Hsc_FBNNPVAci__QigQw94R-eg,1776
+rivescript/__main__.py,sha256=4bVAXurjd9AbM4N1FqT8l6A7w-_oRw80NBjxWHRU_yg,1878
+rivescript/exceptions.py,sha256=wyGXQ-mtupcb5hmHCHn85aL7Nl3KB-Tq9v1foTM9HOo,4759
+rivescript/interactive.py,sha256=9DxH6unGdZVxFMnlx7Ya0hoCcIs-IJox20iUQPAMgKg,7545
+rivescript/python.py,sha256=iGFAyMlRotq0S7oownb_1tjBNtnM69MWrIexTqrrHnQ,3760
+rivescript/regexp.py,sha256=-1NHjfnB1Astr7HTyNlgcVMGofqo2hxIdnfTCb5h4to,2888
+rivescript/rivescript.py,sha256=68wyiaCM2K3HaC80daQAGmmlpZVKwUCiCjEUWrOakLE,116320
+rivescript-1.12.3.dist-info/DESCRIPTION.rst,sha256=ir-xaQOK0Y9w_4Ii6i6dgrJ4KVxhNqGE92oZ5D8G6P8,76
+rivescript-1.12.3.dist-info/METADATA,sha256=XhbLTeJXasjx8L0rw9KL4jdBtrWZv8PqDjoyen-y2j4,786
+rivescript-1.12.3.dist-info/RECORD,,
+rivescript-1.12.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+rivescript-1.12.3.dist-info/metadata.json,sha256=Zn0XBlSSGGMDEPxhdNo2ecogzIJgtzWXW-PK88L6cAw,899
+rivescript-1.12.3.dist-info/top_level.txt,sha256=zyKv0x3LRqXlC4ksA23XPzN8buyloqqSK3e3e_fdtCM,11

@@ -1,0 +1,5 @@
+pour installer :
+python setup.py install
+pour tester le modèle :
+exemple.py
+les fichiers brain se trouvent dans /eg/neo_brain

@@ -1,0 +1,12 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+// Contient les données d'auto-apprentissage.
+
++ une maison
+- un habitat pour les humains tantot en pierre en brique en bois ou en beton
+
++ une tente
+- une petite maison en toile surtout utilisee en camping
+
++ un grand arbre
+- une grande plante

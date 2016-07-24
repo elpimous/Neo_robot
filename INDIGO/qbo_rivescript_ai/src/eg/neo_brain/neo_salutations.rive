@@ -1,0 +1,16 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ botquiestu
+- {random}qui es-tu|tu es qui|comment tu t'appelles|c'est quoi ton nom{/random}, déjà
+
++ (bonjour|salut|hello|hi)[*]
+* <get name> == undefined => {random}salut.|bonjour.|hello.{/random} {@ botquiestu}
+- {random}salut|bonjour|hello{/random} <get name>. {random}Content de te revoir.|Heureux de te parler à nouveau.|comment vas tu|comment te sens tu|tout va bien ?|tu as besoin de moi ?{/random}
+
++ (au revoir|bye|bye bye|a bientot|a la prochaine|a la revoyure|a plus)[*]
+- à bientôt, <get name>
+- C'était cool. A la prochaine,
+- c'est sympas d'avoir parlé avec moi. A plus, <get name>{weight=4}
+- Merci d'avoir discuté avec moi. A très bientôt.{weight=3}
+- Oui, à la prochaine, <get name>

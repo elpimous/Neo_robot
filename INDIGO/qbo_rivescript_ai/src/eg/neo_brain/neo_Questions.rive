@@ -1,0 +1,10 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ questions
+- Donne-moi le nom d'une personne à rechercher,
+- Donne-moi le nom d'un truc à rechercher,
+- Demande-moi la météo, si tu veux
+- Poses-moi des questions concernant mon système,
+- interroges mon système, si tu veux.
+- interroge le niveau de ma batterie,

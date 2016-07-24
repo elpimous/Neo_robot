@@ -1,0 +1,24 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ [*] (memorises|memorise|memoriser|memorisez) [la donnee suivante][l information suivante][cela][ceci][que][qu ] * (c est|est|sont) *
+- <call>memorize (+ <star2>     - <star4>)</call> Ok. Je viens de mémoriser : <star2> est <star4>
+
++ (merci|merci (bien|beaucoup|enormement))
+* <get name> == undefined => de rien. Penses à me dire comment tu t'appelles.
+- {random}je t'en prie|c'est un plaisir{/random}
+- de rien, <get name> {weight=8}
+
++ mes cheveux sont (@cheveux)
+- tu as les cheveux <star>? ça te va bien.
+
++ moi (aussi|non plus) [*]
+- Et tu as peut-être raison
+- ok
+- c'est bien
+- on est du même avis, alors.
+
++ [*] (moi pas|pas moi) [*]
+- Ah ? ok.
+- ah bon,
+- tu es sur ?

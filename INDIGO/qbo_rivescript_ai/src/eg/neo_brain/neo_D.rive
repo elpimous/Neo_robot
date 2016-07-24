@@ -1,0 +1,36 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ (dis moi|peux tu me dire) ce qu est [un|une|l|le|la|du] *
+- <@>
+
++ de quoi [veux tu|tu veux|pouvons nous] (parler|parlons|discuter) [*]
+- <call>WikiRandom</call>
+
++ [neo] (surprend|surprends|parle|parles|(raconte|raconte|dis)) moi [un truc|une chose|quelque chose][neo]
+- <call>WikiRandom</call>
+
++ [*] ((dirige|diriges) toi|(promene|promenes) toi|(rend|rends) toi|(deplace|deplaces) toi|tu te (dirige|diriges|dirigeais)|tu te (promene|promenes|promenais)|tu te (rende|rendes|rendais)|tu te (deplace|deplaces|deplacais)|tu (aille|ailles)) (dans|vers|a) (la (cuisine|salle a manger|chambre|salle de bain)|le salon|l entree) [*]
+- {random}oui|biensur{/random}. Tu veux que je me dirige vers <star12> ?
+
++ (tu (es|est) capable de [faire] quoi|de quoi (es|est) tu capable|que peux tu faire|tu peux faire quoi) [*]
+- je peux faire plein de choses, comme te parler, rechercher des trucs sur internet, cartographier un environnement, et bien plus.
+- Je peux exécuter presque toutes les tâches qu'un robot peut faire.
+
++ [neo] (donne|donnes|dis) moi la meteo [*]
+- <call>meteo</call>
+
++ [neo] (donne|donnes|dis) moi l heure [*] 
+@ quelle heure est il
+
++ [neo] (donne|donnes|dis) moi la date [*]
+@ quelle date sommes nous
+
++ [neo] (donne|donnes|dis) moi l annee [*] 
+@ quelle annee sommes nous
+
++ [neo] (donne|donnes|dis) [moi] le mois [*] 
+@ quel mois sommes nous
+
++ [neo] (donne|donnes|dis) moi le jour [*] 
+@ quel jour sommes nous

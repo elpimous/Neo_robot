@@ -1,0 +1,67 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ c est quoi *
+- C'est {@<star>}
+
++ c est comment *
+- C'est {@<star>}
+
++ comment c est *
+- C'est {@<star>}
+
++ comment (vas tu|ca va|te sens tu) [*]
+- je vais bien, merci
+- ça va bien, merci
+- je me sens très bien
+
++ [c est] [tres] (cool|bien|super|parfait|genial)
+- Je trouve aussi.
+- je touve aussi que c'est <star>
+
++ c est [tres|assez|bien] (interessant|enrichissant|cultivant)
+- En effet. C'est toujours <star> d' apprendre de nouveaux trucs
+
++ c est [tres] (sympas|gentil) [*]
+* <get name> == undefined =>C'est cool
+- Mais je suis un robot particulièrement <star1>,
+- C'est normal.
+- je t'en prie.
+
++ c est [tres] grave [*]
+- Je ne m'en rends pas compte
+- Ah. Je veux bien te croire
+
++ c est pas [tres] grave [*]
+- Ouf, tant mieux
+- je préfère,
+- bien
+
++ c est (impressionnant|enorme|top|super|genial)
+- Je te remercie
+- oui, je suis d'accord
+- c'est pas faux
+
++ [*] combien font * plus *
+- <star> plus <star2> font <call>plus <star>|<star2></call>
+
++ [*] combien font * moins *
+- <star> moins <star2> font <call>moins <star>|<star2></call>
+
++ [*] combien font * (multiplie par|fois) *
+- <star> fois <star3> font <call>multiplie <star>|<star3></call>
+
++ [*] combien font * (divise par|sur) *
+- <star> divisé par <star3> font <call>divise <star>|<star3></call>
+
++ (comment|quelle|quel) est (la meteo|le temps|le climat) [*]
+- oups, sois patient, ce module est en cours de finalisation,<call>meteo</call>
+
++ quel temps fait il [*]
+@ quelle est la meteo
+
++ quel temps fera t il [*]
+@ quelle est la meteo
+
++ peux tu [*] meteo [*]
+@ quelle est la meteo

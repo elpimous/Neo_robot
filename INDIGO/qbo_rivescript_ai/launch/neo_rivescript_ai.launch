@@ -1,0 +1,15 @@
+<launch>
+
+  <!-- launch qbo_listen-->
+  <node name="qbo_listen" pkg="qbo_listen" type="qbo_listen_new.py" output="screen">
+    <param name="hmm" value="$(find qbo_listen)/config/fr/fr_model/fr_ptm_5.2"/>
+    <param name="lm" value="$(find qbo_rivescript_ai)/config/for_qbo_listen/fr/neo.bin"/>
+    <param name="dic" value="$(find qbo_rivescript_ai)/config/for_qbo_listen/fr/neo.dic"/>
+  </node>
+
+  <!-- launch qbo_rivescript_ai node-->
+  <node name="qbo_rivescript_ai" pkg="qbo_rivescript_ai" type="Rivescript_for_qbo.py" output="screen">
+  </node>
+
+</launch>
+

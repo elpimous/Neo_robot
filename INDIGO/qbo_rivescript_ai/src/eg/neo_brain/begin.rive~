@@ -1,0 +1,85 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
+// Bot variables
+! var name = Neo
+! var master = Vincent
+! var genre = un garçon
+! var town = Boncourt, dans l'Eure.
+! var couleur_preferee = bleu
+! var livre_prefere = apprendre ROS
+! var musique_preferee = je n'en ai pas
+! var prenom_prefere = Axel
+! var age  = 7
+
+! array fille = fille fillette femme femelle madame dame mademoiselle demoiselle donzelle gonzesse meuf
+! array filles = filles fillettes femmes femelles mesdames dames mesdemoiselles demoiselles donzelles gonzesses meufs
+! array garcon = garcon mec queum monsieur homme male
+! array garcons = garcons mecs queum messieurs hommes males
+! array couleurs = blanc jaune vert bleu rouge vert orange violet mauve noir fuschia
+
+! array moche = sale horrible affreux rebutant moche
+! array bete = bete stupide con nul
+! array beau = beau joli exceptionnel magnifique super nickel fabuleux mignon
+! array fort = fort puissant solide
+! array faible = faible
+! array grand = grand enorme gigantesque
+! array petit = petit minuscule microscopique
+
+! array minable = minable nul insignifiant insipide ridicule bad
+! array interessant = interessant cultive intelligent utile efficace performant perfectionne
+
+! array legumes = legume legumes carottes haricots navets chou choux frites soupe soupes
+! array legumes2 = |pommes de terre|chou fleur|
+
+! array fruits = fruit fruits fraises framboises pommes tomates melon citron clementines mandarines oranges noix noisettes amandes amande raisin raisins cerises
+
+! array sucreries = sucrerie sucreries bonbon bonbons sucette sucettes chocolat caramel glace glaces gateau gateaux confiture confitures barbapapa
+! array parfum = parfum chocolat vanille fraise cerise abricot pomme orange caramel noisette nougat menthe café
+! array parfum2 = |noix de coco|
+! array alcool = alcool vin rose whisky cognac rhum vodka gin apero
+! array alcool2 = |vin rouge|vin blanc|grand marnier|
+
+! array jus = |jus|jus de fruit|jus de fruits|jus d orange|jus d oranges|jus de framboise|jus de framboises|jus de pamplemousse|jus de pamplemousses|jus de fraise|jus de fraises|jus d abricot|jus d abricots|jus de pomme|jus de pommes|multifruits|multifruit|jus de carotte|jus de carottes|
+
+! array eau = |eau|eau plate|eau gazeuse|eau de source|eau de sources|
+! array viandes = viande viandes porc boeuf cochon poulet dinde sanglier biche cerf coq cheval pigeon canard jambon saucisson saucisse terrine pate
+! array viandes2 = |cotes de porc|travers de porc|
+! array poisson = poisson poissons truite saumon sardine sardines 
+! array fruitsDeMer = crabe crabes araignee araignees crevette crevettes homard homards langoustine langoustines bulot bulots 
+! array fruitsDeMer2 = |fruits de mer|coquille saint jacques|coquilles saint jacques|
+
+! array jaime = |j aime|j adore|j affectionne|
+! array aimerai = aimerai aimerais adorerai adorerais voudrai voudrais
+! array jaimePas = |j aime pas|je n aime pas|je deteste|je ne supporte pas|
+
+! array sports = sport sports foot football hand handball basket volley volleyball tennis course courses randonnee randonnees cross cyclisme motocross moto velo escalade varape grimpe natation gymnastique gym petanque booling curling athletisme karate kungfu judo taekwondo boxe equitation escrime tir danse
+
+! array sports2 = |activite sportive|activites sportives|ping pong|course a pieds|sport de combat|sports de combat|saut en hauteur|saut en longueur|boxe francaise|boxe americaine|boxe thaïlandaise|boxe anglaise|tir sportif|
+
+! array loisirs = modelisme maquettisme peinture peindre dessin dessiner magie modelage modeler sculpture sculpter informatique robotique programmation programmer calcul calculer calculs cine cinema theatre opera bricolage bricoler tele lecture lire ecrire jardinage jardiner danser danse 
+
+! array matieresScolaires = physique chimie biologie math mathematiques histoire geographie langue langues psychologie recherche
+
+! array chercher = trouver chercher rechercher recherche trouver retrouver decouvrir decouverte decouvertes redecouvrir connaitre connaissance connaissances reconnaitre analyser calculer sythetiser imaginer entrevoir voir observer reflechir
+
+// Substitutions
+! sub à     = a
+! sub t' es     = tu es
+! sub c' est     = c est
+! sub j' ai     = j ai
+! sub n' ai     = n ai
+! sub n' avais     = n avais
+! sub j' avais     = j avais
+
+// person
+! person tu 		= je
+! person toi 		= moi
+! person ton 		= mon
+! person ta 		= ma
+! person toi meme 	= moi meme
+! person je 		= tu
+! person moi 		= toi
+! person me 		= te
+! person m 			= t
+! person mon 		= ton

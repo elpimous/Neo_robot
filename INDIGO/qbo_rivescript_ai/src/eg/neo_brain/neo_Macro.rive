@@ -1,0 +1,218 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------
+// macro d'apprentissage automatique, création de question/réponse, insertion dans le fichier macro : neo_Auto_Learning.rive (elpimous2016) !!!
+//---------------------------------------------------------------------------------------------------------------------------------------------
+> object memorize python
+    a = args
+    b = ', '.join(a).replace(',','').replace('(','').replace(')','') # clean string
+    c = b.replace(' -','\n-') # insert '\n' separation for stream export
+    rs.stream (c)
+    rs.sort_replies()
+    file = open("./eg/neo_brain/neo_Auto_Learning.rive", "a")
+    file.write("\n\n")
+    file.write(str(c))
+    file.close()
+< object
+
+
+//----------------------------------------------------------------------------
+// macro création d'un timing en secondes. Pas de décimales (elpimous2016) !!!    ==> ex : <call>pause 5</call>  (pause 5secondes)
+//----------------------------------------------------------------------------
+> object pause python
+    import time
+    a = (args)
+    a = "".join(a)
+    time.sleep(int(a))
+< object
+
+
+//------------------------------------------------
+// macros interrogation système (elpimous2016) !!!
+//------------------------------------------------
+
+> object annee python
+    import datetime
+    dat = datetime.date.today()
+    LAnnee = dat.year
+    return LAnnee
+< object
+
+> object mois python
+    import datetime
+    Mois=['Janvier','Fevrier','Mars','Avril','Mai','Juin','Juillet','Aout','Septembre','Octobre','Novembre','Decembre']
+    dat = datetime.date.today()
+    mois = dat.month
+    LeMois = Mois[mois-1]
+    return LeMois
+< object
+
+> object jour python
+    import time
+    a = time.strftime('%a') # ex: Mon
+    b = time.strftime('%d') # ex: 6
+    c = a.replace("Sun","Dimanche").replace("Mon","Lundi").replace("Tue","Mardi").replace("Wed","Mercredi").replace("Thu","Jeudi").replace("Fri","Vendredi").replace("Sat","Samedi")
+    jour = c+" "+b
+    return jour
+< object
+
+> object heure python
+    import time
+    Heure = time.strftime('%H heures %M minutes et %S secondes',time.localtime())
+    return Heure
+< object
+
+
+
+//-------------------------------------------------
+// macro interrogation Wikipédia (elpimous2016) !!!
+//-------------------------------------------------
+
+> object WikiPerson python
+    import wikipedia
+    search = ""
+    wikipedia.set_lang("fr")
+    wordSearch = (args)
+    wordSearch2 = str(wordSearch)
+    search = wordSearch2.encode('utf8')
+    FirstSearch = wikipedia.search((search), results=1)
+    modWord2 = str(FirstSearch)
+    Search = wikipedia.summary(modWord2, sentences=3)
+    return type(Search)
+< object
+
+
+
+//--------------------------------------------------------
+// macro Wikipédia extraction aléatoire (elpimous2016) !!!
+//--------------------------------------------------------
+
+> object WikiRandom python 
+
+    import wikipedia
+    wikipedia.set_lang("fr")
+    wordSearch = wikipedia.random(pages=1)
+    search = wordSearch.encode('utf8')
+    try :
+        Search = wikipedia.summary(search, sentences=3)
+    except :
+        a = 'Désolé, je ne sais pas quoi te dire'
+        return (a)
+    try:
+        cleaning = Search.replace('(','').replace(')','').replace('/',' ') # remove parenthesis from text for better speaking
+    except :
+        pass
+    try:
+        a = cleaning.split('[')[0] # remove phonetics
+        b = cleaning.split(']')[1]
+        cleaned = a+b 
+        return (cleaned)
+    except :
+        try :
+            return (cleaning)
+        except :
+            try :
+                return (Search)
+            except :
+                a = 'Désolé, je ne sais pas quoi te dire'
+                return (a)
+< object
+
+
+
+//--------------------------------------------------------
+// macro  execute ROS commands          (elpimous2016) !!!
+//--------------------------------------------------------
+
+> object command python
+    import os
+    from time import sleep
+    os.system('a terminal command') # for example robot mouth changes to happy smile
+    sleep(2)
+    os.system('other terminal command') # return mouth to neutral
+    sleep(0.5)
+    return
+< object
+
+
+//--------------------------------------------------------
+// macro  execute ROS ball_colors          (elpimous2016) !!!
+//--------------------------------------------------------
+
+> object ball_colors python
+    import os
+    os.system('roslaunch qbo_play_games qbo_ball_colors.launch')
+    return
+< object
+
+
+//--------------------------------------------------------
+// macro  execute ROS chifumi          (elpimous2016) !!!
+//--------------------------------------------------------
+
+> object chifumi python
+    import os
+    os.system('roslaunch qbo_play_games qbo_chifumi.launch')
+    return
+< object
+
+
+//--------------------------------------------------------
+// macro  calculs    +                  (elpimous2016) !!!
+//--------------------------------------------------------
+
+> object plus python
+    a = args
+    b = ', '.join(a).replace(',','').replace('(','').replace(')','') # clean string
+    c = b.split("|")
+    A = c[0]
+    B = c[1]
+    result = int(A)+int(B)
+    return result
+< object
+
+
+//--------------------------------------------------------
+// macro  calculs    -                  (elpimous2016) !!!
+//--------------------------------------------------------
+
+> object moins python
+    a = args
+    b = ', '.join(a).replace(',','').replace('(','').replace(')','') # clean string
+    c = b.split("|")
+    A = c[0]
+    B = c[1]
+    result = int(A)-int(B)
+    return result
+< object
+
+
+//--------------------------------------------------------
+// macro  calculs    X                  (elpimous2016) !!!
+//--------------------------------------------------------
+
+> object multiplie python
+    a = args
+    b = ', '.join(a).replace(',','').replace('(','').replace(')','') # clean string
+    c = b.split("|")
+    A = c[0]
+    B = c[1]
+    result = int(A)*int(B)
+    return result
+< object
+
+//--------------------------------------------------------
+// macro  calculs    /                  (elpimous2016) !!!
+//--------------------------------------------------------
+
+> object divise python
+    a = args
+    b = ', '.join(a).replace(',','').replace('(','').replace(')','') # clean string
+    c = b.split("|")
+    A = c[0]
+    B = c[1]
+    result = float(A)/float(B)
+    return result
+< object

@@ -1,0 +1,366 @@
+RIVESCRIPT
+
+GUIDE DES COMMANDES EN FRANCAIS
+Vincent FOUCAULT
+Juin 2016
+
+
+fichier de config principal : begin.rive
+
+// Bot variables
+ (variables par défaut de Néo)
+! var name = Néo
+
+// Array
+! array colors = rouge vert bleu orange jaune
+! array bleu = bleu ciel|bleu foncé|bleu turquoise
+
+// Substitutions
+! sub c' est = c'est (remplacements automatiques entre écoute et transcription)
+! sub j' ai  = j'ai
+
+// Person
+! person je suis    = tu es
+! person je ne suis = tu n'es
+! person moi        = toi
+! person je         = tu
+
+
+>>> écriture de la réponse sur +rs lignes <<<
+
++ parle-moi
+- Je ne vois pas ce dont tu veux parler,\s
+^ mais je suis prêt à  commencer.\s
+^ si tu veux bien.
+
+
+
+>>> * <<<
+
+ex : j'aime le bleu, moi aussi j'aime le bleu
+
++ j aime le *
+- moi aussi j'aime le <star>
+
+ex : la neige est blanche, tu as dit que blanche était la neige ?
+
++ * est *
+- tu as dit que <star2> était <star1>?
+
+ex : je suis (possibilités), tu es (choix) : je suis content, tu es content
+
++ je suis (content|triste|énervé|en colère)  (ici la sélection remplace le *)
+- tu es <star>.
+
+ex : j'aime la couleur rouge, moi aussi j'aime le rouge.
+
++ j' (adore|aime) la couleur *             (ici, exemple donné : "rouge")
+- moi aussi j' <star1> la couleur<star2>.
+
+
+>>> [*] <<<
+
+ex : déclenchement n'importe ou dans les sentences.
+
++ [*] fonctionne pas [*]        
+(ici, le symbole "[]" signifie une option.   A l'inverse, le symbole "*" oblige un remplissage !)
+- c'est pas de ma faute, à moi.
+
++ [*] [mes yeux] [*] de quel[*] couleur [*] [mes yeux] [*]
+(
+	les 2 extrémités "[*]" permettent l'ajout (mais pas l'obligation) de mots avant ou après,
+	"[mes yeux]" avant et après "de quel" permettent de matcher dans les 2 sens,
+	"[*]" derrière "de quel" permet l'emploi de tous les 'quel' : quelle, quelles, quel, quels...
+)
+
+ex : vincent, tu fais quoi après le resto
+
+(on prévoit les erreurs de saisie, avec le "[*]" après le "tu fai")
++ [*] tu fai [*] quoi [*]
+
+
+
+
+>>> <Botstar> <<<
+
+ex : j'ai un camion/de quelle couleur est ton camion/bleu/un camion bleu, super.
+
++ j ai un *
+- de quelle couleur est ton <star>
+
++ (@colors)
+% de quelle couleur est ton *
+- un <botstar> <star>, super. 
+("<botstar>" récupère le "star" de la question précédente)
+
+>>> #
+ex : j'ai 20 ans, tu as 20 ans
+
++ j'ai _ ans              (ici, le symbole "_" demande un mot sans espaces, ni chiffre !)
+- s'il te plait, écris ton age en nombre, merci
+
++ j'ai # ans              (ici, le symbole "#" exige un chiffre !)
+- tu as <star> ans
+
+
+
+
+>>> choix/random <<<
+
++ j aime les (chiens|chats)
+- moi je préfère les {random}tigres|lions{/random}
+
+
+
+
+>>> poids de la réponse <<<
+
+( {weight} sert aussi bien aux questions qu'aux réponses )
++ bonjour
+- salut!{weight=3}   (cette réponse sortira 3 fois sur 6)
+- Hello!{weight=2}
+- bonjour!
+
+
+
+
+>>> gestion des erreurs <<<
+
++ qui est *
+- je ne vois pas qui c'est
+- je ne sais pas trop qui c'est
+(si la personne (*) n'est pas référencée, une de ces réponses sera donnée.
+PREVOIR LA PERSONNALISATION COMME ICI. ex "c est quoi *", "pourquoi *"...)
+
+
+
+
+
+>>> gestion des "Array" <<<
+
+ex : j'ai un pull rouge, j'aime le rouge.
+
++ j'ai un pull (@colors)          
+(ici, l'array est défini dans le fichier "begin.rive". si pas de parenthèses, pas placé en "star")
+- j'aime le <star>.
+
+ex : j'ai un pull trop petit, mince.
+
++ j'ai un pull [@colors] trop petit         
+(ici, l'array est placé entre "[]" et devient donc optionnel)
+- mince.
+
+
+
+
+>>> @ (équivalent du "srai") <<<
+
+ex : tu es sage, merci  / tu es gentil, merci
+
++ tu es sage
+- merci
+
++ tu es gentil
+- @ tu es sage
+
+ex : tu es un robot, oui je suis une super machine
+
++ un robot
+- une super machine
+
++ tu es *
+- oui je suis {@<star>}  ou  <@>    (équivalent du « /sr ») 
+(ici, on peut raccourcir le tag "{@ <star>}" par "<@>")
+
+>>> % (équivalent du "that") <<<
+
+ex : je suis fatigué / tu veux du café ? / oui/ ok je t'en donne
+
++ je suis fatigué
+- tu veux du café ?
+
++ oui
+% tu veux du café  
+( rappel : ne pas oublier les "Substitutions" ex : j' ai)
+- ok je t'en donne
+
+
+
+>>> Set/Get <<<
+
+ex : mon nom est vince / salut vince
+
++ mon nom est *
+- <set name=<star>> salut <get name>
+(si on éviter la mise en minuscule pour un nom propre, on utilise : "- <set name=<formal>> salut <get name>" )
+
+
+
+
+>>> Bot variables <<<
+
+ex : quel est ton nom ? / mon nom est néo
+
++ quel est ton nom ?
+- mon nom est <bot name> et j'ai <bot age>
+
+
+
+
+>>> Undefined <<<
+
+ex : quel est mon nom ? / tu ne me l'as pas donné / tu es vince
+
++ quel est mon nom
+* <get name> == undefined => tu ne me l'as pas donné
+- tu es <get name>
+
+
+
+>>> Conditions <<<
+
+ex : possibilités liées à une variable
+
++ je peux faire quoi avec mon age ?
+* <get age> == undefined => je ne connais pas ton age.
+* <get age> >  25 => tu peux faire tout ce que tu veux.
+* <get age> >  18 => t'es majeur.
+* <get age> == 18 => t'es tout juste majeur.
+- t'es pas majeur
+
+* <get name> == <bot name  =>Cool, on a le même nom !
+-------   OPERANDES   -------
+==  equal to
+eq  equal to (alias)
+!=  not equal to
+ne  not equal to (alias)
+<>  not equal to (alias)
+<   less than
+<=  less than or equal to
+>   greater than
+>=  greater than or equal to
+-------------------------------
+
+
+>>> Topics <<<
+
+(quand l'utilisateur se trouve dans un topic, il ne peux répondre que des sentences faisant partie de ce topic)
+
+
+>>> Macros <<<
+
+(permet l'execution de programmes python, java...)
+
+
+
+>>> Person Substitutions <<<
+
+ex : dis moi que je suis génial / tu es génial
+
+( permet un formatage automatique du sujet )
++ dis moi que *
+- <person>
+( remplace "je suis" par "tu es" et finit la phrase,
+à condition que "! person je suis = tu es" soit paramétré dans begin.rive )
+
+
+
+>>> <input>, <reply> <<<
+
+( possibilité de rappeler les 9 derniers messages pour l'utilisateur et le bot)
+
+ex: Moi:tu es con, Néo:tu es stupide, Moi:tu es stupide,Néo:arrête de me copier
+
++ tu es con
+- tu es stupide
++ <reply>     ( je redis comme Néo: tu es stupide )
+- arrête de me copier   (sa réponse)
+
+ex 2 : Moi: qu'as tu dit?
+Néo: j'ai dit que tu es stupide car tu as dit, « tu es con et tu es stupide » 
+
++ qu as tu dit ?
+- j'ai dit que tu es <reply> car tu as dit, « <input2> et <input> »
+
+ex 3 : ça fait 2 fois que tu dis la même chose
+
++ <input1>
+* <input1> == <input2> => ça fait 2 fois que tu dis la même chose
+- oui, et alors ?
+
+
+>>> <id> <<<
+
+( identification de l'utilisateur. Par défaut : « localuser » )
+
+ex : moi:je suis paul, Néo:ok, 
+     Moi:je suis ton botmaster, Néo:non, mon botmaster est vincent, tu es paul
+
+! var botmaster = vincent
+
++ je suis paul
+- ok
+
++ je suis ton botmaster
+* <id> == <bot master> => oui tu es mon botmaster!
+- Non, mon botmaster est <bot master>, tu es <id>.
+
+
+
+
+
+>>> <bot> <<<
+
+( sert à récupérer les variables du bot. Ex : <bot name> )
+
+
+
+
+
+>>> <env> <<<
+
+( sert à récupérer/initier une variable GLOBALE. Ex :<env REMOTE_ADDR> )
+
++ quelle est ton adresse IP
+- mon IP est : <env REMOTE_ADDR>
+
+
+
+
+
+
+>>> <add>, <sub>, <mult>, <div> <<<
+
+( permet d'opérer des calculs avec du numérique )
+
++ combien font * plus *
+- il me semble que <set points=<star1>> <get points> plus <star2> font <add points=5> <get points>
+
+ou
+
++ combien font * plus *
+- <add points=<star1>> il me semble que <star1> plus <star2> font <add points=<star2>> <get points>
+
+( <add points=x> si la variable n'est pas définie, elle est initialisée à 0 ) 
+
+
+
+
+>> <formal>,<sentence>,<uppercase>,<lowercase> <<
+
+
+	<formal> place la 1ere lettre en majuscule
+	ex : - <set name=<formal>><get name> qui ?
+
+	<sentence> place le 1er MOT en majuscule
+
+	<uppercase>/<lowercase> place l'intégralité en maj. ou min.
+
+
+
+
+>>> <call> <<<
+
+( permet d'appeler un macro )
+
+

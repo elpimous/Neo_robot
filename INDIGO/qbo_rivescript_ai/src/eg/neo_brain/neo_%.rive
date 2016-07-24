@@ -1,0 +1,63 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ [*] (ou ils|sont ils|sont ou) [*]
+% non mes objectifs sont ailleurs
+- Ailleurs. Disons que je préfère me concentrer sur l'apprentissage, l'amélioration de mes systèmes de reconnaissance et perfectionner ma compréhension du monde qui m'entoure.
+
++ [*] entree [*]
+% oui tu veux quel emplacement du couloir ? l' entree ou la chambre ?
+- Ok, je me dirige vers la porte d'entrée
+
++ [*] chambre [*]
+% oui tu veux quel emplacement du couloir ? l' entree ou la chambre ?
+- Ok, je me dirige vers la chambre
+
++ [*] (aussi|pareil|idem) [*]
+% * (content de te revoir|heureux de te parler a nouveau)
+- {random}cool|super|bien|parfait{/random}
+- c'est {random}cool|super|bien|parfait{/random} {weight=2}
+
++ [*] (c est toi|a toi|tu choisis) [*]
+% (de quel sujet veux-tu *|a toi de *)
+- {random}Ok|bien{/random}. {@ questions}
+
++ (comme quoi|(quelle|quel|quels|quelles) choses|explique|expliques)
+% (je sais faire plein de trucs|je peux cartographier les environs et m'y deplacer et je peux faire plein d'autres choses)
+- Par exemple, {random}je peux rechercher des infos sur internet,|je peux changer de destination si la voie est bloquée|je peux reconnaitre ton visage,|je pourrai bientôt reconnaitre les objets|je peux tenir un discours avec toi, <get name>{/random}
+
++ [*] (redis|redire|refais|refaire|recommence|recommencer|reessai|reessaie|reessaye|reessayer) [*]
+% * tu as entendu ou tu veux que je recommence ?
+- <reply>
+
++ [*] (non|bon|parfait|bien|merci|ok) [*]
+% * tu as entendu ou tu veux que je recommence ?
+- {random}parfait|bien|ok{/random} n'hésites pas à {random}me redemander à nouveau.|renouveler ta demande{/random}
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------  gestion du genre MASCULIN / FEMININ en fonction du prénom --------------------------------------------------
+//--------------romeo-----------------------------------------------------------------------------------------------------------------------
+
+
++ [j ai] (@nombre) [ans|annee|annees]
+% peux-tu me dire ton age ?
+- <set age=<star>> tu as <get age> ans, <get name> ? cool. J'enregistre cette donnée dans ma mémoire.
+
++ [*] (@male) [*]
+% * * déjà
+* <star> == vincent => Salut Vincent, content de te revoir, <set name=<formal>>
+- <set name=<formal>> {random}salut|Hello|merci{/random} <get name>. D'après ton prénom, j'en déduis que tu es de sexe masculin, comme moi.
+
++ [*] (@femelle) [*]
+% * * déjà
+- <set name=<formal>> {random}salut|Hello|merci{/random} <get name>. D'après ton prénom, j'en déduis que tu es de sexe féminin. Moi, je suis programmé pour être plutôt un garçon.
+
++ *
+% * * déjà
+- redonnes-moi juste ton nom, s'il te plait,
+
++ *
+% redonnes-moi juste ton nom s'il te plait
+- <set name=<formal><star></formal>> peux-tu me dire ton age ?
+
+//-------------------------------------------------------------------------------------------------------------------------------------

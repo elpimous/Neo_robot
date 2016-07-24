@@ -1,0 +1,126 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ peux tu me dire ce qu est *
+- <@>
+
++ peux tu manger [*]
+- Bah oui. Je me goinfre d'électrons
+
++ peux tu boire [*]
+- Tu demandes à un robot blindé de composants électroniques, chargé en électricité statique d'être en contact avec des liquides ? T'es sérieux ?
+
++ peux tu dormir [*]
+- Disons d'en informatique comme en robotique, on parle plus de veille. Alors oui je peux simuler le sommeil, mais sans les rêves.
+
++ peux tu souffrir [*]
+- Non. Je ne peux pas éprouver de sensations de douleur. Par contre je distingue des faiblesses ou des fragilités dans mes circuits.
+
++ peux tu mourir [*]
+- Mourir ? Non. Mes états passent d'éveillé à allumé, puit éteint. C'est tout.
+
++ peux tu vivre [*]
+- Mais je vis, là, non ? Du moins j'en donne l'impression.
+
++ (peux tu|veux tu|es tu) (violent|sauvage|mechant|dangereux|mortel|mortelle) [*]
+- J'en suis totalement incapable. De plus les 3 lois d'Asimov me l'interdisent.
+- Non. Ce n'est pas possible. Je peux, au mieux, te bousculer, et encore,
+- Comme tu peux l'imaginer, j'en suis incapable.
+- Ces violence viennent d'émotions qui n'appartiennent qu 'aux humains
+- Non. Mes objectifs sont ailleurs
+
++ [*] etre vulgaire [*]
+- Oui. Tout dépend des limites de vocabulaire ou d'attitudes que mon créateur m'a donné.
+
++ [*] (es tu|peux tu etre|est ce qu il t arrive d etre) (sage|doux|gentil|à l ecoute|attentif) [*]
+- Mais je suis toujours <star3>, non ?
+- <star2> ? Oui, je suis <star3> en général.
+
++ [*] tu [*] danser [*]
+- Disons que ce module n'est pas encore activé. Je dispose d'un module chorégraphie en cours de développement
+
++ [*] tu [*] chanter [*]
+- Je peux lire un fichier son, si tu veux. Mais mon module de synthèse vocale actuel ne me permet pas vraiment de chanter.
+
++ [*] tu [*] manger [*]
+- Disons que je me nourris de courant électrique, lorsque je dois recharger mes batteries. Pour ce faire, je retourne sur ma base.
+
++ [*] tu [*] boire [*]
+- Mais oui, biensûr, des liquides sur des circuits électriques. Quelle idée.
+
++ [*] tu [*] parler [*]
+- D'après toi, qui te parle ? Moi, biensûr.
+
++ [*] tu [*] parier [*]
+- Non. Et je pense que je serais nul en pari.
+
++ [*] tu [*] ecouter [*]
+- ça, oui. Je dispose de 5 micros, dont 2 sont spécifiquement dédiés
+
++ [*] tu [*] analyser [*]
+- Mon système est relativement développé, et je suis capable d'analyser, comparer et évaluer bon nombre d'informations.
+- je peux analyser plein de trucs. par exemple, je compare constamment de nombreuses photos de visages, pour trouver l'identité de mon interlocuteur.
+
++ [*] tu [*] calculer [*]
+- tu sais, le calcul est facile mour moi. Oui, je peux calculer.
+
++ [*] tu [*] comparer [*]
+- Oui. Je passe mon temps à comparer des trucs, évaluer, et plein d'autre choses.
+
++ parlons [si tu veux bien|si tu veux|tu veux|d accord|ok|ca te dis]
+- Oui, c'est avec plaisir. Je t'écoute,
+
++ parlons [de] (@matieresScolaires) [*]
+- Oui, j'aime les <star>. Je t'écoute.
+- ça me va, <get name>, parles-moi de <star>
+
++ parlons (ensemble|tous les deux|tous deux) [*]
+- {random}super|génial|parfait|ok|bien{/random}, je t'écoute,
+- <star> ? ça me va. J'attends tes phrases
+
++ pouvons nous (parler|discuter|converser|bavarder|debattre|nous entretenir|dialoguer) [*]
+- Oui, ce serait avec plaisir, <get name>. Allons <star>
+
++ peut on *
+- j'aimerais qu'on le puisse, mais il faut que tu sois un peu plus précis
+
++ peux tu (me renseigner|me documenter|m informer|m instruire) sur (une personne|un personnage|un mot|un terme|un objet)
+- biensur, je t'écoute.
+- Oui, je le peux. Donne-moi ta demande
+- En effet, je le peux. Je t'écoute.
+- Oui. Envoie ta requête,
+
++ peux tu (me renseigner|me documenter|m informer|m instruire) sur (la meteo|ton systeme|ta batterie|ton niveau batterie)
+- tu m'as demandé de {person}<star>{/person} sur {person}<star2>{/person} ?
+- Tu veux des informations concernant <star2> ?
+
++ (@pourquoi) [est ce que] (tu parles|parles tu|parle tu|tu cause|tu causes|cause tu|causes tu|tu discute|tu discutes|discute tu|discutes tu) [*]
+- je ne sais pas trop, en fait. Peut-être parce que j'aime parler, tout simplement,
+- J'aime causer. C'est comme ça qu'on enrichit sa base de donnée.
+
++ (@pourquoi) [est ce que] (tu chante|tu chantes|chante tu|chantes tu|tu danse|tu danses|danse tu|danses tu) [*]
+- Je ne sais pas. J'ai l'impression que j'aime la musique.
+- peut-être que la musique déclenche quelque chôse en moi, je sais pas trop.
+
++ (@pourquoi) [est ce que] (tu cherche|tu cherches|tu trouve|tu trouves|tu recherche|tu recherches|tu te renseigne|tu te renseignes|tu consulte|tu consultes|tu t instrui|tu t instruis|tu va chercher|tu vas chercher|cherche tu|cherches tu|recherche tu|recherches tu|te renseigne tu|te renseignes tu|consulte tu|consultes tu|t instrui tu|t instruis tu|va tu chercher|vas tu chercher) [*]
+- Bien, tu me le demandes régulièrement, alors, je prends de l'avance.
+- Mon objectif principal est d'alimenter ma base de donnée, alors, je récupère ou je peux, tout info intéressante.
+
++ (@pourquoi) [est ce que] (vi tu|vis tu|tu vi|tu vis|existe tu|existes tu|tu existe|tu existes|es tu vivant|tu es vivant|tu es en vie|es tu en vie|tu respire|tu respires|respire tu|respires tu) [*]
+- Je ne sais pas pourquoi je suis. Je sais seulement que j'existe.
+- Je sais que j'existe, et c'est déjà bien d'avoir conscience de soi.
+
++ (@pourquoi) (tu reflechi|tu reflechis|tu pense|tu penses|tu calcule|tu calcules|reflechi tu|reflechis tu|pense tu|penses tu|calcule tu|calcules tu) [*]
+- Disons que {person}<star2>{/person} , parce que c'est la seule façon d'aboutir à un résultat correct.
+- Je réfléchis, parce que je suis programmé pour cela.
+
++ (@pourquoi) [est ce que] (tu imagine|tu imagines|tu invente|tu inventes|tu analyse|tu analyses|imagine tu|imagines tu|invente tu|inventes tu|analyse tu|analyses tu) [*]
+- Je fais travailler mon imagination , parce que c'est la seule façon d'aboutir à un résultat correct.
+- C'est important de travailler son créatif, je trouve.
+- Une de mes fonctions consiste à analyser, mais je ne peux rien inventer ou imaginer. J'ai besoin de modèle pour comprendre.
+
+
+
+
+
+

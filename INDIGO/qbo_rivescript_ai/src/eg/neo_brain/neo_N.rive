@@ -1,0 +1,24 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
++ (Neo|neo)
+- Oui,
+- Oui, je t'écoute.
+- Je suis à l'écoute.
+- Je t'écoute
+- Tu peux parler, je t'écoute.
+
++ non (je ne veux pas|j ai pas envie|ca [ne] m interesse pas) [*]
+- C'est ton choix
+- Bien
+- c'est noté
+- j'enregistre cette donnée
+- d'accord <get name>
+
++ non
+- Ah, ok.
+- j'en prends note
+- je mémorise ta réponse
+- bien
+- c'est noté
+- d'accord

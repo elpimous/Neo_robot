@@ -1,0 +1,217 @@
+// Fichier Français, à utiliser avec le programme d' IA Rivescript --- Vincent FOUCAULT --- Juin 2016
+! version = 2.0
+
+! global debug = false
+
+// Bot variables
+! var name = Neo
+! var master = Vincent
+! var genre = un garçon
+! var town = Boncourt, dans l'Eure.
+! var couleur_preferee = bleu
+! var livre_prefere = apprendre ROS
+! var musique_preferee = je n'en ai pas
+! var prenom_prefere = Axel
+! var age  = 7
+
+! array nombre = un deux trois quatre cinq six sept huit neuf dix onze douze treize quatorze quinze seize vingt trente quarante cinquante soixante cent
+^ dix-sept|dix-huit|dix-neuf|vingt_et_un|vinct-deux|vingt-trois|vingt-quatre|vingt-cinq|vingt-six|vingt-sept|vingt-huit|vingt-neuf|trente_et_un|trente-deux|trente-trois|trente-quatre|trente-cinq|trente-six|trente-sept|trente-huit|trente-neuf|quarante_et_un|quarante-deux|quarante-trois|quarante-quatre|quarante-cinq|quarante-six|quarante-sept|quarante-huit|quarante-neux|cinquante_et_un|cinquante-deux|cinquante-trois|cinquante-quatre|cinquante-cinq|cinquante-six|cinquante-sept|cinquante-huit|
+^ cinquante-neuf|soixante_et_un|soixante-deux|soixante-trois|soixante-quatre|soixante-cinq|soixante-six|soixante-sept|soixante-huit|soixante-neuf|soixante_et_onze|soixante-douze|soixante-treize|soixante-quatorze|soixante-quinze|soixante-seize|soixante-dix-sept|soixante-dix-huit|soixante-dix-neuf|quatre-vingt-un|quatre-vingt-deux|quatre-vingt-trois|quatre-vingt-quatre|quatre-vingt-cinq|quatre-vingt-six|quatre-vingt-sept|quatre-vingt-huit|quatre-vingt-neuf|quatre-vingt-dix|quatre-vingt-onze|quatre-vingt-douze|quatre-vingt-treize|quatre-vingt-quatorze|quatre-vingt-quinze|quatre-vingt-seize|quatre-vingt-dix-sept|quatre-vingt-dix-huit|quatre-vingt-dix-neuf|cent
+
+! array male = anatole antoine armand armel arnaud auguste augustin aurelien axel baptiste barnabe barthelemy basile bastien baudouin benoit blaise brice celestin cesaire chante charlot christophe clement colombain corin cyrille damien desire didier dieudonne dominique donatien eustache evariste evrard fabien fabrice felicien felix fernand fiacre fifi firmin florentin franck françois frederic gaetan gaspard gaston gautier geoffroi georges gerald gerard geraud germain gervais ghislain gilles gratien gregoire guillaume gustave henri hercule herve hilaire honore honorine hugues ignace jacques jean-baptiste jean-marie jeannot jeremie jerôme joel josephe jourdain julien juste laurent lazare leandre leon leonard leonce leopold lionel loup luc lucien marc marcellin mathieu matthieu maxime maximilien mignon modeste morgane nazaire nicolas noel olivie olivier olympe onesime papillion pascal paschal patrice paul perceval philibert philippe pierre placide pons rainier raoul raphael regis remi remy renaud rene reynaud roch rodolphe rodrigu romain salome sebastien serge severin stephane sylvain sylvestre telesphore theirn theo theodore theophile thibault thierry toussaint urbain vespasien victoire vincent vivien yves zacharie andre avril bertrand cesar claude constantin denis loic louis marcel marin michel prosper renard 
+
+! array femelle = antoinette apolline arianne arienne aristide armelle arnaude aude aurele aurelie aurore axelle beatrice benedicte benjamine benoite bernadette berthe camille carole cecile celestine celine cerise chante charline chloe christelle claire clarisse claudette claudine clemence clementine clothilde colette colombe corinne cosette cunegonde daniele delphine desiree donatienne doriane dorothee edith eleonore eliane elise elodie eloise emeline emile emilie emmanuelle esme esmee etienne eugenie eulalie fabienne faustine felicie felicien felicienne fernande flavie florette florianne françoise gaetane genevieve georgette georgine germaine ghislaine gigi gilberte gisele gwenaelle helene heloïse henriette honorine hyacinthe ines irene irene irenee jacinthe jeanne jeannette joceline joelle jolie josee josephe josephine josette josiane julienne juliette laure laurentine laurette lea leonie leonne leontine lisette luce lucie lucienne lucille lucinde lydie madeline manon marceline marcelle marcellette marcelline margot marguerite marie marielle mariette marine marise martine mathilde maximilienne melanie melissa michele micheline mireille modestine monique morgaine morgane nadine narcisse nathalie nicolette ninette ninon noella noemie oceane odette odile oriane orianne osanne ouida ozanne pascale pascaline paule paulette penelope perrine philippine raymonde rebecca regine reine renee rochelle rolande romaine rosalie roselle rosemonde rosette rosine sandrine sebastienne seraphine severine sidonie solange stephanie suzanne suzette sylvaine sylviane sylvianne sylvie tatienne therese timothee valere valerie veronique victorine vienne violette virginie vivienne yolande yvette yvonne zoe anne arlette blanche carine caroline chantal charlotte christine danielle denise diane dianne francine gabrielle giselle gisselle godelieve jacqueline jeanine jeannine juliane julie justine louise lucile madeleine marthe michelle mirabelle myriam natalie nicole noelle pauline roxane sabine sophie
+
+! array fille = fille fillette femme femelle madame dame mademoiselle demoiselle donzelle gonzesse meuf
+! array filles = filles fillettes femmes femelles mesdames dames mesdemoiselles demoiselles donzelles gonzesses meufs
+! array garcon = garcon mec queum monsieur homme male
+! array garcons = garcons mecs queum messieurs hommes males
+! array couleurs = blanc jaune vert bleu rouge vert orange violet mauve noir fuschia
+! array cheveux = blond blonds blonde blondes roux rousse rousses brun bruns brune brunes chatain chatains chauve rase rases rasee gris grise grises
+! array moche = sale horrible affreux rebutant moche
+! array bete = bete stupide con nul
+! array beau = beau joli exceptionnel magnifique super nickel fabuleux mignon
+! array fort = fort puissant solide
+! array faible = faible|sans force
+! array grand = grand enorme gigantesque
+! array petit = petit minuscule microscopique
+! array triste = triste maussade tristesse
+! array minable = minable nul insignifiant insipide ridicule bad
+! array interessant = interessant cultive intelligent utile efficace performant perfectionne
+
+! array legumes = legume legumes carottes haricots navets chou choux frites soupe soupes
+^ |pommes de terre|chou fleur|
+
+! array fruits = fruit fruits fraises framboises pommes tomates melon citron clementines mandarines oranges noix noisettes amandes amande raisin raisins cerises
+
+! array sucreries = sucrerie sucreries bonbon bonbons sucette sucettes chocolat caramel glace glaces gateau gateaux confiture confitures barbapapa
+! array parfum = parfum chocolat vanille fraise cerise abricot pomme orange caramel noisette nougat menthe café
+^ noix de coco
+! array alcool = alcool vin rose whisky cognac rhum vodka gin apero
+^ vin rouge|vin blanc|grand marnier|
+
+! array jus = |jus|jus de fruit|jus de fruits|jus d orange|jus d oranges|jus de framboise|jus de framboises|jus de pamplemousse|jus de pamplemousses|jus de fraise|jus de fraises|jus d abricot|jus d abricots|jus de pomme|jus de pommes|multifruits|multifruit|jus de carotte|jus de carottes|
+
+! array eau = |eau|eau plate|eau gazeuse|eau de source|eau de sources|
+! array viandes = viande viandes porc boeuf cochon poulet dinde sanglier biche cerf coq cheval pigeon canard jambon saucisson saucisse terrine pate
+^ cotes de porc|travers de porc|
+! array poisson = poisson poissons truite saumon sardine sardines 
+! array fruitsDeMer = crabe crabes araignee araignees crevette crevettes homard homards langoustine langoustines bulot bulots
+^ fruits de mer|coquille saint jacques|coquilles saint jacques|
+
+! array jaime = |j aime|j adore|j affectionne|
+! array aimerai = aimerai aimerais adorerai adorerais voudrai voudrais
+! array jaimePas = |j aime pas|je n aime pas|je deteste|je ne supporte pas|
+
+! array sports = sport sports foot football hand handball basket volley volleyball tennis course courses randonnee randonnees cross cyclisme motocross moto velo escalade varape grimpe natation gymnastique gym petanque booling curling athletisme karate kungfu judo taekwondo boxe equitation escrime tir danse
+^ activite sportive|activites sportives|ping pong|course a pieds|sport de combat|sports de combat|saut en hauteur|saut en longueur|boxe francaise|boxe americaine|boxe thaïlandaise|boxe anglaise|tir sportif|volley ball|foot ball|basket ball|hand ball| quatre cent metres
+
+! array loisirs = modelisme maquettisme peinture peindre dessin dessiner magie modelage modeler sculpture sculpter informatique robotique programmation programmer calcul calculer calculs cine cinema theatre opera bricolage bricoler tele lecture lire ecrire jardinage jardiner danser danse 
+
+! array matieresScolaires = physique chimie biologie math mathematiques histoire geographie langue langues psychologie recherche
+
+! array chercher = trouver chercher rechercher recherche trouver retrouver decouvrir decouverte decouvertes redecouvrir connaitre connaissance connaissances reconnaitre analyser calculer sythetiser imaginer entrevoir voir observer reflechir
+
+! array pourquoi = |comment est il possible que|comment se fait il que|pourquoi|comment ca se fait que|
+
+// Substitutions
+
+// Mon dictionnaire pocket renvoir les ' comme suit :  "c' est"
+// un espace est present entre le ' et le "e". 
+// ci dessous, un formatage est effectué avant analyse de la séquence
+
+! sub à			= a
+! sub t'  	   	= t
+! sub c'  	   	= c
+! sub s'	    = s
+! sub j'     	= j
+! sub n'	    = n
+! sub m'	    = m
+! sub l'	    = l
+! sub d'	    = d
+! sub t'	    = t
+
+// NOMBRES, servant pour les calculs
+
+! sub 	un 						= 1
+! sub	deux					= 2
+! sub	trois					= 3
+! sub	quatre					= 4
+! sub	cinq					= 5
+! sub	six						= 6
+! sub	sept					= 7
+! sub	huit					= 8
+! sub	neuf					= 9
+! sub	dix						= 10
+! sub	onze					= 11
+! sub	douze					= 12
+! sub	treize					= 13
+! sub	quatorze				= 14
+! sub	quinze					= 15
+! sub	seize					= 16
+! sub	dix-sept				= 17
+! sub	dix-huit				= 18
+! sub	dix_neuf				= 19
+! sub	vingt					= 20
+! sub	vingt_et_un				= 21
+! sub	vingt-deux				= 22
+! sub	vingt-trois				= 23
+! sub	vingt-quatre			= 24
+! sub	vingt-cinq				= 25
+! sub	vingt-six				= 26
+! sub	vingt-sept				= 27
+! sub	vingt-huit				= 28
+! sub	vingt-neuf				= 29
+! sub	trente					= 30
+! sub	trente_et_un			= 31
+! sub	trente-deux				= 32
+! sub	trente-trois			= 33
+! sub	trente-quatre			= 34
+! sub	trente-cinq				= 35
+! sub	trente-six				= 36
+! sub	trente-sept				= 37
+! sub	trente-huit				= 38
+! sub	trente-neuf				= 39
+! sub	quarante				= 40
+! sub	quarante_et_un			= 41
+! sub	quarante-deux			= 42
+! sub	quarante-trois			= 43
+! sub	quarante-quatre			= 44
+! sub	quarante-cinq			= 45
+! sub	quarante-six			= 46
+! sub	quarante-sept			= 47 
+! sub	quarante-huit			= 48
+! sub	quarante-neuf			= 49
+! sub	cinquante				= 50
+! sub	cinquante_et_un			= 51
+! sub	cinquante-deux			= 52
+! sub	cinquante-trois			= 53
+! sub	cinquante-quatre		= 54
+! sub	cinquante-cinq			= 55
+! sub	cinquante-six			= 56
+! sub	cinquante-sept			= 57
+! sub	cinquante-huit			= 58
+! sub	cinquante-neuf			= 59
+! sub	soixante				= 60
+! sub	soixante_et_un			= 61
+! sub	soixante-deux			= 62
+! sub	soixante-trois			= 63
+! sub	soixante-quatre			= 64
+! sub	soixante-cinq			= 65 
+! sub	soixante-six			= 66
+! sub	soixante-sept			= 67
+! sub	soixante-huit			= 68
+! sub	soixante-neuf			= 69
+! sub	soixante-dix			= 70
+! sub	soixante-onze			= 71
+! sub	soixante-douze			= 72 
+! sub	soixante-treize			= 73
+! sub	soixante-quatorze		= 74
+! sub	soixante-quinze			= 75
+! sub	soixante-seize			= 76
+! sub	soixante-dix-sept		= 77
+! sub	soixante-dix-huit		= 78
+! sub	soixante-dix-neuf		= 79 
+! sub	quatre-vingt			= 80
+! sub	quatre-vingt-un			= 81
+! sub	quatre-vingt-deux		= 82
+! sub	quatre-vingt-trois		= 83
+! sub	quatre-vingt-quatre		= 84
+! sub	quatre-vingt-cinq		= 85
+! sub	quatre-vingt-six		= 86
+! sub	quatre-vingt-sept		= 87
+! sub	quatre-vingt-huit		= 88
+! sub	quatre-vingt-neuf		= 89
+! sub	quatre-vingt-dix		= 90
+! sub	quatre-vingt-onze		= 91
+! sub	quatre-vingt-douze		= 92
+! sub	quatre-vingt-treize		= 93
+! sub	quatre-vingt-quatorze	= 94
+! sub	quatre-vingt-quinze		= 95
+! sub	quatre-vingt-seize		= 96
+! sub	quatre-vingt-dix-sept	= 97
+! sub	quatre-vingt-dix-huit	= 98
+! sub	quatre-vingt-dix-neuf	= 99
+! sub	cent					= 100
+
+
+// person, sert à modifier automatiquement les conjugaisons du type "je" => "tu"
+! person tu 		= je
+! person je 		= tu
+! person toi 		= moi
+! person moi 		= toi
+! person ton 		= mon
+! person mon 		= ton
+! person ta 		= ma
+! person ma 		= ta
+! person toi meme 	= moi meme
+! person moi meme 	= toi meme
+! person me 		= te
+! person te 		= me
+! person m 			= t
+! person t 			= m
+! person brun 			= brune
+! person blond 			= blonde
+! person bruns			= brunes
+! person blonds 			= blondes
+! person gris 			= grise
