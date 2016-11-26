@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC    -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/neo/catkin_ws/src/face_recognition/build/gtest/src -lpthread -Wl,-rpath,/home/neo/catkin_ws/src/face_recognition/build/gtest/src 

@@ -3,15 +3,13 @@
 
 
 # Author: Vincent FOUCAULT
-# Here is a text-to-speech wrapper for Espeak
-# It's part of QBO robot ros softwares
+# Here is a text-to-speech using svoxpico
 
 
 import rospy
 import roslib
 from qbo_talk.srv import Text2Speach # read service content (words we want to be spoken)
 import os
-import subprocess
 from time import sleep
 
 # Some possibilities of different languages
@@ -26,14 +24,8 @@ from time import sleep
 #--- pico2wave
 fr1_speak = "pico2wave -l fr-FR -w test.wav \"%s\" && play test.wav"
 en1_speak = "pico2wave -l en-GB -w test.wav \"%s\" && play test.wav"
+      
 
-def run_process(command = ""):
-    if command != "":
-        return os.system(command)
-    else:
-        return -1
-            
-            
 class talk():
 
     def __init__(self):
@@ -46,23 +38,20 @@ class talk():
     #TODO  Dic. words fo gain better words sounds ! 
 
     def fr1_talk(self, speak): 
-      #try :
+      try :
         # open talk_dic_fr to read words inside
-        #pkg_dir = roslib.packages.get_pkg_dir("qbo_talk")
+        pkg_dir = roslib.packages.get_pkg_dir("qbo_talk")
  
         # FR #
-        #with open(pkg_dir+"/params/talk_dic_fr","r") as dic:
+        with open(pkg_dir+"/params/talk_dic_fr","r") as dic:
         # EN #
         #with open(pkg_dir+"/params/talk_dic_en","r") as dic:
 
-          #self.dico = dic.read()
-          #dico = self.dico.split("\n")
+          self.dico = dic.read()
+          dico = self.dico.split("\n")
 
-          # When speaking, micros cut (0 %)  /OFF
-          os.system("amixer -c 1 sset Mic,0 nocap")
-          os.system("amixer -c 1 sset Mic,1 nocap")
-          sleep (0.3)
-          """
+          self.Cut_mics()
+
           # replace word with modified one in dic, for better sound
           New = speak.sentence.split(" ")
           for w in New :
@@ -71,22 +60,19 @@ class talk():
               a = i.split(" > ")
               speak.sentence = speak.sentence.replace(w, a[1])
            continue
-           dic.close()
+        dic.close()
+        print "good"
+        self.Cut_mics()
+        os.system(fr1_speak % str(speak.sentence))
+        self.Open_mics()
+        return True
 
-          else :
-           print speak.sentence
-           os.system(fr1_speak % speak.sentence) 
-
-           # when finished talking, micros hear again /ON
-           sleep (0.1)
-      
 
       except :
-           """
+      	  print "exception"
+      	  self.Cut_mics()
           os.system(fr1_speak % str(speak.sentence))
-
-      	  os.system("amixer -c 1 sset Mic,0 cap")
-          os.system("amixer -c 1 sset Mic,0 70%")
+          self.Open_mics()
           return True
 
     """
@@ -94,6 +80,19 @@ class talk():
         os.system(en1_speak % speak.sentence)
         return []
     """
+
+    def Cut_mics(self):
+          # When speaking, micros cut (0 %)  /OFF
+          os.system("amixer -c 1 sset Mic,0 nocap")
+          os.system("amixer -c 1 sset Mic,1 nocap")
+          sleep (0.1)
+
+    def Open_mics(self):
+          # When finished speaking, micros hear again (70 %)  /ON
+          #sleep (0.1)
+     	  os.system("amixer -c 1 sset Mic,0 cap")
+          os.system("amixer -c 1 sset Mic,0 70%")
+
 
 if __name__ == '__main__':
     try:

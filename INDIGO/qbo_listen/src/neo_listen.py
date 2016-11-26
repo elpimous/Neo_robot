@@ -38,7 +38,7 @@ class recognizer(object):
         rospy.init_node("qbo_listen")
         hmdir=rospy.get_param("~hmm")
         lmd=rospy.get_param("~lm")
-        dictd=rospy.get_param("~dic")
+        dictd=rospy.get_param("~dict")
 
         while not rospy.is_shutdown():
 
