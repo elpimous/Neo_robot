@@ -94,3 +94,19 @@ sudo chmod 666 /etc/openni/GlobalDefaults.ini
 
 sudo gedit /etc/openni/GlobalDefaults.ini
 remove the ";" so it should be this : UsbInterface=2
+
+
+**************************************************************************************
+ERRORS CORRECTION :
+
+*** remove bluetooth micro errors :
+"bt_audio_service_open: connect() failed: Connection refused"
+
+--> sudo apt-get purge bluez-alsa
+
+
+*** 
+
+
+
+
