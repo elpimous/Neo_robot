@@ -28,7 +28,7 @@ Needs :
 	replace 2nd lign (!important : second line only!) with your own alphabet.
 		!important! use commas to separate each characters. ex : a,b,c,d
 
-        3/ Do some changes in Deepspeech.py, spell.py and text.py,
+       3/ Do some changes in Deepspeech.py, spell.py and text.py,
 	(all changes are marked with "***********  MOD for personal alphabet use !!!  ************",
 	for an easy find in text)
 
