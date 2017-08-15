@@ -1,5 +1,7 @@
 MODS FOR DEEPSPEECH MOZILLA FOR MULTILANGUAGE (I hope. LOL)
 Tested with French, (use of special characters :âàéèêîôùûç)
+===========================================================
+
 
 for python 2.7
 ==============
