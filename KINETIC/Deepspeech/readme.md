@@ -22,19 +22,20 @@ Normally, It should help all people who use of characters != of [a-z]
 Needs :
 -------
 
-	COPY files in correct Dirs;
+	1/ COPY files in correct Dirs;
 
-	open file : your_root/DeepSpeech/data/alphabet/alphabet.txt
+	2/ open file : your_root/DeepSpeech/data/alphabet/alphabet.txt
 	replace 2nd lign (!important : second line only!) with your own alphabet.
-		!important! use commas to separate each characters
+		!important! use commas to separate each characters. ex : a,b,c,d
 
-        Do some changes in Deepspeech.py, spell.py and text.py
-	(all changes are marked with "***********  MOD for personal alphabet use !!!  ************", for an easy find in text)
+        3/ Do some changes in Deepspeech.py, spell.py and text.py,
+	(all changes are marked with "***********  MOD for personal alphabet use !!!  ************",
+	for an easy find in text)
 
         Or copy/pastle my files on yours !!!
 	====================================
 
-	add program 'alphabet_converter.py'  to  your_root/DeepSpeech/util/
+	4/ add program 'alphabet_converter.py'  to  your_root/DeepSpeech/util/
 
 
 Finally:
