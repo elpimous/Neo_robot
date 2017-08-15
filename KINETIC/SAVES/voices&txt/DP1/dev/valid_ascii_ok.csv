@@ -1,0 +1,72 @@
+wav_filename,wav_filesize,transcript
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.1.wav,59560,qui es tu et qui est il
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.2.wav,72512,quel est ton nom ou comment tu t appelles
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.3.wav,31126,est ce que tu vas bien
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.4.wav,51886,jouons au toc toc toc
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.5.wav,57758,qui est la pour jouer avec toi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.6.wav,49522,aimes tu jouer avec axel
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.7.wav,55000,est ce que tu aimes jouer avec moi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.8.wav,77370,es tu plutot un garcon ou une fille
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.9.wav,44440,est ce que tu es un papa
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.10.wav,67250,est ce que tu aimes jouer avec axel
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.11.wav,75600,axel adore jouer avec toi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.12.wav,63188,les robots ne jouent pas en general
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.13.wav,49028,nous aimons jouer avec toi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.14.wav,53424,j aime travailler avec toi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.15.wav,61574,j aime discuter avec toi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.16.wav,82150,j aime beaucoup bavarder avec toi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.17.wav,54742,aimes tu parler avec moi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.18.wav,74546,es tu capable de chanter avec moi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.19.wav,104830,peux tu rechercher sur wikipedia une information
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.20.wav,53690,alfred parle moi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.21.wav,72146,alfred viens jouer avec moi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.22.wav,115826,alfred rends toi dans la cuisine puis la salle a manger
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.23.wav,107030,peux tu te diriger vers la chambre et le couloir
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.24.wav,95064,tu es tres interessant et tu es tres intelligent
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.25.wav,113912,tu disposes d une intelligence artificielle performante
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.26.wav,104228,tu as plusieurs capteurs dont un capteur de sol
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.27.wav,92990,tu peux te deplacer lentement ou rapidement
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.28.wav,85794,tu peux eviter les murs et les obstacles
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.29.wav,55508,tu n es pas si grand que ca
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.30.wav,99992,tu es intelligent meme si tu es tout petit
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.31.wav,89254,tu es noir et blanc et tu n es pas grand
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.32.wav,208106,tu es equipe de haut parleurs camera bouche et oreilles et meme de plusieurs capteurs
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.33.wav,69312,je me demande si tu as raison
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.34.wav,113122,je suis ton maitre ton createur et ton botmaster
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.35.wav,97816,alfred as tu quelque chose a me dire
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.36.wav,87944,je ne comprends pas ce que tu viens de dire
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.37.wav,69024,je ne saisis pas ce que tu dis
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.38.wav,84660,est ce que tu as un copain ou une copine
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.39.wav,64686,as tu des amis ou des potes
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.40.wav,87458,alfred aimerais tu faire plein de choses
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.41.wav,106942,alfred suis moi je te demande de me suivre
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.42.wav,96452,alfred peux tu dire comment je m appelle
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.43.wav,98374,alfred tu fais quoi et que veux tu faire
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.44.wav,47748,que reves tu de faire
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.45.wav,70372,as tu une ia developpee
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.46.wav,75466,quels sont tes loisirs si tu en as
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.47.wav,54260,quelle est ta musique preferee
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.48.wav,55358,quel est ton livre prefere
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.49.wav,76370,je ne comprends pas ce que tu veux dire
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.50.wav,31706,que veux tu dire
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.51.wav,101176,que veux tu chanter ou tu veux chanter quoi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.52.wav,78192,je te demande de chercher un objet
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.53.wav,55964,peux tu rechercher un objet
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.54.wav,52798,quelle est la date du jour
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.55.wav,69076,peux tu me donner le mois et l annee
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.56.wav,85210,renseigne moi sur la meteo du jour
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.57.wav,55694,quel temps fera t il demain
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.58.wav,65606,quel sera le temps apres demain
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.59.wav,102732,qu aimerais tu faire si tu pouvais ressentir les choses
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.60.wav,58558,aimerais tu etre un humain
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.61.wav,66368,est ce que tu aimerais etre humain
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.62.wav,113216,est ce que tu aimerais ressentir les choses comme un humain
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.63.wav,119508,peux tu me renseigner sur ta batterie et ton niveau de batterie
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.64.wav,118560,comment fais tu pour te rendre sur ta base de recharge
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.65.wav,90028,disposes tu d une station de recharge
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.66.wav,64182,comment fais tu pour t alimenter
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.67.wav,75104,es tu capable de manger de boire
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.68.wav,54408,comment te recharges tu
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.69.wav,66316,peux tu te recharger seul
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.70.wav,84042,es tu capable de t alimenter seul
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.71.wav,79232,es tu capable de comprendre cela

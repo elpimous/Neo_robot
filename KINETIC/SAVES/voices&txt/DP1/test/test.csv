@@ -1,0 +1,44 @@
+wav_filename,wav_filesize,transcript
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.1.wav,46764,connais-tu axel
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.2.wav,100854,alfred peux-tu te rendre dans la salle a manger
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.3.wav,61478,diriges-toi vers la cuisine
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.4.wav,59186,promènes-toi dans le salon
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.5.wav,108832,alfred as-tu une intelligence artificielle
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.6.wav,79152,alfred donnes-moi la météo
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.7.wav,84570,quelle heure est-il et quel jour sommes-nous
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.8.wav,73224,alfred que peux-tu faire
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.9.wav,84328,alfred as-tu des bras et des jambes
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.10.wav,80220,est ce que tu es un grand robot alfred
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.11.wav,92962,es-tu équipé de caméras et de haut-parleurs
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.12.wav,64264,es-tu sûr d être un robot
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.13.wav,96318,es-tu certain d être plus intelligent que moi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.14.wav,57556,alfred je veux jouer avec toi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.15.wav,76348,comment tu t appelles et quel âge as-tu
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.16.wav,88020,es-tu capable de rêver et de dormir
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.17.wav,87698,peux-tu boire et manger et dormir
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.18.wav,68430,recherches sur internet
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.19.wav,79326,je veux que tu recherches sur internet
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.20.wav,82090,effectue une recherche sur internet
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.21.wav,50876,recherches sur wikipédia
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.22.wav,106658,es-tu un robot stupide et peux-tu être violent
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.23.wav,67556,peux-tu me renseigner s il te plait
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.24.wav,63594,peux-tu te promener dans la maison
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.25.wav,72054,comment fais-tu quand tes batteries sont vides
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.26.wav,87370,disposes-tu d une station de recharge
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.27.wav,49786,posez-moi des questions
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.28.wav,60718,racontes-moi des histoires
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.29.wav,115700,alfred peux-tu chanter danser et courir
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.30.wav,94984,alfred peux-tu être violent ou méchant
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.31.wav,43388,je suis ton père
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.32.wav,73868,je n aime pas du tout la nourriture
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.33.wav,68382,est ce que tu aimes les sciences
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.34.wav,50952,aimes-tu internet
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.35.wav,73256,je ne suis pas d accord avec toi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.36.wav,98780,je me demande si tu es d accord avec moi
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.37.wav,80774,as-tu compris ce que je viens de dire
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.38.wav,63184,es-tu capable d avoir faim
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.39.wav,73828,alfred as-tu des loisirs
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.40.wav,67074,peux-tu recommencer à parler
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.41.wav,74648,alfred peux-tu reformuler
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.42.wav,144110,as-tu des capteurs comme un capteur de sol ou une caméra trois d
+/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/test/record.43.wav,46914,alfred merci
