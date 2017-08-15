@@ -19,3 +19,15 @@ Needs :
 	open file : your_root/DeepSpeech/data/alphabet/alphabet.txt
 	replace 2nd lign (!important : second line only!) with your own alphabet.
 		!important! use commas to separate each characters
+
+        Do some changes in Deepspeech.py, spell.py and text.py
+	(all changes are marked with "***********  MOD for personal alphabet use !!!  ************", for an easy find in text)
+
+	add program 'alphabet_converter.py'  to  your_root/DeepSpeech/util/
+
+
+Finally:
+--------
+	feed your word.txt with your natural sentences
+	build your own LM
+	test !
