@@ -1,7 +1,0 @@
-wav_filename,wav_filesize,transcript
-/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.1.wav,59560,qui es-tu et qui est-il
-/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.2.wav,72512,quel est ton nom ou comment tu t appelles
-/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.3.wav,31126,est ce que tu vas bien
-/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.4.wav,51886,jouons au toc toc toc
-/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.5.wav,57758,qui est là pour jouer avec toi
-/home/nvidia/deepspeech/DeepSpeech/data/deepspeech_material/dev/record.6.wav,49522,aimes-tu jouer avec axel
