@@ -1,5 +1,6 @@
 MODS FOR DEEPSPEECH MOZILLA FOR MULTILANGUAGE (I hope. LOL)
 Tested with French, (use of special characters :âàéèêîôùûç)
+elpimous12@orange.fr                  v1.0
 ===========================================================
 
 
@@ -20,12 +21,18 @@ Normally, It should help all people who use of characters != of [a-z]
 
 Needs :
 -------
+
+	COPY files in correct Dirs;
+
 	open file : your_root/DeepSpeech/data/alphabet/alphabet.txt
 	replace 2nd lign (!important : second line only!) with your own alphabet.
 		!important! use commas to separate each characters
 
         Do some changes in Deepspeech.py, spell.py and text.py
 	(all changes are marked with "***********  MOD for personal alphabet use !!!  ************", for an easy find in text)
+
+        Or copy/pastle my files on yours !!!
+	====================================
 
 	add program 'alphabet_converter.py'  to  your_root/DeepSpeech/util/
 
