@@ -24,9 +24,11 @@ Needs :
 
 1/ COPY files in correct Dirs;
 
+
 2/ open file : your_root/DeepSpeech/data/alphabet/alphabet.txt
 	replace 2nd lign (!important : second line only!) with your own alphabet.
 		!important! use commas to separate each characters. ex : a,b,c,d
+
 
 3/ Do some changes in Deepspeech.py, spell.py and text.py,
 	(all changes are marked with "***********  MOD for personal alphabet use !!!  ************",
@@ -35,7 +37,9 @@ Needs :
         Or copy/pastle my files on yours !!!
 	====================================
 
+
 4/ add program 'alphabet_converter.py'  to  your_root/DeepSpeech/util/
+
 
 
 Finally:
